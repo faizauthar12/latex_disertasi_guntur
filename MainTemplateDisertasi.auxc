@@ -1,0 +1,94 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\citation{*}
+\@input{cover.aux}
+\select@language{indonesia}
+\@writefile{toc}{\select@language{indonesia}}
+\@writefile{lof}{\select@language{indonesia}}
+\@writefile{lot}{\select@language{indonesia}}
+\@input{cover_judul.aux}
+\@input{originalitas.aux}
+\@input{lembar_persetujuan.aux}
+\@input{abstrak.aux}
+\@input{abstract.aux}
+\@input{katapengantar.aux}
+\@writefile{toc}{\contentsline {chapter}{DAFTAR ISI}{viii}{Item.8}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{DAFTAR GAMBAR}{x}{chapter*.4}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{DAFTAR TABEL}{xi}{chapter*.5}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{DAFTAR ALGORITMA}{xii}{chapter*.6}}
+\@input{daftarlampiran.aux}
+\citation{Biologi2012}
+\citation{Cancer2013}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{BAB \hbox to\@tempdima {I\hfil } : PENDAHULUAN}{1}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}}
+\newlabel{sec:1-LatarBelakang}{{1.1}{1}{Latar Belakang\relax }{section.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Visualisasi organ hati dengan tampilan citra ultrasonografi (Jiang 2016)\relax }}{1}{figure.caption.7}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{gambar1}{{1.1}{1}{Visualisasi organ hati dengan tampilan citra ultrasonografi (Jiang 2016)\relax \relax }{figure.caption.7}{}}
+\citation{Rajesh2018liver}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Gambar 1.2. Tampilan citra ultrasonografi (Kee,2017, Rueda, 2013)\relax }}{5}{figure.caption.8}}
+\newlabel{gambar1}{{1.2}{5}{Gambar 1.2. Tampilan citra ultrasonografi (Kee,2017, Rueda, 2013)\relax \relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Rumusan Masalah}{10}{section.1.2}}
+\newlabel{sec:2-Rumusanmasalah}{{1.2}{10}{Rumusan Masalah\relax }{section.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Tujuan Penelitian}{11}{section.1.3}}
+\newlabel{sec:3-TujuanPenelitian}{{1.3}{11}{Tujuan Penelitian\relax }{section.1.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Kontribusi dan Manfaat Penelitian}{12}{section.1.4}}
+\newlabel{sec:4-KontribusidanManfaatPenelitian}{{1.4}{12}{Kontribusi dan Manfaat Penelitian\relax }{section.1.4}{}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{BAB \hbox to\@tempdima {II\hfil } : TELAAH PUSTAKA}{13}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cha:2-TelaahPustaka}{{2}{13}{TELAAH PUSTAKA\relax }{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}judul bab 2}{13}{section.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}judul sub bab 2}{13}{subsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.1}judul sub sub bab 2}{13}{subsubsection.2.1.1.1}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces {\sc  Max} finds the maximum number\relax }}{13}{algocf.1}}
+\newlabel{algo:max}{{1}{13}{judul sub sub bab 2\relax }{algocf.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{c.c}{13}{lstlisting.2.-1}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Tabel Perbandingan\relax }}{14}{table.caption.10}}
+\newlabel{my-label1}{{2.1}{14}{Tabel Perbandingan\relax \relax }{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Tabel Perbandingan\relax }}{15}{table.caption.11}}
+\newlabel{my-label2}{{2.2}{15}{Tabel Perbandingan\relax \relax }{table.caption.11}{}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{BAB \hbox to\@tempdima {III\hfil } : METODE PENELITIAN}{16}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Tahapan Penelitian}{16}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}judul sub bab 3}{16}{subsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.1}judul sub sub bab 3}{16}{subsubsection.3.1.1.1}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{BAB \hbox to\@tempdima {IV\hfil } : HASIL DAN PEMBAHASAN}{17}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Hasil}{17}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}judul sub bab 4}{17}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.1}judul sub sub bab 4}{17}{subsubsection.4.1.1.1}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{BAB \hbox to\@tempdima {V\hfil } : PENUTUP}{18}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Kesimpulan}{18}{section.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Saran}{18}{section.5.2}}
+\bibstyle{agsm}
+\bibdata{MainTemplateDisertasi}
+\@input{lampiran.aux}
+\@writefile{toc}{\contentsline {chapter}{DAFTAR PUSTAKA}{19}{section.5.2}}
+\@writefile{toc}{\contentsline {chapter}{RIWAYAT HIDUP}{20}{section.5.2}}

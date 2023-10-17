@@ -1,0 +1,23 @@
+\newpage %Abstract
+\addcontentsline{toc}{chapter}{ABSTRAK}
+\begin{center}
+%\begin{large}\textbf{Deteksi dan Klasifikasi Karies Molar Rahang Bawah Menggunakan Citra Radiograf Periapikal Gigi dengan Segmentasi Region Growing}\end{large}\\
+%%\begin{large}\textbf{JUDUL DISETASI baris 2}\end{large}\\
+\vspace{10mm}
+\begin{large}\textbf{ABSTRAK}\end{large}
+\end{center}
+\vspace{5mm}
+
+\begin{singlespace}
+Penerapan teknologi informasi dan komunikasi sangat dibutuhkan,\\khususnya di bidang pertanian. Kelapa sawit merupakan produk pertanian yang terbesar di Indonesia dan produksi kelapa sawit sangat penting bagi perekonomian. Dalam menghasilkan produksi kelapa sawit yang baik dibutuhkan pengelolaan perkebunan kelapa sawit yang baik. Permasalahan utama dalam pengelolaan ini, yaitu luas area dalam skala besar (perusahaan perkebunan kelapa sawit memiliki luas mininimum sebesar 6.000 hektar yang harus dikelola), wilayah perkebunan berada di \textit{remote area}, akses infrastruktur yang terbatas, dan pemupukan presisi mengalami kesulitan untuk mendapatkan data secara akurat berdasarkan jumlah tegakkan pohon kelapa sawit pada suatu area lahan. Hal ini menyebabkan deteksi dan menghitung pohon kelapa sawit sangat dibutuhkan. Selama ini, penghitungan tradisional didasarkan pada catatan awal penanaman pohon kelapa sawit atau penghitungan teoritis berdasarkan jarak tanam antara pohon kelapa sawit dalam satu hektar atau blok. Metode tradisional ini lambat dan tidak akurat, serta tidak diketahui status pohon kelapa sawit yang rusak atau mati. Penggunaan teknologi dibutuhkan untuk dapat secara otomatis dan \textit{real-time} dalam memonitoring data pohon kelapa sawit dan memperkirakan produktivitasnya. Penggunaan ini dibutuhkan dalam deteksi objek berupa citra.
+
+Penggunaan citra untuk deteksi objek dibutuhkan dalam persiapan data, seperti menganalisa, memberikan anotasi atau kelas dari objek tersebut. Metode dalam melakukan anotasi dataset selama ini dilakukan secara manual, satu per satu dengan memberikan kotak batas. Persiapan data ini menghabiskan lebih dari 70\% waktu dalam siklus hidup \textit{deep learning} untuk menjadi dataset yang dapat digunakan sebagai data pelatihan, validasi, dan pengujian. Hal inilah yang menjadi tantangan bagi \textit{stakeholders}. 
+
+Penelitian ini bertujuan untuk menghasilkan pengembangan metode \textit{object-based image analysis} (OBIA) untuk membuat dataset secara otomatis dengan memberikan label suatu kelas pada data citra. Metode yang dikembangkan menggunakan algoritma klasifikasi \textit{template matching}. Algoritma ini sebagai template awal citra pohon kelapa sawit yang memiliki kunci nilai ambang batas dalam menentukan kelas dari objek di dalam citra. Algoritma BIRCH digunakan untuk mengurangi objek yang bukan terdeteksi ke dalam kelas pohon kelapa sawit. Hasil evaluasi performance pelatihan menunjukkan bahwa model dengan algoritma YOLOv7 lebih baik dengan akurasi best MAP sebesar 0,993 dan pada pengujian sebesar 0,997. Berdasarkan waktu pemrosesan DGX-A-100 Universitas Gunadarma lebih baik, pada pelatihan sebesar 2948 detik dibandingkan dengan Google Colab Pro sebesar 4847 detik.
+
+Penelitian ini dihasilkan purwarupa sistem yang menggunakan model algoritma dari YOLOv7 untuk dapat mendeteksi dan menghitung pohon kelapa sawit pada area tertentu dari citra satelit yang terintegrasi dengan Google Maps API. Berdasarkan hasil pengujian 4 blok pada Kebun Pendidikan dan Pendidikan Kelapa Sawit IPB-Cargil bahwa hasil presentasi berhasil dideteksi sebesar 97,67\%, dan diketahui setiap pohon kelapa sawit yang terdeteksi diketahui letak titik koordinat untuk dapat dilakukan pemantauan, pengelolaan, dan estimasi produktivitas pohon kelapa sawit.
+
+\end{singlespace}
+\noindent \\
+
+\noindent Kata kunci : OBIA, \textit{Deep Learning}, YOLOv7, Kelapa Sawit.

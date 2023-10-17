@@ -1,0 +1,114 @@
+\chapter{METODE PENELITIAN}
+\section{Gambaran Umum Penelitian}
+Penelitian ini mengimplementasikan integral image ke dalam bentuk desain
+CHIP berupa layout menggunakan metode sintesis. Gambaran Integral image disajikan
+dalam bentuk diagram blok pada gambar \ref{gambar31}
+
+ \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{3_Metodologi/31a.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Blok Diagram Integral Image}\label{gambar31}
+\end{figure}
+
+\section{Tahapan Penelitian}
+
+Metode penelitian yang dilakukan pada penelitian ini dibagi menjadi 5 tahapan.
+Gambar 3.2 menggambarkan tahapan-tahapan penelitian sebagai berikut
+
+ \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{3_Metodologi/31b.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Tahapan Penelitian}\label{gambar32}
+\end{figure}
+Berikut ini penjelasan lengkap Tahapan-tahapan penelitian
+\begin{enumerate}
+
+ \item Tahapan pertama, Studi literatur, pada tahap ini dilakukan studi tentang sejumlah
+artikel ilmiah dan buku yang menguraikan tentang sistem pendeteksi wajah khususnya
+integral image, desain sintesis, desain CHIP dan penggunaan perangkat
+lunak desain EDA.
+ \item Tahapan Kedua, Melakukan desain pada tingkat logika (High Level Design),
+pada bagian ini dilakukan desain rangkaian dengan menggunakan bahasa HDL
+dengan format bahasaVHDL. Desain logika dapat dilakukan pada perangkat lunak
+Xilinx ISE untuk FPGA atau di perangkat lunak Mentor HDL Designer.
+Desain logika dalam bentuk VHDL akan disimulasikan pada perangkat lunak
+Mentor Modelsim. Saat ini penelitian ini beberapa bagian telah dikerjakan. Sesuai
+Gambar 3.2 dan Gambar 3.3, bagian yang telah dikerjakan saat ini adalah
+membuat Desain logika berupa HDL untuk peyimpanan memori integral image
+menggunakan perangkat lunak mentor HDL designer dan masih dalam tahap
+simulasi.
+ \item Tahapan ketiga, Proses sintesis desain. Desain logika yang sudah disimulasikan
+akan disintesiskan. Pada tahap ini desain VHDL disintesiskan ke bentuk gerbang
+logika dan ditambahkan teknologi CMOS. Teknologi CMOS yang digunakan
+adalah 0,35mm dari AMS (AustriaMicro System). serta dilakukan optimasi.
+Dari tahap ini dihasilkan desain dalam bentuk Netlist berupa file yang telah tertanamkan
+teknologi CMOS.
+ \item Tahapan keempat, Proses pembuatan desain fisik CHIP atau disebut desain fisik
+(physical design). Desain berupa netlist akan dibuat skematik dan layout menggunakan
+perangkat lunak Mentor Graphics IC FLOW. Untuk membuat skematik
+dilakukan pada Design Architech-IC, netlist yang telah ada dibuatkan skematik.
+Skematik tersebut akan disimulasikan kembali untuk memastikan fungsi berjalan
+dengan baik. Kemudian dari skmatik tersebut layout dibuat dan dilakukan
+verifikasi IC.
+ \item Tahapan Kelima, Hasil akhir dari desain ini adalah berupa layout yang sudah disimulasikan.
+Layout ini nantinya akan disajikan dalam format GDSII (Graphical
+Database System). Selain itu pada tahap terakhir pada penelitian Hibah Disertasi
+ini, yaitu pelaporan.
+
+\end{enumerate}
+
+Berikut gambar 3.5 Alur pengerjaan penelitian
+
+\begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{3_Metodologi/33.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Tahapan Penelitian}\label{gambar23}
+\end{figure}
+
+
+\section{Arsitektur Integral Image}
+\subsection{Blok Diagram}
+Model implementasi integral image dapat dilihat pada gambar \ref{} sebagai blok diagram. Blok diagram terdiri dari beberapa blok yaitu (1)masukkan citra, (2) Array citra,
+(3) adder citra, (4) memori citra dan (5) hasil integral image. Berikut ini akan dijelaskan masing-masing blok-blok tersebut.
+
+\begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{3_Metodologi/34.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Arsitektur Integral Image }\label{gambar23}
+\end{figure}
+
+
+
+\subsection{Masukkan Citra}
+ Blok ini merupakan citra masukkan atau citra asli yang direpresentasikan dalam bentuk nilai citra (piksel). Diasumsikan nilai citra dalam
+derajat keabuan (Grayscale).
+\subsection{Array Image}
+ Blok ini merupakan blok yang berfungsi untuk menerima masukkan dari blok masukkan citra yang kemudian diubah kedalam bentuk array
+sesuai ukuran dengan blok masukkan citra. Jika blok ini telah diisi maka akan nilai array akan diteruskan ke blok penjumlahan / proses (adder).
+\subsection{Adder Image}
+ Blok ini merupakan blok yang akan memproses perhitungan integral dengan memproses dua baris untuk mendapatkan nilai integral image.
+\subsection{Memori Image}
+Blok ini merupakan blok yang berfungsi untuk menyimpan hasil integral yang dilakukan pada blok adder image.
+\subsection{Integral Image Value}
+Blok ini merupakan blok yang berfungsi untuk memberikan hasil integral image yang dirangkai kembali dalam bentuk array.
+

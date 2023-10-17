@@ -1,0 +1,65 @@
+\chapter{PENDAHULUAN}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+\section{Latar Belakang}
+\label{sec:1-LatarBelakang}
+\textit{Integral image} atau citra integral merupakan sebuah algoritma yang banyak digunakan
+pada sistem pendeteksian wajah atau face detection. Integral image awalnya
+bersumber dari penelitian yang dilakukan oleh frank crow  yang dinamakan
+Summed area table dan Pada bidang computer vision istilah ini diperkenalkan
+kembali oleh paul viola dan michle jones  untuk sistem face
+detection yang diberi nama viola jones \cite{crow1984summed} \cite{viola2001rapid}. Sistem viola jones pada penelitian \cite{viola2001rapid} terdiri dari Integral image, adaboost dan Klasifier cascade
+Integral image adalah proses penjumlahan nilai piksel citra asal pada daerah tertentu
+menjadi sebuah representasi citra baru. Kegunaan dari Integral image adalah mempercepat
+dan mengefisiensikan waktu perhitungan untuk mendeteksi fitur pada sebuah
+citra dalam hal ini fitur yang digunakan adalah fitur haar. Sehingga metode viola jones
+memiliki proses yang cepat dan akurasi yang tinggi dalam mendeteksi wajah \cite{gupta2014study}
+Pengembangan Penelitian terkait dengan face detection khususnya integral image
+pada bidang sistem tertanam diataranya, penelitian ehsan \cite{ehsan2009novel} mengembangkan
+paralel Integral image pada platform FPGA (\textit{Field Programmable Gate
+Array}) dengan metode multirow, penelitian Yuchi dkk pada \cite{zhang2014parallel}, mengembangkan paralel Integral image dengan membandingkan dua metode
+integral image pada platform FPGA dan penelitian hoseini \cite{hoseini2013novel} mengembangkan
+paralel Integral image pada platform ASIC (\textit{Application Specific Integrated
+Circuit}) dengan model current mode.
+Pada penelitian disertasi ini, akan dilakukan pengembangan implementasi integral
+image dengan aristektur paralel pada platform ASIC menggunakan metode desain sintesis
+berbasiskan teknologi CMOS 0,35 $\mu$m. Agar dapat mengimplementasikan ke
+dalam desain ASIC maka diperlukan desain sintesis. Pada bidang Desain VLSI (\textit{Very
+Large Scale Integration}), Desain sintesis sendiri merupakan bagian dari desain CHIP
+dengan metode desain ASIC. Desain sintesis erat kaitanya dengan desain digital, yang
+menggunakan gerbang-gerbang logika sebagai arsitektur desain dalam bentuk bahasa
+pemrograman HDL(High Description Language). Perbedaan mendasar dari Desain
+ASIC dan Desain FPGA dari sisi alur desain pada gambar 1.1, dimana desain ASIC 
+memilki tahap Sintesis Logika yang menghasilkan desain lojik berupa netlist dan juga
+tahap desain fisik berupa layout dalam format GDSII (Graphics Database System).
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{1_Pendahuluan/1.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Perbedaan Alur Desain FPGA dan Desain ASIC}\label{gambar1}
+\end{figure}
+
+Proses dalam desain sintesis adalah menggunakan bahasa HDL yang terdiri dari
+verilog dan VHDL sebagai proses desain arsitektur untuk ditransformasikan ke dalam
+bentuk IC (\textit{Integrated Circuit}).
+Penelitian terkait dengan desain ASIC Khususnya desain sintesis diantaranya, Kuharuk
+dkk pada \cite{kuharuk2006design} menjelaskan alur desain CHIP menggunakan
+perangkat lunak Mentor graphics, Kuharuk dkk pada \cite{Patrick2006design} menjelaskan
+alur desain sintesis FPGA pada lunak Mentor graphics dan Unnikrishnan dan
+Vesterbacka pada \cite{unnikrishnan2016mixed} untuk desain Mixed-Signal
+Perbedaan dari penelitian-penelitian yang telah disebutkan diatas khususnya penelitian
+ehsan dan hoseini selain perbedaan platform yang digunakan, proses desain yang
+menggunakan sintesis. Sehingga diharapkan desain yang akan diimplementasikan ke
+dalam model ASIC dengan teknologi CMOS memilki kecepatan yang lebih cepat dan
+rendah untuk konsusmsi daya. Perangkat lunak untuk mendesain menggunakan perangkat
+lunak desain chip mentor graphics, teknologi CMOS dari AMS (AustriaMicros-
+System) dengan ukuran teknologi CMOS 0,35 $\mu$ m dan hasil dari penelitian ini adalah
+dalam bentuk Layout.
+
+\section{Rumusan Masalah}
+\label{sec:2-Rumusanmasalah}

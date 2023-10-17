@@ -1,0 +1,34 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Bailey}{2003}{bailey2003comparison}
+Bailey, S.  \harvardyearleft 2003\harvardyearright , `Comparison of vhdl,
+  verilog and systemverilog', Available for download from www. model. com.
+\newblock Accessed: 2016-11-30.
+
+\harvarditem{Crow}{1984}{crow1984summed}
+Crow, F.~C.  \harvardyearleft 1984\harvardyearright , `Summed-area tables for
+  texture mapping', {\em ACM SIGGRAPH computer graphics} {\bf 18}(3),~207--212.
+
+\harvarditem{Gupta \harvardand\ Sharma}{2014}{gupta2014study}
+Gupta, M.~V. \harvardand\ Sharma, M.~D.  \harvardyearleft 2014\harvardyearright
+  , `A study of various face detection methods', {\em METHODS} {\bf 3}(5).
+
+\harvarditem[Oren et~al.]{Oren, Papageorgiou, Sinha, Osuna \harvardand\
+  Poggio}{1997}{oren1997pedestrian}
+Oren, M., Papageorgiou, C., Sinha, P., Osuna, E. \harvardand\ Poggio, T.
+  \harvardyearleft 1997\harvardyearright , Pedestrian detection using wavelet
+  templates, {\em in} `Computer Vision and Pattern Recognition, 1997.
+  Proceedings., 1997 IEEE Computer Society Conference on', IEEE, pp.~193--199.
+
+\harvarditem{Viola \harvardand\ Jones}{2001}{viola2001rapid}
+Viola, P. \harvardand\ Jones, M.  \harvardyearleft 2001\harvardyearright ,
+  `Rapid object detection using a boosted cascade of simple features', {\em
+  Computer Vision and Pattern Recognition, 2001. CVPR 2001. Proceedings of the
+  2001 IEEE Computer Society Conference on} {\bf 1},~I--511.
+
+\harvarditem{Viola \harvardand\ Jones}{2004}{viola2004robust}
+Viola, P. \harvardand\ Jones, M.~J.  \harvardyearleft 2004\harvardyearright ,
+  `Robust real-time face detection', {\em International journal of computer
+  vision} {\bf 57}(2),~137--154.
+
+\end{thebibliography}

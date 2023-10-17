@@ -1,0 +1,376 @@
+\chapter{TELAAH PUSTAKA}
+\label{cha:2-TelaahPustaka}
+\section{\textit{Integral Image}}
+Pada pertengahan tahun 1980 summed-area table telah diperkenalkan pada penelitian
+Frank Crow \citep{crow1984summed} untuk texture-mapping pada bidang komputer grafik
+\citep{ehsan2015integral}. Kemudian (summed-area table) dikembangkan dan diperkenalkan
+kembali oleh paul viola dan michael jones dengan istliah baru pada bidang pengolahan
+citra yang disebut Integral Image pada penelitian \citep{viola2001rapid} dan \citep{viola2004robust}. integral image merupakan penjumlahan nilai pixel dari sebuah citra
+asli, dimana nilai pada setiap lokasi tertentu (x,y) dari integral image adalah jumlah dari
+pixel-pixel citra yang berada di atasnya dan pada sebelah kiri dari lokasi (x,y). Alasan
+utama untuk menggunakan citra integral adalah meningkatkan kecepatan eksekusi
+untuk komputasi filter serta mendeteksi fitur haar pada sebuah citra. Ilustrasi integral
+image dapat dilihat pada gambar \ref{gambar21}
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/21.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Citra Integral}\citep{ehsan2015integral}\label{gambar21}
+\end{figure}
+
+\subsection{Komputasi Citra Integral}
+
+Citra integeral merupakan pengambangan dari metode(summed-area table) dengan
+persamaan 2.1 dan 2.2
+
+\begin{equation}
+ii(x,y) = \sum_{m=1}^x \sum_{n=1}^y i (m,n)
+\end{equation}
+atau
+\begin{equation}
+ii(x,y) =  \sum_{x'\leq x, y'\leq y}^y i (x',y')
+\end{equation}
+
+Dimana ii(x,y) merupakan citra integral dan i(x,y) citra asli. Dari persamaan 2.1 dan 2.2 dapat
+dilakukan proses sebagai berikut :
+
+\begin{equation}
+ S(x,y) = i(x,y)+S(x,y-1)
+\end{equation}
+\begin{equation}
+ ii(x,y) = ii(x-1,y)+S(x,y)
+\end{equation}
+
+Dimana $i(x,y)$ adalah masukkan nilai citra asli pada lokasi (x,y), $S(x,y)$ adalah jumlah nilai pada baris lokasi (x,y) dan $ii(x,y)$ adalah nilai integral image.
+Tahap pertama (persamaan 2.3) merupakan penjumlahan baris pada lokasi (x,y) dan meneruskan
+ke tahap kedua (persamaan 2.3) untuk menghitung nilai citra integeral dari nilai tahap sebelumnya,
+sehingga proses ini menjadi pemrosesan secara serial untuk 1 baris dari citra masukkan sehingga operasi penjumlahan yang
+dihasilkan $\frac{1}{4}M^2N^2$ \citep{ehsan2015integral}.
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/22.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Citra Integral}\label{gambar22}
+\end{figure}
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/23.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Perhitungan Citra Integral}\label{gambar23}
+\end{figure}
+
+
+\subsection{\textit{Paralel Integral Image}}
+
+Tujuan melakukan pemrosesan pararel adalah untuk mengurangi sumber daya dan
+peningkatan performa komputasi pada perangkat keras. Berikut ini beberapa penelitian
+yang telah melakukan pengembangan untuk citra integral
+
+\subsubsection{Parallel Integral image Ehsan}
+Masalah delay yang terjadi pada pemrosesan secara seri persamaan 2.3 dan 2.4, diberi solusi pada penelitian
+\citep{ehsan2009novel} memperkenalkan algoritma untuk pemrosesan secara paralel
+dengan dua tahap (two-stage). Algoritma ini dapat memproses 2 baris dalam sekali pemrosesan dengan menggunakan sistem pipeline. Citra masukkan dibagi menjadi dua
+kelompok yaitu dua baris dan satu pemrosesan, dari atas ke bawah dari citra masukkan.
+Pemrosesan (two-stage) dapat dirumuskan seperti pada persamaan di bawah ini:
+
+\begin{equation}
+S(x,y) = i(x,y) + S(x,y-1) \label{rumus25}
+\end{equation}
+\begin{equation}
+S(x+1,y) = i(x+1,y) + S(x+1,y-1) \label{rumus26}
+\end{equation}
+\begin{equation}
+ii(x,y) = ii(x-1,y) + S(x,y) \label{rumus27}
+\end{equation}
+\begin{equation}
+ii(x+1,y) = ii(x-1,y) + S(x,y) + S(x+1,y) \label{rumus28}
+\end{equation}
+
+Dari kempat persamaan diatas, persamaan 2.5 dan 2.7 digunakan untuk menghitung
+baris pertama, persamaan 2.6 dan 2.8 untuk menghitung baris ke dua. Sehingga dengan
+menggunakan perhitungan ini maka menghasilkan operasi penjumlahan $2MN + \frac{MN}{2}$.
+
+Selain pemrosesan dua baris, persamaan 2.3 dapat juga dikembangkan untuk baris
+lebih dari dua atau dalam jumlah N atau \textit{multirow}. Seperti pada pemerosesan dua baris,
+pemrosesan empat baris dapat dilakukan sekaligus dalam satu waktu (\textit{clock cycle}).
+Citra masukkan dibagi menjadi dua kelompok yaitu 4 kelompok baris dan 1 kelompok
+proses.
+
+Pemrosesan 4 baris dapat dirumuskan seperti pada persamaan di bawah ini:
+
+\begin{equation}
+S(x,y) = i(x,y) + S(x,y-1) \label{rumus29}
+\end{equation}
+\begin{equation}
+S(x+1,y) = i(x+1,y) + S(x+1,y-1) \label{rumus210}
+\end{equation}
+\begin{equation}
+S(x+2,y) = i(x+2,y) + S(x+3,y-1) \label{rumus211}
+\end{equation}
+\begin{equation}
+S(x+3,y) = i(x+3,y) + S(x+3,y-1) \label{rumus212}
+\end{equation}
+\begin{equation}
+ii(x,y) = ii(x-1,y) + S(x,y) \label{rumus213}
+\end{equation}
+\begin{equation}
+ii(x+1,y) = ii(x-1,y) + S(x,y) + S(x+1,y) \label{rumus214}
+\end{equation}
+\begin{equation}
+ii(x+2,y) = ii(x+1,y) + S(x+2,y) \label{rumus215}
+\end{equation}
+\begin{equation}
+ii(x+3,y) = ii(x+1,y) + S(x+2,y) + S(x+3,y) \label{rumus216}
+\end{equation}
+
+Dimana persamaan 2.10 dan 2.11 untuk menghitung nilai citra integral untuk baris
+pertama, persamaan 2.12 dan 2.13 untuk menghitung nilai citra integral untuk baris kedua,
+persamaan 2.14 dan 2.15 untuk menghitung nilai citra integral untuk baris ketiga,
+dan persamaan 2.16 dan 2.17 untuk menghitung nilai citra integral untuk baris keempat.
+Pengembangan dari model arsitektur paralel ehsan untuk menghemat penggunaan
+memori \citep{ehsan2015integral}.
+
+ \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/23a.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Proses Paralel Integral Image 2 baris Ehsan \citep{ehsan2009novel}}\label{gambar24}
+\end{figure}
+
+ \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/23b.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Proses Paralel Integral Image 4 baris Ehsan \citep{ehsan2009novel}}\label{gambar24}
+\end{figure}
+
+\subsubsection{Paralel Integral image Yuchi}
+Penelitian Yuchi Zhang mengembangkan algoritma paralel integral image pada platfom
+FPGA, dimana untuk sebuah citra masukkan m x n, membutuhkan baris sebelumnya
+dinyatakan $n-1$ dan kolom sebelumnya dinyatakan dalam $m-1$. Jumlah total
+tahap yang diproses dinyatakan dalam $m+n-2$ serta kompleksitas waktu algoritma dinyatakan
+dalam $O(m+n)$, harus lebih kecil dari $O(mn)$ \citep{zhang2014parallel}.
+Ilustrasi proses Paralel Integral image Yuchi dapat dilihat pada gambar \ref{gambar24}.
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/24.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Proses Paralel Integral Image Yuchi \cite{zhang2014parallel}}\label{gambar24}
+\end{figure}
+\subsubsection{Paralel Integral image Hoseini}
+Penelitian Hoseini didesain menggunakan metode desain analog dengan membatasi
+citra masukkan dengan ukuran 2 x 3, dimana representasi piksel dalam arsitekturnya
+terdiri sebuah array dari current-mode 2 transistor aktif. Setiap baris diakses melalui masukkan yang dinamakan \textit{rownot} ke dalam array. Pada desain ini menggunakan modified
+column decoder sebagai penjumlahan piksel dalam satu baris pada kolom pertama.
+Gambar \ref{} adalah arsitektur dari integral image Hoseini.
+\begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/24a.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Ilustrasi Proses Paralel Integral Image Hoseini \citep{hoseini2013novel}}\label{gambar24}
+\end{figure}
+\subsection{Desain ASIC}
+Desain ASIC (\textit{Application Specific Integration Circuits}) merupakan cabang ilmu
+dalam elektronika yang mempelajari dan merangkai dari bentuk desain elektronik ke
+bentuk desain fisik berupa IC (Integrated Circuit) menggunakan teknologi dari vendor.
+Dalam metodologi desain ASIC seperti pada gambar \ref{}, secara umum didefinisikan
+dalam Masukkan, proses dan keluaran \citep{kuharuk2006design}. Masukkan (input) dalam
+desain asic adalah spesifikasi desain. Proses merupakan teknik dan metode desain.
+Keluaran merupakan desain berupa layout yang diwujudkan dalam bentuk IC / CHIP.
+
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/25.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Metode Desain ASIC}\label{gambar22}
+\end{figure}
+
+
+
+Desain IC terdiri dari 2+1 model desain. Dua model desain tersebut adalah desain
+analog dan desain digital ditambah satumodel penggabungan dari kedua model tersebut
+yang dikenal dengan model desain \textit{Analog Digital Mixed-signal} (ADMS). Perbedaan
+dari keduanya adalah metode yang digunakan, pada desain analog menggunakan primitif
+desain yaitu rangkaian transistor, sedangkan desain digital menggunakan bahasa
+\textit{Hardware Programming Language} (HDL) sebelum menuju ke primitif desain.
+Desain elektrnoik berbantuan komputer saat ini dikenal dengan istilah \textit{Electronic
+Design Automation}(EDA). Dimana teknologi saat ini dapat memodelkan sistem
+elektronik menjadi bentuk \textit{printed Circuit Board}(PCB) dan Integrated Circuit. IC sendiri
+saat ini dapat berupa \textit{System On Chip}(SOC), \textit{Application Specific Integrated Circuit}
+(ASIC), dan Field programmable gate array(FPGA). Secara umum desain
+CMOS IC terdiri dari Perangkat Lunak EDA dan Teknologi CMOS. Diawali dengan
+sebuah konsep yang kemudian ditungakan ke dalam perangkat lunak EDA. Konsep tersebut
+dibuat kedalam sebuah skema rangakaian yang disebut skematik dalam bentuk
+transistor. Kemudian skema rangakaian diubah menjadi bentuk layout IC atau desain fisik yang nanti akan dimuat ke dalam sebuah IC, seperti dilihat pada gambar \ref{gambar26}
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/26.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Alur Desain IC}\label{gambar26}
+\end{figure}
+
+\subsubsection{Desain Sintesis IC}
+Desain Sintesis erat kaitannya dengan desain Digital pada desain ASIC. Desain digital
+IC merupakan metode untuk mendesain IC menggunakan model digital berupa
+rangkaian gerbang-gerbang logika. Desain digital saat ini banyak digunakan untuk
+mendesain beberapa perangakat elektronika seperti prosesor, memori, FPGA, ASIC,
+dan SOC. Kategori desain digital dapat dibagi menjadi tiga, yaitu desain sistem, desain
+RTL (\textit{register-transfer level}), dan desain fisik. Menurut Paul dalam \citep{paul1999asic} perbedaan
+antara behavioral dan RTL adalah model, dimana behavioral merupakan model algoritma layaknya programman pada perangkat lunak tanpa harus mengetahui arsitektur
+perangkat keras secara langsung. Sedangkan RTL model berbentuk kombinasi
+gerbang logika dan register. Perbedaan dari sisi implementasi, behavioral diimplemntasikan
+ke perangkat ASIC dan RTL ke perangkat FPGA. Selain itu alur desain (design
+flow) digital terdiri dari dua bagian yaitu desain Front-End dan Desain emphBack-End.
+Ilustrasi desain digital dapat dilihat pada gambar \ref{gambar27}.
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/27.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Klasifikasi Alur Desain Digital.}\label{gambar27}
+\end{figure}
+
+Sebelum tahap awal desain pada gambar \ref{} terdapat tahap pembuatan desain sistem
+berdasarkan dari ide dasar untuk membangun sistem, tahap ini dapat disebut pra-desain
+sistem. Pada tahap mendesain secara manual yang dituangkan ke dalam bentuk Blok
+diagram sistem. Kemudian dilanjutkan Pada tahap pertama dari desain sistem pada
+gambar \ref{gambar28} merupakan system level yang terdiri dari proses pembuatan dan pemrograman
+sistem menggunakan bahasa HDL : verilog dan VHDL. Selain itu pada tahap
+ini juga dapat menentukan blok RTL dan juga \textit{IP LIbrary} yang akan digunakan. Tahap
+kedua merupakan tahap logical level, proses sintesis dilakukan pada tahap ini sehingga
+menghasilkan netlist. Alur proses sintesis logika dapat dilihat pada gambar \ref{} Tahap
+ketiga merupakan tahap Gate Level, pada tahap ini pengaplikasian libray teknologi
+yang berisi aturan desain dari teknologi yang digunakan dan dituangkan ke dalam bentuk
+skematik.
+Tahap keempat prelayout simulation, melakukan pengujian dengan mensimulasi
+skematik dari hasil sintesis. Tahap kelima pembuatan proyek dengan memasukkan filefile
+teknologi diantaranya adalah file proses, file library dan file aturan (\textit{rules}). Tahap
+keenam proses mendesain layout dimulai dengan floorplanning, membuat partisi untuk
+mendekomposisikan performa antar komponen atau fitur fungsional. Tahap ketujuh
+\textit{placement}, proses meletakkan dan merangkai komponen ke dalam floorplan. Tahap kedelapan \textit{routing}, proses menghubungkan antar komponen. Tahap kesembilan verification
+tahap uji coba dan proses cek layout menggunakan metode DRC, LVS serta
+mengekstraksi parasitik pada kapasitor.
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/28.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Alur Logika Proses Sintesis \citep{wang2009electronic}}\label{gambar28}
+\end{figure}
+
+Pada penelitian Unnikrishnan dan Vesterbacka pada \citep{unnikrishnan2016mixed} alur desain \textit{ mixed-signal} yang
+disajikan pada gambar \ref{gambar29} dapat juga dijadikan alur desain untuk desain digital. hanya
+saja perbedaannya tidak melakukan proses mixed signal.
+
+
+  \begin{figure}[!h]
+  \vspace{-0.1cm}
+%\rule{\columnwidth}{0.1pt}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{2_TinjauanPustaka/29.eps}
+\end{center}
+\vspace{-0.2cm}
+%\rule{\columnwidth}{0.1pt}
+\caption{Alur desain Mixed-Signal}\citep{unnikrishnan2016mixed}\label{gambar29}
+\end{figure}
+
+\subsection{Hardware Description Language}
+Bahasa HDl dibagi atas tiga bagian, (1) VHDL, (2) Verilog, (3) System Verilog. Namun
+umumnya pada desain digital dikenal hanya dua yaitu VHDL dan Verilog. VHDL
+dan Verilog pada [Bailey, ] merupakan sebuah bahasa desain digital general - purpose
+yang didukung oleh beberapa veridfikasi dan alat (tools) sintesis. Perbedaan dari kedua
+bahasa ini secara umum pada [Bailey, ], VHDL memiliki keunggulan dari Verilog pada
+kekuatan struktur penulisan (stong typing) dan definisi dari user. Penjelasan Lebih
+lanjut mengenai perbedaan dari kedua bahasa tersebut adalah tabel 2.1 sebagai berikut
+
+\begin{table}[]
+\centering
+\caption{Tabel Perbandingan Bahasa HDL}\citep{bailey2003comparison}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+Fungsi                         & VHDL & Verilog \\ \hline
+Strong Typing                  & Yes  & No      \\ \hline
+User-defined types             & Yes  & No      \\ \hline
+Dynamic memory allocation      & Yes  & No      \\ \hline
+Physical types (pointer types) & Yes  & No      \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Perbandingan Tinjauan}
+Perbandingan tinjauan dirangkum ke dalam sebuah tabel penelitian terdahulu untuk
+membandingkan metode-metode yang telah digunakan pada tabel \ref{}
+
+\begin{landscape}
+ % Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+\centering
+\caption{Perbandingan Penelitian}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+No & Nama Peneliti & Judul                                                                     & Platform & Metode                             & Hasil                                                        \\ \hline
+1  & Ehsan         & Novel Hardware Algorithms For Row-Parallel Integral Image Calculation     & FPGA     & Array of currentmodetwo transistor & Ukuran Citra 1920 x 1080dengan peningkatan kemampuan5,3 kali \\ \hline
+2  & Hoseini       & A Novel CMOS ImageSensor for High SpeedParallel Integral ImageComputation & ASIC     & Multiple Row in parallel           & Ukuran Citra 160x160dengan peningkatan kemampuan500 kali     \\ \hline
+3  & Yuchi         & A Parallel HardwareArchitecture for FastIntegral Image Computing          & FPGA     & Pipiline                           & Ukuran Citra 4096 x 2160dengan peningkatan kemampuan181 kali \\ \hline
+\end{tabular}
+\end{table}
+\end{landscape}

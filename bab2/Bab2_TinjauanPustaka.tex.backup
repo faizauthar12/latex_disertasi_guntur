@@ -1,0 +1,19 @@
+\chapter{TELAAH PUSTAKA}
+\label{cha:2-TelaahPustaka}
+\section{judul bab 2}
+\subsection{judul sub bab 2}
+\subsubsection{judul sub sub bab 2}
+
+\begin{table}[!h]
+\centering
+\caption{Tabel Perbandingan}
+\label{my-label1}
+\begin{tabular}{|l|l|p{3cm}|p{1cm}|p{3cm}|p{4cm}|}
+\hline
+No & Nama Peneliti & Judul                                                                     & Platform & Metode                             & Hasil                                                        \\ \hline
+1  & Peneliti A        & Judul peneliti A    & FPGA     & Metode Peneliti A & HAsil Peneliti A \\ \hline
+2  & Peneliti B      & Judul peneliti B  & ASIC     & Metode Peneliti B           & HAsil Peneliti B     \\ \hline
+3  & Peneliti C       & Judul peneliti C       & FPGA     & Metode Peneliti C                          & HAsil Peneliti C  \\ \hline
+\end{tabular}
+\end{table}
+\end{landscape}

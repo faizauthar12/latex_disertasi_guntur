@@ -1,0 +1,17 @@
+\g@addto@macro{\appendices}{%
+	%	\appendix
+	%\appendixpage
+	\write\@auxout{%
+		\string\let\string\latex@tf@toc\string\tf@toc% Store the original `\tf@lof` file handle
+		\string\let\string\tf@toc\string\tf@app% 
+	}%
+}
+
+
+\g@addto@macro{\endappendices}{%
+	\write\@auxout{%
+		\string\let\string\tf@toc\string\latex@tf@toc% Rename the file handle
+	}%
+}
+
+\newcommand{\appendicesname}{Appendices}

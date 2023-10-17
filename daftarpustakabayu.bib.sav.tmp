@@ -1,0 +1,489 @@
+@Article{Ansari2019,
+  author  = {Arshiya Sajid Ansari and Mohammad Sajid Mohammadi and Mohammad Tanvir Parvez},
+  title   = {A Comparative Study of Recent Steganography Techniques for Multiple Image Formats},
+  journal = {International Journal of Computer Network and Information Security},
+  year    = {2019},
+  volume  = {1},
+  pages   = {11-25},
+  doi     = {10.5815/ijcnis.2019.01.02},
+}
+
+@Article{Pathak2017,
+  author  = {Kunjan Pathak and Manu Bansal},
+  title   = {A FPGA based Steganographic System Implementing a Modern Steganalysis Resistant LSB Algorithm},
+  journal = {Defence Science Journal},
+  year    = {2017},
+  volume  = {67},
+  number  = {5},
+  pages   = {551-558},
+  month   = sep,
+}
+
+@Article{Kumar2018,
+  author  = {Raushan Kumar and Gunjan Sharma and Varun Sanduja},
+  title   = {A Real Time Approach to Compare PSNR and MSE Value of Different Original Images and Noise Salt and Pepper, Speckle, Gaussian) Added Images},
+  journal = {International Journal of Latest Technology in Engineering, Management \& Applied Science},
+  year    = {2018},
+  volume  = {7},
+  number  = {1},
+  pages   = {43-47},
+  month   = jan,
+}
+
+@Conference{Macit2018,
+  author    = {Huseyin Bilal Macit and Arif Koyun and Orhan Gungnor},
+  title     = {A Review And Comparison Of Steganography Techniques},
+  booktitle = {INES},
+  year      = {2018},
+}
+
+@Article{Pansare2014,
+  author  = {K.N. Pansare and A.K. Kureshi},
+  title   = {A Review FPGA Implementation of Different Steganographic Technique},
+  journal = {International Journal of Innovative Research in Science, Engineering and Technology},
+  year    = {2014},
+  volume  = {3},
+  number  = {4},
+  pages   = {377-382},
+}
+
+@Conference{Hameed2019,
+  author    = {Mohamed Hameed and Mahmoud Hassaballah and Saleh Aly and Ali Ismail Awad},
+  title     = {An Adaptive Image Steganography Method Based on Histogram of Oriented Gradient and PVD-LSB Techniques},
+  booktitle = {IEEE Access},
+  year      = {2019},
+  volume    = {7},
+  pages     = {185189-185204},
+  doi       = {10.1109/ACCESS.2019.2960254},
+}
+
+@Article{Thangadurai2014,
+  author  = {K. Thangadurai and G. Sudha Devi},
+  title   = {An analysis of LSB Based Image Steganography Techniques},
+  journal = {International Conference on Computer Communication and Informatics},
+  year    = {2014},
+  pages   = {1-4},
+}
+
+@Conference{Budiman2018,
+  author       = {Budiman and Amalia and Chayanie},
+  title        = {An Implementation of RC4+ Algorithm and Zig-zag Algorithm in a Super Encryption Scheme for Text Security},
+  year         = {2018},
+  volume       = {978},
+  organization = {2nd International Conference on Computing and Applied Informatics},
+  publisher    = {Journal of Physics: Conference Series},
+  doi          = {10.1088/1742-6596/978/1/012086},
+}
+
+@Article{Godara2018,
+  author  = {Samarth Godara and Shakti Kundu and Ravi Kaler},
+  title   = {An Improved Algorithmic Implementation of Rail Fence Cipher},
+  journal = {International Journal of Future Generation Communication and Networking},
+  year    = {2018},
+  volume  = {11},
+  number  = {2},
+  pages   = {23-32},
+  month   = mar,
+  doi     = {http://dx.doi.org/10.14257/ijfgcn.2018.11.2.03},
+}
+
+@Article{Emam2016,
+  author  = {Marwa M. Emam and Abdelmgeid A. Aly and Fatma A. Omara},
+  title   = {An Improved Image Steganography Method Based on LSB Technique with Random Pixel Selection},
+  journal = {International Journal of Advanced Computer Science and Applications,},
+  year    = {2016},
+  volume  = {7},
+  number  = {3},
+  pages   = {361-366},
+}
+
+@Article{Altaay2012,
+  author  = {A. A. J. Altaay and S. B. Sahib and M. Zamani},
+  title   = {An Introduction to Image Steganography Techniques},
+  journal = {2012 International Conference on Advanced Computer Science Applications and Technologies (ACSAT)},
+  year    = {2012},
+  pages   = {122-126},
+}
+
+@Conference{Wazirali2019,
+  author       = {Raniyah Wazirali and Waleed Alasmary and Mohamed Mahmoud and Ahmad Alhindi},
+  title        = {An Optimized Steganography Hiding Capacity and Imperceptibly Using Genetic Algorithms},
+  year         = {2019},
+  volume       = {7},
+  organization = {IEEE Access},
+  publisher    = {Special Section on Security, Privacy, and Trust Mamagement in Smart Cities},
+  doi          = {10.1109/ACCESS.2019.2941440},
+}
+
+@Article{Devi2019,
+  author  = {K. Renuka Devi and G. N. Harshini},
+  title   = {Analysis and Comparison of Substitution and Transposition Cipher},
+  journal = {IJRAR- International Journal of Research and Analytical Reviews},
+  year    = {2019},
+  volume  = {6},
+  number  = {2},
+  pages   = {549-555},
+}
+
+@Misc{Catsoulis2021,
+  author       = {John Catsoulis},
+  title        = {Chapter 1 An Introduction to Computer Architecture},
+  howpublished = {https://www.oreilly.com/library/view/designing-embedded-hardware/0596007558/ch01.html},
+  year         = {2021},
+}
+
+@Article{Poonia2016,
+  author  = {Preeti Poonia and Praveen Kantha},
+  title   = {Comparative Study of Various Substitution and Transposition Encryption Techniques},
+  journal = {International Journal of Computer Applications (0975-8887)},
+  year    = {2016},
+  volume  = {145},
+  number  = {10},
+  pages   = {24-27},
+  doi     = {10.5120/ijca2016910783},
+}
+
+@Article{Elgabar2013,
+  author  = {Eltyeb E. A Bed Elgabar},
+  title   = {Comparison of LSB Steganography in BMP and JPEG Images},
+  journal = {International Journal of Soft Computing and Engineering (IJSCE)},
+  year    = {2013},
+  volume  = {3},
+  number  = {5},
+  pages   = {91-95},
+}
+
+@Article{Sinha2015,
+  author  = {Bharat Sinha},
+  title   = {Comparison of PNG \& JPEG Format for LSB Steganography},
+  journal = {Computer Science \& Engineering},
+  year    = {2015},
+  volume  = {4},
+  number  = {4},
+  pages   = {198 - 201},
+}
+
+@Article{Taee2015,
+  author  = {Elaf Al Taee},
+  title   = {Comparison Study of LSB Steganography for JPEG and GIF Images},
+  journal = {European Academic Research},
+  year    = {2015},
+  volume  = {2},
+  pages   = {12776 -12785},
+}
+
+@Article{Huang2018,
+  author  = {Chiung-Wei Huang and Changmin Chou and Yu-Che Chiu and Cy Chang},
+  title   = {Embedded FPGA Design for Optimal Pixel Adjustment Process of Image Steganography},
+  journal = {Mathematical Problems in Engineering},
+  year    = {2018},
+  volume  = {2018},
+  pages   = {1-8},
+  doi     = {10.1155/2018/5216029},
+}
+
+@Conference{Jayapandiyan2020,
+  author    = {Jagan Raj Jayapandiyan},
+  title     = {Enhanced Least Significant Bit Replacement Algorithm in spatial domain of Steganography using character sequence optimization},
+  year      = {2020},
+  publisher = {IEEE Access},
+}
+
+@Article{Boutros2021,
+  author  = {Andrew Boutros and Vaughn Betz},
+  title   = {FPGA Architecture: Principles and Progression},
+  journal = {IEEE Circuits and Systems Magazine},
+  year    = {2021},
+  volume  = {21},
+  number  = {2},
+  pages   = {4-29},
+  doi     = {10.1109/MCAS.2021.3071607},
+}
+
+@Article{Krishna2020,
+  author  = {B. Murali Krishna and Sarat K. Kotamraju and Divya Chepuri and Nagaraju Chattu and Niharika Kamineni},
+  title   = {FPGA based Data Hiding through Steganography},
+  journal = {International Journal of Recent Technology and Engineering},
+  year    = {2020},
+  volume  = {9},
+  number  = {1},
+  pages   = {2042-2045},
+}
+
+@Conference{Elshazly2018,
+  author       = {E. A. Elshazly and Safey A. S. Abdelwahab},
+  title        = {FPGA Implementation of Image Steganography Algorithms using Generalized Exploiting Modification Direction and Pixel Segmentation Strategy},
+  year         = {2018},
+  organization = {NATIONAL RADIO SCIENCE CONFERENCE},
+}
+
+@Article{Chaudhari2014,
+  author  = {Jatin Chaudhari and K. R. Bhatt},
+  title   = {FPGA Implementation of Image Steganography: A Retrospective},
+  journal = {International Journal of Engineering Development and Research},
+  year    = {2014},
+  volume  = {2},
+  number  = {2},
+  pages   = {2117-2121},
+}
+
+@Article{Safey2016,
+  author  = {A. Safey and O. Zahran and Mohamed Kord},
+  title   = {FPGA Implementation of Robust Image Steganography Technique based on Least Significant Bit (LSB) in Spatial Domain},
+  journal = {International Journal of Computer Applications},
+  year    = {2016},
+  volume  = {145},
+  pages   = {43-52},
+  doi     = {10.5120/ijca2016910796},
+}
+
+@InBook{Krishna2017,
+  chapter   = {Fundamentals of FPGA Architecture},
+  pages     = {12-30},
+  title     = {Advanced Engineering},
+  publisher = {Technical and Scientific Publisher},
+  year      = {2017},
+  author    = {Gopal Krishna and Sahadev Roy},
+  editor    = {Gopal Krishna and Sahadev Roy},
+}
+
+@Article{Baddap2015,
+  author  = {Suraj Baddap and Ketan Khomane and Pratik Deshmukh and Prof Patharwalkal Shilpa},
+  title   = {Hardware Implementation of LSB Steganography for Data Security},
+  journal = {International Journal of Innovative Research in Advanced Engineering (IJIRAE)},
+  year    = {2015},
+  volume  = {2},
+  number  = {3},
+  pages   = {59-63},
+}
+
+@Conference{Fouad2021,
+  author    = {Osama Fouad and Ashraf A. M. Khalaf and Aziza Hussein and Hesham Hamed},
+  title     = {Hiding Data Using Efficient Combination of RSA Cryptography, and Compression Steganography Techniques},
+  year      = {2021},
+  publisher = {IEEE Access},
+  doi       = {10.1109/ACCESS.2021.3060317},
+}
+
+@Conference{Solak2020,
+  author    = {Serdar Solak},
+  title     = {High Embedding Capacity Data Hiding Technique Based on EMSD and LSB Substitution Algorithms},
+  year      = {2020},
+}
+
+@Article{Sara2019,
+  author  = {Umme Sara and Morium Akter and Mohammad Shorif Uddin},
+  title   = {Image Quality Assessment through FSIM, SSIM, MSE and PSNR A Comparative Study},
+  journal = {Journal of Computer and Communications},
+  year    = {2019},
+  volume  = {7},
+  pages   = {8-18},
+}
+
+@Conference{Hore2010,
+  author       = {Alain Hore and Djemel Ziou},
+  title        = {Image quality metrics: PSNR vs. SSIM},
+  year         = {2010},
+  pages        = {2362-2366},
+  organization = {International Conference on Pattern Recognition},
+}
+
+@Article{Ayyed2020,
+  author  = {D. Ayyed},
+  title   = {Image Steganography Based Sobel Edge Detection Using FPGA},
+  journal = {Technium Romanian Journal of Applied Sciences and Technology},
+  year    = {2020},
+  volume  = {2},
+  number  = {6},
+  pages   = {23-34},
+  doi     = {https://doi.org/10.47577/technium.v2i6.1346},
+}
+
+@Article{Subramanian2021,
+  author  = {Nandhini Subramanian and Omar Elharrouss and Somaya Al-ma'adeed and Ahmed Bouridane},
+  title   = {Image Steganography: A Review of the Recent Advances},
+  journal = {IEEE Access},
+  year    = {2021},
+  pages   = {23409-23423},
+  doi     = {10.1109/ACCESS.2021.3053998},
+}
+
+@MastersThesis{Islam2011,
+  author = {Saiful Islam},
+  title  = {Information Encryption by Zigzag Rule With Dynamic Block and Key},
+  school = {Dhaka University},
+  year   = {2011},
+  type   = {mathesis},
+}
+
+@Article{Zhao2020,
+  author  = {Lianying Zhao and David Lie},
+  title   = {Is Hardware More Secure Than Software?},
+  journal = {IEEE Security \& Privacy},
+  year    = {2020},
+  volume  = {18},
+  number  = {5},
+  pages   = {8-17},
+  doi     = {10.1109/MSEC.2020.2994827},
+}
+
+@Misc{Digilent2019,
+  author       = {Digilent},
+  title        = {Nexys A7 Reference Manual},
+  howpublished = {https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual?redirect=1},
+  year         = {2019},
+}
+
+@Article{Duncan2017,
+  author  = {William Duncan},
+  title   = {Ontological distinctions between hardware and software},
+  journal = {Applied Ontology},
+  year    = {2017},
+  volume  = {12},
+  pages   = {1-28},
+  doi     = {10.3233/AO-170175},
+}
+
+@Book{Madenda2015,
+  title     = {Pengolahan Citra dan Video Digital Teori, Aplikasi dan pemrograman mengggunakan MATLAB},
+  publisher = {Erlangga},
+  year      = {2015},
+  author    = {Sarifuddin Madenda},
+  editor    = {Sarifuddin Madenda},
+}
+
+@Article{Ordonez2013,
+  author  = {Edward Ordonez},
+  title   = {Platforms and Applications in Hardware Security: Trends and Challenges},
+  journal = {International Journal of Information and Computer Security},
+  year    = {2013},
+  volume  = {7},
+  pages   = {289-304},
+  doi     = {10.14257/ijsia.2013.7.5.27},
+}
+
+@Article{Siahaan2016,
+  author  = {Andysah Putera Utama Siahaan},
+  title   = {Rail Fence Cryptography in Securing Information},
+  journal = {International Journal of Scientific \& Engineering Research},
+  year    = {2016},
+  volume  = {7},
+  number  = {7},
+  pages   = {535-538},
+  doi     = {10.31227/osf.io/h5jnz},
+}
+
+@Conference{Khodher2020,
+  author       = {Maisa'a Abid Ali Khodher and Teaba Wala Aldeen},
+  title        = {Review: A comparison Steganography Between Texts and Images},
+  year         = {2020},
+  pages        = {1-8},
+  organization = {Journal of Physics: Conference Series},
+  publisher    = {FISCAS 2020},
+}
+
+@Article{Laskar2013,
+  author  = {Shamim Ahmed Laskar and Kattamanchi Hemachandran},
+  title   = {Steganography Based On Random Pixel Selection For Efficient Data Hiding},
+  journal = {International journal of Computer Engineering \& Technology (IJCET)},
+  year    = {2013},
+  volume  = {4},
+  number  = {2},
+  pages   = {31-44},
+}
+
+@Conference{Horng2020,
+  author    = {Jihwei Horng and Chang Chin-Chen and Guan-Long Li},
+  title     = {Steganography Using Quotient Value Differencing and LSB Substitution for AMBTC Compressed Images},
+  year      = {2020},
+  publisher = {IEEE Access},
+  url       = {10.1109/ACCESS.2020.3009232},
+}
+
+@Article{Candra2017,
+  author  = {Robby Candra and Sarifuddin Madenda and Sunny Arief Sudiro and Muhammad Subali},
+  title   = {The Implementation of an Efficient Zigzag Scan},
+  journal = {Journal of Telecommunication, Electronic and Computer Engineering},
+  year    = {2017},
+  volume  = {9},
+  number  = {2},
+  pages   = {95-98},
+}
+
+@Book{Tyagi2018,
+  title     = {Understanding Digital Image Processing},
+  publisher = {Taylor \& Francis Group, LLC},
+  year      = {2018},
+  author    = {Vipin Tyagi},
+  doi       = {10.1201/9781315123905},
+}
+
+@Conference{Annalakshmi2013,
+  author       = {Mu Annalakshmi and A. Padmapriya},
+  title        = {Zigzag Ciphers: A Novel Transposition Method},
+  year         = {2013},
+  volume       = {2},
+  pages        = {8-12},
+  organization = {IJCA Proceedings on International Conference on Computing and information Technology},
+  publisher    = {IJCA Journal},
+}
+
+@Article{Tole2014,
+  author  = {Tole Sutikno and Nik Rumzi Nik Idris and Aiman Zakwan Jidin},
+  title   = {Overview on Strategies and Approaches for FPGA Programming},
+  journal = {TELKOMNIKA},
+  year    = {2014},
+  volume  = {12},
+  number  = {2},
+  pages   = {273-282},
+  month   = jun,
+  issn    = {1693-6930},
+  doi     = {10.12928/TELKOMNIKA.v12i2.1948},
+}
+
+@Conference{Qasim2009,
+  author       = {Syed Manzoor Qasim and Shuja Ahmad Abbasi and Bandar Almashary},
+  title        = {A review of FPGA based design methodology and optimization techniques for efficient hardware realization of computation intensive algorithms},
+  year         = {2009},
+  pages        = {313-316},
+  organization = {2009 International Multimedia, Signal Processing and Communication Technologies},
+  publisher    = {IEEE},
+  doi          = {10.1109/MSPCT.2009.5164238},
+}
+
+@Article{Abdullah2010,
+  author  = {Sadoon Hussein Abdullah},
+  title   = {Steganography Methods and some application},
+  journal = {Tikrit Journal of Pure Science},
+  year    = {2010},
+  volume  = {15},
+  number  = {2},
+  pages   = {105-111},
+}
+
+@Article{Arvin2010,
+  author  = {Arvind Kumar and Km. Pooja},
+  title   = {Steganography A Data Hiding Technique},
+  journal = {International Journal of Computer Applications},
+  year    = {2010},
+  volume  = {9},
+  number  = {7},
+  pages   = {19-23},
+}
+
+@Conference{Gonga2017,
+  author    = {Lina Gonga and Li Zhang and Wei Zhang and Xuhong Li and Xia Wang and Wenwen Pan},
+  title     = {The Application of Data Encryption Technology in Computer Network Communication Security},
+  booktitle = {5th International Conference on Computer-Aided Design, Manufacturing, Modeling and Simulation (CDMMS 2017)},
+  year      = {2017},
+  doi       = {https://doi.org/10.1063/1.4981623},
+}
+
+@Book{william2016,
+  title     = {Computer Organization and Architecture Designing for Performance Tenth Edition},
+  publisher = {PEARSON},
+  year      = {2016},
+  author    = {William Stallings},
+  editor    = {Peter Zeno},
+  edition   = {10},
+  isbn      = {97

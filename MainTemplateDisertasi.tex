@@ -1,0 +1,367 @@
+%*******************************************************************************************
+% File ini merupakan file template LaTEX untuk penulisan Disertasi pada Universitas Gunadarma Tahun 2018
+%% Programmer  : Robby Kurniawan Harahap
+%% E-mail  : robby_kurniawan@staff.gunadarma.ac.id
+%% Pembuatan program template makalah ini dibuat dengan menggunakan :
+%% Linux Opensuse Leap 42.3
+%% texstudio versi 2.12.22 dan kile
+%% TeX Live 2016/TeX Live for SUSE Linux
+%% acrobat reader atau okular
+
+%*******************************************************************************************
+
+%berikut langkah-langkah untuk mendapatkan hasil akhir Disertasi
+%================================================================
+%Untuk pengguna texstudio (Linux dan Windows) :
+% buka template, MainTemplateDisertasi.tex
+% run compile atau tekan tombol f9 pada keyboard untuk mendapatkan hasil
+
+%Untuk pengguna texmaker (Linux dan Windows):
+% buka template, MainTemplateDisertasi.tex
+% run compile untuk mendapatkan hasil
+
+%Untuk pengguna kile:
+% buka template, MainTemplateDisertasi.tex
+% run compile PDFLatex untuk mendapatkan hasil
+
+%berikut ini langkah-langkah untuk mendapatkan hasil akhir disertasi
+
+%==============================================================
+% Untuk platform Windows, berikut software yang diperlukan :
+% 1. MiKTeX (Latex versi Windows). Dapat didownload dari situs http://miktex.org/
+% 2. WinEdt (dapat didownload dari http://www.winedt.com
+% 3. ghostscript
+% 4. gimp untuk mengedit gambar
+% 5. Adobe reader atau foxit reader
+
+%==============================================================
+% 
+%  berikut ini langkah-langkah untuk mendapatkan hasil akhir disertasi menggunakan  WinEdt :
+%  tekan tombol Latex
+%  tekan tombol bibtex
+%  tekan tombol makeindex
+%  tekan tombol Latex
+%  tekan tombol Latex
+%  tekan tombol Pdf Latex/Pdf Texify
+%=======================================================================================================
+% jika terjadi masalah dalam penulisan silahkan hubungi programmer 
+%% E-mail  : robby_kurniawan@staff.gunadarma.ac.id
+
+
+\documentclass[a4paper,12pt,oneside]{disertasi}
+\usepackage[a4paper,top=3cm,right=3cm,bottom=3cm,left=4cm]{geometry}
+\usepackage[indonesia]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setcounter{totalnumber}{4}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{array,longtable}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{setspace}
+\usepackage{multind}
+\usepackage{rotating} %for rotate/sideway text
+\usepackage{subfig} %for make floating sub-figure
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{pseudocode}
+
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{afterpage}
+\usepackage{algorithmicx}
+\usepackage{algcompatible}
+\usepackage{algpseudocode}
+\usepackage[
+bookmarksopen,
+bookmarksdepth=2,
+breaklinks=true]{hyperref}
+\hypersetup{
+	colorlinks=true, % tadinya false
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	%pagecolor=black,
+	urlcolor=blue,
+	bookmarks=true,
+	pdfborder={0 0 0 0},
+	pdftitle={MainTemplateDisertasi},
+	pdfauthor={me},
+	pdfkeywords={somekeywords},
+	pdfdisplaydoctitle=true,
+	pdftoolbar=true,
+	pdfmenubar=true,
+	pdfstartview=X Y Z
+}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{listings}
+\usepackage{alltt}
+%\usepackage[toc,page]{appendix} by sunny
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\hypersetup{breaklinks=true}
+\usepackage{tikz}
+%\usepackage{adjustbox}
+\usepackage[hyphenbreaks]{breakurl}
+\usepackage{etoolbox}
+\usepackage{array, hhline}
+\usepackage{colortbl}
+\usepackage{lmodern}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{darkblue}{rgb}{0,0,.75}
+\usepackage{caption}
+
+\usepackage[chapter]{algorithm}
+\usepackage{makecell}
+\usepackage{graphbox}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\Large\bfseries\centering}{\centering\chaptertitlename\ \thechapter}{14pt}{\Large\bfseries}
+\titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+
+\usepackage{textcomp}
+
+
+\renewcommand{\thechapter}{\Roman{chapter}\bfseries}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+%%\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand {\thetable}{\arabic{chapter}.\arabic{table}} 
+\renewcommand {\theequation} {\arabic{chapter}.\arabic{equation}} 
+
+\renewcommand{\arraystretch}{1}
+\renewcommand*{\arraystretch}{1}
+
+
+
+\setcounter{chapter}{0}
+\makeatletter
+
+\lstset{language=Matlab,%
+	%basicstyle=\color{red},
+	breaklines=true,%
+	morekeywords={matlab2tikz},
+	keywordstyle=\color{blue},%
+	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+	identifierstyle=\color{black},%
+	stringstyle=\color{mylilas},
+	commentstyle=\color{mygreen},%
+	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+	numbers=left,%
+	numberstyle={\tiny \color{black}},% size of the numbers
+	numbersep=9pt, % this defines how far the numbers are from the text
+	emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+	%emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+
+
+%%% Letakkan disini buat Appendice
+\newcommand{\listofappendices}{\bgroup%
+	\renewcommand\contentsname{DAFTAR LAMPIRAN}
+	\let\@startoc@temp\@starttoc%
+	\def\@starttoc##1{\@startoc@temp{app}}%
+	\clearpage
+	\tableofcontents \egroup
+}
+
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+
+
+\newcommand*{\skipnumber}[2][1]{%
+	{\renewcommand*{\alglinenumber}[1]{}\State #2}%
+	\addtocounter{ALG@line}{-#1}}
+
+\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}
+
+
+\renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}}
+\renewcommand{\ALG@name}{Algoritma}
+\renewcommand{\listalgorithmname}{DAFTAR ALGORITMA}
+
+%Pseudocode
+\newcounter{nalg}[chapter] % defines algorithm counter for chapter-level
+\renewcommand{\thenalg}{\thechapter .\arabic{nalg}} %defines appearance of the algorithm counter
+\DeclareCaptionLabelFormat{algocaption}{PseudoCode \thenalg}
+\lstloadlanguages{Matlab} %use listings with Matlab for Pseudocode
+\lstnewenvironment{PseudoCode}[1][]
+{\lstset{language=Matlab,basicstyle=\scriptsize, keywordstyle=\color{darkblue},numbers=left,xleftmargin=.04\textwidth,#1}}
+{}
+
+\algrenewcommand{\algorithmicwhile}{\textbf{WHILE}}
+\algrenewcommand{\algorithmicif}{\textbf{IF}}
+\algrenewcommand{\algorithmicelse}{\textbf{ELSE}}
+\algrenewcommand{\algorithmicthen}{\textbf{THEN}}
+\algrenewcommand{\algorithmicend}{\textbf{END}}
+\algrenewcommand{\algorithmicprocedure}{\textbf{PROCEDURE}}
+
+\newcounter{algsubstate}
+\makeatletter
+\renewcommand{\thealgsubstate}{\arabic{ALG@line}.\alph{algsubstate}}
+\makeatother
+\newenvironment{algsubstates}
+{\setcounter{algsubstate}{0}%
+	\renewcommand{\State}{%
+		\refstepcounter{algsubstate}%
+		\Statex {\footnotesize\alph{algsubstate}:}\space}}
+
+
+\newcommand{\abbrlabel}[1]{\makebox[3.5cm][l]{\textbf{#1}}}
+\newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}}}{\end{list}}
+
+
+
+
+%% Bagian Pemenggalan Kata Yang Tidak Sempurna
+\hyphenation{me-tode pe-rang-kat me-rekam ber-dasar-kan me-lakukan di-usul-kan di-antara-nya Ge-neration ci-tra Ci-tra pe-ngu-kur-an} 
+%% kata yang dipenggal dengan tak sempurna
+
+\renewcommand{\headrulewidth}{2pt}
+%\renewcommand{\footrulewidth}{2pt}
+
+\newenvironment{conditions*}
+{\par\vspace{\abovedisplayskip}\noindent
+	\tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
+{\endtabularx\par\vspace{\belowdisplayskip}}
+\doublespacing
+\makeatother
+\parindent 3.0em
+
+% Renew the command that starts the appendices.
+\usepackage{titlesec}
+\renewcommand{\chaptername}{CHAPTER}
+\titlespacing*{\chapter}{0pt}{0.45in}{0.3in}
+\titleformat{\chapter}[display]
+{\normalfont\Large\centering\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Large\uppercase}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+	\nocite{*}
+	%#start bagian administrasi #==================================================
+	% bagian muka sebelum isi, umumnya halaman administrasi, kalau tidak digunakan
+	% dapat diberikan tanda % didepannya
+	%cover
+	\pagestyle{empty}
+	\pagenumbering{roman}
+	\setcounter{page}{1}
+	\include{cover}
+	\pagestyle{plain}
+	\pagenumbering{roman}
+	\setcounter{page}{2}
+	\include{cover_judul}
+	
+	%halaman lembar pengesahan, abstraksi, kata pengantar
+	%nilai halaman utk awal dari abstrak s/d ucapan terimakasih dlm romawi
+	\include{Lembar_Pengesahan}
+	\include{Lembar_Penguji}
+	\include{originalitas}% menggabungkan file lembar pengesahan
+	\include{abstrak}% menggabungkan file abstraksi
+	\include{abstract}
+	\include{katapengantar}% mengabungkan file kata pengantar
+	%# akhir bagian administrasi # ==================================================
+	 
+     
+            
+	% #mulai membuat daftar isi, daftar gambar dan  daftar tabel # ========================
+	%\setcounter{page}{8} %set nilai halaman sesuai urutannya
+	\include{daftaristilah}%
+	% membuat daftar isi
+	\addcontentsline{toc}{chapter}{DAFTAR ISI}
+	\doublespacing
+	\tableofcontents
+
+	%% membuat daftar tabel
+	\doublespacing
+	\listoftables
+	\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+	
+	%membuat daftar gambar
+	\doublespacing
+	\listoffigures
+	\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}%masih masalah
+	
+	%membuat daftar algoritma
+	\doublespacing
+	\addcontentsline{toc}{chapter}{DAFTAR ALGORITMA}
+	\listofalgorithms
+	%\addcontentsline{toc}{chapter}{DAFTAR PSEUDOCODE}
+	%\apptoc
+	%\listofappendices
+	%\addcontentsline{toc}{chapter}{DAFTAR LAMPIRAN}
+	%\listofappendices
+	%\include{daftarlampiran}
+	% #akhir membuat daftar isi, daftar gambar dan  daftar tabel # =======================
+	
+	
+	
+	% # mulai bagian isi # =================================================================
+	\newpage
+	\pagestyle{headings}
+	\doublespacing
+	\pagenumbering{arabic} % jenis huruf arabic
+	\setcounter{page}{1} %mulai dari halaman 1
+	\pagestyle{fancy}
+	\fancyhead[LO,RE]{\slshape \leftmark}
+	\rhead{\thepage}
+	\cfoot{}
+	
+	\input{bab1/Bab1_Pendahuluan.tex} %Bab 1
+	\input{bab2/Bab2_TinjauanPustaka.tex} %Bab 2
+	\input{bab3/Bab3_Metodologi.tex} %Bab 3
+	\input{bab4/Bab4_HasilDiskusi.tex} %Bab 4
+	\input{bab5/Bab5_Kesimpulan.tex} %Bab 5
+	\newpage
+	% diatas menunjukkan SubDir/nama file tex, bisa ditambah/dikurang sesuai kebutuhan
+	% # akhir bagian isi # ====================================================================
+	
+	
+	% # mulai bagian Daftar Pustaka # ============================================
+	\thispagestyle{empty}
+	\renewcommand\bibname{DAFTAR PUSTAKA}
+	\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA} %memasukkan daftar pustaka di daftar isi
+	\bibliographystyle{agsm}
+	\titlespacing*{\chapter}{0pt}{0cm}{1cm}% add extra vertical spacing
+	\bibliography{daftarpustakasandy} %file menyimpan bibtex
+	% # akhir bagian referensi # ============================================
+	
+	
+	\newpage
+	\pagestyle{plain}
+	\thispagestyle{empty}
+	\include{daftarlampiran}
+	\input{cv.tex}
+	\addcontentsline{toc}{chapter}{DAFTAR RIWAYAT HIDUP}
+\end{document}

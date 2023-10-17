@@ -1,0 +1,56 @@
+\babel@toc {indonesia}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces dasar telekomunikasi \citep {ElSaba2018}}}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sistem penyiaran digital untuk televisi terestrial \citep {dtvstatus2017}}}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sistem pemancar DVB-T2 \citep {Hou2010}}}{17}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces H.264/AVC Struktur GOP \citep {Inc.2012}}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh gambar dari Basis Data Penilaian Kualitas Gambar LIVE, yang menunjukkan ambiguitas metrik kualitas objektif (dalam hal ini, PSNR)\citep {Sheikh2006}}}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh gambar asli Lena dan versi terdistorsinya dengan artefak pemblokiran \citep {Kusuma2005}}}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Contoh video yang terganggu oleh pembekuan frame temporal. Setiap huruf yang berbeda mewakili frame yang unik. \citep {Quan_Huynh_Thu_2009}}}{30}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Struktur otak manusia dengan kemampuan operasional (SANDY 24)}}{32}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Fungsi Sigmoid}}{34}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Langkah training ANN (SANDY 25)}}{35}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Antarmuka \textit {website} perangkat lunak \textit {tvheadend}}}{37}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Tahapan penelitian yang dilakukan}}{44}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Contoh Gambar FHD dari layanan TVRI World}}{46}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fokus Penelitian}}{48}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Rancangan Sistem Pengukuran Kualitas Gambar Siaran DVB-T2}}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Perbandingan gambar normal dan \textit {blocking}}}{51}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Perbandingan Gambar Blur dan tidak, dari kiri ke kanan: Tumbling Es, Lena, Street View \citep {Xu_2021}}}{55}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Hasil Transformasi ke bentuk deteksi tepi menggunakan sobal pada gambar Lenna}}{56}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagram alur algoritma pengukuran blur pada gambar \citep {Marziliano}}}{57}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Struktur presentasi dari subyektif tes}}{65}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Interval antara \textit {midgrey} dan materi uji}}{66}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Rancangan tampilan aplikasi web subyektif \textit {assessment}}}{69}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagram parameter I/O untuk membangun model NN}}{70}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Tahapan pembuatan arsitektur dan model NN}}{72}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces \textit {Multiple Class Confusion Matrix} \citep {Markoulidakis_2021}}}{74}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagram alur program python pada pengukuran kualitas gambar siaran DVB-T2 waktu nyata}}{79}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Tahapan pembuatan \textit {website monitoring real-time} kualitas gambar DVB-T2}}{81}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagram arsitektur \textit {website} pemantauan kualitas gambar siaran DVB-T2}}{82}{figure.caption.40}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Perangkat keras yang digunakan untuk akuisisi video siaran DVB-T2}}{85}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pengukuran kekuatan sinyal menggunakan \textit {signal analyzer, TinySA}}}{86}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Penempatan antena outdoor PX HDA-5000}}{86}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fitur melakukan perekaman video siaran DVB-T2 menggunakan \textit {tvheadend}}}{87}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Jarak stasiun pemancar terhadap lokasi pengambilan data siaran DVB-T2}}{89}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Citra/frame video dengan resolusi FHD $1920\times 1080$ piksel hasil rekaman dari siaran DVB-T2}}{90}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pengukuran metrik obyektif blok pada citra normal dan \textit {blocking artifact}}}{93}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Contoh pengukuran metrik obyektif blok pada beberapa citra siaran televisi DVB-T2}}{94}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pengukuran metrik obyektif blur pada citra normal dan blur}}{96}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Contoh pengukuran metrik obyektif blur pada beberapa citra siaran televisi DVB-T2}}{97}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Pengukuran metrik temporal \textit {freeze} dengan MSE skor}}{99}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Contoh pengukuran metrik obyektif temporal pada video \textit {dataset} no.84 siaran televisi DVB-T, temporal skor : 90}}{101}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Contoh pengukuran metrik obyektif temporal pada video \textit {dataset} no.15 siaran televisi DVB-T, temporal skor : 65}}{103}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Tampilan aplikasi pengukuran subyektif kualitas citra video siaran DVB-T2}}{107}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Tampilan dashboard aplikasi pengukuran subyektif dari sisi administrator}}{108}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Sebaran MOS pengukuran tes subyektif dari dataset video}}{110}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Pembagian kelas MOS pengukuran subyektif dataset }}{110}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Varian pengukuran subyektif dataset dengan skor terurut}}{111}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Diagram scatter pengukuran metrik spatial terhadap MOS pada pengukuran subyektif (a) metrik blok, (b) metrik blur.}}{114}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagram scatter pengukuran metrik temporal terhadap MOS pada pengukuran subyektif (a) metrik freeze, (b) metrik variansi gradien .}}{115}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Diagram hasil prediksi terhadap MOS}}{117}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Diagram Scater hasil prediksi terhadap MOS}}{118}{figure.caption.70}%
+\addvspace {10\p@ }
