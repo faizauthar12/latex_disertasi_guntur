@@ -446,6 +446,906 @@ Masing-masing arsitektur pada Tabel \ref{tbl:Penerapan-Arsitektur-Deep-Learning}
 
 \subsubsection{Recurrent Neural Networks (RNN)}
 \hspace{1,2cm}\textit{Recurrent Neural Network} (RNN) merupakan arsitektur \textit{deep learning} yang popular serta sangat menjanjinak untuk menyelesaikan berbagai persoalan yang terkait dengan \textit{Natural Language Processing} (NLP). Model RNN digunakan agar mesin dapat memahami bahasa manusia. Mulai dari cara berkomunikasi, mendengarkan, mengenali percakapan, hingga memahami tata bahasa dan aksen. RNN juga dapat diimplementasikan untuk mengenali gambar-gambar atau objek (R. Primartha, 2018).
+
+Diagram network RNN seperti pada Gambar \ref{img:Diagram-RNN} berikut. 
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.8\columnwidth]{bab2/Gambar/Picture14.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Diagram \textit{Recurent Neural Network} (RNN)\\(Sumber: K. Dass, 2020)}\label{img:Diagram-RNN}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Long Short Term Memory (LSTM)}
+\hspace{1,2cm}\textit{Long Short Term Memory} (LSTM) merupakan building unit untuk \textit{layer-layer} pada recurrent neural network (RNN). LSTM mula-mula diusulkan oleh Sepp Hochreiter dan Jurgen Schmidhuber pada tahun 1997. LSTM juga banyak diimplementasikan pada bidang NLP. Boleh dibilang LSTM merupakan pengembangan dari RNN. Secara teoritis, jaringan saraf yang terhubung secara naif, yang disebut jaringan saraf berulang, dapat bekerja. Namun dalam praktiknya, mengalami dua masalah: gradien menghilang dan gradien meledak, yang membuatnya tidak dapat digunakan (R. Primartha, 2018).  Kemudian, LSTM ditemukan untuk mengatasi masalah ini dengan secara eksplisit memasukkan unit memori, yang disebut sel ke dalam jaringan. Ini adalah diagram blok bangunan LSTM pada Gambar \ref{img:Diagram-LSTM}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.8\columnwidth]{bab2/Gambar/Picture15.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Diagram \textit{Long Short Term Memory} (LSTM) \\(Sumber: S. Yan, 2016)}\label{img:Diagram-LSTM}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Convolutional Neural Network (CNN)}
+\hspace{1,2cm}\textit{Convolutional Neural Networks} (CNN atau ConvNet) merupakan salah satu model deep learning yang banyak digunakan untuk keperluan analisis citra/visual. CNN adalah salah satu kategori utama untuk melakukan pengenalan dan klasifikasi gambar, deteksi objek, pengenalan wajah, dan sebagainya merupakan beberapa area dimana CNN banyak digunakan (R. Primartha, 2018).
+
+Klasifikasi gambar CNN mengambil input gambar, memproses, dan mengklasifikasikannya dalam kategori tertentu, misalnya kucing, harimau, singa. Komputer melihat gambar input sebagai susunan piksel dan itu tergantung pada resolusi gambar. Berdasarkan resolusi gambar, akan terlihat h x w x d (h = Tinggi, w = Lebar, d = Dimensi). Misalnya, gambar array matriks RGB 6 x 6 x 3 (3 mengacu pada nilai RGB) dan gambar array matriks 4 x 4 x 1 dari gambar skala abu-abu, seperti pada Gambar \ref{img:Array-Matriks-RGB}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.3\columnwidth]{bab2/Gambar/Picture16.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Array dari Matriks RGB\\(Sumber: R. Prabhu, 2018)}\label{img:Array-Matriks-RGB}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Secara teknis, model \textit{deep learning} CNN untuk latih dan uji, setiap gambar input akan melewati serangkaian lapisan konvolusi dengan filter (Kernel), Pooling, \textit{fully connected layers} (FC) dan menerapkan fungsi softmax untuk mengklasifikasikan objek dengan nilai probabilistic antara 0 dan 1. Gambar 2.17. adalah alur dari CNN untuk memproses gambar input dan mengklasifikasikan objek berdasarkan nilai.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture17.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Neural Network dengan banyak Convolusi Layer\\(Sumber: R. Prabhu, 2018)}\label{img:Neural-Network-Dengan-Banyak-Convolusi-Layer}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+	\item \textit{Convolution Layer}
+	
+	Konvolusi adalah lapisan pertama untuk mengekstraksi fitur dari gambar masukan. Konvolusi mempertahankan hubungan antara piksel dengan mempelajari fitur gambar menggunakan kotak kecil data masukan. Ini adalah operasi matematika yang mengambil dua input, seperti matriks gambar dan filter atau kernel.
+	
+	\begin{itemize}
+		\item Sebuah gambar matriks (volume) dari dimensi \textbf{(h x w x d)}
+		\item Sebuah filter \textbf{(fh x fw x d)}
+		\item Output volume dimensi \textbf{(h - fh + 1) x (w - fw + 1) x 1 }
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}[H]
+			\vspace{-0.1cm}
+			%\rule{\columnwidth}{0.1pt}
+			\begin{center}
+				\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture18.png}
+			\end{center}
+			\vspace{-0.2cm}
+			%\rule{\columnwidth}{0.1pt}
+			\captionsetup{justification=centering}
+			\caption{Gambar Matriks Multiplies Kernel atau Filter Matriks\\(Sumber: R. Prabhu, 2018)}\label{img:Matriks-Multiplies}
+		\end{figure}
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\end{itemize}
+	Pertimbangkan gambar 5 x 5 yang nilai piksel gambarnya adalah 0, 1 dan matriks filter 3 x 3, seperti pada Gambar \ref{img:Matriks5x5}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.7\columnwidth]{bab2/Gambar/Picture19.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Gambar matriks 5 x 5 dikalikan dengan Filter matiks 3 x 3}\label{img:Matriks5x5}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+	
+	Kemudian, konvolusi matriks gambar 5 x 5 dikalikan dengan filter matriks 3 x 3 yang disebut "Feature Map" sebagai output yang ditunjukkan pada Gambar \ref{img:Output-Matriks-3-3}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.7\columnwidth]{bab2/Gambar/Picture20.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Output Matriks 3 x 3}\label{img:Output-Matriks-3-3}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Konvolusi gambar dengan filter berbeda dapat melakukan operasi seperti deteksi tepi, mengaburkan, dan memeprtajam dengan menerapkan filter. Berikut ini contoh yang menunjukkan berbagai gambar konvolusi setelah menerapkan berbagai jenis filter (Kernel) pada Gambar \ref{img:Fitur-Umum}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.6\columnwidth]{bab2/Gambar/Picture21.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Beberapa Filter Umum\\(Sumber: R. Prabhu, 2018)}\label{img:Fitur-Umum}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Strides
+	
+	Stride adalah jumlah piksel yang bergeser di atas matriks input. Saat langkahnya 1, maka memindahkan filter ke 1 piksel sekaligus. Saat langkahnya 2, maka memindahkan filter ke 2 piksel sekaligus dan seterusnya. Gambar \ref{img:Stride-2-Piksel} menunjukkan konvolusi akan bekerja dengan Langkah 2.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.6\columnwidth]{bab2/Gambar/Picture22.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Stride 2 Piksel\\(Sumber: R. Prabhu, 2018)}\label{img:Stride-2-Piksel}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Padding
+	
+	Pada saat penggunaan filter, terkadang filter tidak pas dengan gambar masukan. Maka, terdapat dua pilihan: 
+	\begin{itemize}
+		\item Memadatkan gambar dengan angka nol (\textit{zero padding}) agar pas; 
+		\item Menghilangkan bagian gambar yang tidak sesuai dengan filter. Ini disebut dengan \textit{valid padding} yang hanya menyimpan bagian gambar yang valid. 
+		
+	\end{itemize}
+	
+	\item Non Linerarity (ReLU)
+	
+	ReLU adalah singkatan dari \textit{Rectified Linear Unit} untuk operasi non-linear. Outputnya adalah \textit{f(x) = maks(0,x)}. ReLU penting karena tujuan ReLU adalah untuk mengenalkan non-linearitas di ConvNet, karena data dunia nyata ingin ConvNet pelajari adalah nilai linier non-negatif. Fungsi ini hanya mengembalikan nilai 0 jika nilai tersebut bernilai negative, selain itu mengembalikan nilai yang sama dengan yang diberikan, tidak lain adalah menghilangkan keluaran negative dan mempertahankan nilai antara 0 hingga + tak terhingga, seperti pada Gambar \ref{img:Operasi-RELU}. 
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.3\columnwidth]{bab2/Gambar/Picture23.1.png}\\
+			\includegraphics[width=0.6\columnwidth]{bab2/Gambar/Picture23.2.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Operasi ReLU\\(Sumber: P. Ratan, 2021)}\label{img:Operasi-RELU}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Pooling Layer
+	
+	Bagian layer pooling akan mengurangi jumlah parameter ketika gambar terlalu besar. Penyatuan spasial juga disebut subsampling atau downsampling yang mengurangi dimensi setiap peta tetapi tetap mempertahankan informasi penting. Penyatuan spasial dapat dari berbagai jenis, diantaranya Max Pooling, Average Pooling, dan Sum Pooling.\\
+	Max Pooling mengambil elemen tersbesar dari peta fitur yang diperbaiki. Mengambil elemen terbesar juga bisa mengambil pooling rata-rata. Jumlah semua elemen dalam peta fitur disebut sebagai kumpulan jumlah.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.5\columnwidth]{bab2/Gambar/Picture24.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Max Pooling}\label{img:Max-Polling}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Fully Connected Layer
+
+	Lapisan yang disebut \textit{Fully Connected Layer}, diratakan matriks menjadi vector dan memasukkannya ke dalam \textit{fully connected layer}, seperti jaringan saraf (\textit{neural network}), seperti Gambar \ref{img:Setelah-Pooling-Layer}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.5\columnwidth]{bab2/Gambar/Picture25.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Setelah Pooling Layer Diratakan sebagai FC Layer}\label{img:Setelah-Pooling-Layer}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Pada Gambar \ref{img:Setelah-Pooling-Layer}, matriks peta fitur akan diubah menjadi vector (x1, x2, x3, ...). Dengan lapisan yang terhubung sepenuhnya, digabungkan fitur ini bersama untuk membuat model. Setelah itu, akhirnya memiliki fungsi aktivasi seperti softmax atau sigmoid untuk mengklasifikasikan keluaran sebagai objek, misalnya rumah, pohon, kucing, mobil, truk, dan sebagainya, seperti pada Gambar \ref{img:Arsitektur-CNN-Lengkap}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.5\columnwidth]{bab2/Gambar/Picture26.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Arsitektur CNN Lengkap}\label{img:Arsitektur-CNN-Lengkap}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{enumerate}
+
+\subsubsection{Deep Believe Networks (DBN)}
+\hspace{1,2cm}\textit{Deep Belief Neworks} (DBN) merupakan model \textit{deep learning} yang memanfaatkan tumpukan/\textit{stack Restricted Boltzmann Machines} (RBM) atau kadangkala \textit{Autoencoders}. \textit{Autoencoders} adalah model \textit{neural networks} yang memiliki input dan output yang sama. \textit{Autoencoder} mempelajari data input dan berusaha untuk melakukan rekonstruksi terhadap data input tersebut (R. Primartha, 2018).  Skema diagram DBN seperti pada Gambar \ref{img:Skema-Diagram-DBN}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.6\columnwidth]{bab2/Gambar/Picture27.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema Diagram DBN\\(Sumber: H. Liu {\&} B. Lang, 2019)}\label{img:Skema-Diagram-DBN}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Deep Stacking Networks (DSN)}
+\hspace{1,2cm}Salah satu masalah pada \textit{deep learning} adalah proses learning sangat sulit dilakukan dan memerlukan komputasi yang cukup kompleks. Pada tahun 2011 Deng Yu mengusulkan model \textit{Deep Convex Networks} (DCN) atau \textit{Deep Stacking Network} (DSN), yang sedikit berbeda dibandingkan model \textit{deep learning} lain (R. Primartha, 2018). Secara umum model DSN terdiri atas ub-nets berukuran kecil dengan hanya sebuah hidden layer, seperti pada Gambar \ref{img:Skema-Diagram-DSN}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.4\columnwidth]{bab2/Gambar/Picture28.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema Diagram DSN\\(Sumber: L. Deng et al, 2012)}\label{img:Skema-Diagram-DSN}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Model \textit{deep learning} yang popular lainny aiatu Region Based CNN, Google Net, Generative Adversarial Network (GAN), dan You Only Look Once (YOLO).
+
+\section{You Only Look Once (YOLO)}
+\hspace{1,2cm}\textit{You Only Look Once} (YOLO) adalah algoritma deteksi objek real-time yang diperkenalkan pada tahun 2015 oleh Joseph Redmon, Santosh Divvala, Rosh Girshick dan Ali Farhadi dalam paper dengan judul "You Only Look Once: Unified, Real-Time Object Detection" (J. Redmon et al., 2015). Penulis membingkai masalah deteksi objek sebagai masalah regresi tugas klasifikasi dengan memisahkan kotak pembatas (\textit{bounding box}) secara spasial dan menghubungkan probabilitas ke masing-masing gambar yang terdeteksi menggunakan \textit{convolutional neural network} (CNN). YOLO adalah \textit{Convolutional Neural Network} (CNN) untuk melakukan deteksi objek secara real-time (V. Meel, 2022) (G. Boesch, 2022).
+
+Beberapa alasan mengapa YOLO baik digunakan untuk deteksi objek real-time, diantaranya:
+\begin{enumerate}
+	\item Kecepatan (\textit{speed})
+	
+	YOLO sangat cepat karena tidak berurusan dengan jalur pipa (\textit{pipelines}) yang rumit. YOLO dapat memproses gambar pada 45 frames per second (FPS). Selain itu, YOLO mencapai rata-rata presisi atau mean average precision (mAP) lebih dari dua kali dibandingkan dengan sistem real-time lainnya, yang menjadikannya kandidat yang bagus untuk pemrosesan real-time. Dari grafik pada Gambar \ref{img:Kecepatan-YOLO} diamati bahwa YOLO jauh melampaui pendeteksi objek lainnya dengan 91 FPS.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.4\columnwidth]{bab2/Gambar/Picture29.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Kecepatan YOLO dibandingkan dengan detector Objek Lainnya\\(Sumber: S. A. S. Hernandez et al, 2020)}\label{img:Kecepatan-YOLO}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Akurasi deteksi tinggi (\textit{high detection accuracy})
+	
+	YOLO jauh melampaui model \textit{state-of-the-art} dalam akurasi dengan sedikit kesalahan latar belakang. 
+	
+	\item Generalisasi yang bagus (\textit{good generalization})
+	
+	YOLO mendorong sedikit lebih jauh dengan memberikan generalisasi yang lebih baik untuk domain baru, yang menjadikannya bagus untuk aplikasi yang mengandalkan deteksi objek yang cepat dan kuat. 
+	
+	\item Sumber terbuka (\textit{open-source})
+	
+	Membuat YOLO open-source membuat komunitas terus meningkatkan model. Inilah salah satu alasan mengapa YOLO telah melakukan begitu banyak perbaikan dalam waktu yang begitu terbatas. 
+	
+\end{enumerate}
+
+\subsection{Arsitektur YOLO}
+\hspace{1,2cm}Arsitektur YOLO memiliki keseluruhan 24 lapisan konvolusional, empat lapisan penyatuan maksimum, dan dua lapisan yang terhubung sepenuhnya, arsitektur YOLO secara umum pada Gambar \ref{img:Arsitektur-YOLO}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture30.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Arsitektur YOLO dari \textit{Original Paper}\\(J. Redmon et al., 2015)}\label{img:Arsitektur-YOLO}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Arsitektur YOLO bekerja sebagai berikut: 
+\begin{itemize}
+	\item Mengubah ukuran gambar input menjadi 448x448 sebelum melalui \textit{convolutional network}. 
+	
+	\item Konvolusi 1x1 pertama kali diterapkan untuk mengurangi jumlah saluran, yang kemudian diikuti oleh konvolusi 3x3 untuk menghasilkan output kuboid. 
+	
+	\item Fungsi aktivasi ReLU, kecuali lapisan terakhir, yang menggunakan fungsi aktivasi linier.
+	
+	\item Beberapa Teknik tambahan, seperti normalisasi batch dan droput, masing-masing mengatur model dan mencegah overfitting. 
+\end{itemize}
+
+\subsection{Cara kerja Deteksi Objek YOLO}
+\hspace{1,2cm}Berikut ini adalah proses bagaimana YOLO melakukan deteksi objek untuk mendapatkan gambar (b) dari gambar (a) pada Gambar \ref{img:Cara-Kerja-YOLO}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture31.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{(A) Input Image dan (B) Hasil Algoritma YOLO\\(Sumber: Z. Kelta, 2022)}\label{img:Cara-Kerja-YOLO}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Algoritma YOLO bekerja berdasarkan empat pendekatan, sebagai berikut:
+\begin{enumerate}[label=(\alph*)]
+	\item \textit{Residual Blocks}(Blok Sisa)
+	
+	Langkah pertama dimulai dengan membagi gambar asli (A) menjadi sel grid (NxN) dengan bentuk yang sama, di mana N dalam hal ini adalah 4x4 grid sel pada Gambar \ref{img:Residual-Blocks}. Setiap sel dalam grid bertanggung jawab untuk melokalkan dan memprediksi kelas objek yang dicakupnya, bersama dengan nilai probabilitas/kepercayaan.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture32.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Residual Blocks\\(Sumber: Z. Kelta, 2022)}\label{img:Residual-Blocks}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item \textit{Bounding Box Regression} (Regresi Kotak Pembatas)
+	
+	Langkah selanjutnya adalah menentukan kotak pembatas (\textit{bounding box}) yang sesuai dengan persegi Panjang yang menyoroti semua objek dalam gambar. Dapat memiliki kotak pembatas sebanyak objek di dalam gambar yang diberikan. YOLO menentukan atribut kotak pembatas ini menggunakan modul regresi tunggal dalam format berikut, dimana Y adalah representasi vector terakhir untuk setiap kotak pembatas.\\
+	Y = [pc, bx, by, bh, bw, c1, c2]\\
+	Ini sangat penting selama fase pelatihan model.
+	\begin{itemize}
+		\item pc sesuai dengan skor probabilitas dari grid yang berisi objek. Misalnya, semua grid yang berwarna merah akan memiliki skor probabilitas lebih tinggi dari nol. Gambar \ref{img:Grid-Probabilitas} adalah versi yang disederhanakan karena probabilitas setiap sel kuning adalah nol (tidak signifikan)
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}[H]
+			\vspace{-0.1cm}
+			%\rule{\columnwidth}{0.1pt}
+			\begin{center}
+				\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture33.png}
+			\end{center}
+			\vspace{-0.2cm}
+			%\rule{\columnwidth}{0.1pt}
+			\captionsetup{justification=centering}
+			\caption{Grid dengan Probabilitas\\(Sumber: Z. Kelta, 2022)}\label{img:Grid-Probabilitas}
+		\end{figure}
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\item bx dan by adalah koordinat x dan y dari pusat kotak pembatas (\textit{center of bounding box}) sehubungan dengan grid sel pembungkus. 
+		
+		\item bh dan bw sesuai dengan tinggi dan lebar kotak pembatas sehubungan dengan sel grid pembungkus
+		
+		\item c1 dan c2 sesuai dengan dua kelas Player dan Ball, dapat memiliki kelas sebanyak yang dibutuhkan oleh pengguna.
+		
+		Untuk dapat memahami dan terlihat, seperti pada Gambar \ref{img:Cara-Bounding-Box} berikut.
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}[H]
+			\vspace{-0.1cm}
+			%\rule{\columnwidth}{0.1pt}
+			\begin{center}
+				\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture34.png}
+			\end{center}
+			\vspace{-0.2cm}
+			%\rule{\columnwidth}{0.1pt}
+			\captionsetup{justification=centering}
+			\caption{Cara \textit{Bounding Box}\\(Sumber: Z. Kelta, 2022)}\label{img:Cara-Bounding-Box}
+		\end{figure}
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\end{itemize}
+	
+	\item \textit{Intersection Over Unions} (IOU)
+	
+	Sebagian besar waktu, satu objek dalam gambar dapat memiliki beberapa kandidat kotak petak untuk prediksi, meskipun tidak semuanya relevan. Tujuan dari IOU (nilai antara 0 dan 1) adalah untuk membuang kotak kisi tersebut agar hanya menyimpan yang relevan. Inilah logika dari IOU:
+	
+	\begin{itemize}
+		\item Pengguna menentukan ambang pemilihan IOU-nya, misalnya, 0,5.
+		
+		\item Kemudian YOLO menghitung IOU dari setiap sel grid yang merupakan area persimpangan dibagi dengan Union Area.
+		
+		\item Terakhir, ia mengabaikan prediksi sel kisi yang memiliki IOU $\leq$ ambang batas dan mempertimbangkannya dengan IOU > ambang batas.
+	\end{itemize}
+	
+	Pada Gambar \ref{img:IOU} adalah ilustrasi penerapan proses pemilihan grid pada objek kiri bawah. Dapat diamati bahwa objek awalnya memiliki dua kandidat kisi, kemudian hanya "Kisi 2" yang dipilih di bagian akhir.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture35.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{IOU\\(Sumber: Z. Kelta, 2022)}\label{img:IOU}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Non-Maximum Supression (NMS)
+	
+	Menetapkan ambang batas untuk IOU tidak selalu cukup karena sebuah objek dapat memiliki beberapa kotak dengan IOU di luar ambang batas, dan meninggalkan semua kotak tersebut mungkin termasuk kebisingann (\textit{noise}). Di sinilah, dapat menggunakan NMS untuk menyimpan hanya kotak dengan skor probabilitas deteksi tertinggi.
+\end{enumerate}
+
+\subsection{Perkembangan YOLO}
+\hspace{1,2cm}Sejak rilis pertama YOLO pada tahun 2015, YOLO telah banyak berkembang dengan versi berbeda, seperti pada Gambar \ref{img:Perkembangan-YOLO}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.9\columnwidth]{bab2/Gambar/Picture36.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Perkembangan YOLO\\(Sumber: Z. Kelta, 2022)}\label{img:Perkembangan-YOLO}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+	\item YOLO atau YOLOv1
+	
+	Versi pertama YOLO ini adalah pengubah permainan untuk deteksi objek, karena kemampuannya mengenali objek dengan cepat dan efisien.\\
+	Namun, seperti banyak solusi lainnya, versi pertama YOLO memiliki keterbatasannya sendiri:
+	\begin{itemize}
+		\item Kesulitan untuk mendeteksi gambar yang lebih kecil dalam sekelompok gambar, seperti sekelompok orang di stadion. Ini karena setiap kisi dalam arsitektur YOLO dirancang untuk deteksi objek tunggal.
+		
+		\item Kemudian, YOLO tidak berhasil mendeteksi bentuk baru atau tidak biasa.
+		
+		\item Terakhir, fungsi kerugian yang digunakan untuk memperkirakan kinerja pendeteksian memperlakukan kesalahan yang sama untuk kotak pembatas kecil dan besar, yang sebenarnya membuat pelokalan yang salah.
+	\end{itemize}
+	
+	\item YOLOv2 atau YOLO9000
+	
+	YOLOv2 dibuat pada tahun 2016 dengan ide membuat model YOLO lebih baik, lebih cepat, dan lebih kuat.\\
+	Peningkatan termasuk tetapi tidak terbatas pada penggunaan Darknet-19 sebagai arsitektur baru, normalisasi batch, resolusi input yang lebih tinggi, lapisan konvolusi dengan anchors, pengelompokan dimensi, dan (5) fitur-fitur halus.
+	
+	\begin{itemize}
+		\item \textit{Batch Normalization}
+		
+		Menambahkan lapisan normalisasi batch meningkatkan kinerja sebesar 2\% mAP. Normalisasi batch ini menyertakan efek regularisasi, mencegah overfitting.
+		
+		\item \textit{Higher input resolution}
+		
+		YOLOv2 secara langsung menggunakan input 448x448 beresolusi lebih tinggi daripada 224x224, yang membuat model menyesuaikan filternya untuk bekerja lebih baik pada gambar beresolusi lebih tinggi. Pendekatan ini meningkatkan akurasi sebesar 4\% mAP, setelah dilatih selama 10 epochs pada data ImageNet.
+	\end{itemize}
+	
+	\item YOLOv3 - Peningkatan Bertahap
+	
+	Perubahan tersebut terutama mencakup arsitektur jaringan baru: Darknet-53. Ini adalah jaringan saraf 106, dengan jaringan upsampling dan blok residual. Jauh lebih besar, lebih cepat, dan lebih akurat dibandingkan dengan Darknet-19, yang merupakan tulang punggung YOLOv2. Arsitektur baru ini telah bermanfaat di banyak tingkatan:
+	
+	\begin{itemize}
+		\item Prediksi \textit{Bounding Box} Lebih Baik
+		
+		Model regresi logistic digunakan oleh YOLOv3 untuk memprediksi skor objektivitas untuk setiap kotak pembatas (bounding box).
+		
+		\item Prediksi Kelas yang Lebih Akurat
+		
+		Menggantikan penggunaan softmax seperti yang dilakukan di YOLOv2, pengklasifikasi logistik independen telah diperkenalkan untuk memprediksi kelas kotak pembatas secara akurat. Ini bahkan berguna saat menghadapi domain yang lebih kompleks dengan label yang tumpang tindih (Misalnya, $\rightarrow$ Pemain Sepak Bola). Menggunakan softmax akan membatasi setiap kotak hanya memiliki satu kelas, yang tidak selalu benar.
+		
+	\end{itemize}
+	
+	\item YOLOv4 - \textit{Optimal Speed dan Accuracy of Object Detection}
+	
+	Versi YOLO ini memiliki Kecepatan dan Akurasi Deteksi Objek Optimal dibandingkan dengan semua versi sebelumnya dan detektor objek canggih lainnya.\\
+	Gambar \ref{img:KomprasiYoloV4-YoloV3} menunjukkan YOLOv4 mengungguli YOLOv3 dan FPS dalam kecepatan masing-masing sebesar 10\% dan 12\%.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.8\columnwidth]{bab2/Gambar/Picture37.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Komparasi YOLOv4 dengan YOLOv3 dan \textit{state-of-the-art} Deteksi Objek Lain \\(Sumber: Z. Kelta, 2022)}\label{img:KomprasiYoloV4-YoloV3}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	YOLOv4 dirancang khusus untuk sistem produksi dan dioptimalkan untuk komputasi paralel.\\
+	\textit{Backbone} arsitektur YOLOv4 adalah CSPDarknet53, jaringan yang berisi 29 lapisan konvolusi dengan filter 3 x 3 dan sekitar 27,6 juta parameter.\\
+	Arsitektur ini, dibandingkan dengan YOLOv3, menambahkan informasi berikut untuk deteksi objek yang lebih baik:
+	
+	\begin{itemize}
+		\item \textit{Spatial Pyramid Pooling} (SPP) secara signifikan meningkatkan bidang reseptif, memisahkan fitur konteks yang paling relevan, dan tidak memengaruhi kecepatan jaringan.
+		
+		\item Menggantikan \textit{Feature Pyramid Network} (FPN) yang digunakan di YOLOv3, YOLOv4 menggunakan PANet untuk agregasi parameter dari tingkat deteksi yang berbeda.
+		
+		\item Augmentasi data menggunakan teknik mosaik yang menggabungkan empat gambar pelatihan selain pendekatan pelatihan permusuhan diri.
+		
+		\item Menggunakan pemilihan hyper-parameter yang optimal menggunakan algoritma genetika.
+		
+	\end{itemize}
+	
+	\item YOLOR - You Only Look One Representation
+	
+	Sebagai \textit{Unified Network for Multiple Tasks}, YOLOR didasarkan pada jaringan terpadu yang merupakan kombinasi dari pendekatan pengetahuan eksplisit dan implisit.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.8\columnwidth]{bab2/Gambar/Picture38.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Unified Network Architecture\\(Sumber: C. Y. Wang et al, 2021}\label{img:Unified-Network-Architecture}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		Pengetahuan eksplisit adalah pembelajaran normal atau conscious learning. Pembelajaran implisit di sisi lain dilakukan secara tidak sadar (dari pengalaman).\\
+		Menggabungkan kedua teknik ini, YOLOR mampu menciptakan arsitektur yang lebih kuat berdasarkan tiga proses: (1) penyelarasan fitur, (2) penyelarasan prediksi untuk deteksi objek, dan (3) representasi kanonis untuk pembelajaran multi-tugas.\\
+		Salah satu yang mengalami peningkatan adalah penjajaran prediksi. Pendekatan ini memperkenalkan representasi implisit ke dalam peta fitur dari setiap jaringan piramida fitur (FPN), yang meningkatkan presisi sekitar 0,5\%.\\
+		Dari grafik berikut, dapat diamati bahwa YOLOR mencapai kecepatan inferensi data MS COCO yang canggih dibandingkan dengan model lain seperti pada Gambar \ref{img:Performance-YOLOR-YOLOV4}.
+		
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.8\columnwidth]{bab2/Gambar/Picture39.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Performance YOLOR vs YOLOv4 dan Model Lainnya\\(Sumber: C. Y. Wang et al, 2021}\label{img:Performance-YOLOR-YOLOV4}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item YOLOX - Exciding \textit{YOLO Series in 2021}
+	
+	Ini menggunakan baseline yang merupakan versi modifikasi dari YOLOv3, dengan Darknet-53 sebagai \textit{backbone}.\\
+	Diterbitkan dalam makalah \textit{Exceeding} YOLO \textit{Series in 2021}, YOLOX menghadirkan empat karakteristik utama berikut untuk membuat model yang lebih baik dibandingkan dengan versi yang lebih lama.
+	
+	\begin{itemize}
+		\item Kepala terpisah yang efisien: Coupled head yang digunakan pada versi YOLO sebelumnya terbukti mengurangi performa model. YOLOX menggunakan decoupled sebagai gantinya, yang memungkinkan pemisahan tugas klasifikasi dan lokalisasi, sehingga meningkatkan kinerja model.
+		
+		\item Augmentasi data yang kuat: Integrasi Mosaic dan MixUp ke dalam pendekatan augmentasi data sangat meningkatkan kinerja YOLOX.
+		
+		\item \textit{Anchor free system}: Algoritma \textit{anchor-based} melakukan pengelompokan di bawah tenda, yang meningkatkan waktu inferensi. Menghapus mekanisme jangkar di YOLOX mengurangi jumlah prediksi per gambar, dan meningkatkan waktu inferensi secara signifikan.
+		
+		\item SimOTA untuk penetapan label: Pergantian penggunaan pendekatan interseksi penyatuan (IoU), penulis memperkenalkan SimOTA, strategi penetapan label yang lebih kuat yang mencapai hasil canggih dengan tidak hanya mengurangi waktu pelatihan tetapi juga menghindari masalah hiperparameter tambahan. Selain itu, ini meningkatkan peta deteksi sebesar 3\%.
+		
+	\end{itemize}
+	
+	\item YOLOv5
+	
+	YOLOv5, dibandingkan dengan versi lain, tidak memiliki makalah penelitian yang diterbitkan, dan ini adalah versi YOLO pertama yang diimplementasikan di Pytorch, bukan di Darknet.\\
+	Dirilis oleh Glenn Jocher pada Juni 2020, YOLOv5, mirip dengan YOLOv4, menggunakan CSPDarknet53 sebagai tulang punggung arsitekturnya. Rilis ini mencakup lima ukuran model yang berbeda: YOLOv5s (terkecil), YOLOv5m, YOLOv5l, dan YOLOv5x (terbesar).\\
+	Salah satu peningkatan besar dalam arsitektur YOLOv5 adalah integrasi lapisan Fokus, yang diwakili oleh satu lapisan, yang dibuat dengan mengganti tiga lapisan pertama YOLOv3. Integrasi ini mengurangi jumlah lapisan, dan jumlah parameter dan juga meningkatkan kecepatan maju dan mundur tanpa dampak besar pada peta.\\
+	Ilustrasi Gambar \ref{img:Perbandingan-YOLOv4-YOLOv5} membandingkan waktu pelatihan antara YOLOv4 dan YOLOv5.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=0.6\columnwidth]{bab2/Gambar/Picture40.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Perbandingan Waktu Pelatihan antara YOLOv4 dan YOLOv5\\(Sumber: J. Nelson, 2020}\label{img:Perbandingan-YOLOv4-YOLOv5}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item YOLOv6
+	
+	Didedikasikan untuk aplikasi industri dengan desain efisien yang ramah perangkat keras dan kinerja tinggi, kerangka kerja YOLOv6 (MT-YOLOv6) dirilis oleh Meituan, sebuah perusahaan e-commerce Tiongkok.\\
+	Ditulis dalam Pytorch, versi baru ini bukan bagian dari YOLO resmi tetapi tetap diberi nama YOLOv6 karena tulang punggungnya terinspirasi oleh arsitektur YOLO satu tahap yang asli.\\
+	YOLOv6 memperkenalkan tiga peningkatan signifikan pada YOLOv5 sebelumnya: desain tulang punggung dan leher yang ramah perangkat keras, kepala terpisah yang efisien, dan strategi pelatihan yang lebih efektif.\\
+	YOLOv6 memberikan hasil yang luar biasa dibandingkan dengan versi YOLO sebelumnya dalam hal akurasi dan kecepatan pada dataset COCO seperti yang diilustrasikan pada Gambar \ref{img:Performance-YOLOv6}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture41.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Comparison of state-of-the-art efficient object detectors. All models are tested with TensorRT 7 except that the quantized model is with TensorRT 8\\(Sumber: C. Li et al, 2022}\label{img:Performance-YOLOv6}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{itemize}
+		\item YOLOv6-N mencapai 35,9\% AP pada dataset COCO dengan throughput 1234 (throughput) FPS pada GPU NVIDIA Tesla T4.
+		
+		\item YOLOv6-S mencapai AP 43,3\% yang canggih pada 869 FPS.
+		
+		\item YOLOv6-M dan YOLOv6-L juga mencapai kinerja akurasi yang lebih baik masing-masing sebesar 49,5\% dan 52,3\% dengan kecepatan inferensi yang sama.
+		
+	\end{itemize}
+	
+	\item YOLOv7
+	
+	YOLOv7 dirilis pada Juli 2022 di Paper \textit{Trained bag-of-freebies set state-of-the-art real-time object detector}. Versi ini membuat langkah signifikan di bidang deteksi objek, dan melampaui semua model sebelumnya dalam hal akurasi dan kecepatan.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture42.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Perbandingan YOLOv7 inference time dengan real-time object detector lainnya\\(Sumber: C. Y. Wang et al, 2022}\label{img:Performance-YOLOv7}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	YOLOv7 telah membuat perubahan besar dalam (1) arsitekturnya dan (2) pada tingkat bag-of-freebies yang dapat dilatih:
+	
+	\begin{itemize}
+		\item Level Aristektur
+		
+		YOLOv7 mereformasi arsitekturnya dengan mengintegrasikan Extended Efficient Layer Aggregation Network (E-ELAN) yang memungkinkan model mempelajari fitur yang lebih beragam untuk pembelajaran yang lebih baik.\\
+		Selain itu, YOLOv7 menskalakan arsitekturnya dengan menggabungkan arsitektur model asalnya seperti YOLOv4, Scaled YOLOv4, dan YOLO-R. Hal ini memungkinkan model untuk memenuhi kebutuhan kecepatan inferensi yang berbeda.
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}[H]
+			\vspace{-0.1cm}
+			%\rule{\columnwidth}{0.1pt}
+			\begin{center}
+				\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture43.png}
+			\end{center}
+			\vspace{-0.2cm}
+			%\rule{\columnwidth}{0.1pt}
+			\captionsetup{justification=centering}
+			\caption{\textit{Compound scaling up depth and width for concatenation-based model}\\(Sumber: C. Y. Wang et al, 2022}\label{img:Compund-Scaling}
+		\end{figure}
+		%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\item Trainable bag-of-freebies
+		
+		Istilah bag-of-freebies mengacu pada peningkatan akurasi model tanpa meningkatkan biaya pelatihan, dan inilah alasan mengapa YOLOv7 tidak hanya meningkatkan kecepatan inferensi tetapi juga akurasi deteksi.
+		
+	\end{itemize}
+\end{enumerate}
+
+\section{Object Based Image Analysis (OBIA)}
+\hspace{1,2cm}OBIA merupakan teknik klasifikasi yang tidak hanya memandang rona dan tekstur piksel namun berdasarkan dari kesatuan objek, atau dapat dikatakan OBIA adalah pendekatan yang proses klasifikasinya tidak hanya mempertimbangkan aspek spectral naum aspek spasial objek. Data citra penginderaan jauh yang digunakan untuk klasifikasi ini biasanya menggunakan data citra penginderaan jauh resolusi tinggi seperti QUickbird, Ikonos, World View, dll. Klasifikasi ini hamper mirip dengan klasifikasi unsupervised, akan tetapi basis dari klasifikasi OBIA yaitu dengan segmentasi (A. Bakar, 2014).
+
+OBIA mengelompokkan gambar yang mengelompokkan piksel kecil menjadi objek vektor. Alih-alih berbasis per-pixel, segmentasi secara otomatis mendigitalkan gambar untuk pengguna (GIS Geography, 2020).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture44.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{OBIA Segmentasi Proses Pengelompokkkan Pixel yang hampir sama ke dalam Objek\\(Sumber: GISGeography, 2020)}\label{img:OBIA-Segmentasi-Proses}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Apa yang dilakukan segmentasi adalah meniru apa yang dilakukan mata pengguna. Tetapi dengan objek tersegmentasi ini, pengguna menggunakan properti spektral, geometris, dan spasialnya untuk mengklasifikasikan ke dalam tutupan lahan.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture45.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{OBIA Klasifikasi menggunakan shape, size, dan spectral properties objek untuk klasifikasi setiap objek}\label{img:OBIA-Klasifikasi}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dua prinsip dasar OBIA adalah klasifikasi dan segmentasi. Segmentasi adalah memecah gambar menjadi objek yang mewakili fitur berbasis darat, sedangkan Klasifikasi adalah mengklasifikasi objek-objek tersebut menggunakan bentuk, ukuran, sifat spasial dan spektralnya. Analis sering menggunakan statistik ini untuk mengklasifikasikan tutupan lahan menggunakan OBIA, yaitu \textit{trees} (pohon) memiliki ketinggian yang bervariasi (standar deviasi \textit{normalized Digital Surface Model} (nDSM)) yang merupakan model elevasi yang menangkap fitur alami dan fitur buatan, seperti gedung, pohon, kabel listrik, dan objek lainnya. Di samping itu, memiliki reflektansi inframerah-dekat yang tinggi (\textit{normalized difference vegetation index} (NDVI) tinggi), sedangkan \textit{grass} memiliki pendek (nDSM rendah), datar (deviasi standar nDSM rendah) dan memiliki reflektansi inframerah-dekat sedang (NDVI sedang). NDVI digunakan untuk mengukur indeks yang menggambarkan tingkat kepadatan, kehijauan suatu tanaman dan kondisi dari suatu vegetasi.
+
+\section{Sentinel-2}
+\hspace{1,2cm}Data yang digunakan dalam penelitian ini diambil dari gambar citra satelit Sentinel-2. Sentinel-2 diluncurkan sebagai bagian dari program Copernicus Komisi Eropa pada tanggal 23 Juni 2015 yang dirancang khusus untuk memberikan banyak data dan citra. Satelit dilengkapi dengan sensor multispectral opto-elektronik untuk survei dengan resoulsi Sentinel-2 yaitu 10 hingga 60m di zona spekatral tampak, VNIR, SWIR, termasuk 13 saluran spectral yang memastikan penangkapan perbedaan dalam keadaan vegetasi, termasuk perubahan temporal, dna juga meminimalkan dampkan kualitas fotografi atmosfer. Sentinel-2 memiliki dua satelit dalam misi memungkinkan survei berulang setiap 5 hari di ekuator dan 2-3 hari di garis lintang tengah (EOS, 2020). 
+
+Misi Sentinel-2 terdiri dari dua satelit yang dikembangkan untuk mendukung vegetasi, tutupan lahan, dan pemantauan lingkungan. Satelit Sentinel-2A diluncurkan oleh European Space Agency (ESA) pada 23 Juni 2015, dan beroperasi di orbit sinkron matahari dengan siklus berulang 10 hari. Setelit kedua yaitu Sentinel-2B diluncurkan pada 7 Maret 2017 dan beroperasi dengan akuisisi data yang tersedia di EarthExplorer (USGS EROS, 2020). 
+
+Terdapat Perbandingan antara Sentinel-2 dengan UAV Drone, seperti pada Tabel 2.2.
+
+%%% BENERIN TABEL
+
+\section{Pertanian Presisi}
+\hspace{1,2cm}Pertanian presisi atau precision agriculture merupakan suatu sistem pertanian yang mengintegrasikan penggunaan teknologi dalam mengumpulkan informasi, sehingga dapat melakukan proses pertanian secara presisi atau dengan input, tempat, dan waktu yang tepat. Istilah presisi berarti akurat, terakar, dan terukur. Pertanian presisi disebut juga menggunakan input pertanian yang tepat dengan teknik, jumlah, tempat, dan waktu yang tepat untuk menghasilkan produksi panen secara maksimal. Input pertanian meliputi seperti pemupukan, herbisida, insektisida, benih, dan lainnya. Meskipun untuk melakukan pertanian secara akurat ini membutuhkan banyak informasi, cenderung kompleks untuk kebanyakan petani, dan membutuhkan kerjasama dari berbagai multidisiplin ilmu, namun sistem pertanian presisi mampu meingkatkan laba, mengurangi limbah, mengurangi biaya produksi, dan menjaga kualitas lingkungan (J. Taylor et al., 2016). 
+
+Pertanian presisi (PA) merupakan ilmu untuk meningkatkan hasil panen dan membantu keputusan manajemen menggunakan sensor dan alat analisis teknologi tinggi. Pertanian presisi adalah konsep yang digunakan untuk meningkatkan produksi, mengurangi waktu kerja, dan memastikan pengelolaan seperti pupuk, irigasi, dan lainnya berjalan efektif. Perkembangan teknologi, khususnya ketersediaan citra satelit beresolusi tinggi, perkembangan teknologi kendaraan udara tak berawak (UAV), menunjukkan bahwa adopsi sumber data penginderaan jauh dalam pertanian presisi mengalami peningkatan (P. Singh et al., 2020). 
+
+Siklus pertanian presisi terdiri dari tahapan seperti Gambar 2.46.
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture46.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Siklus Pertanian Presisi\\(Sumber: A. Comparetti, 2011)}\label{img:Siklus-Pertanian-Presisi}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+	\item Pengukuran parameter tanah dan tanaman dengan bantuan pemetaan spasial dan pemantauan kondisi cuaca setempat (pengumpulan data);
+	
+	\item pemetaan parameter tanah dan tanaman dalam lapangan (pengumpulan data);
+	
+	\item pemetaan dan integrasi data dengan bantuan aplikasi (interpretasi);
+	
+	\item pemantauan kesuburan dan penaburan (aplikasi);
+	
+\end{itemize}
+Dalam menerapkan pertanian presisi diperlukan instrumen berikut (A. Comparetti, 2011):
+
+\begin{itemize}
+	\item Sistem penentuan posisi satelit, untuk penginderaan posisi di mana setiap parameter lapangan yang diukur harus direferensikan secara geografis dan, kemudian, juga posisi di mana input (seperti, tanaman, lahan) yang terdeteksi oleh  mesin dapat diterapkan kebutuhannya di setiap area lahan (zona pengelolaan).
+	
+	\item Sensor, untuk mengukur parameter tanah dan tanaman di lapangan.
+	
+	\item Perangkat (devices), untuk menyiapkan dan mengontrol aplikasi input tanaman tingkat variabel spasial.
+	
+	\item Perangkat lunak, untuk membuat peta parameter tanah dan tanaman dalam lahan dan aplikasi input tanaman dengan data dari citra penginderaan, dan juga untuk menginterpretasikan data terukur;
+	
+\end{itemize}
+
+\section{Kelapa Sawit}
+\hspace{1,2cm}Kelapa sawit adalah tanaman sejenis palma berakar serabut atau monokotil. Bagian tanaman yang bernilai ekonomis adalah buah. Masing-masing dari seribu atau lebih buah dalam tandan buah segar itu terdiri dari inti sawit (kernel) yang dikelilingi) oleh daging buah (mesocarp). Di pabrik kelapa sawit, sangat sedikit buah yang terbuang sia-sia karena pabrik tersebut mengubah setiap buah kelapa sawit menjadi minyak kelapa sawit dan minyak inti sawit), bahkan limbah dari setiap buah sawitpun di daur ulang di perkebunan sebagai pupuk atau diolah sebagai bahan bakar biomass. Sangat sedikit sekali buah kelapa sawit terbuang karena baik inti kelapa sawit dan dagingnya sama-sama digunakan untuk menghasilkan minyak.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.3\columnwidth]{bab2/Gambar/Picture47.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Buah Kelapa Sawit(Inti dan Daging Sawit)}\label{img:Buah-Kelapa-Sawit}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Satu tandan tanaman dewasa beratnya mencapai 20 - 35 kg, bahkan ada yang mencapai di atas 40 kg, tergantung pada perawatan. Tandan tersusun dari 200 - 600 buah masing-masing sekitar 20-35 gram. Buah diambil minyaknya dengan hasil sabut (daging buah/mesocarp) menghasilkan minyak kasar (CPO) 20-26\%, inti sawit sebanyak 6\% yang menghasilkan minyak inti (PKO) 3-4\%. Kadar \% dihitung dari berat tandan buah segar (Smart Agribusiness and Food, 2017).
+
+\begin{enumerate}[label=(\alph*)]
+	\item Usia Tanam
+	
+	Umur atau usia ekonomis tanaman kelapa sawit yang dibudidayakan bisa mencapai usia hingga 25 tahun. Pada usia tanam sudah tinggi, sehingga sulit dipanen, tandanya sudah jarang sehingga secara perhitungan tidak ekonomis lagi. Pengelompokkan berdasarkan masa berbuah (PTPN, 2018), seperti Tabel \ref{tbl:Pengelompokkan-Berdasarkan-Masa-Berubah} berikut ini:
+	
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{singlespace}
+		\begin{table}[H]
+			\centering
+			\caption{Pengelompokkan Berdasarkan Masa Berbuah}
+			\label{tbl:Pengelompokkan-Berdasarkan-Masa-Berubah}
+			\begin{tabular}{|p{6cm}|p{6cm}|}
+				\hline
+				\multicolumn{1}{|c|}{Kelompok}   & Masa Berbuah (Tahun) \\ \hline
+				Tanaman Belum Menghasilkan (TBM) & 0-3                  \\ \hline
+				Tanaman Menghasilkan             & \textgreater{}3      \\ \hline
+			\end{tabular}
+		\end{table}
+	\end{singlespace}
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\item Produktivitas Tanaman Kelapa Sawit Menurut Umur Tanaman
+	
+	Produktivitas tanaman kelapa sawit (tandan buah segar (TBS)) menurut umur tanaman dalam Kondisi Kebun Percobaan Balit Marihat berdasarkan PTPN. VII tahun 1993 dalam \textit{lecture note} "Budi Daya Kelapa Sawit" (S. Yahya \& Suwarto, 2021), seperti Tabel 2.4. berikut ini:
+	
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{singlespace}
+		\begin{table}[H]
+			\centering
+			\caption{Produktivitas Tanaman Kelapa Sawit Menurut Umur Tanaman dalam Kondisi Kebun Percobaan Balit Marihat}
+			\label{tbl:Produktivitas-Tanaman-Kelapa-Sawit}
+			\begin{tabular}{|c|c|}
+			\hline
+			
+			Umur Di Lapangan (Tahun) & \begin{tabular}[c]{@{}c@{}}Produksi    Produksi TBS\\ (ton/ha/Thn)\end{tabular} \\ \hline
+			
+			4 & 8 \\ \hline
+			
+			5 & 15 \\ \hline
+			
+			6 & 17 \\ \hline
+			
+			7 & 18 \\ \hline
+			
+			8 & 20 \\ \hline
+			
+			9 & 21 \\ \hline
+			
+			10 & 23 \\ \hline
+			
+			11 & 25 \\ \hline
+			
+			12 & 26 \\ \hline
+			
+			13 & 30 \\ \hline
+			
+			14 & 30 \\ \hline
+			
+			15 & 30 \\ \hline
+			
+			16 & 30 \\ \hline
+			
+			17 & 29 \\ \hline
+			
+			18 & 28 \\ \hline
+			
+			19 & 28 \\ \hline
+			
+			20 & 25 \\ \hline
+			
+			21 & 23 \\ \hline
+			
+			22 & 20 \\ \hline
+			
+			23 & 18 \\ \hline
+			
+			24 & 18 \\ \hline
+			
+			25 & 18 \\ \hline
+				
+				
+			\end{tabular}
+		\end{table}
+	\end{singlespace}
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{enumerate}
+
+
+
+
+
+
+
+
 	
 \section{Teknologi Informasi}
 \hspace{1,2cm}Informasi adalah proses transmisi dan transfer pengetahuan: bentuk, data, dan konsep, studi dengan tujuan membuatnya dapat diakses oleh orang lain, lembaga atau masyarakat. Kualitas proses ini akan menentukan diterima atau tidaknya perubahan perilaku dan sikap individu tersebut. Teknologi informasi berupa perangkat apapun yang memiliki kapasitas untuk mengolah data dan atau informasi, baik secara sistematis maupun dinamis. Teknologi informasi juga dapat diterapkan pada produk maupun dalam suatu proses \citep{Victoria2020}.
