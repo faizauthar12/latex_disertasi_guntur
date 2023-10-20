@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  17 OCT 2023 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  20 OCT 2023 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,7 +1230,7 @@ Package epstopdf Info: Source file: <LogoGundar.eps>
 rted-to.pdf LogoGundar.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<LogoGundar-eps-converted-to.pdf, id=318, 201.75375pt x 205.76875pt>
+<LogoGundar-eps-converted-to.pdf, id=358, 201.75375pt x 205.76875pt>
 File: LogoGundar-eps-converted-to.pdf Graphic file (type pdf)
 <use LogoGundar-eps-converted-to.pdf>
 Package pdftex.def Info: LogoGundar-eps-converted-to.pdf  used on input line 7.
@@ -1404,12 +1404,12 @@ TeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm
 
 
 
-] [16] [17])
+] [16] [17] [18])
 \tf@toc=\write6
 \openout6 = `MainTemplateDisertasi.toc'.
 
- [18] (MainTemplateDisertasi.lot
-Overfull \hbox (4.74068pt too wide) in paragraph at lines 5--5
+ [19] (MainTemplateDisertasi.lot
+Overfull \hbox (4.74068pt too wide) in paragraph at lines 6--6
  \T1/lmr/m/n/12 ruh dunia ATSC, DTMB, DVB-T/DVB-T2, dan ISDB-T ([][]DTVs- 
  []
 
@@ -1417,61 +1417,73 @@ Overfull \hbox (4.74068pt too wide) in paragraph at lines 5--5
 \tf@lot=\write7
 \openout7 = `MainTemplateDisertasi.lot'.
 
- [19
+ [20
 
 ] (MainTemplateDisertasi.lof
-Overfull \hbox (3.26926pt too wide) in paragraph at lines 15--15
+Overfull \hbox (1.30106pt too wide) in paragraph at lines 8--8
+ \T1/lmr/m/n/12 Deep Learn-ing. (b) Je-nis Ma-chine Learn-ing (Sum-ber: C. Thon
+g- 
+ []
+
+
+Overfull \hbox (18.32466pt too wide) in paragraph at lines 10--10
+ [][] [][][]\T1/lmr/m/n/12 Segmentation, Clas-si-fi-ca-tion+Localization, Ob-je
+ct De-tec-tion (Sum- 
+ []
+
+[21
+
+]
+Overfull \hbox (3.26926pt too wide) in paragraph at lines 28--28
  [][] [][][]\T1/lmr/m/n/12 Struktur otak manu-sia den-gan ke-mam-puan op-era-si
 on-al (SANDY 
  []
 
-[20
-
-] [21]
-Overfull \hbox (4.41763pt too wide) in paragraph at lines 39--39
+[22]
+Overfull \hbox (4.41763pt too wide) in paragraph at lines 52--52
  [][] [][][]\T1/lmr/m/n/12 Pengukuran keku-atan sinyal meng-gu-nakan \T1/lmr/m/
 it/12 sig-nal an-a-lyz-er, TinySA[][] [][]  
  []
 
 
-Overfull \hbox (2.88205pt too wide) in paragraph at lines 41--41
+Overfull \hbox (2.88205pt too wide) in paragraph at lines 54--54
  [][] [][][]\T1/lmr/m/n/12 Fitur me-lakukan pereka-man video siaran DVB-T2 meng
 -gu-nakan 
  []
 
 
-Overfull \hbox (2.75925pt too wide) in paragraph at lines 42--42
+Overfull \hbox (2.75925pt too wide) in paragraph at lines 55--55
  [][] [][][]\T1/lmr/m/n/12 Jarak sta-si-un pe-man-car ter-hadap lokasi pengam-b
 i-lan da-ta siaran 
  []
 
-
-Overfull \hbox (1.1286pt too wide) in paragraph at lines 49--49
+[23]
+Overfull \hbox (1.1286pt too wide) in paragraph at lines 62--62
  [][] [][][]\T1/lmr/m/n/12 Contoh pe-ngu-kur-an metrik obyek-tif tem-po-ral pa-
 da video \T1/lmr/m/it/12 dataset 
  []
 
 
-Overfull \hbox (1.1286pt too wide) in paragraph at lines 50--50
+Overfull \hbox (1.1286pt too wide) in paragraph at lines 63--63
  [][] [][][]\T1/lmr/m/n/12 Contoh pe-ngu-kur-an metrik obyek-tif tem-po-ral pa-
 da video \T1/lmr/m/it/12 dataset 
  []
 
 
-Overfull \hbox (10.43225pt too wide) in paragraph at lines 51--51
+Overfull \hbox (10.43225pt too wide) in paragraph at lines 64--64
  [][] [][][]\T1/lmr/m/n/12 Tampilan ap-likasi pe-ngu-kur-an sub-yek-tif kual-i-
 tas ci-tra video siaran 
  []
 
-[22])
+)
 \tf@lof=\write8
 \openout8 = `MainTemplateDisertasi.lof'.
 
- [23] (MainTemplateDisertasi.loa)
+ [24] (MainTemplateDisertasi.loa)
 \tf@loa=\write9
 \openout9 = `MainTemplateDisertasi.loa'.
 
- [24
+ [25
 
 ]
 
@@ -1501,24 +1513,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2] [3] [4]
-<bab1/Gambar/Picture1.png, id=805, 213.04594pt x 214.55156pt>
+<bab1/Gambar/Picture1.png, id=895, 213.04594pt x 214.55156pt>
 File: bab1/Gambar/Picture1.png Graphic file (type png)
 <use bab1/Gambar/Picture1.png>
 Package pdftex.def Info: bab1/Gambar/Picture1.png  used on input line 43.
 (pdftex.def)             Requested size: 199.1693pt x 200.5883pt.
  [5 <./bab1/Gambar/Picture1.png>]
-<bab1/Gambar/Picture2.jpg, id=813, 176.15813pt x 216.05719pt>
+<bab1/Gambar/Picture2.jpg, id=903, 176.15813pt x 216.05719pt>
 File: bab1/Gambar/Picture2.jpg Graphic file (type jpg)
 <use bab1/Gambar/Picture2.jpg>
 Package pdftex.def Info: bab1/Gambar/Picture2.jpg  used on input line 58.
 (pdftex.def)             Requested size: 199.1693pt x 244.28021pt.
-<bab1/Gambar/Picture3.png, id=815, 399.74344pt x 145.29282pt>
+<bab1/Gambar/Picture3.png, id=905, 399.74344pt x 145.29282pt>
 File: bab1/Gambar/Picture3.png Graphic file (type png)
 <use bab1/Gambar/Picture3.png>
 Package pdftex.def Info: bab1/Gambar/Picture3.png  used on input line 73.
 (pdftex.def)             Requested size: 398.3386pt x 144.78918pt.
  [6 <./bab1/Gambar/Picture2.jpg>]
-<bab1/Gambar/Picture4.png, id=821, 396.609pt x 217.248pt>
+<bab1/Gambar/Picture4.png, id=912, 396.609pt x 217.248pt>
 File: bab1/Gambar/Picture4.png Graphic file (type png)
 <use bab1/Gambar/Picture4.png>
 Package pdftex.def Info: bab1/Gambar/Picture4.png  used on input line 88.
@@ -1536,337 +1548,487 @@ Overfull \hbox (0.81874pt too wide) in paragraph at lines 133--134
 a YOLOv5,
  []
 
-[14] [15] [16]) (bab2/Bab2_TinjauanPustaka.tex [17]
+[14]
+Overfull \hbox (14.28282pt too wide) in paragraph at lines 142--143
+[]\T1/lmr/m/n/12 Menghasilkan mod-el CNN dari al-go-rit-ma YOLOv5, YOLOv6, dan 
+YOLOv7
+ []
+
+[15]) (bab2/Bab2_TinjauanPustaka.tex [16]
 BAB II\bfseries .
-<bab2/Gambar/SANDY. dasar telkom.png, id=888, 570.33075pt x 187.29974pt>
+[17
+
+] [18{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [19]
+[20]
+<bab2/Gambar/Picture1.jpg, id=995, 394.47375pt x 158.84344pt>
+File: bab2/Gambar/Picture1.jpg Graphic file (type jpg)
+<use bab2/Gambar/Picture1.jpg>
+Package pdftex.def Info: bab2/Gambar/Picture1.jpg  used on input line 78.
+(pdftex.def)             Requested size: 398.3386pt x 160.3991pt.
+ [21 <./bab2/Gambar/Picture1.jpg>]
+<bab2/Gambar/Picture2.png, id=1002, 387.69844pt x 136.25906pt>
+File: bab2/Gambar/Picture2.png Graphic file (type png)
+<use bab2/Gambar/Picture2.png>
+Package pdftex.def Info: bab2/Gambar/Picture2.png  used on input line 98.
+(pdftex.def)             Requested size: 398.3386pt x 140.00116pt.
+<bab2/Gambar/Picture3.png, id=1004, 335.00156pt x 141.52875pt>
+File: bab2/Gambar/Picture3.png Graphic file (type png)
+<use bab2/Gambar/Picture3.png>
+Package pdftex.def Info: bab2/Gambar/Picture3.png  used on input line 113.
+(pdftex.def)             Requested size: 398.3386pt x 168.28523pt.
+ [22 <./bab2/Gambar/Picture2.png>]
+Overfull \hbox (4.56917pt too wide) in paragraph at lines 121--122
+\T1/lmr/m/n/12 fikasi ci-tra (\T1/lmr/m/it/12 im-age clas-si-fi-ca-tion\T1/lmr/
+m/n/12 ). Keti-ka gam-bar adalah in-put ke CNN, masalah
+ []
+
+<bab2/Gambar/Picture4.png, id=1011, 338.01282pt x 113.67468pt>
+File: bab2/Gambar/Picture4.png Graphic file (type png)
+<use bab2/Gambar/Picture4.png>
+Package pdftex.def Info: bab2/Gambar/Picture4.png  used on input line 128.
+(pdftex.def)             Requested size: 398.3386pt x 133.96669pt.
+<bab2/Gambar/Picture5.png, id=1013, 350.05782pt x 107.65219pt>
+File: bab2/Gambar/Picture5.png Graphic file (type png)
+<use bab2/Gambar/Picture5.png>
+Package pdftex.def Info: bab2/Gambar/Picture5.png  used on input line 143.
+(pdftex.def)             Requested size: 398.3386pt x 122.50792pt.
+[23 <./bab2/Gambar/Picture3.png> <./bab2/Gambar/Picture4.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+59.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [24{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./bab2/Gambar/Pic
+ture5.png>]
+<bab2/Gambar/Picture6.png, id=1027, 316.18124pt x 160.34906pt>
+File: bab2/Gambar/Picture6.png Graphic file (type png)
+<use bab2/Gambar/Picture6.png>
+Package pdftex.def Info: bab2/Gambar/Picture6.png  used on input line 169.
+(pdftex.def)             Requested size: 398.3386pt x 202.02864pt.
+<bab2/Gambar/Picture7.png, id=1028, 149.8097pt x 117.43875pt>
+File: bab2/Gambar/Picture7.png Graphic file (type png)
+<use bab2/Gambar/Picture7.png>
+Package pdftex.def Info: bab2/Gambar/Picture7.png  used on input line 186.
+(pdftex.def)             Requested size: 159.333pt x 124.91454pt.
+
+Overfull \hbox (9.95903pt too wide) in paragraph at lines 194--195
+[]\T1/lmr/m/n/12 IoU adalah area tumpang tindih (\T1/lmr/m/it/12 over-lap\T1/lm
+r/m/n/12 ) an-tara seg-men-tasi yang dipredik-
+ []
+
+[25 <./bab2/Gambar/Picture6.png> <./bab2/Gambar/Picture7.png>]
+Overfull \hbox (13.4445pt too wide) in paragraph at lines 203--204
+[]\T1/lmr/m/it/12 Machine learn-ing \T1/lmr/m/n/12 mem-bu-tuhkan se-buah mod-el
+ yang didefin-isikan berdasar
+ []
+
+
+Overfull \hbox (2.69608pt too wide) in paragraph at lines 207--208
+\T1/lmr/m/n/12 di li-ma bagian, yaitu \T1/lmr/m/it/12 su-per-vised learn-ing\T1
+/lmr/m/n/12 , \T1/lmr/m/it/12 un-su-per-vised learn-ing\T1/lmr/m/n/12 , \T1/lmr
+/m/it/12 semi-supervised
+ []
+
+[26]
+<bab2/Gambar/Picture8.png, id=1041, 381.67593pt x 214.55156pt>
+File: bab2/Gambar/Picture8.png Graphic file (type png)
+<use bab2/Gambar/Picture8.png>
+Package pdftex.def Info: bab2/Gambar/Picture8.png  used on input line 217.
+(pdftex.def)             Requested size: 398.3386pt x 223.92715pt.
+ [27 <./bab2/Gambar/Picture8.png>] [28]
+<bab2/Gambar/Picture9.png, id=1059, 383.18156pt x 188.20313pt>
+File: bab2/Gambar/Picture9.png Graphic file (type png)
+<use bab2/Gambar/Picture9.png>
+Package pdftex.def Info: bab2/Gambar/Picture9.png  used on input line 262.
+(pdftex.def)             Requested size: 398.3386pt x 195.6577pt.
+ [29 <./bab2/Gambar/Picture9.png>]
+Overfull \hbox (0.74896pt too wide) in paragraph at lines 275--276
+[]\T1/lmr/m/n/12 Permasalahan sep-utar \T1/lmr/m/it/12 un-su-per-vised learn-in
+g \T1/lmr/m/n/12 da-p-at dikelom-pokkan men-
+ []
+
+
+Overfull \hbox (7.82011pt too wide) in paragraph at lines 280--281
+\T1/lmr/m/n/12 dasar-kan keterkai-tan (co-occurrence) dari item-item dalam se-b
+uah kumpu-
+ []
+
+
+Overfull \hbox (17.02118pt too wide) in paragraph at lines 287--288
+[]\T1/lmr/m/n/12 Dimensionality Re-duc-tion be-rar-ti men-gu-ran-gi se-jum-lah 
+vari-abel dari dataset
+ []
+
+
+Overfull \hbox (4.42372pt too wide) in paragraph at lines 291--292
+[]\T1/lmr/m/n/12 Melakukan trans-for-masi da-ta dari di-men-si ting-gi (a high-
+dimensional
+ []
+
+[30] [31]
+<bab2/Gambar/Picture10.png, id=1088, 398.99063pt x 121.20282pt>
+File: bab2/Gambar/Picture10.png Graphic file (type png)
+<use bab2/Gambar/Picture10.png>
+Package pdftex.def Info: bab2/Gambar/Picture10.png  used on input line 319.
+(pdftex.def)             Requested size: 398.3386pt x 121.01016pt.
+ [32 <./bab2/Gambar/Picture10.png>]
+<bab2/Gambar/Picture11.png, id=1095, 293.59688pt x 145.29282pt>
+File: bab2/Gambar/Picture11.png Graphic file (type png)
+<use bab2/Gambar/Picture11.png>
+Package pdftex.def Info: bab2/Gambar/Picture11.png  used on input line 340.
+(pdftex.def)             Requested size: 398.3386pt x 197.1278pt.
+
+Overfull \hbox (1.16316pt too wide) in paragraph at lines 349--353
+[]\T1/lmr/m/n/12 Menurut R. Sut-ton, pros-es \T1/lmr/m/it/12 re-in-force-ment l
+earn-ing \T1/lmr/m/n/12 da-p-at dipresen-tasikan
+ []
+
+[33 <./bab2/Gambar/Picture11.png>] [34]
+<bab2/Gambar/Picture12.png, id=1110, 287.57437pt x 162.6075pt>
+File: bab2/Gambar/Picture12.png Graphic file (type png)
+<use bab2/Gambar/Picture12.png>
+Package pdftex.def Info: bab2/Gambar/Picture12.png  used on input line 385.
+(pdftex.def)             Requested size: 398.3386pt x 225.24715pt.
+ [35] [36 <./bab2/Gambar/Picture12.png>]
+<bab2/Gambar/Picture13.png, id=1123, 362.85562pt x 216.81pt>
+File: bab2/Gambar/Picture13.png Graphic file (type png)
+<use bab2/Gambar/Picture13.png>
+Package pdftex.def Info: bab2/Gambar/Picture13.png  used on input line 404.
+(pdftex.def)             Requested size: 398.3386pt x 238.01534pt.
+[37 <./bab2/Gambar/Picture13.png>]
+Overfull \hbox (0.69757pt too wide) in paragraph at lines 424--426
+[]\T1/lmr/m/n/12 Contoh pen-er-a-pan masing-masing ar-sitek-tur deep learn-ing 
+da-p-at dipela-
+ []
+
+
+Overfull \hbox (1.62004pt too wide) in paragraph at lines 445--446
+\T1/lmr/m/n/12 pen-je-lasan dan di-a-gram net-work be-ber-a-pa ar-sitek-tur dee
+p learn-ing yang umum. 
+ []
+
+[38]
+<bab2/Gambar/SANDY. dasar telkom.png, id=1144, 570.33075pt x 187.29974pt>
 File: bab2/Gambar/SANDY. dasar telkom.png Graphic file (type png)
 <use bab2/Gambar/SANDY. dasar telkom.png>
 Package pdftex.def Info: bab2/Gambar/SANDY. dasar telkom.png  used on input lin
-e 15.
+e 460.
 (pdftex.def)             Requested size: 358.50229pt x 117.73651pt.
-[18
+ [39 <./bab2/Gambar/SANDY. dasar telkom.png>] [40]
 
- <./bab2/Gambar/SANDY. dasar telkom.png>] [19]
-
-Package natbib Warning: Citation `Baek_2008' on page 20 undefined on input line
- 37.
+Package natbib Warning: Citation `Baek_2008' on page 41 undefined on input line
+ 482.
 
 
-Overfull \hbox (12.30742pt too wide) in paragraph at lines 37--38
+Overfull \hbox (12.30742pt too wide) in paragraph at lines 482--483
 []\T1/lmr/m/it/12 Digital Ter-res-tri-al Mul-ti-me-dia Broad-cast-ing \T1/lmr/m
 /n/12 (DTMB) men-gadop-si teknolo-
  []
 
-<bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg, id=922, 58
-1.17125pt x 407.121pt>
+<bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg, id=1177, 5
+81.17125pt x 407.121pt>
 File: bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg Graphi
 c file (type jpg)
 <use bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg>
 Package pdftex.def Info: bab2/Gambar/Sistem penyiaran digital untuk televisi te
-restrial.jpg  used on input line 44.
+restrial.jpg  used on input line 489.
 (pdftex.def)             Requested size: 398.3386pt x 279.04393pt.
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|\T1/lmr/m/n/12 DVB-T/DVB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 []|\T1/lmr/m/n/12 DVB-T/DVB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
 []|\T1/lmr/m/n/12 DVB-T/DVB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|\T1/lmr/m/n/12 ATSC tri-al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
 []|\T1/lmr/m/n/12 ISDB-T tri-al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 []|\T1/lmr/m/n/12 SBTVD-T
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
 []|\T1/lmr/m/n/12 DTMB tri-al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
 []|\T1/lmr/m/n/12 Commercial
  []
 
-[21 <./bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg>]
-Overfull \hbox (1.00414pt too wide) in paragraph at lines 101--103
+[42 <./bab2/Gambar/Sistem penyiaran digital untuk televisi terestrial.jpg>]
+Overfull \hbox (1.00414pt too wide) in paragraph at lines 546--548
  \T1/lmr/m/n/12 Proyek \T1/lmr/m/it/12 Dig-i-tal Video Broad-cast-ing \T1/lmr/m
 /n/12 (DVB), meru-pakan su-atu badan yang
  []
 
 
-Overfull \hbox (7.74709pt too wide) in paragraph at lines 101--103
+Overfull \hbox (7.74709pt too wide) in paragraph at lines 546--548
 \T1/lmr/m/n/12 bertang-gung jawab un-tuk mem-bu-at spe-si-fikasi DVB dan se-car
 a res-mi diresmikan
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
 []|\T1/lmr/m/n/12 Input In-
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 129--129
+Underfull \hbox (badness 1668) in paragraph at lines 574--574
 []|\T1/lmr/m/n/12 Multiple Trans-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 129--129
+Underfull \hbox (badness 2384) in paragraph at lines 574--574
 \T1/lmr/m/n/12 Gener-ic Stream
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
 \T1/lmr/m/n/12 En-cap-su-la-tion
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 129--129
+Underfull \hbox (badness 1668) in paragraph at lines 574--574
 []|\T1/lmr/m/n/12 Multiple Trans-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 129--129
+Underfull \hbox (badness 2384) in paragraph at lines 574--574
 \T1/lmr/m/n/12 Gener-ic Stream
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
 \T1/lmr/m/n/12 En-cap-su-la-tion
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 129--129
+Underfull \hbox (badness 1668) in paragraph at lines 574--574
 []|\T1/lmr/m/n/12 Multiple Trans-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 129--129
+Underfull \hbox (badness 2384) in paragraph at lines 574--574
 \T1/lmr/m/n/12 Gener-ic Stream
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
 \T1/lmr/m/n/12 En-cap-su-la-tion
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 []|\T1/lmr/m/n/12 1/2, 3/5, 2/3,
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 []|\T1/lmr/m/n/12 1/2, 2/3, 3/4,
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 \T1/lmr/m/n/12 4/5, 5/6, 8/9,
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 []|\T1/lmr/m/n/12 1/4, 1/3, 2/5,
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 \T1/lmr/m/n/12 1/2, 3/5, 2/3,
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 130--130
+Underfull \hbox (badness 2790) in paragraph at lines 575--575
 \T1/lmr/m/n/12 3/4, 4/5, 5/6,
  []
 
 
-Overfull \hbox (3.79875pt too wide) in paragraph at lines 131--131
+Overfull \hbox (3.79875pt too wide) in paragraph at lines 576--576
 []|\T1/lmr/m/n/12 Interleaving| 
  []
 
 
-Overfull \hbox (2.49411pt too wide) in paragraph at lines 132--132
+Overfull \hbox (2.49411pt too wide) in paragraph at lines 577--577
 []|\T1/lmr/m/n/12 Modulation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 \T1/lmr/m/n/12 64QAM,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\T1/lmr/m/n/12 16QAM to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\T1/lmr/m/n/12 QPSK to 8-
  []
 
 
-Overfull \hbox (2.49411pt too wide) in paragraph at lines 133--133
+Overfull \hbox (2.49411pt too wide) in paragraph at lines 578--578
 []|\T1/lmr/m/n/12 Modulation| 
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 134--134
+Underfull \hbox (badness 2318) in paragraph at lines 579--579
 []|\T1/lmr/m/n/12 Guard In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []|\T1/lmr/m/n/12 1/4, 19/256,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 \T1/lmr/m/n/12 1/8, 9/128,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 \T1/lmr/m/n/12 1/16, 1/32,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 \T1/lmr/m/n/12 con-tin-u-al, P2,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 \T1/lmr/m/n/12 con-tin-u-al, P2,
  []
 
-[23] [24]
-<bab2/Gambar/Sistem pemancar DVB-T2.jpg, id=973, 360.59718pt x 89.58469pt>
+[44] [45]
+<bab2/Gambar/Sistem pemancar DVB-T2.jpg, id=1229, 360.59718pt x 89.58469pt>
 File: bab2/Gambar/Sistem pemancar DVB-T2.jpg Graphic file (type jpg)
 <use bab2/Gambar/Sistem pemancar DVB-T2.jpg>
 Package pdftex.def Info: bab2/Gambar/Sistem pemancar DVB-T2.jpg  used on input 
-line 151.
+line 596.
 (pdftex.def)             Requested size: 358.50229pt x 89.06364pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
+Underfull \hbox (badness 10000) in paragraph at lines 613--613
 []|\T1/lmr/m/n/12 Input In-
  []
 
 
-Underfull \hbox (badness 7081) in paragraph at lines 168--168
+Underfull \hbox (badness 7081) in paragraph at lines 613--613
 []|\T1/lmr/m/n/12 Single Trans-port Stream
  []
 
 
-Underfull \hbox (badness 8056) in paragraph at lines 169--169
+Underfull \hbox (badness 8056) in paragraph at lines 614--614
 []|\T1/lmr/m/n/12 Convolutional Cod-ing +
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 169--169
+Underfull \hbox (badness 3557) in paragraph at lines 614--614
 \T1/lmr/m/n/12 Reed-Solomon, 1/2, 2/3,
  []
 
 
-Overfull \hbox (2.49411pt too wide) in paragraph at lines 170--170
+Overfull \hbox (2.49411pt too wide) in paragraph at lines 615--615
 []|\T1/lmr/m/n/12 Modulation
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 170--170
+Underfull \hbox (badness 2158) in paragraph at lines 615--615
 []|\T1/lmr/m/n/12 QPSK, 16QAM, 64QAM,
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 171--171
+Underfull \hbox (badness 2318) in paragraph at lines 616--616
 []|\T1/lmr/m/n/12 Guard In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
 []|\T1/lmr/m/n/12 IFFT
  []
 
-[25 <./bab2/Gambar/Sistem pemancar DVB-T2.jpg>] [26]
-Overfull \hbox (11.3893pt too wide) in paragraph at lines 263--264
+[46 <./bab2/Gambar/Sistem pemancar DVB-T2.jpg>] [47]
+Overfull \hbox (11.3893pt too wide) in paragraph at lines 708--709
 []\T1/lmr/m/n/12 Berikutnya \T1/lmr/m/it/12 Pre-dict-ed frame (P-frame)\T1/lmr/
 m/n/12 , di-enkodekan dari gam-bar dipredik-
  []
 
-[27]
-<bab2/Gambar/H.264 AVC Struktur GOP.jpg, id=1011, 354.57469pt x 154.32657pt>
+[48]
+<bab2/Gambar/H.264 AVC Struktur GOP.jpg, id=1267, 354.57469pt x 154.32657pt>
 File: bab2/Gambar/H.264 AVC Struktur GOP.jpg Graphic file (type jpg)
 <use bab2/Gambar/H.264 AVC Struktur GOP.jpg>
 Package pdftex.def Info: bab2/Gambar/H.264 AVC Struktur GOP.jpg  used on input 
-line 270.
+line 715.
 (pdftex.def)             Requested size: 358.50229pt x 156.04048pt.
- [28 <./bab2/Gambar/H.264 AVC Struktur GOP.jpg>] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 298--302
+ [49 <./bab2/Gambar/H.264 AVC Struktur GOP.jpg>] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 743--747
 
  []
 
 
-Overfull \hbox (0.16339pt too wide) in paragraph at lines 304--305
+Overfull \hbox (0.16339pt too wide) in paragraph at lines 749--750
  \T1/lmr/m/n/12 Keku-atan sinyal atau \T1/lmr/m/it/12 sig-nal strength \T1/lmr/
 m/n/12 be-rar-ti uku-ran se-ber-a-pa ku-at sinyal
  []
 
-[30]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-07.
- (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 320--324
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 765--769
 
  []
 
-[31{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiK
-TeX/fonts/enc/dvips/lm/lm-mathex.enc}] [32]
-<bab2/Gambar/Contoh gambar dari Basis Data.jpg, id=1102, 526.96875pt x 410.7345
+[52] [53]
+<bab2/Gambar/Contoh gambar dari Basis Data.jpg, id=1355, 526.96875pt x 410.7345
 pt>
 File: bab2/Gambar/Contoh gambar dari Basis Data.jpg Graphic file (type jpg)
 <use bab2/Gambar/Contoh gambar dari Basis Data.jpg>
 Package pdftex.def Info: bab2/Gambar/Contoh gambar dari Basis Data.jpg  used on
- input line 337.
+ input line 782.
 (pdftex.def)             Requested size: 358.50229pt x 279.43991pt.
- [33] [34 <./bab2/Gambar/Contoh gambar dari Basis Data.jpg>]
-Overfull \hbox (1.44212pt too wide) in paragraph at lines 358--359
+ [54] [55 <./bab2/Gambar/Contoh gambar dari Basis Data.jpg>]
+Overfull \hbox (1.44212pt too wide) in paragraph at lines 803--804
 \T1/lmr/m/n/12 kuan-ti-sasi kasar kom-po-nen frekuen-si. Arte-fak ini da-p-at d
 ia-mati se-ba-gai diskon-
  []
 
-[35]
+[56]
 <bab2/Gambar/Contoh gambar asli Lena dan versi terdistorsinya dengan artefak pe
-mblokiran.jpg, id=1135, 346.896pt x 163.20975pt>
+mblokiran.jpg, id=1389, 346.896pt x 163.20975pt>
 File: bab2/Gambar/Contoh gambar asli Lena dan versi terdistorsinya dengan artef
 ak pemblokiran.jpg Graphic file (type jpg)
 <use bab2/Gambar/Contoh gambar asli Lena dan versi terdistorsinya dengan artefa
 k pemblokiran.jpg>
 Package pdftex.def Info: bab2/Gambar/Contoh gambar asli Lena dan versi terdisto
-rsinya dengan artefak pemblokiran.jpg  used on input line 365.
+rsinya dengan artefak pemblokiran.jpg  used on input line 810.
 (pdftex.def)             Requested size: 358.50229pt x 168.67819pt.
- [36 <./bab2/Gambar/Contoh gambar asli Lena dan versi terdistorsinya dengan art
+ [57 <./bab2/Gambar/Contoh gambar asli Lena dan versi terdistorsinya dengan art
 efak pemblokiran.jpg>]
 <bab2/Gambar/Contoh video yang terganggu oleh pembekuan frame temporal. Setiap 
-huruf yang berbeda mewakili frame yang unik.jpg, id=1148, 365.56575pt x 48.7822
+huruf yang berbeda mewakili frame yang unik.jpg, id=1402, 365.56575pt x 48.7822
 6pt>
 File: bab2/Gambar/Contoh video yang terganggu oleh pembekuan frame temporal. Se
 tiap huruf yang berbeda mewakili frame yang unik.jpg Graphic file (type jpg)
@@ -1874,161 +2036,167 @@ tiap huruf yang berbeda mewakili frame yang unik.jpg Graphic file (type jpg)
 iap huruf yang berbeda mewakili frame yang unik.jpg>
 Package pdftex.def Info: bab2/Gambar/Contoh video yang terganggu oleh pembekuan
  frame temporal. Setiap huruf yang berbeda mewakili frame yang unik.jpg  used o
-n input line 396.
+n input line 841.
 (pdftex.def)             Requested size: 358.50229pt x 47.83975pt.
- [37] [38 <./bab2/Gambar/Contoh video yang terganggu oleh pembekuan frame tempo
+ [58] [59 <./bab2/Gambar/Contoh video yang terganggu oleh pembekuan frame tempo
 ral. Setiap huruf yang berbeda mewakili frame yang unik.jpg>]
-<bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg, id=1165, 3
+<bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg, id=1418, 3
 37.86224pt x 152.36925pt>
 File: bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg Graphi
 c file (type jpg)
 <use bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg>
 Package pdftex.def Info: bab2/Gambar/Struktur otak manusia dengan kemampuan ope
-rasional.jpg  used on input line 416.
+rasional.jpg  used on input line 861.
 (pdftex.def)             Requested size: 358.50229pt x 161.685pt.
- [39]
-Overfull \hbox (4.55907pt too wide) in paragraph at lines 433--434
+
+Underfull \hbox (badness 1515) in paragraph at lines 865--865
+[]\T1/lmr/m/n/12 Gambar 2.21: |Struk-tur otak manu-sia den-gan ke-mam-puan op-e
+ra-sion-al
+ []
+
+[60]
+Overfull \hbox (4.55907pt too wide) in paragraph at lines 878--879
 \T1/lmr/m/n/12 ka peng-gu-na mem-biarkan neu-ron berpikir ten-tang situ-asi bar
 u den-gan mengiku-
  []
 
-[40 <./bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 441--446
+[61 <./bab2/Gambar/Struktur otak manusia dengan kemampuan operasional.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 886--891
 
  []
 
-<bab2/Gambar/Fungsi Sigmoid.jpg, id=1180, 498.06075pt x 320.99925pt>
+<bab2/Gambar/Fungsi Sigmoid.jpg, id=1434, 498.06075pt x 320.99925pt>
 File: bab2/Gambar/Fungsi Sigmoid.jpg Graphic file (type jpg)
 <use bab2/Gambar/Fungsi Sigmoid.jpg>
-Package pdftex.def Info: bab2/Gambar/Fungsi Sigmoid.jpg  used on input line 469
+Package pdftex.def Info: bab2/Gambar/Fungsi Sigmoid.jpg  used on input line 914
 .
 (pdftex.def)             Requested size: 358.50229pt x 231.0654pt.
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 486--490
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 931--935
 
  []
 
-<bab2/Gambar/Langkah training ANN.jpg, id=1190, 242.1045pt x 133.6995pt>
+<bab2/Gambar/Langkah training ANN.jpg, id=1444, 242.1045pt x 133.6995pt>
 File: bab2/Gambar/Langkah training ANN.jpg Graphic file (type jpg)
 <use bab2/Gambar/Langkah training ANN.jpg>
 Package pdftex.def Info: bab2/Gambar/Langkah training ANN.jpg  used on input li
-ne 496.
+ne 941.
 (pdftex.def)             Requested size: 358.50229pt x 197.98637pt.
-[42 <./bab2/Gambar/Fungsi Sigmoid.jpg>] [43 <./bab2/Gambar/Langkah training ANN
+[63 <./bab2/Gambar/Fungsi Sigmoid.jpg>] [64 <./bab2/Gambar/Langkah training ANN
 .jpg>]
-<bab2/Gambar/tvheadend.png, id=1209, 1927.2pt x 1084.05pt>
+<bab2/Gambar/tvheadend.png, id=1462, 1927.2pt x 1084.05pt>
 File: bab2/Gambar/tvheadend.png Graphic file (type png)
 <use bab2/Gambar/tvheadend.png>
-Package pdftex.def Info: bab2/Gambar/tvheadend.png  used on input line 538.
+Package pdftex.def Info: bab2/Gambar/tvheadend.png  used on input line 983.
 (pdftex.def)             Requested size: 398.3386pt x 224.05122pt.
- [44]
-Overfull \hbox (3.49345pt too wide) in paragraph at lines 550--552
+ [65]
+Overfull \hbox (3.49345pt too wide) in paragraph at lines 995--997
 \T1/lmr/m/n/12 ni-lai. Pe-do-man ini dikem-bangkan oleh In-ter-na-tion-al Telec
 om-mu-ni-ca-tion Union-
  []
 
-[45 <./bab2/Gambar/tvheadend.png>] [46] [47] [48] [49])
-(bab3/Bab3_Metodologi.tex [50]
+[66 <./bab2/Gambar/tvheadend.png>] [67] [68] [69] [70])
+(bab3/Bab3_Metodologi.tex [71]
 BAB III\bfseries .
-[51
+[72
 
 ]
-<bab3/Gambar/tahapan-penelitian2-1.png, id=1265, 693.59125pt x 673.51625pt>
+<bab3/Gambar/tahapan-penelitian2-1.png, id=1519, 693.59125pt x 673.51625pt>
 File: bab3/Gambar/tahapan-penelitian2-1.png Graphic file (type png)
 <use bab3/Gambar/tahapan-penelitian2-1.png>
 Package pdftex.def Info: bab3/Gambar/tahapan-penelitian2-1.png  used on input l
 ine 17.
 (pdftex.def)             Requested size: 398.3386pt x 386.81665pt.
- [52 <./bab3/Gambar/tahapan-penelitian2-1.png>] [53]
-<bab3/Gambar/gambar-tvriw.png, id=1276, 886.31125pt x 510.90875pt>
+ [73 <./bab3/Gambar/tahapan-penelitian2-1.png>] [74]
+<bab3/Gambar/gambar-tvriw.png, id=1530, 886.31125pt x 510.90875pt>
 File: bab3/Gambar/gambar-tvriw.png Graphic file (type png)
 <use bab3/Gambar/gambar-tvriw.png>
 Package pdftex.def Info: bab3/Gambar/gambar-tvriw.png  used on input line 42.
 (pdftex.def)             Requested size: 398.3386pt x 229.62616pt.
- [54 <./bab3/Gambar/gambar-tvriw.png>]
+ [75 <./bab3/Gambar/gambar-tvriw.png>]
 Overfull \hbox (8.97258pt too wide) in paragraph at lines 59--60
 \T1/lmr/m/n/12 ber-ry pi TV HAT \T1/lmr/m/it/12 (Hard-ware At-tach on Top) \T1/
 lmr/m/n/12 den-gan Tuner Sony CXD2880,
  []
 
-[55]
-<bab3/Gambar/fokus-penelitian.png, id=1288, 804.00375pt x 412.54124pt>
+[76]
+<bab3/Gambar/fokus-penelitian.png, id=1541, 804.00375pt x 412.54124pt>
 File: bab3/Gambar/fokus-penelitian.png Graphic file (type png)
 <use bab3/Gambar/fokus-penelitian.png>
 Package pdftex.def Info: bab3/Gambar/fokus-penelitian.png  used on input line 8
 7.
 (pdftex.def)             Requested size: 398.3386pt x 204.38794pt.
- [56 <./bab3/Gambar/fokus-penelitian.png>]
-<bab3/Gambar/rancangan-sistem.png, id=1295, 1098.1025pt x 377.41pt>
+ [77 <./bab3/Gambar/fokus-penelitian.png>]
+<bab3/Gambar/rancangan-sistem.png, id=1548, 1098.1025pt x 377.41pt>
 File: bab3/Gambar/rancangan-sistem.png Graphic file (type png)
 <use bab3/Gambar/rancangan-sistem.png>
 Package pdftex.def Info: bab3/Gambar/rancangan-sistem.png  used on input line 1
 07.
 (pdftex.def)             Requested size: 398.3386pt x 136.90407pt.
- [57 <./bab3/Gambar/rancangan-sistem.png>] [58]
-<bab3/Gambar/gambar-blocking.png, id=1306, 875.27pt x 343.2825pt>
+ [78 <./bab3/Gambar/rancangan-sistem.png>] [79]
+<bab3/Gambar/gambar-blocking.png, id=1560, 875.27pt x 343.2825pt>
 File: bab3/Gambar/gambar-blocking.png Graphic file (type png)
 <use bab3/Gambar/gambar-blocking.png>
 Package pdftex.def Info: bab3/Gambar/gambar-blocking.png  used on input line 13
 7.
 (pdftex.def)             Requested size: 398.3386pt x 156.23044pt.
- [59 <./bab3/Gambar/gambar-blocking.png>] [60] [61]
-<bab3/Gambar/lena-blur.png, id=1333, 964.60374pt x 638.385pt>
+ [80 <./bab3/Gambar/gambar-blocking.png>] [81] [82]
+<bab3/Gambar/lena-blur.png, id=1586, 964.60374pt x 638.385pt>
 File: bab3/Gambar/lena-blur.png Graphic file (type png)
 <use bab3/Gambar/lena-blur.png>
 Package pdftex.def Info: bab3/Gambar/lena-blur.png  used on input line 226.
 (pdftex.def)             Requested size: 318.67209pt x 210.90147pt.
- [62] [63 <./bab3/Gambar/lena-blur.png>]
-<bab3/Gambar/lenna-edge.png, id=1355, 698.61pt x 685.56125pt>
+ [83] [84 <./bab3/Gambar/lena-blur.png>]
+<bab3/Gambar/lenna-edge.png, id=1609, 698.61pt x 685.56125pt>
 File: bab3/Gambar/lenna-edge.png Graphic file (type png)
 <use bab3/Gambar/lenna-edge.png>
 Package pdftex.def Info: bab3/Gambar/lenna-edge.png  used on input line 263.
 (pdftex.def)             Requested size: 318.67209pt x 312.72588pt.
- [64 <./bab3/Gambar/lenna-edge.png>]
+ [85 <./bab3/Gambar/lenna-edge.png>]
 
-LaTeX Warning: Reference `diagram-blur' on page 65 undefined on input line 273.
+LaTeX Warning: Reference `diagram-blur' on page 86 undefined on input line 273.
 
 
-<bab3/Gambar/algoritma-blur.png, id=1363, 560.0925pt x 783.92876pt>
+<bab3/Gambar/algoritma-blur.png, id=1617, 560.0925pt x 783.92876pt>
 File: bab3/Gambar/algoritma-blur.png Graphic file (type png)
 <use bab3/Gambar/algoritma-blur.png>
 Package pdftex.def Info: bab3/Gambar/algoritma-blur.png  used on input line 280
 .
 (pdftex.def)             Requested size: 239.00558pt x 334.52298pt.
-[65 <./bab3/Gambar/algoritma-blur.png>]
+[86 <./bab3/Gambar/algoritma-blur.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 314--325
 
  []
 
-[66] [67] [68] [69] [70] [71] [72]
-<bab3/Gambar/structure-tes.png, id=1432, 529.98pt x 173.64874pt>
+[87] [88] [89] [90] [91] [92] [93]
+<bab3/Gambar/structure-tes.png, id=1686, 529.98pt x 173.64874pt>
 File: bab3/Gambar/structure-tes.png Graphic file (type png)
 <use bab3/Gambar/structure-tes.png>
 Package pdftex.def Info: bab3/Gambar/structure-tes.png  used on input line 439.
 
 (pdftex.def)             Requested size: 398.3386pt x 130.51709pt.
- [73 <./bab3/Gambar/structure-tes.png>]
-<bab3/Gambar/midgrey-time.png, id=1440, 1138.2525pt x 334.24875pt>
+ [94 <./bab3/Gambar/structure-tes.png>]
+<bab3/Gambar/midgrey-time.png, id=1693, 1138.2525pt x 334.24875pt>
 File: bab3/Gambar/midgrey-time.png Graphic file (type png)
 <use bab3/Gambar/midgrey-time.png>
 Package pdftex.def Info: bab3/Gambar/midgrey-time.png  used on input line 456.
 (pdftex.def)             Requested size: 398.3386pt x 116.97351pt.
 
-[74 <./bab3/Gambar/midgrey-time.png>]
+[95 <./bab3/Gambar/midgrey-time.png>]
 Overfull \hbox (2.01212pt too wide) in paragraph at lines 487--488
 \T1/lmr/m/n/12 menya-jikan hasil pen-gu-jian, se-mua skor rata-rata harus memi-
 li-ki in-ter-val keper-
  []
 
-[75]
-<bab3/Gambar/single_stimulus.png, id=1457, 963.6pt x 542.025pt>
+[96]
+<bab3/Gambar/single_stimulus.png, id=1711, 963.6pt x 542.025pt>
 File: bab3/Gambar/single_stimulus.png Graphic file (type png)
 <use bab3/Gambar/single_stimulus.png>
 Package pdftex.def Info: bab3/Gambar/single_stimulus.png  used on input line 52
 4.
 (pdftex.def)             Requested size: 398.3386pt x 224.0595pt.
- [76] [77 <./bab3/Gambar/single_stimulus.png>]
-<bab3/Gambar/tahap-nn.png, id=1468, 954.56625pt x 422.57875pt>
+ [97] [98 <./bab3/Gambar/single_stimulus.png>]
+<bab3/Gambar/tahap-nn.png, id=1722, 954.56625pt x 422.57875pt>
 File: bab3/Gambar/tahap-nn.png Graphic file (type png)
 <use bab3/Gambar/tahap-nn.png>
 Package pdftex.def Info: bab3/Gambar/tahap-nn.png  used on input line 546.
@@ -2045,86 +2213,87 @@ Overfull \hbox (4.65054pt too wide) in paragraph at lines 557--558
 el: Langkah
  []
 
-[78 <./bab3/Gambar/tahap-nn.png>]
+[99 <./bab3/Gambar/tahap-nn.png>]
 Overfull \hbox (8.6598pt too wide) in paragraph at lines 565--566
 []\T1/lmr/m/n/12 Mengatur hy-per-pa-ram-e-ter: Hy-per-pa-ram-e-ter adalah pa-ra
 m-e-ter yang diatur
  []
 
-<bab3/Gambar/langkah-model.png, id=1479, 994.71625pt x 270.00874pt>
+<bab3/Gambar/langkah-model.png, id=1733, 994.71625pt x 270.00874pt>
 File: bab3/Gambar/langkah-model.png Graphic file (type png)
 <use bab3/Gambar/langkah-model.png>
 Package pdftex.def Info: bab3/Gambar/langkah-model.png  used on input line 581.
 
 (pdftex.def)             Requested size: 398.3386pt x 108.12517pt.
-[79] [80 <./bab3/Gambar/langkah-model.png>]
-<bab3/Gambar/mc-cm.png, id=1498, 618.31pt x 520.94624pt>
+[100] [101 <./bab3/Gambar/langkah-model.png>]
+<bab3/Gambar/mc-cm.png, id=1751, 618.31pt x 520.94624pt>
 File: bab3/Gambar/mc-cm.png Graphic file (type png)
 <use bab3/Gambar/mc-cm.png>
 Package pdftex.def Info: bab3/Gambar/mc-cm.png  used on input line 615.
 (pdftex.def)             Requested size: 199.1693pt x 167.80316pt.
- [81] [82 <./bab3/Gambar/mc-cm.png>] [83] [84] [85]
-<bab3/Gambar/realtime-measurement.png, id=1543, 350.30875pt x 722.7pt>
+ [102] [103 <./bab3/Gambar/mc-cm.png>] [104] [105] [106]
+<bab3/Gambar/realtime-measurement.png, id=1796, 350.30875pt x 722.7pt>
 File: bab3/Gambar/realtime-measurement.png Graphic file (type png)
 <use bab3/Gambar/realtime-measurement.png>
 Package pdftex.def Info: bab3/Gambar/realtime-measurement.png  used on input li
 ne 750.
 (pdftex.def)             Requested size: 239.00558pt x 493.08362pt.
- [86] [87 <./bab3/Gambar/realtime-measurement.png>]
-<bab3/Gambar/pembuatan-web.png, id=1555, 482.80376pt x 309.155pt>
+ [107] [108 <./bab3/Gambar/realtime-measurement.png>]
+<bab3/Gambar/pembuatan-web.png, id=1809, 482.80376pt x 309.155pt>
 File: bab3/Gambar/pembuatan-web.png Graphic file (type png)
 <use bab3/Gambar/pembuatan-web.png>
 Package pdftex.def Info: bab3/Gambar/pembuatan-web.png  used on input line 771.
 
 (pdftex.def)             Requested size: 318.67209pt x 204.06178pt.
- [88]
+
+[109]
 Overfull \hbox (10.38882pt too wide) in paragraph at lines 780--781
 \T1/lmr/m/n/12 diper-lukan dalam ap-likasi. Anal-i-sis ke-bu-tuhan di-lakukan d
 en-gan mengumpulkan
  []
 
-[89 <./bab3/Gambar/pembuatan-web.png>]
+[110 <./bab3/Gambar/pembuatan-web.png>]
 Overfull \hbox (0.53424pt too wide) in paragraph at lines 786--787
 \T1/lmr/m/n/12 Penerapan hasil pe-ngu-kur-an kual-i-tas gam-bar pa-da siaran DV
 B-T2 di-ta-mpilkan
  []
 
-<bab3/Gambar/web-arsitektur.png, id=1566, 522.95375pt x 363.3575pt>
+<bab3/Gambar/web-arsitektur.png, id=1820, 522.95375pt x 363.3575pt>
 File: bab3/Gambar/web-arsitektur.png Graphic file (type png)
 <use bab3/Gambar/web-arsitektur.png>
 Package pdftex.def Info: bab3/Gambar/web-arsitektur.png  used on input line 793
 .
 (pdftex.def)             Requested size: 318.67209pt x 221.42043pt.
-[90 <./bab3/Gambar/web-arsitektur.png>]) (bab4/Bab4_HasilDiskusi.tex [91]
+[111 <./bab3/Gambar/web-arsitektur.png>]) (bab4/Bab4_HasilDiskusi.tex [112]
 BAB IV\bfseries .
-<bab4/Gambar/hardware-setup.png, id=1578, 627.216pt x 545.967pt>
+<bab4/Gambar/hardware-setup.png, id=1831, 627.216pt x 545.967pt>
 File: bab4/Gambar/hardware-setup.png Graphic file (type png)
 <use bab4/Gambar/hardware-setup.png>
 Package pdftex.def Info: bab4/Gambar/hardware-setup.png  used on input line 17.
 
 (pdftex.def)             Requested size: 358.50229pt x 312.07082pt.
-[92
+[113
 
 ]
-<bab4/Gambar/tiny-sa.png, id=1584, 603.25375pt x 461.725pt>
+<bab4/Gambar/tiny-sa.png, id=1837, 603.25375pt x 461.725pt>
 File: bab4/Gambar/tiny-sa.png Graphic file (type png)
 <use bab4/Gambar/tiny-sa.png>
 Package pdftex.def Info: bab4/Gambar/tiny-sa.png  used on input line 33.
 (pdftex.def)             Requested size: 239.00558pt x 182.93243pt.
- [93 <./bab4/Gambar/hardware-setup.png>]
-<bab4/Gambar/antenna-5000.png, id=1591, 503.7pt x 411.501pt>
+ [114 <./bab4/Gambar/hardware-setup.png>]
+<bab4/Gambar/antenna-5000.png, id=1845, 503.7pt x 411.501pt>
 File: bab4/Gambar/antenna-5000.png Graphic file (type png)
 <use bab4/Gambar/antenna-5000.png>
 Package pdftex.def Info: bab4/Gambar/antenna-5000.png  used on input line 49.
 (pdftex.def)             Requested size: 239.00558pt x 195.2578pt.
- [94 <./bab4/Gambar/tiny-sa.png> <./bab4/Gambar/antenna-5000.png>]
-<bab4/Gambar/tvheadend-record.png, id=1599, 1223.57124pt x 531.9875pt>
+ [115 <./bab4/Gambar/tiny-sa.png> <./bab4/Gambar/antenna-5000.png>]
+<bab4/Gambar/tvheadend-record.png, id=1853, 1223.57124pt x 531.9875pt>
 File: bab4/Gambar/tvheadend-record.png Graphic file (type png)
 <use bab4/Gambar/tvheadend-record.png>
 Package pdftex.def Info: bab4/Gambar/tvheadend-record.png  used on input line 6
 5.
 (pdftex.def)             Requested size: 398.3386pt x 173.18611pt.
- [95 <./bab4/Gambar/tvheadend-record.png>]
+ [116 <./bab4/Gambar/tvheadend-record.png>]
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -2132,30 +2301,30 @@ Overfull \hbox (9.13466pt too wide) in paragraph at lines 102--110
  [][] 
  []
 
-[96]
-<bab4/Gambar/jarak-pemancar.png, id=1623, 746.79pt x 540.93pt>
+[117]
+<bab4/Gambar/jarak-pemancar.png, id=1877, 746.79pt x 540.93pt>
 File: bab4/Gambar/jarak-pemancar.png Graphic file (type png)
 <use bab4/Gambar/jarak-pemancar.png>
 Package pdftex.def Info: bab4/Gambar/jarak-pemancar.png  used on input line 119
 .
 (pdftex.def)             Requested size: 398.3386pt x 288.53215pt.
- [97 <./bab4/Gambar/jarak-pemancar.png>]
-<bab4/Gambar/hires-img.png, id=1633, 1110.1475pt x 646.415pt>
+ [118 <./bab4/Gambar/jarak-pemancar.png>]
+<bab4/Gambar/hires-img.png, id=1886, 1110.1475pt x 646.415pt>
 File: bab4/Gambar/hires-img.png Graphic file (type png)
 <use bab4/Gambar/hires-img.png>
 Package pdftex.def Info: bab4/Gambar/hires-img.png  used on input line 144.
 (pdftex.def)             Requested size: 398.3386pt x 231.93987pt.
- [98 <./bab4/Gambar/hires-img.png>]
+ [119 <./bab4/Gambar/hires-img.png>]
 Overfull \hbox (5.63506pt too wide) in paragraph at lines 176--178
   \T1/lmr/m/n/12 Pros-es pe-ngu-kur-an kual-i-tas video se-cara obyek-tif, di-g
 u-nakan tiga metrik.
  []
 
-[99]
+[120]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 185.
- [100]
-<bab4/Gambar/blok-score.png, id=1654, 895.345pt x 1083.04625pt>
+ [121]
+<bab4/Gambar/blok-score.png, id=1908, 895.345pt x 1083.04625pt>
 File: bab4/Gambar/blok-score.png Graphic file (type png)
 <use bab4/Gambar/blok-score.png>
 Package pdftex.def Info: bab4/Gambar/blok-score.png  used on input line 216.
@@ -2166,76 +2335,76 @@ Overfull \hbox (13.37103pt too wide) in paragraph at lines 225--226
 ang su-dah diberikan
  []
 
-<bab4/Gambar/sample-blok.png, id=1656, 1170.3725pt x 1063.975pt>
+<bab4/Gambar/sample-blok.png, id=1910, 1170.3725pt x 1063.975pt>
 File: bab4/Gambar/sample-blok.png Graphic file (type png)
 <use bab4/Gambar/sample-blok.png>
 Package pdftex.def Info: bab4/Gambar/sample-blok.png  used on input line 233.
 (pdftex.def)             Requested size: 398.3386pt x 362.12012pt.
-[101 <./bab4/Gambar/blok-score.png>] [102 <./bab4/Gambar/sample-blok.png>]
-<bab4/Gambar/blur-score.png, id=1669, 895.345pt x 1080.035pt>
+[122 <./bab4/Gambar/blok-score.png>] [123 <./bab4/Gambar/sample-blok.png>]
+<bab4/Gambar/blur-score.png, id=1923, 895.345pt x 1080.035pt>
 File: bab4/Gambar/blur-score.png Graphic file (type png)
 <use bab4/Gambar/blur-score.png>
 Package pdftex.def Info: bab4/Gambar/blur-score.png  used on input line 288.
 (pdftex.def)             Requested size: 318.67209pt x 384.41216pt.
 
-[103]
+[124]
 Overfull \vbox (14.80013pt too high) has occurred while \output is active []
 
 
-[104 <./bab4/Gambar/blur-score.png>]
+[125 <./bab4/Gambar/blur-score.png>]
 Overfull \hbox (13.37103pt too wide) in paragraph at lines 297--298
 \T1/lmr/m/n/12 siaran, sedan-gkan ci-tra pa-da bagian bawah meru-pakan ci-tra y
 ang su-dah diberikan
  []
 
-<bab4/Gambar/sample-blur.png, id=1681, 1170.3725pt x 1063.975pt>
+<bab4/Gambar/sample-blur.png, id=1934, 1170.3725pt x 1063.975pt>
 File: bab4/Gambar/sample-blur.png Graphic file (type png)
 <use bab4/Gambar/sample-blur.png>
 Package pdftex.def Info: bab4/Gambar/sample-blur.png  used on input line 304.
 (pdftex.def)             Requested size: 398.3386pt x 362.12012pt.
-[105 <./bab4/Gambar/sample-blur.png>] [106]
-<bab4/Gambar/temporal-score.png, id=1692, 1170.3725pt x 689.57625pt>
+[126 <./bab4/Gambar/sample-blur.png>] [127]
+<bab4/Gambar/temporal-score.png, id=1946, 1170.3725pt x 689.57625pt>
 File: bab4/Gambar/temporal-score.png Graphic file (type png)
 <use bab4/Gambar/temporal-score.png>
 Package pdftex.def Info: bab4/Gambar/temporal-score.png  used on input line 353
 .
 (pdftex.def)             Requested size: 398.3386pt x 234.69482pt.
- [107 <./bab4/Gambar/temporal-score.png>] [108]
-<bab4/Gambar/sample-freeze4.png, id=1706, 1401.235pt x 1061.9675pt>
+ [128 <./bab4/Gambar/temporal-score.png>] [129]
+<bab4/Gambar/sample-freeze4.png, id=1960, 1401.235pt x 1061.9675pt>
 File: bab4/Gambar/sample-freeze4.png Graphic file (type png)
 <use bab4/Gambar/sample-freeze4.png>
 Package pdftex.def Info: bab4/Gambar/sample-freeze4.png  used on input line 401
 .
 (pdftex.def)             Requested size: 398.3386pt x 301.88608pt.
- [109 <./bab4/Gambar/sample-freeze4.png>]
-<bab4/Gambar/sample-freeze3.png, id=1716, 1401.235pt x 1061.9675pt>
+ [130 <./bab4/Gambar/sample-freeze4.png>]
+<bab4/Gambar/sample-freeze3.png, id=1969, 1401.235pt x 1061.9675pt>
 File: bab4/Gambar/sample-freeze3.png Graphic file (type png)
 <use bab4/Gambar/sample-freeze3.png>
 Package pdftex.def Info: bab4/Gambar/sample-freeze3.png  used on input line 446
 .
 (pdftex.def)             Requested size: 398.3386pt x 301.88608pt.
- [110]
+ [131]
 Overfull \hbox (1.18335pt too wide) in paragraph at lines 458--460
 \T1/lmr/m/n/12 pan se-lan-jut-nya akan di-gu-nakan un-tuk me-lakukan pe-ngu-kur
 -an sub-yek-tif. Keti-
  []
 
-[111 <./bab4/Gambar/sample-freeze3.png>] [112] [113]
-<bab4/Gambar/aplikasi-tes.png, id=1737, 868.116pt x 542.025pt>
+[132 <./bab4/Gambar/sample-freeze3.png>] [133] [134]
+<bab4/Gambar/aplikasi-tes.png, id=1991, 868.116pt x 542.025pt>
 File: bab4/Gambar/aplikasi-tes.png Graphic file (type png)
 <use bab4/Gambar/aplikasi-tes.png>
 Package pdftex.def Info: bab4/Gambar/aplikasi-tes.png  used on input line 512.
 (pdftex.def)             Requested size: 398.3386pt x 248.71422pt.
- [114]
-<bab4/Gambar/aplikasi-admin.png, id=1744, 1798.72pt x 1124.2pt>
+ [135]
+<bab4/Gambar/aplikasi-admin.png, id=1998, 1798.72pt x 1124.2pt>
 File: bab4/Gambar/aplikasi-admin.png Graphic file (type png)
 <use bab4/Gambar/aplikasi-admin.png>
 Package pdftex.def Info: bab4/Gambar/aplikasi-admin.png  used on input line 528
 .
 (pdftex.def)             Requested size: 398.3386pt x 248.95438pt.
- [115 <./bab4/Gambar/aplikasi-tes.png>]
+ [136 <./bab4/Gambar/aplikasi-tes.png>]
 
-LaTeX Warning: Reference `' on page 116 undefined on input line 541.
+LaTeX Warning: Reference `' on page 137 undefined on input line 541.
 
 
 Overfull \hbox (9.91393pt too wide) in paragraph at lines 540--542
@@ -2247,37 +2416,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 552.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 552.
-[116 <./bab4/Gambar/aplikasi-admin.png>]
-<bab4/Gambar/sebaran-tes.png, id=1757, 947.54pt x 552.0625pt>
+[137 <./bab4/Gambar/aplikasi-admin.png>]
+<bab4/Gambar/sebaran-tes.png, id=2010, 947.54pt x 552.0625pt>
 File: bab4/Gambar/sebaran-tes.png Graphic file (type png)
 <use bab4/Gambar/sebaran-tes.png>
 Package pdftex.def Info: bab4/Gambar/sebaran-tes.png  used on input line 593.
 (pdftex.def)             Requested size: 398.3386pt x 232.08368pt.
- [117]
-<bab4/Gambar/sort-tes.png, id=1763, 937.5025pt x 552.0625pt>
+ [138]
+<bab4/Gambar/sort-tes.png, id=2017, 937.5025pt x 552.0625pt>
 File: bab4/Gambar/sort-tes.png Graphic file (type png)
 <use bab4/Gambar/sort-tes.png>
 Package pdftex.def Info: bab4/Gambar/sort-tes.png  used on input line 607.
 (pdftex.def)             Requested size: 398.3386pt x 234.56027pt.
-<bab4/Gambar/var-tes.png, id=1764, 947.54pt x 552.0625pt>
+<bab4/Gambar/var-tes.png, id=2018, 947.54pt x 552.0625pt>
 File: bab4/Gambar/var-tes.png Graphic file (type png)
 <use bab4/Gambar/var-tes.png>
 Package pdftex.def Info: bab4/Gambar/var-tes.png  used on input line 621.
 (pdftex.def)             Requested size: 398.3386pt x 232.08368pt.
- [118 <./bab4/Gambar/sebaran-tes.png> <./bab4/Gambar/sort-tes.png>] [119 <./bab
+ [139 <./bab4/Gambar/sebaran-tes.png> <./bab4/Gambar/sort-tes.png>] [140 <./bab
 4/Gambar/var-tes.png>]
 Overfull \hbox (2.79759pt too wide) in paragraph at lines 662--664
   \T1/lmr/m/n/12 Ter-da-p-at 100 dataset beru-pa skor dari pe-ngu-kur-an meng-g
 u-nakan metrik
  []
 
-[120]
-<bab4/Gambar/mos-blok.png, id=1785, 947.54pt x 536.0025pt>
+[141]
+<bab4/Gambar/mos-blok.png, id=2039, 947.54pt x 536.0025pt>
 File: bab4/Gambar/mos-blok.png Graphic file (type png)
 <use bab4/Gambar/mos-blok.png>
 Package pdftex.def Info: bab4/Gambar/mos-blok.png  used on input line 715.
 (pdftex.def)             Requested size: 398.3386pt x 225.33215pt.
-<bab4/Gambar/mos-blur.png, id=1786, 947.54pt x 536.0025pt>
+<bab4/Gambar/mos-blur.png, id=2040, 947.54pt x 536.0025pt>
 File: bab4/Gambar/mos-blur.png Graphic file (type png)
 <use bab4/Gambar/mos-blur.png>
 Package pdftex.def Info: bab4/Gambar/mos-blur.png  used on input line 717.
@@ -2287,13 +2456,13 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 714--720
  [] 
  []
 
-[121]
-<bab4/Gambar/mos-temp.png, id=1792, 947.54pt x 536.0025pt>
+[142]
+<bab4/Gambar/mos-temp.png, id=2045, 947.54pt x 536.0025pt>
 File: bab4/Gambar/mos-temp.png Graphic file (type png)
 <use bab4/Gambar/mos-temp.png>
 Package pdftex.def Info: bab4/Gambar/mos-temp.png  used on input line 732.
 (pdftex.def)             Requested size: 398.3386pt x 225.33215pt.
-<bab4/Gambar/mos-grad.png, id=1793, 947.54pt x 536.0025pt>
+<bab4/Gambar/mos-grad.png, id=2046, 947.54pt x 536.0025pt>
 File: bab4/Gambar/mos-grad.png Graphic file (type png)
 <use bab4/Gambar/mos-grad.png>
 Package pdftex.def Info: bab4/Gambar/mos-grad.png  used on input line 734.
@@ -2303,26 +2472,26 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 731--737
  [] 
  []
 
-[122 <./bab4/Gambar/mos-blok.png> <./bab4/Gambar/mos-blur.png>] [123 <./bab4/Ga
-mbar/mos-temp.png> <./bab4/Gambar/mos-grad.png>] [124]
-<bab4/Gambar/diagram-regresi.png, id=1812, 951.555pt x 540.0175pt>
+[143 <./bab4/Gambar/mos-blok.png> <./bab4/Gambar/mos-blur.png>] [144 <./bab4/Ga
+mbar/mos-temp.png> <./bab4/Gambar/mos-grad.png>] [145]
+<bab4/Gambar/diagram-regresi.png, id=2066, 951.555pt x 540.0175pt>
 File: bab4/Gambar/diagram-regresi.png Graphic file (type png)
 <use bab4/Gambar/diagram-regresi.png>
 Package pdftex.def Info: bab4/Gambar/diagram-regresi.png  used on input line 84
 5.
 (pdftex.def)             Requested size: 398.3386pt x 226.0642pt.
-<bab4/Gambar/scater-regresi.png, id=1813, 947.54pt x 536.0025pt>
+<bab4/Gambar/scater-regresi.png, id=2067, 947.54pt x 536.0025pt>
 File: bab4/Gambar/scater-regresi.png Graphic file (type png)
 <use bab4/Gambar/scater-regresi.png>
 Package pdftex.def Info: bab4/Gambar/scater-regresi.png  used on input line 859
 .
 (pdftex.def)             Requested size: 398.3386pt x 225.33215pt.
- [125 <./bab4/Gambar/diagram-regresi.png>]) (bab5/Bab5_Kesimpulan.tex [126 <./b
-ab4/Gambar/scater-regresi.png>] [127]
+ [146 <./bab4/Gambar/diagram-regresi.png>]) (bab5/Bab5_Kesimpulan.tex [147 <./b
+ab4/Gambar/scater-regresi.png>] [148]
 BAB V\bfseries .
-[128
+[149
 
-]) [129] (MainTemplateDisertasi.bbl
+]) [150] (MainTemplateDisertasi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 20--24
 []\T1/lmr/m/n/12 Annur, C. M. (2023), `De-mografi Peng-gu-na Tele-
  []
@@ -2356,9 +2525,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--31
 
  []
 
-[130
+[151
 
-] [131]
+] [152]
 Underfull \hbox (badness 10000) in paragraph at lines 121--124
 []\T1/lmr/m/n/12 Foundation, T. (2015), `Tv-head-end 4.0 Us-er Guide', URL:
  []
@@ -2381,7 +2550,7 @@ Overfull \hbox (118.34778pt too wide) in paragraph at lines 147--152
 les/Compression/mpegproj/.
  []
 
-[132]
+[153]
 Underfull \hbox (badness 10000) in paragraph at lines 154--158
 []\T1/lmr/m/n/12 Hou, H.-A. (2010), `DVB-T2 tech-nol-o-gy overview
  []
@@ -2391,7 +2560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--158
 \T1/lmr/m/n/12 - In-dus-tri-al Tech-nol-o-gy Re-search In-sti-tute', URL:
  []
 
-[133]
+[154]
 Underfull \hbox (badness 10000) in paragraph at lines 203--208
 \T1/lmr/m/n/12 URL: https://www.kominfo.go.id/content/detail/43905/siaran-pers-
 no-
@@ -2403,7 +2572,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--208
 -
  []
 
-[134] [135]
+[155] [156]
 Underfull \hbox (badness 6173) in paragraph at lines 353--358
 []\T1/lmr/m/n/12 Suryanto (2021), `In-done-sia mu-lai ma-su-ki era TV Dig-i-tal
 ', URL:
@@ -2421,7 +2590,7 @@ Underfull \hbox (badness 3861) in paragraph at lines 360--364
 ference-
  []
 
-[136] [137]) [138]
+[157] [158]) [159]
 \openout2 = `daftarlampiran.aux'.
 
  (daftarlampiran.tex
@@ -2430,16 +2599,16 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 
 (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [139
+) [160
 
-] [140] [141]) [142]
+] [161] [162]) [163]
 (cv.tex
-<foto_cv_sandy.jpg, id=1915, 2452.16125pt x 3269.21375pt>
+<foto_cv_sandy.jpg, id=2169, 2452.16125pt x 3269.21375pt>
 File: foto_cv_sandy.jpg Graphic file (type jpg)
 <use foto_cv_sandy.jpg>
 Package pdftex.def Info: foto_cv_sandy.jpg  used on input line 17.
 (pdftex.def)             Requested size: 122.61523pt x 163.47026pt.
- [143
+ [164
 
 
  <./foto_cv_sandy.jpg>]
@@ -2467,11 +2636,11 @@ Overfull \hbox (9.14336pt too wide) in paragraph at lines 112--124
 [][] 
  []
 
-[144])
+[165])
 
 Package natbib Warning: There were undefined citations.
 
-[145] (MainTemplateDisertasi.aux (cover.aux) (cover_judul.aux)
+[166] (MainTemplateDisertasi.aux (cover.aux) (cover_judul.aux)
 (Lembar_Pengesahan.aux) (Lembar_Penguji.aux) (originalitas.aux) (abstrak.aux)
 (abstract.aux) (katapengantar.aux) (daftaristilah.aux) (daftarlampiran.aux))
  ***********
@@ -2486,13 +2655,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MainTemplateDisertasi.out' has not changed.
-(rerunfilecheck)             Checksum: 30D491406B3725EBC4126B8E786F5609;13719.
+(rerunfilecheck)             Checksum: 98FDA073F21F71E90DB3A2A91DEAD84C;15277.
  ) 
 Here is how much of TeX's memory you used:
- 31465 strings out of 475248
- 564274 string characters out of 5767609
+ 31663 strings out of 475248
+ 568608 string characters out of 5767609
  2101785 words of memory out of 5000000
- 51744 multiletter control sequences out of 15000+600000
+ 51860 multiletter control sequences out of 15000+600000
  650801 words of font info for 102 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  84i,18n,87p,2663b,1338s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2510,9 +2679,9 @@ ic/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
 lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on MainTemplateDisertasi.pdf (169 pages, 39593965 bytes).
+Output written on MainTemplateDisertasi.pdf (191 pages, 40290714 bytes).
 PDF statistics:
- 2139 PDF objects out of 2487 (max. 8388607)
- 530 named destinations out of 1000 (max. 500000)
- 943 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2408 PDF objects out of 2487 (max. 8388607)
+ 612 named destinations out of 1000 (max. 500000)
+ 1088 words of extra memory for PDF output out of 10000 (max. 10000000)
 

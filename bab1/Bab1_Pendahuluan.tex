@@ -138,27 +138,20 @@ N. A. Mubin et al. tahun 2019 telah meneliti bahwa deteksi dan penghitungan kela
 \label{sec:4-BatasanMasalah}
 \hspace{1,2cm}Adapun tujuan dari penelitian ini secara umum adalah menghasilkan purwarupa sistem berbasis web dengan menerapkan model OBIA dan \textit{Deep Learning} (DL) untuk mendeteksi, menghitung jumlah pohon dalam suatu luasan tertentu dan mendapatkan nilai koordinat latitude-longitude setiap pohon kelapa sawit dari citra satelit. Tujuan penelitian secara khusus sebagai berikut: 
 \begin{enumerate}
-	\item Menggunakan perangkat mikrokomputer raspberry-pi dan modul tv hat untuk mendapatkan siaran televisi digital terrestrial (DVB-T2) dan juga pengukuran kualitas sinyal yang dapat diakuisisi pada perangkat komputer. Perangkat ini memiliki kekurangan dari sisi spesifikasi prosesor dan juga GPU yang tidak terlalu tinggi. 
-	\item Menggunakan beberapa pengukuran no-reference image quality metrics (NR-IQA) yang sudah ada untuk mendapatkan tingkat kerusakan pada gambar secara objektif yang nantinya digunakan sebagai variable masukan pada sistem artificial neural network (ANN).
-	\item Melakukan pengukuran secara subjektif pada gambar/video menggunakan standar terbaru yang ditetapkan International Telecommunication Union (ITU). Hasil pengukuran ini nantinya digunakan sebagai parameter supervised learning pada sistem ANN.
-	\item Melakukan implementasi model dari ANN ke sistem untuk melakukan pengukuran secara realtime pada mikrokomputer. Hasil pengukuran dikirim menggunakan protocol IoT yang nantinya ditampilkan pada aplikasi web.
+	\item Menghasilkan metode object-based image analysis (OBIA) untuk membuat dataset secara otomatis dengan memberikan anotasi atau label suatu kelas, kelas 'oil palm' pada data citra.
+	\item Menghasilkan model CNN dari algoritma YOLOv5, YOLOv6, dan YOLOv7 yang dapat mendeteksi dan menghitung pohon kelapa sawit pada suatu area tertentu.
+	\item Menghasilkan purwarupa perangkat lunak aplikasi dengan model convolutional neural network dari algoritma YOLO yang terintegrasi dengan citra satelit dengan menggunakan Google Maps API yang dapat mendeteksi, menghitung, dan mendapatkan letak koordinat latitude-longitude setiap pohon kelapa sawit pada suatu area tertentu.
 \end{enumerate}
 
-\section{Tujuan Penelitian}
-\label{sec:4-TujuanPenelitian}
-\hspace{1,2cm}Berdasarkan masalah penelitian yang telah diuraikan sebelumnya, maka tujuan utama dari penelitian ini adalah membuat suatu sistem pengukuran kualitas sinyal dan kualitas gambar pada siaran televisi digital terrestrial. Dalam prosesnya dibutuhkan beberapa tujuan yang ingin dicapai dalam penelitian ini, yaitu:
+\section{Kontribusi Hasil Penelitian}
+\label{sec:5-Kontribusi-Hasil-Penelitian}
+\hspace{1,2cm}Kontribusi penting dari penelitian yang dilakukan dalam penelitian ini adalah:
 \begin{enumerate}
-	\item Menghasilkan metode untuk memeperoleh data kualitas sinyal televisi digital terrestrial secara realtime menggukan perangkat mikrokomputer.
-	\item Menghasilkan suatu model ANN dengan variable masukan berupa pengukuran objektif kualitas gambar yang disupervised menggunakan pengukuran subjektif.
-	\item Membuat suatu aplikasi untuk melakukan pengukuran gambar/video dari siaran televisi digital secara subjektif, yang nantinya digunakan sebagai dataset pada ANN. 
-	\item Menghasilkan suatu metode untuk melakukan pengukuran kualitas gambar/video secara realtime dari siaran televisi digital menggunakan model ANN yang sudah dibentuk, dan menampilkannya pada dashboard web aplikasi menggunakan protocol IoT. 
+	\item Dari sisi keilmuan, berupa pengembangan metode \textit{object-based image analysis} (OBIA) untuk membuat dataset secara otomatis dengan memberikan anotasi atau label suatu kelas pada data citra dengan menggunakan algoritma \textit{template matching} dan BIRCH.
+	\item Dari sisi teknologi, penelitian ini menghasilkan dataset primer dengan kelas pohon kelapa sawit (\textit{oil palm}) dan purwarupa perangkat lunak aplikasi dengan model \textit{convolutional neural network} dari algoritma YOLO yang terintegrasi dengan citra satelit dengan menggunakan Google Maps API yang dapat mendeteksi, menghitung, dan mendapatkan letak koordinat latitude-longitude setiap pohon kelapa sawit yang berhasil dideteksi.
+	3.	Dari sisi pemanfaatan, menawarkan suatu cara alternatif untuk proses persiapan data citra untuk mendapatkan dataset dengan proses anotasi yang lebih cepat, serta bagi \textit{stakeholder} dapat memantau, mengelola, dan melakukan estimasi produktivitas secara otomatis pohon kelapa sawit pada suatu area tertentu dengan penerapan teknologi informasi.
+	
 \end{enumerate}
-
-\section{Kontribusi dan Manfaat Penelitian}
-\label{sec:5-KontribusidanManfaatPenelitian}
-\hspace{1,2cm}Dari segi keilmuan, penelitian ini menghasilkan suatu metode untuk melakukan pengukuran kualitas gambar/video menggunakan algoritma ANN supervised learning berdasarkan penilaian subjektif assessment dan juga metrik pengukuran objektif. Dari sisi pengembangan teknologi, penelitian ini menghasilkan suatu sistem pengukuran kualitas gambar/video pada siaran televisi digital terrestrial secara realtime. Sistem ini dapat digunakan secara umum untuk mengetahui kualitas siaran televisi pada suatu wilayah.
-
-Manfaat dari penelitian ini yaitu sistem yang dihasilkan dapat diterapkan dan digunakan oleh penyedia siaran (services), pengguna jasa siaran, dan juga pengguna akhir. Sistem dapat menampilan secara realtime dengan pengukuran yang sesuai untuk dapat memeberikan bukti secara nyata kualitas gambar yang diterima di suatu wilayah.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!h]

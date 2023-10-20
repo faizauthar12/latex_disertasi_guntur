@@ -2,21 +2,22 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces Statistik Areal dan Produksi Kelapa Sawit Menurut Provinsi dan Status Pengusahaan Tahun 2021 (Sumber: Ditjenbun, 2023)}}{4}{table.caption.7}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Status DTV membandingkan sistem penyiaran digital di seluruh dunia ATSC, DTMB, DVB-T/DVB-T2, dan ISDB-T \citep {dtvstatus2017}}}{22}{table.caption.14}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Fitur DVB-S2, DVB-C2 dan DVB-T2 (SANDY 4.)}}{24}{table.caption.15}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Spesifikasi DVB-T dan DVB-T2 \citep {Yaacob2019}}}{26}{table.caption.17}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Penerapan Arsitektur Deep Learning}}{38}{table.caption.25}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Status DTV membandingkan sistem penyiaran digital di seluruh dunia ATSC, DTMB, DVB-T/DVB-T2, dan ISDB-T \citep {dtvstatus2017}}}{43}{table.caption.28}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Fitur DVB-S2, DVB-C2 dan DVB-T2 (SANDY 4.)}}{45}{table.caption.29}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Spesifikasi DVB-T dan DVB-T2 \citep {Yaacob2019}}}{47}{table.caption.31}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Versi bahasa pemprograman python dan librarinya}}{56}{table.caption.28}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Standar pengujian SS dengan \textit {home-environment}}}{71}{table.caption.35}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Skala ITU-R Quality dan Impairment}}{72}{table.caption.36}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Versi bahasa pemprograman python dan librarinya}}{77}{table.caption.42}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Standar pengujian SS dengan \textit {home-environment}}}{92}{table.caption.49}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Skala ITU-R Quality dan Impairment}}{93}{table.caption.50}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Pengambilan \textit {dataset} dari layanan siaran DVB-T2 pada area studi}}{97}{table.caption.50}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Perangkat pengolahan data yang digunakan}}{99}{table.caption.53}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Waktu yang dibutuhkan untuk memproses satu video dalam satuan detik}}{110}{table.caption.60}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Pengukuran metrik obyektif terhadap dataset}}{112}{table.caption.62}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Hasil pengukuran subyektif terhadap dataset}}{117}{table.caption.65}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Batasan masing-masing kelas berdasarkan pengukuran subyektif}}{120}{table.caption.69}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Hasil pengukuran subyektif terhadap dataset}}{121}{table.caption.70}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil pengujian terhadap percobaan regresi multivariabel}}{124}{table.caption.73}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Pengambilan \textit {dataset} dari layanan siaran DVB-T2 pada area studi}}{118}{table.caption.64}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Perangkat pengolahan data yang digunakan}}{120}{table.caption.67}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Waktu yang dibutuhkan untuk memproses satu video dalam satuan detik}}{131}{table.caption.74}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Pengukuran metrik obyektif terhadap dataset}}{133}{table.caption.76}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Hasil pengukuran subyektif terhadap dataset}}{138}{table.caption.79}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Batasan masing-masing kelas berdasarkan pengukuran subyektif}}{141}{table.caption.83}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Hasil pengukuran subyektif terhadap dataset}}{142}{table.caption.84}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil pengujian terhadap percobaan regresi multivariabel}}{145}{table.caption.87}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces A sample long table.}}{139}{table.5.1}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces A sample long table.}}{160}{table.5.1}%

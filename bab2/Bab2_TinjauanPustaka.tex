@@ -2,6 +2,451 @@
 \label{cha:2-TelaahPustaka}
 
 \vspace{1cm}
+\section{\textit{Computer Vision}}
+\hspace{1,2cm}\textit{Computer Vision} atau visi komputer adalah bidang kecerdasan buatan (AI) yang memungkinkan komputer dan sistem memperoleh informasi bermakna dari gambar digital, video, dan input visual lainnya, dan mengambil tindakan atau membuat rekomendasi berdasarkan informasi tersebut. Jika kecerdasan buatan memungkinkan komputer untuk berpikir, visi komputer memungkinkan untuk melihat, mengamati, dan memahami (IBM, 2020).
+
+\textit{Computer vision} bekerja hamper sama dengan visi manusia, kecuali manusia memiliki permulaan. Penglihatan manusia memiliki keunggulan konteks seumur hidup untuk melatih cara membedakan objek, seberapa jauh jaraknya, apakah bergerak, dan apakah ada yang salah dalam sebuah gambar. \textit{Computer vision} melatih mesin untuk melakukan fungsi-fungsi melatih mesin untuk melakukan fungsi-fungsi ini, tetapi ia harus melakukannya dalam waktu yang jauh lebih singkat dengan kamera, data, dan algoritma daripada retina, saraf, optic, dan korteks visual karena sistem yang dilatih untuk memeriksa produk atau mengamati asset produksi dapat menganalisis ribuan produk atau proses dalam satu menit, memperhatikan cacat atau masalah yang tidak terlihat, sistem tersebut dapat dengan cepat melampaui kemampuan manusia. 
+
+Memahami dan menentukan tugas visi komputer tertentu dapat memfokuskan dan memvalidasi proyek dan aplikasi, serta mempermudah untuk memulai. Hal dasar untuk \textit{computer vision} adalah \textit{object detection}, beberapa tugas visi komputer lainnya, seperti \textit{image classification, object detection, object tracking}, dan \textit{content-based image retrieval} (U. Arshad, 2021).
+
+\vspace{1cm}
+\section{Pengertian Citra}
+Citra didefinisikan sebagai fungsi dari dua variabel misalnya \textit{a(x,y)} dimana a sendiri sebagai amplitudo (misalnya kecerahan) citra pada koordinat (x,y) (I. T. Young et al, 1995). Citra digital a[m,n] merupakan citra dalam ruang diskrit 2D yang berasal dari citra analog a(x,y) di ruang kontinyu 2D melalui proses sampling yaitu yang biasa disebut sebagai digitalisasi. Sedangkan, menurut Maria citra digital adalah citra f(x,y) yang telah didiskritkan oleh pada koordinat spasial dan kecerahan. Citra digital direpresentasikan oleh \textit{array} dua dimensi atau sekumpulan \textit{array} dua dimensi dimana setiap \textit{array} merepresentasikan satu kanal warna. Nilai kecerahan yang didigitalkan dinamakan nilai tingkat keabuan (A. McAndrew, 2004).
+
+Setiap elemen \textit{array} tersebut dinamakan piksel yang diambil dari istilah \textit{picture element}. Dimensi citra biasanya ditulis dengan format panjang x tinggi (misalnya 640 x 480 piksel). Namun, perlu diperhatikan dengan seksama bahwa secara matematis, definisi citra terlihat seperti di bawah ini, dimana x menunjukkan baris dan y menunjukkan kolom:
+
+\[
+f(x,y)=
+\begin{bmatrix}
+	f\left(0,0\right)  & f\left(0,1\right) & ... & f\left(0,N-1\right) \\ 
+	f\left(1,0\right)  & f\left(1,1\right) & ... & f\left(1,N-1\right) \\
+	... & ... & ... & .. \\
+	f\left(M-1,0\right) & f\left(M-1,1\right) & ... & \ f\left(M-1,N-1\right)
+\end{bmatrix}
+\]
+
+Seperti pada layar monitor, koordinat citra dimulai dari pojok kiri atas. Secara matematis dimulai dari (0,0) dan berakhir di (M-1, N-1), dimana M menunjukkan tinggi, dan N menunjukkan panjang.
+
+\section{Pengolahan Citra}
+\hspace{1,2cm}Pengolahan citra adalah pemrosesan citra, khususnya menggunakan komputer menjadi citra yang kualitasnya lebih baik. Pengolahan citr adikembangkan bertujuan untuk (M. Petrou, 1999):
+\begin{enumerate}
+	\item Untuk memperbaiki tampilan citra (\textit{image enhancement}).
+	\item Untuk mengurangi ukuran file citra dengan tetap mempertahankan kualitas citra (\textit{image compression}).
+	\item Untuk memulihkan citra ke kondisi semula (\textit{image restoration}). 
+	\item Untuk menyoroti ciri tertentu dari citra agar lebih mudah untuk di analisis. 
+\end{enumerate}
+
+Pengolahan citra adalah cabang ilmu informatika untuk memperbaiki kualitas citra agar kualitasnya lebih baik atau lebih mudah diinterpretasi oleh manusia maupun komputer. Input dari program pengolahan citra adalah citra dan outputnya pun citra pula.
+
+Pengolahan citra digital digunakan dalam berbagai bidang untuk mempermudah manusia dalam melakukan analisis dan pekerjaan. Bentuk aplikasi pengolahan citra digital yang digunakan bidang militer, industry, medis, transportasi, hukum dan keamanan, pemetaan, robotika, fotografi, film, pencarian gambar berdasarkan kandungan citra, dan pemahaman kandungan citra. Salah satu pemanfaatan teknologi pengolahan citra digital yaitu bisa memahami maksud dari sebuah citra. Apabila aplikasi diberikan input berupa gambar yang mampu mendefinisikan bahwa dalam gambar tersebut terdapat gambar yang mendapati objek, seperti kendaraan, jalan, buah, dan lainnya.
+
+\section{\textit{Artificial Intelligence} (AI)}
+\hspace{1,2cm}\textit{Artificial inlelligence} atau kecerdasan buatan adalah studi tentang teori dan pengembangan sistem komputer agar mampu melakukan tugas-tugas yang dahulu hanya dapat dilakukan oleh manusia. Seperti membadakan berbagai gambar, menjawab pertanyaan, mengenali dan menerjemahkan bahasa, dan sebagainya (R. Primartha, 2018). 
+
+Komputer atau mesin cukup bagus untuk melakukan hal-hal berikut: menyelesaikan perhitungan aritmatika dengan cepat, mengerjakan secara akurat apa-apa yang sudah deprogram oleh komputer. Namun, komputer atau mesin memiliki kelemahan, seperti sulit berinteraksi dengan \textit{noisy data} (data yang blur/bias), sulit memahami lingkungan, kurang toleran yerhadap kesalahan (\textit{fault tolerance}), sulit beradaptasi dengan situasi dan kondisi tertentu. Untuk mengatasi hal tersebut ada lima hal yang perlu dimiliki oleh mesin, yaitu:
+
+\begin{enumerate}
+	\item Persepsi
+	
+	Terkait dengen permasalahan pengindraan. Mesin harus memiliki indra untuk dapat mengenali dunia sekitarnya.
+	
+	\item Pemrosesan bahasa alami (NLP)
+	
+	Kemampuan untuk mengidentifikasi kalimat dan memahami perbedaan aksesn dan maknanya.
+	
+	\item Menyampaikan pengetahuan
+	
+	Menyampaikan berbagai informasi di dunia luar berdasarkan pemikirannya sendiri.
+	
+	\item Pengambilan keputusan
+	
+	Mampu memecahkan berbagai permasalahan secara logis.
+	
+	\item Perencanaan dan pemetaan
+	
+	Memetakan dunia tiga dimensi dan merencanakan rute paling efektif.
+	Salah satu bagian penting dari AI adalah machine learning atau pembelajaran 
+\end{enumerate}
+
+Salah satu bagian penting dari AI adalah \textit{machine learning} atau pembelajaran mesin, yaitu dicirikan sebagai studi tentang algoritma dan model statistik yang digunakan sistem komputer untuk belajar dari data sampel dan pengalaman sebelumnya tanpa diprogram secara eksplisit untuk mencapai tugas tertentu. Dengan kemampuan untuk mengidentifikasi pola yang tidak jelas dalam data, kita dapat menggunakan pembelajaran mesin untuk memecahkan banyak masalah, termasuk menilai hubungan dua variabel, membuat prediksi berdasarkan karakteristik dasar, mengidentifikasi objek dengan pola yang sebanding, dan menggabungkan subjek dengan kriteria tertentu. Baik \textit{Artificial Intelligence}, \textit{Machine Learning}, dan \textit{Deep Learning} merupakan tiga istilah yang popular, namun banyak yang salah mengira bahwa ketiganya menggambarkan hal yang sama, padahal tiga hal yang berbeda. Bagaimana hubungan tiga istilah ini, seperti pada Gambar \ref{img:Hubungan-Artificial-Intelligence}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture1.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{(a) Hubungan Artificial Intelligence, Machine Learning, dan Deep Learning. (b) Jenis Machine Learning\\(Sumber: C. Thongprayoon et al, 2020)}\label{img:Hubungan-Artificial-Intelligence}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Disamping hal tersebut, \textit{artificial intelligence} (AI) memungkinkan untuk berfikir, dan salah satu bagian dari \textit{artificial intelligence} untuk dapat melihat, mengamati, dan memahami adalah komputer visi atau \textit{computer vision}. \textit{Computer vision} memungkinkan untuk komputer dan sistem memberikan informasi berarti dari gambar digital, dan visual input. 
+
+\section{\textit{Object Detection}}
+\hspace{1,2cm}\textit{Object detection} atau deteksi objek dianggap sebagai salah satu bidang penting dalam pembelajaran mendalam dan visi komputer. Deteksi objek telah ditentukan oleh banyak aplikasi dalam visi komputer, seperti pelacakan objek, pengambilan, dan pengawasan video. Deteksi objek adalah teknologi \textit{deep learning} dimana benda, manusia, bengunan, mobil, dapat dideteksi sebagai objek dalam gambar dan video (U. Arshad, 2021).
+
+Deteksi objek untuk mengenali objek dengan kotak pembatas pada gambar, dimana dalam klasifikasi gambar, cukup mengkategorikan (mengklasifikasikan) objek pada gambar atau tidak dalam hal kemungkinan (\textit{probability}), seperti contoh pada Gambar \ref{img:Classification-Object-Detection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture2.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Classification, Object Detection dan Segmentation Representation\\(Sumber: A. Patel, 2020)}\label{img:Classification-Object-Detection}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada Gambar \ref{img:Segementation-Classification}, terlihat bahwa kucing (cat) dengan kotak pembatas dan tanpa kotak pembatas dapat membedakan mendasar antara klasifikasi citra dan deteksi objek.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture3.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Segmentation, Classification+Localization, Object Detection\\(Sumber: A. Patel, 2020)}\label{img:Segementation-Classification}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dalam mempelajari deteksi objek, maka diperlukan mengetahui klasifikasi citra (\textit{image classification}). Ketika gambar adalah input ke CNN, masalah mengklasifikasikan kelas yang sesuai dengan gambar dikenal sebagai klasifikasi gambar, dan seperti yang ditunjukkan pada Gambar \ref{img:Image-Classification}, nilai probabilitas untuk semua kelas yang ditargetkan adalah keluaran.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture4.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Image Classification\\(Sumber: A. Patel, 2020)}\label{img:Image-Classification}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dapat juga dianggap bahwa deteksi objek sebagai masalah dimana tugas klasifikasi gambar memiliki tugas regresi yang memprediksi posisi objek menggunakan \textit{bounding box} (kotak pembatas) pada Gambar \ref{img:Object-Bounding-Box}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture5.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Object Detection dengan Bounding Box\\(Sumber: A. Patel, 2020)}\label{img:Object-Bounding-Box}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Masalah deteksi objek mengasumsikan bahwa beberapa kelas objek mungkin ada dalam gambar pada waktu yang sama. Dapat memvisualisasikan seperti dua jenis masalah, 1) klasifikasi multi label (beberapa kelas dalam satu gambar), 2) Bounding Box (masalah regresi) dimana harus memprediksi nilai koordinat kotak pembatas (\textit{bounding box}) dalam bentuk x, y, w, h.
+
+Dalam deteksi objek, terdapat \textit{object localization} atau lokalisasi objek yang merupakan untuk memprediksi objek dalam sebuah citra serta batas-batasnya. Perbedaan antara lokalisasi objek dan deteksi objek tidak kentara. Sederhananya, lokalisasi objek bertujuan untuk menemukan objek utama (atau yang paling terlihat) dalam sebuah gambar, sedangkan deteksi objek mencoba untuk mengetahui semua objek dan batasannya.
+
+Suatu klasifikasi citra atau model pengenalan citra hanya mendeteksi probabilitas suatu objek dalam suatu citra. Berbeda dengan ini, lokalisasi objek mengacu pada mengidentifikasi lokasi suatu objek dalam gambar. Algoritma lokalisasi objek akan menampilkan koordinat lokasi objek sehubungan dengan gambar. Dalam visi komputer, cara paling popular untuk melokalkan objek dalam gambar adalah dengan merepresentasikan lokasinya dengan bantuan kotak pembatas (\textit{bounding box}).
+
+Bounding box dapat diinisialisasi menggunakan parameter berikut: 
+\begin{itemize}
+	\item bx, by: koordinat pusat kotak pembatas (center of bounding box)
+	\item bw: lebar kotak pembatas dengan lebar gambar (width)
+	\item bh: tinggi kotak pembatas dengan tinggi gambar (height)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture6.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Intersection Over Union (IoU)\\(Sumber: A. Patel, 2020)}\label{img:Intersection-Over-Union}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dengan memprediksi ini, dapat menghitung Mean-IoU dan memprediksi kotak pembatas (\textit{bounding box}) yang melokalkan objek di gambar.
+\begin{itemize}
+	\item IoU adalah Intersection-Over-Union (IoU) disebut sebagai Indeks Jaccard (\textit{Jaccard Index}) dianggap sebagai salah satu metrik kinerja yang paling banyak digunakan dalam deteksi objek. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.4\columnwidth]{bab2/Gambar/Picture7.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Persamaan IoU\\(Sumber: A. Patel, 2020)}\label{img:Persamaan-IOU}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\item IoU adalah area tumpang tindih (\textit{overlap}) antara segmentasi yang diprediksi (\textit{prediction}) dan kebenaran dasar (\textit{ground truth}), seperti yang ditampilkan pada Gambar \ref{img:Persamaan-IOU}. Metrik ini bervariasi dari 0-1 (0-100\%) dengan 0 menyiratkan tidak ada tumpeng tindih (sampah) dan 1 menandakan segmentasi yang tumpang tindih sempurna (\textit{fat dub}).
+	
+	\item Mean IoU adalah segmentasi biner (dua kelas) atau multi-kelas, mean Io Udari gambar dihitung dengan mengambil IoU dari setiap kelas dan merata-ratakannya. 
+
+\end{itemize}
+
+\section{Machine Learning}
+\hspace{1,2cm}Istilah \textit{machine learning} mula-mula diperkenalkan oleh Arthur Samuel pada tahun 1959 melalui jurnalnya yang berjudul "Some Studies in Machine Learning Using the Game of Checkers". (IBM Journal of Research and Development). Samuel mencoba mengajari program komputer untuk bermain catur. Tujuannya adalah membuat agar komputer dapat bermain catur lebih baik dari dirinya. Pada tahun 1962 program buatannya dapat mengalahkan juara catur dari negara bagian Connecticut (R. Primartha, 2018).
+
+\textit{Machine learning} membutuhkan sebuah model yang didefinisikan berdasar parameter-parameter tertentu. Proses learning adalah eksekusi program komputer untuk mengoptimasi parameter-parameter dari model tersebut, dengan memanfaatkan data training atau \textit{past experience}.
+
+Jadi, secara sederhana dapat dijelaskan bahwa \textit{machine learning} adalah pemrograman komputer untuk mencapai kriteria/performa tertentu dengan menggunakan sekumpulan data training atau pengalaman di masa lalu (\textit{past experience}). \textit{Machine learning} mempelajari teori agar komputer mampu "belajar" dari data. 
+
+Secara umum algoritma \textit{machine learning} dapat dikelompokkan menjadi lima bagian, yaitu \textit{supervised learning}, \textit{unsupervised learning}, \textit{semi-supervised learning}, \textit{reinforcement learning}, dan \textit{deep learning}.
+
+\subsection{Supervised Learning} 
+\hspace{1,2cm}Sebagian besar praktik machine learning mengandalkan algoritma \textit{supervised learning}. Algoritmanya dinamakan seperti ini karena training dataset (sekumpulan data untuk training) akan memandu dan mengajari komputer agar menghasilkan outcome sesuai harapan. Pada \textit{supervised learning} menggunakan sebuah algoritma untuk mempelajari mapping function antara input dengan output. Berbagai kemungkinan output sudah diketahui dan data-data yang digunakan untuk latihan (training) sudah diberi label dengan jawaban yang benar. \textit{Supervised learning} dapat bermanfaat untuk memprediksi sesuatu dengan bantuan training dataset. Berikut skema \textit{supervised learning} pada Gambar \ref{img:Skema-Supervised-Learning} (R. Primartha, 2018).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture8.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Skema Supervised Learning\\(Sumber: M. Kozan, 2021)}\label{img:Skema-Supervised-Learning}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Supervise learning} menggunakan training data yang sudah diberi label untuk mempelajari \textit{mapping function}, dari input variables (x) ke ouput variables (y).
+\[y=f\ (x)\]
+
+Sebagai contoh, sebuah algoritma klasifikasi akan dapat mengidentifikasi berbagai bentuk bangun setelah melalui proses belajar dari sekumpulan bangun datar yang sudah ditandai atau diberi label dengan ciri tertentu seperti pada gambar 2.12.
+
+Permasalahan-permasalahan yang terkait dengan \textit{supervised learning} dapat dikategorikan menjadi dua jenis:
+\begin{enumerate}
+	\item \textit{Classification}
+	
+	Klasifikasi bertujuan untuk memprediksi outcome dari input (sample yang diberikan), dimana output variabel berbentuk kategori-kategori. Contoh: pria/wanita, sakit/sehat, tinggi/rendah, dan sebagainya.
+	
+	\item \textit{Regression}
+	
+	Regression bertujuan untuk memprediksi outcome dari input (sample yang diberikan), dimana output, variabel berbentuk nilai aktual (\textit{real values}). Contoh: prediksi harga rumah, tinggi badan seseorang, curah hujan, dan sebagainya. 
+	
+\end{enumerate}
+
+Ada beberapa algoritma yang sudah dikembangkan dan terkait dengan \textit{supervised learning}, diantaranya:
+\begin{enumerate}
+	\item Decision tree,
+	\item Naïve Bayes Classifier,
+	\item Artificial Neural Network,
+	\item Support Vector Machine,
+	\item Linear Regression,
+	\item Logistic Regression,
+	\item CART,
+	\item KNN (-KNearest Neighbor), dsb.
+\end{enumerate}
+
+\subsection{Unsupervised Learning}
+\hspace{1,2cm}Berbeda dengan supervised learning, pada \textit{unsupervised learning} persoalan diproses hanya mengandalkan data yang belum dilatih sebelumnya. \textit{Unsepervised learning} menggunakan \textit{unlabeled training dataset} untuk memodelkan struktur dari data, sehingga unsupervised learning bersifat lebih subjektif dibandingkan \textit{supervised learning}. Berikut skema \textit{unsupervised learning} pada Gambar \ref{img:Skema-Unsupervised-Learning} (R. Primartha, 2018).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture9.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\caption{Skema Unsupervised Learning\\(Sumber: M. Kozan, 2021)}\label{img:Skema-Unsupervised-Learning}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Unsupervised learning} bermanfaat untuk kasus-kasus dimana kita ingin menemukan relasi implisit (implicit relationships) dari \textit{unlabeled dataset} yang disediakan. Jadi, pada \textit{unsupervised learning} kita tidak memprediksi masa depan, sebab input variable (X) tidak memiliki relasi dengan output variabel (Y). 
+\[ f(x) \]
+
+Untuk memudahkan memahaminya, dapat diasumsikan saat ini belum pernah membeli majalah sama sekali. Suatu ketika membeli beberapa buah majalah dan ingin membaginya menjadi beberapa kategori, dengan tujuan agar nantinya mudah dicari. Maka, dapat dimulai dengan mengidentifikasi majalah-majalah berdasarkan kemiripan. Misalnya, berdasarkan isi, penerbit, dan lain-lain yang bisa ditentukan sesuai kebutuhan.
+
+Permasalahan seputar \textit{unsupervised learning} dapat dikelompokkan menjadi tiga kategori, yaitu:
+
+\begin{enumerate}
+	\item Association
+	
+	Association bertujuan untuk menemukan peluang (probabilitas) berdasarkan keterkaitan (co-occurrence) dari item-item dalam sebuah kumpulan. Sebuah contoh, jika customer membeli teh celup, maka kemungkinan besar (sekitar 80%) customer juga membeli gula pasir. Association banyak digunakan dalam market-basket analisis. 
+	\item Clustering
+	
+	Clustering bertujuan untuk mengelompokkan sample dalam cluster yang sama berdasarkan kemiripan (similiarity).
+	
+	\item Dimensionality Reduction
+	
+	Dimensionality Reduction berarti mengurangi sejumlah variabel dari dataset namun tetap memastikan informasi yang penting masih tersedia. Dimensionality Reduction dapat diwujudkan menggunakan metode:
+	\begin{enumerate}[label=(\alph*)]
+		\item Feature Extraction
+		
+		Melakukan transformasi data dari dimensi tinggi (a high-dimensional space) ke dimensi yang lebih rendah (a low-dimensional space).
+		
+		\item Feature Selection
+		
+		Memilih Sebagian saja (subset) dari variabel asal (original variabel). 
+	\end{enumerate}
+\end{enumerate}
+
+Beberapa algoritma yang dikelompokkan dalam \textit{unsupervised learning}, antara lain: 
+\begin{enumerate}
+	\item K-Means
+	\item Hierarchical Clustering
+	\item DBSCAN
+	\item Fuzzy C-Means
+	\item Self-Orginizing Map, dan sebagainya.	
+	
+\end{enumerate}
+
+\subsection{Semi-supervised learning}
+\hspace{1,2cm}Metode ini berada diantara yang \textit{supervised} dan \textit{unsupervised learning} di mana memiliki sejumlah besar masukan data, beberapa di antaranya diberi label dan sisanya tidak. Banyak masalah pembelajaran kehidupan nyata termasuk dalam bidang pembelajaran mesin ini. Alasannya adalah \textit{semi-supervised} membutuhkan lebih sedikit intervensi manusia karena menggunakan data berlabel dalam jumlah yang sangat kecil dan data yang tidak berlabel dalam jumlah besar. Memanfaatkan kumpulan data yang kurang berlabel lebih menarik karena kumpulan data tersebut sangat sulit untuk dikumpulkan serta mahal dan mungkin memerlukan akses ke pakar domain. Dataset yang tidak berlabel di sisi lain lebih murah dan lebih mudah diakses (X. Zhu, 2018).
+
+Kedua teknik pembelajaran \textit{supervised} dan \textit{unsupervised learning} bisa digunakan untuk melatih algoritma pembelajaran dalam pembelajaran \textit{semi-supervised}. Teknik \textit{unsupervised learning} dapat digunakan untuk mengungkap struktur dan pola tersembunyi dalam kumpulan data input. Sedangkan teknik supervised learning dapat digunakan untuk membuat prediksi tebakan pada data yang tidak berlabel, memasukkan data kembali ke algoritma pembelajaran sebagai data pelatihan, dan menggunakan pengetahuan yang diperoleh untuk membuat prediksi pada kumpulan data baru. Dengan demikian, dapat mengatakan bahwa data yang tidak berlabel digunakan untuk memodifikasi atau memprioritaskan kembali prediksi atau hipotesis yang diperoleh dari data yang berlabel. Gambar \ref{img:Skema-Semi-Supervised-Learning} mengilustrasikan berbagai tahapan metode \textit{semi-supervised learning}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture10.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema Semi-Supervised Learning\\(Sumber: A. B. Nassif et al, 2019)}\label{img:Skema-Semi-Supervised-Learning}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Untuk memanfaatkan data pelatihan yang tidak berlabel, semua algoritma \textit{semi-supervised learning} melakukan setidaknya satu dari asumsi berikut asumsi kehalusan, asumsi cluster, dan asumsi manifold.
+
+\subsection{Reinforcement Learning}
+\hspace{1,2cm}\textit{Reinforcement learning} merupakan metode pembelajaran yang dipengaruhi oleh feedback dari lingkungan dengan Teknik pembelajaran yang iterative (berulang-ulang) dan adaptive (menyesuaikan). \textit{Reinforcement learning} dipercaya mendekati cara manusia belajar (R. Primartha, 2018). 
+
+\textit{Reinforcement learning} (RL) diinspirasi oleh kebiasaan makhluk hidup dalam belajar dan bertindak, khususnya manusia. Pada RL tidak ada dataset. Data-data diperoleh berdasarkan pengalaman. Algoritma \textit{reinforcement learning} mengijinkan agent untuk memutuskan aksi selanjutnya berdasarkan kondisi saat ini (\textit{current state}). \textit{Reinforcement learning} kadang disebut juga \textit{credit assessment learning}, sebab learning difokuskan untuk memaksimalkan perolehan \textit{rewards}. \textit{Reinforcement learning} tergantung pada proses coba-coba untuk mengungkap rangkaian tindakan yang memaksimalkan metrik imbalan kumulatif, yang digunakan untuk membuat algoritma memahami apakah itu mengarah ke arah yang benar atau tidak. Berikut skema \textit{reinforcement learning} pada Gambar \ref{img:Skema-Reinforcement-Learning}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture11.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema Reinforcement Learning\\(Sumber: R. Sutton, 1998)}\label{img:Skema-Reinforcement-Learning}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Menurut R. Sutton, proses \textit{reinforcement learning} dapat dipresentasikan dalam matematika sebagai \textit{Markov Decision Process} (MDP), memperkenalkan 4 set {S, A, P, R}, dengan:\\
+S - Kumpulan status tempat agen dapat berada, pada saat tertentu;\\
+A - Serangkaian kemungkinan Tindakan yang dapat dilakukan agen dalam waktu tertentu;\\
+P - Himpunan probabilitas, bahwa sebuah agen, yang berada dalam keadaan s, bertransisi ke keadaan s' dengan melakukan Tindakan A dalam waktu t+1;
+
+Representasi \textit{reinforcement learning} mirip dengan supervised learning. Yang membedakan adalah pada reinforcement learning tidak hanya x, namun x dan z.
+\[ y=\ f\ \left(x\right)\ given\ z \]
+
+Tidak seperti \textit{supervised} dan \textit{unsupervised learning} dimana algoritma sudah memiliki tujuan (goal). Algoritma \textit{reinforcement learning} tidak memiliki tujuan eksplisit, sebagai gantinya algoritma dipaksa untuk belajar menemukan nilai optimal melalui kegiatan trial dan error.
+
+\textit{Reinforcement learning} banyak diimplementasikan pada \textit{game theory, control theory, operation research, information theory, simulation-based optimaztion, multi-agent systems, swarm intelligence, statistics}, dan \textit{genetic algorithm}.
+
+Contoh penerapan \textit{reinforcement learning} yaitu pada bidang robotic. Sebuah robot dapat belajar untuk menghindari tabrakan dengan cara menerima feedback negative manakala robot tersebut menabrak halangan tertentu. Robot akan dibiarkan berjalan tanpa dipandu. Robot akan belajar dari pengalaman sebelumnya untuk menemukan rute paling optimal. 
+
+Beberapa algoritma yang dikelompokkan dalam \textit{reinforcement learning} antara lain:
+\begin{enumerate}
+	\item Genetic Algorithm (GA)
+	\item Dynamic Programming (DP)
+	\item Generalized Policy Iteration (GPI)
+	\item Monte Carlo Methods
+\end{enumerate}
+
+\subsection{Deep Learning}
+\hspace{1,2cm}\textit{Deep learning} merupakan metode pembelajaran yang memanfaatkan \textit{artificial neural networks} yang berlapis-lapis (multi layer). \textit{Artificial neural networks} ini dibuat mirip dengan otak manusia, di mana neuron-neuron terkoneksi satu sama lain, sehingga membentuk sebuah jaringan neuron yang sangat rumit (R. Primartha, 2018).
+
+\textit{Deep learning} atau \textit{deep structured leaning} atau hierarchical learning atau deep neural merupakan metode pembelajaran yang memanfaatkan multiple non-linear transformation. \textit{Deep learning} dapat dipandang sebagai gabungan machine learning dengan \textit{artificial intelligence} (AI). \textit{Deep learning} pada hakekatnya merupakan perluasan atau pengembangan dari \textit{neural network} atau jaringan saraf tiruan (JST).
+
+Jika dikembalikan kepada tujuan \textit{machine learning} semula, yaitu komputer yang dapat belajar (dari data atau pengalaman), maka \textit{deep learning} adalah apa yang selama ini dicari. \textit{Deep learning} menirukan cara berpikir manusia. Pada \textit{deep learning}, komputer harus memproses data yang sangat banyak, berlapis-lapis, dan output dari layer sebelumnya akan menjadi input bagi layer sesudahnya.
+
+Struktur umum dan dasar dari skema \textit{deep learning} ditunjukkan pada Gambar \ref{img:Skema-Umum-Deep-Learning}. Ini terdiri dari lapisan masukan, yang merupakan data masukan ke algoritma; lapisan tersembunyi, di mana algoritma membuat banyak perhitungan matematis, dan lapisan output, yang merupakan hasil dari perhitungan algoritma.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture12.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema Umum \textit{Deep Learning}\\(Sumber: A. Feizollah et al, 2022)}\label{img:Skema-Umum-Deep-Learning}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sejarah \textit{deep learning} dimulai pada tahun 2006, yaitu setelah Geoffrey Hinton mempublikasikan paper yang memperkenalkan salah satu varian \textit{neural networks} yang disebut \textit{deep belief nets}. Paper ini merupakan awal kemunculan istilah \textit{deep learning}, untuk membedakan arsitektur \textit{neural network} konvensional (\textit{single layer}) dengan arsitektur neural network multi/banyak layer. Dengan kata lain, deep learning adalah salah satu cabang machine learning yang menggunakan \textit{deep neural network} untuk menyelesaikan permasalahan pada domain \textit{machine learning}. 
+
+Pada tahun 2009, Andrew memperkenalkan penggunaan GPU untuk \textit{deep learning} melalui paper yang berjudul \textit{large-scale deep unsupervised learning using graphics processors}. Dengan menggunakan GPU, algoritma \textit{deep learning} dapat dijalankan lebih cepat disbanding dengan tanpa GPU (hanya menggunakan CPU), Perkembangan \textit{deep learning} maju pesat berkat keberadaan \textit{hardware} yang memadai. Dan saat ini, \textit{deep learning} sudah banyak diaplikasikan di berbagai area, seperti pengenal wajah, \textit{self-driving car}, pengenal suara, dan sebagainya. 
+
+\textit{Deep learning} merupakan jalan untuk mencapai apa yang sudah dicita-citakan sebelumnya oleh manusia, yaitu kecerdasan buatan bagi mesin. Bentuk diagram \textit{network model deep learning} seperti pada Gambar \ref{img:Skema-Deep-Learning-Hidden-Layer}. Perhatikan bahwa \textit{hidden layer} hanya digambarkan tiga lapis saja, padahal kenyataanya bisa berjumlah sangat banyak, dapat diasumsikan seperti Gambar \ref{img:Skema-Deep-Learning-Hidden-Layer}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab2/Gambar/Picture13.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Skema \textit{Deep Learning} dengan Penambahan beberapa \textit{hidden layer}\\(Sumber: H. Kaur et al, 2021)}\label{img:Skema-Deep-Learning-Hidden-Layer}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada Gambar \ref{img:Skema-Deep-Learning-Hidden-Layer} mengandung 3 layer, yaitu input, \textit{hidden} dan output layer. Penambahan \textit{layer} ini terjadi pada \textit{hidden layer}. \textit{Hidden layer} pada skema \textit{deep learning} yang disebut dengan \textit{Multi Layer Peceptron} (MLP) disebabkan jumlah neuron semakin banyak dan itu artinya semakin banyak juga perhitungan yang harus dikerjakan pada setiap \textit{layer}. MLP merupakan pengembangan dari \textit{Single Layer Perceptron} (SLP) yang merupakan model paling sederhana dari neural network dan sekaligus merupakan dasar bagi model-model tingkat lanjut yang digunakan pada \textit{deep learning}. MLP kemudian menjadi cikal bakal metode \textit{deep learning} atau \textit{deep neural network} (DNN).
+
+\textit{Deep learning} sudah dikembangkan ke berbagai model atau arsitektur yang berbeda-beda. Berikut daftar beberapa model atau arsitektur untuk \textit{deep learning}. 
+\begin{enumerate}
+	\item \textit{Recurrent Neural Networks} (RNN)
+	\item \textit{Long Short-Term Memory} (LSTM)
+	\item \textit{Convolutional Neural Network} (CNN)
+	\item \textit{Deep Believe Networks} (DBN)
+	\item \textit{Deep Stacking Networks} (DSN)
+\end{enumerate}
+
+Contoh penerapan masing-masing arsitektur deep learning dapat dipelajari pada Tabel \ref{tbl:Penerapan-Arsitektur-Deep-Learning}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Penerapan Arsitektur Deep Learning}
+		\label{tbl:Penerapan-Arsitektur-Deep-Learning}
+		\begin{adjustbox}{width=\columnwidth,center}
+			\begin{tabular}{|c|c|l|}
+				\hline
+				No. & Arsitektur & \multicolumn{1}{c|}{Penerapan}                                                                                                                                           \\ \hline
+				1   & RNN        & \textit{Speech recognition, handwriting recognition}                                                                                                                     \\ \hline
+				2   & LSTM       & \textit{\begin{tabular}[c]{@{}l@{}}Natural language text compression, handwriting recognition,\\ speech recognition, gesture recognition, image captioning\end{tabular}} \\ \hline
+				3   & CNN        & \textit{Image recognition, video analysis, natural language processing}                                                                                                  \\ \hline
+				4   & DBN        & \textit{\begin{tabular}[c]{@{}l@{}}Image recognition, information retrieval, \\ natural language understanding, failure prediction\end{tabular}}                         \\ \hline
+				5   & DSN        & \textit{Information retrieval, continuous speech recognition}                                                                                                            \\ \hline
+			\end{tabular}
+		\end{adjustbox}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+Masing-masing arsitektur pada Tabel \ref{tbl:Penerapan-Arsitektur-Deep-Learning} memiliki perbedaan, berikut penjelasan dan diagram network beberapa arsitektur deep learning yang umum.
+
+\subsubsection{Recurrent Neural Networks (RNN)}
+\hspace{1,2cm}\textit{Recurrent Neural Network} (RNN) merupakan arsitektur \textit{deep learning} yang popular serta sangat menjanjinak untuk menyelesaikan berbagai persoalan yang terkait dengan \textit{Natural Language Processing} (NLP). Model RNN digunakan agar mesin dapat memahami bahasa manusia. Mulai dari cara berkomunikasi, mendengarkan, mengenali percakapan, hingga memahami tata bahasa dan aksen. RNN juga dapat diimplementasikan untuk mengenali gambar-gambar atau objek (R. Primartha, 2018).
+	
 \section{Teknologi Informasi}
 \hspace{1,2cm}Informasi adalah proses transmisi dan transfer pengetahuan: bentuk, data, dan konsep, studi dengan tujuan membuatnya dapat diakses oleh orang lain, lembaga atau masyarakat. Kualitas proses ini akan menentukan diterima atau tidaknya perubahan perilaku dan sikap individu tersebut. Teknologi informasi berupa perangkat apapun yang memiliki kapasitas untuk mengolah data dan atau informasi, baik secara sistematis maupun dinamis. Teknologi informasi juga dapat diterapkan pada produk maupun dalam suatu proses \citep{Victoria2020}.
 
