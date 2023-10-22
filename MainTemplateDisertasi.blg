@@ -26,8 +26,8 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: daftarlampiran.aux
 Database file #1: daftarpustakasandy.bib
 Warning--entry type for "Kessel2018" isn't style-file defined
---line 244 of file daftarpustakasandy.bib
-Repeated entry---line 724 of file daftarpustakasandy.bib
+--line 487 of file daftarpustakasandy.bib
+Repeated entry---line 1447 of file daftarpustakasandy.bib
  : @book{
  :       ,
 I'm skipping whatever remains of this entry

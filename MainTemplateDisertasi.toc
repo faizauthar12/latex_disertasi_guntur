@@ -9,9 +9,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{x}{figure.caption.2}%
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
 \contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
-\contentsline {chapter}{DAFTAR TABEL}{xxi}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxvii}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxvii}{chapter*.5}%
+\contentsline {chapter}{DAFTAR TABEL}{xx}{chapter*.4}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxvi}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxvi}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -43,76 +43,54 @@
 \contentsline {section}{\numberline {2.9}Sentinel-2}{68}{section.2.9}%
 \contentsline {section}{\numberline {2.10}Pertanian Presisi}{69}{section.2.10}%
 \contentsline {section}{\numberline {2.11}Kelapa Sawit}{71}{section.2.11}%
-\contentsline {section}{\numberline {2.12}Teknologi Informasi}{73}{section.2.12}%
-\contentsline {section}{\numberline {2.13}Teknik Televisi Digital}{74}{section.2.13}%
-\contentsline {section}{\numberline {2.14}Digital Video Broadcasting Terestial 2 (DVB-T2)}{77}{section.2.14}%
-\contentsline {section}{\numberline {2.15}Jenis Kompresi Transmisi Video Digital}{81}{section.2.15}%
-\contentsline {subsection}{\numberline {2.15.1}Video H.222 MPEG-TS}{81}{subsection.2.15.1}%
-\contentsline {subsection}{\numberline {2.15.2}Video H.264 MPEG-4}{83}{subsection.2.15.2}%
-\contentsline {section}{\numberline {2.16}\textit {Signal to Noise Ratio} (SNR)}{84}{section.2.16}%
-\contentsline {section}{\numberline {2.17}\textit {Signal Strength}}{85}{section.2.17}%
-\contentsline {section}{\numberline {2.18}Metrik Kualitas Gambar}{87}{section.2.18}%
-\contentsline {subsection}{\numberline {2.18.1}Penilaian Kualitas Gambar Referensi Penuh}{89}{subsection.2.18.1}%
-\contentsline {subsection}{\numberline {2.18.2}Penilaian Kualitas Gambar Tanpa Referensi}{90}{subsection.2.18.2}%
-\contentsline {subsubsection}{\numberline {2.18.2.1}Metrik NR-Bloking}{90}{subsubsection.2.18.2.1}%
-\contentsline {subsubsection}{\numberline {2.18.2.2}Metrik NR-Blur}{91}{subsubsection.2.18.2.2}%
-\contentsline {subsubsection}{\numberline {2.18.2.3}Metrik NR-Temporal}{92}{subsubsection.2.18.2.3}%
-\contentsline {subsection}{\numberline {2.18.3}\textit {Artificial Neural Network} (ANN)}{93}{subsection.2.18.3}%
-\contentsline {section}{\numberline {2.19}Perangkat Lunak \textit {tvheadend}}{99}{section.2.19}%
-\contentsline {section}{\numberline {2.20}\textit {Subjective Assessment}}{100}{section.2.20}%
-\contentsline {subsection}{\numberline {2.20.1}Raspberry Pi + TV Hat}{103}{subsection.2.20.1}%
-\contentsline {subsection}{\numberline {2.20.2}DVB-T2 TV Tunner}{103}{subsection.2.20.2}%
-\contentsline {subsection}{\numberline {2.20.3}\textit {Confusion Matrix}}{103}{subsection.2.20.3}%
-\contentsline {chapter}{\numberline {III\bfseries }METODE PENELITIAN}{106}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tahapan Penelitian}{106}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Area Studi}{108}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Obyek Penelitian}{108}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Pemilihan Perangkat Keras}{109}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Pembentukan \textit {Dataset}}{112}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Akuisisi \textit {Dataset} Video}{113}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Metrik Obyektif Pengukuran Kualitas Gambar}{113}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Metrik Bloking}{114}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Metrik Blur}{117}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Metrik Temporal}{121}{subsubsection.3.3.2.3}%
-\contentsline {subsection}{\numberline {3.3.3}Pengukuran Subyektif Kualitas Gambar}{123}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Single Stimulus Standar ITU-R 500-14}{123}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Tahap 1 - Pemilihan materi dan luaran}{126}{subsubsection.3.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Tahap 2 - Sesi tes}{128}{subsubsection.3.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.4}Tahap 3 - Pengukuran hasil tes}{129}{subsubsection.3.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.3.5}Desain Aplikasi Subyektif \textit {Assessment}}{131}{subsubsection.3.3.3.5}%
-\contentsline {section}{\numberline {3.4}Pembuatan Model NN}{132}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Hasil dan Perhitungan Model}{135}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}\textit {Confusion} matriks}{136}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Pengukuran Korelasi}{139}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Sistem Pengukuran Waktu Nyata}{141}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Tahapan pembuatan \textit {website} pemantauan}{143}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Arsitektur \textit {Website Monitoring}}{145}{subsection.3.6.2}%
-\contentsline {chapter}{\numberline {IV\bfseries }HASIL DAN PEMBAHASAN}{147}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Material yang digunakan}{147}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Proses akuisi material video}{147}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Koleksi data}{153}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Perangkat pengolahan data}{154}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Pengujian metrik obyektif}{155}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pengujian metrik \textit {blocking}}{155}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Pengujian metrik \textit {blur}}{158}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Pengujian metrik \textit {temporal}}{162}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Pengukuran obyektif pada keseluruhan \textit {dataset}}{167}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Hasil pengambilan data pengukuran subyektif}{168}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Material pengukuran subyektif}{168}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Perangkat yang digunakan}{169}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Proses pengukuran subyektif }{169}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Hasil pengukuran subyektif}{171}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Pengujian dan hasil pada NN}{175}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Data masukan dan luaran model}{176}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Pengujian arsitektur NN}{179}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Hasil regresi multivariabel}{179}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Hasil ANN tanpa klasifikasi}{181}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Hasil ANN dengan klasifikasi}{181}{subsubsection.4.4.2.3}%
-\contentsline {section}{\numberline {4.5}Aplikasi pemantauan kualitas gambar siaran DVB-T2}{181}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Arsitektur aplikasi}{181}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Pengujian dan implementasi aplikasi}{182}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{183}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{183}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{184}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{185}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{200}{table.caption.131}%
+\contentsline {section}{\numberline {2.12}\textit {State of The Art} (Penelitian Terdahulu)}{77}{section.2.12}%
+\contentsline {chapter}{\numberline {III\bfseries }METODE PENELITIAN}{82}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tahapan Penelitian}{82}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Area Studi Penelitian Kelapa Sawit}{83}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Persiapan Data}{85}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Deskripsi Dataset dan Pemilihan Data}{85}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Membersihkan Data}{91}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Membangun Data}{92}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Membuat Templates}{94}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Menyesuaikan Template}{95}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluasi Korelasi diantara Template}{96}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}Penambahan Template}{99}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}Menjalankan Template Matching}{99}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}Analisis Kluster dengan BIRCH}{99}{subsubsection.3.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}Menjalankan Auto-Annotate Datasets}{101}{subsubsection.3.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}Integrasi Data}{101}{subsubsection.3.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.3.9}Format Data}{101}{subsubsection.3.3.3.9}%
+\contentsline {section}{\numberline {3.4}Citra untuk Komputasi}{102}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pelatihan Model CNN}{102}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Optimisasi Parameter}{103}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Menjalankan Model CNN}{104}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Hasil Deteksi dan Penghitungan Akhir}{107}{section.3.8}%
+\contentsline {chapter}{\numberline {IV\bfseries }HASIL DAN PEMBAHASAN}{115}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Material yang digunakan}{115}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Proses akuisi material video}{115}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Koleksi data}{121}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Perangkat pengolahan data}{122}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Pengujian metrik obyektif}{123}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pengujian metrik \textit {blocking}}{123}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Pengujian metrik \textit {blur}}{126}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Pengujian metrik \textit {temporal}}{130}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Pengukuran obyektif pada keseluruhan \textit {dataset}}{135}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Hasil pengambilan data pengukuran subyektif}{136}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Material pengukuran subyektif}{136}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Perangkat yang digunakan}{137}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Proses pengukuran subyektif }{137}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Hasil pengukuran subyektif}{139}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Pengujian dan hasil pada NN}{143}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Data masukan dan luaran model}{144}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Pengujian arsitektur NN}{147}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Hasil regresi multivariabel}{147}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Hasil ANN tanpa klasifikasi}{149}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Hasil ANN dengan klasifikasi}{149}{subsubsection.4.4.2.3}%
+\contentsline {section}{\numberline {4.5}Aplikasi pemantauan kualitas gambar siaran DVB-T2}{149}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Arsitektur aplikasi}{149}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Pengujian dan implementasi aplikasi}{150}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{151}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{151}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{152}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{153}{section.5.2}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{168}{table.caption.130}%

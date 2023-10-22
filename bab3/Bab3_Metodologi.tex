@@ -2,805 +2,664 @@
 
 \vspace{1cm}
 \section{Tahapan Penelitian}
-\hspace{1,2cm}
-Penelitian ini bertujuan untuk merancang dan membuat suatu sistem yang dapat memantau kualitas video dari siaran televisi digital DVB-T2. Rencana penelitian dilakukan dengan menggabungkan dan mengembangkan dari algoritma yang sudah dilakukan oleh peneliti terdahulu. Seperti yang ditunjukkan pada gambar \ref{tahapan-penelitian},  penelitian ini diawali dari area studi yang merupakan gambar dari siaran televisi digital DVB-T2 yang ada di Indonesia, khususnya wilayah Jabodetabek. Gambar diperoleh langsung dari siaran DVB-T2 melalui perangkat komputer yang terhubung dengan \textit{tv tunner}.
-
-Pembentukkan dataset diawali dari proses pengambilan gambar/video dengan kualitas FHD dari perangkat komputer. Tahap berikutnya adalah mempelajari parameter apa saja yang dapat mempengaruhi kualitas gambar dari siaran DVB-T2 dan mencari metrik pengukuran apa saja yang dapat digunakan. Pemilihan metrik diutamakan pada metrik pengukuran kualitas gambar tanpa referensi \textit{(No-Reference, NR)} yang didapat dari peneliti terdahulu. Metrik tersebut selanjutkan diprogram kembali dengan menggunakan bahasa pemprograman \textit{python} untuk mempermudah dalam pengaplikasiannya. Hasil dari pengukuran menggunakan metrik obyektif ini nantinya digunakan sebagai parameter masukan dari model \textit{neural network (NN)}.
-
-Tahapan pembentukan dataset berikutnya adalah dengan menguji sampel  kepada beberapa responden untuk memperoleh nilai yang digunakan sebagai parameter pengukuran subjektif.  Proses pengumpulan data subjektif dilakukan dengan merancang suatu aplikasi web yang mengikuti standar ITU-R BT.500-14 tahun 2019 mengenai metodologi untuk pengukuran subjektif  pada kualitas gambar televisi. Hasil dari pengukuran subyektif nantinya akan digunakan sebagai parameter luaran dari model NN yang dibuat di tahapan selanjutnya.
+\hspace{1,2cm}Berdasarkan rumusan masalah, pada dasarnya kegiatan penelitian ilmiah ini terdapat beberapa tahap yang dijelaskan pada Gambar \ref{img:Tahapan-Penelitian}, warna hijau pada diagram adalah kebaruan (\textit{novelty}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\vspace{-0.1cm}
 	%\rule{\columnwidth}{0.1pt}
 	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/tahapan-penelitian2-1.png}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture1.png}
 	\end{center}
 	\vspace{-0.2cm}
 	%\rule{\columnwidth}{0.1pt}
-	\caption{Tahapan penelitian yang dilakukan} \label{tahapan-penelitian}
+	\captionsetup{justification=centering}
+	\caption{Tahapan Penelitian yang Dilakukan}\label{img:Tahapan-Penelitian}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Tahap berikutnya adalah dengan membuat model NN dari data pengukuran metrik objektif sebagai parameter masukan, dan data pengukuran subjektif sebagai parameter luaran. Model NN yang dibuat dilakukan dengan melakukan pengujian dari beberapa NN yang ada hingga memperoleh hasil yang sesuai dengan hasil pengukuran subjektif. Proses pembuatan model dilakukan dengan menggunakan Super Komputer DGX A100 milik Universitas Gunadarma. Selanjutnya dilakukan pengukuran akurasi dan korelasi untuk menvalidasi antara hasil dari model dibandingkan dengan pengukuran subyektif. Tahapan terakhir adalah mengimplementasikan hasil pengukuran dan model NN ke dalam perangkat \textit{edge computing}. Perangkat yang digunakan adalah Raspberry Pi 4 dengan tambahan  modul TV \textit{Hat}. Pengukuran kualitas video dapat dilakukan secara waktu nyata pada siaran DVB-T2. Hasil dari pengukuran selanjutnya ditampilan  pada \textit{website} pemantauan.
+Penelitian ini secara umum digambarkan pada Gambar \ref{img:Tahapan-Penelitian}. Dimulai dari studi area dan akusisi citra area kelapa sawit yang merupakan gambaran dimana citra data terbentuk untuk mendapatkan dataset primer dan dataset sekunder untuk dapat digunakan sebagai citra untuk komputasi. Penelitian ini mengusulkan data citra primer yang didapat dari citra drone dengan pendekatan \textit{object-based image analysis} (OBIA). Pendekatan OBIA untuk dihasilkan citra dengan otomasi dataset atau data citra yang belum diberikan label atau anotasi sebuah kelas, dapat dilakukan anotasi atau pemberikan label kelas pohon kelapa sawit secara otomatis, tidak dilakukan anotasi data citra satu per satu. Pendeketan ini dengan menggunakan proses klasifikasi dan segmentasi yang merupakan kunci dari proses pendekatan OBIA. Dataset yang terbentuk digabungkan dengan dataset sekunder yang digunakan untuk menambahdata. Data tersebut merupakan gambar atau citra yang sudah memiliki label atau anotasi untuk menjadi citra yang digunakan untuk komputasi. Citra tersebut terbagi menjadi tiga, yaitu citra data untuk pelatihan, validasi, dan pengujian dengan model CNN untuk mendeteksi dan menghitung citra pohon kelapa sawit, kemudian model digunakan dalam sistem yang terintergrasi secara real-time, sehingga dapat mendeteksi dna menghitung kepala sawit, serta mengetahui dan mendapatkan identitas dan letak posisi koordinat (latitude dan longitude) setiap pohon kelapa sawit yang berhaisl terdeteksi.
 
-
-
-\section{Area Studi}
-\hspace{1,2cm}
-Penelitian ini dilakukan di Indonesia lebih tepatnya di Wilayah Kota Depok, Jawa Barat, berbatasan dengan Kota Madya Jakarta Selatan. Proses pengambilan data video dan pengukuran kualitas gambarnya yang diperoleh dari siaran DVB-T2 dilakukan di lokasi Kampus F8, Universitas Gunadarma. Video diambil dengan menggunakan perangkat komputer yang terhubung secara langsung ke siaran DVB-T2 menggunakan\textit{ tv tunner} dan juga antena. 
-
-\subsection{Obyek Penelitian}
-\hspace{1,2cm}
-Obyek penelitian ini adalah \textit{frame} video definisi tinggi penuh \textit{(Full High Definition, FHD)} yang diperoleh dari siaran televisi DVB-T2. FHD memilki resolusi gambar 1080p atau $1920\times1080$ piksel. Pada penelitian ini durasi pengambilan sampel video sampel pada siaran DVB-T2 hanya 10 detik untuk setiap samplenya, mengikuti standar pengukuran kualitas gambar ITU-R BT.500. Video diambil dari beberapa layanan televisi lokal yang ada di Indonesia, khususnya di wilayah studi. Beberapa layanan tv digital yang didapat seperti Metro TV, Net TV, TVRI World, TVRI, Sport, dan MyTV. Layanan yang dipilih merupakan layanan yang sudah mendukung resolusi video FHD. Pada gambar \Ref{gambar-tvriw} merupakan hasil gambar FHD yang diperoleh dari siaran DVB-T2 menggunakan perangkat komputer. 
+\section{Area Studi Penelitian Kelapa Sawit}
+\hspace{1,2cm}Penelitian ini dilakukan di Indonesia yang berada pada lokasi Kebun Pendidikan dan Penelitian Kelapa Sawit milik Institut Pertanian Bogor-Cargil yang berlokasi di Jonggol, Jawa Barat dan Universitas Gunadarma di Kalimantan yang memiliki lahan yang ditumbuhi pohon kelapa sawit. Hasil lahan perbekunan pohon kelapa sawit ini berupa citra yang diambil dari drone dengan jenis DJI Mavic 2 Pro dari ketinggian 100 m di atas permukaan tanah. Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil juga dijadikan untuk pengujian penerapan sistem yang diusulkan dalam penelitian ini. Lokasi Kebun Pendidikan dan Penelitian kelapa Sawit tersebut berada pada latitude -6.4277942 dan longitude 106.8418378, sedangkan lokasi di Universitas Gunadarma PPU Campus berada pada latitude -1.318495 dan longitude 116.6678405. Luas dari kebun pohon kelapa sawit yang berada pada IPB-Cargil berdasarkan studi lapang dan perhitungan dengan DroneDeploy ini seluas 63,48 hektar, dan untuk luas wilayah yang ditanami pohon kelapa sawit pada lahan yang dimiliki Universitas Gunadarma berdasarkan hasil wawancara seluas $\approx$ 18 hektar. Gambar 3.2. dan 3.3. menampilkan posisi studi area dari penelitian ini.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\vspace{-0.1cm}
 	%\rule{\columnwidth}{0.1pt}
 	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/gambar-tvriw.png}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture2.png}
 	\end{center}
 	\vspace{-0.2cm}
 	%\rule{\columnwidth}{0.1pt}
-	\caption{Contoh Gambar FHD dari layanan TVRI World} \label{gambar-tvriw}
+	\captionsetup{justification=centering}
+	\caption{Lokasi Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil}\label{img:Lokasi-Kebun-IPB}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Proses pengambilan video membutuhkan beberapa perangkat keras dan perangkat lunak. Perangkat keras yang digunakan adalah perangkat komputer, raspberry pi, \textit{tv tunner}, antena dan monitor. Perangkat lunak yang digunakan adalah \textit{tvheadend}, \textit{visual studio code}, \textit{jupyterlab}, dan bahasa pemprograman \textit{python} beserta librari pendukungnya.
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture3.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Lokasi Universitas Gunadarma PPU Campus yang ditanami Pohon Kelapa Sawit}\label{img:Lokasi-Gunadarma}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Persiapan Data}
+\hspace{1,2cm}Persiapan data atau yang dikenal dengan \textit{data preprocessing} merupakan tahap untuk menyiapkan atau mengubah data awal dan siap untuk dapat digunakan dalam menjalankan proses modeling pada \textit{deep learning}. Tahap ini digunakan berdasarkan \textit{data mining life cycle} atau siklus hidup data mining yang dikemukakan oleh Cross-Industry Standard Process for Data Mining (CRISP-DM) Nvidia. Salah satu proses tersebut untuk membangun data dengan pembangunan dataset berbasis OBIA, sehingga proses anotasi atau pelabelan secara otomatis menjadi lebih cepat yang menjadi salah satu kebaruan dari penelitian ini. Adapun diagram persiapan data pada penelitian ini pada Gambar 3.4.
 
-\subsection{Pemilihan Perangkat Keras}
-\hspace{1,2cm}
-Penelitian ini memiliki beberapa tahapan seperti yang dijelaskan pada gambar \ref{tahapan-penelitian}, sehingga memerlukan perangkat yang mendukung dimulai dari proses pengambilan data, pengukuran obyektif dan subyektif, hingga memperoleh model, dan hasil. Perangkat keras yang digunakan juga tidak hanya satu jenis, dikarena setiap proses pada tahapan penelitian, menggunakan spesifikasi perangkat keras yang berbeda. Proses pengambilan data dan pengujian hasil dilakukan pada perangkat \textit{edge computing} yang terhubung langsung dengan siaran DVB-T2. Sedangkan pada proses pengukuran dan pembuatan model untuk jaringan saraf tiruan (NN) menggunakan perangkat komputer atau cloud computing. Perangkat keras yang digunakan diantaranya:
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.6\columnwidth]{bab3/Gambar/Picture4.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Diagram Proses Persiapan Data}\label{img:Diagram-Proses-Persiapan-Data}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Deskripsi Dataset dan Pemilihan Data}
+\hspace{1,2cm}Pada bagian ini merupakan deskripsi dataset dan pemilihan data yang berisi akuisisi citra area pohon kelapa sawit yang digunakan sebagai dataset untuk citra komputasi. Akuisisi citra ini merupakan proses menangkap atau memindai dari alat yang digunakan untuk menjadi suatu citra atau gambar. Citra area pohon kelapa sawit dibagi menjadi dua, yaitu citra dataset primer dan sekunder. Setiap gambar di dataset memiliki format *.jpg.
+
+\begin{enumerate}
+	\item Dataset Primer
+	
+	Dataset primer yang digunakan data yang dikumpulkan langsung dari sumber data langsung tanpa melalui sumber yang sudah ada atau disediakan. Dataset primer ditangkap dengan menggunakan sarana penelitian drone DJI Mavic 2 Pro dari 100 m di atas permukaan tanah. Dataset ini dijadikan sebagia dataset yang diambil secara langsung untuk digunakan sebagai dataset primer yang belum memiliki label atau anotasi objek kelapa sawit di dalam suatu citra yang ditangkap oleh drone. Citra yang dihasilkan dari area kampus Universitas Gunadarma - PPU dihasilkan 205 gambar dengan dimensi masing-masing sebesar 5472 x 3078 dengan format *.jpg, dan gambar citra pohon kelapa sawit di area tersebut seperti pada Gambar \ref{img:Hasil-Citra-Area-Pohon}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture5.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Hasil Citra Area Pohon Kelapa Sawit PPU untuk Dataset Primer}\label{img:Hasil-Citra-Area-Pohon}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Citra yang dihasilkan dari area Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil diambil dari area blok 3 dan blok 4 dengan drone DJI Mavic 2 Pro dari ketinggian 100 m di atas permukaan tanah. Luas area dari blok 3 dan blok 4 berdasarkan perhitungan dengan bantuan layanan DroneDeploy, seperti pada Tabel \ref{tbl:Luas-Area-Dari-Gambar-Citra}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{singlespace}
+		\begin{table}[H]
+			\centering
+			\caption{Luas Area Dari Gambar Citra yang Ditangkap oleh drone di Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil}
+			\label{tbl:Luas-Area-Dari-Gambar-Citra}
+			\begin{tabular}{|cc|c|}
+				\hline
+				\multicolumn{1}{|c|}{No.} & Area   & Luas Area (ha) \\ \hline
+				\multicolumn{1}{|c|}{1}   & Blok 3 & 18,20          \\ \hline
+				\multicolumn{1}{|c|}{2}   & Blok 4 & 19,31          \\ \hline
+				\multicolumn{2}{|c|}{Total}        & 37,51          \\ \hline
+			\end{tabular}
+		\end{table}
+	\end{singlespace}
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Studi lapang dengan mengambil gambar bisa mencakup area 37,51 hektar dari blok 3 dan 4 blok dari total 4 blok yang tersedia. Berikut ini hasil tangkapan citra dari Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil pada Gambar \ref{img:Hasil-Citra-Blok-3} untuk blok 3 dengan dimensi gambar 32356 x 31214 dan Gambar \ref{img:Hasil-Citra-Blok-4}. untuk blok 4, dengan dimensi gambar 43684 x 23452 dengan format *.jpg.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture6.jpg}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Hasil Citra Blok 3 untuk Dataset Primer (luas area dalam ha)}\label{img:Hasil-Citra-Blok-3}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture7.jpg}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Hasil Citra Blok 4 untuk Dataset Primer (luas area dalam ha)}\label{img:Hasil-Citra-Blok-4}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	Dataset primer ini digunakan untuk pembentukan dataset yang dibentuk secara ototamatis dalam proses anotasi atau memberikan label kepada objek kelapa sawit pada citra file yang terdeteksi tanpa harus melakukan proses anotasi atau pemberian label kelapa sawit satu persatu. Proses ini dilakukan pada bagian sub bab 3.3.3. sebagai salah satu kebaruan atau \textit{novelty} yang diusulkan.
+	
+	\item Dataset Sekunder
+	
+	Data sekunder yang digunakan merupakan data citra yang sudah memiliki label atau anotasi sebagai pohon kelapa sawit (oil palm), dan dikatakan sebagai dataset. Data yang digunakan dalam penelitian ini diambil dari 1795 citra satelit sentinel 2 dari roboflow (JS, 2022). Dataset yang sudah diberikan label dengan memiliki kotak atau bounding box. Dataset ini masing-masing memiliki dimensi citra gambar 1024 x 1024 dengan format file *.jpg. Dataset sekunder yang sudah diberikan anotasi atau label oil palm diakses melalui roboflow, seperti pada Gambar \ref{img:Data-Sekunder-yang-Sudah-Diberikan-Label}. 
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture8.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Data sekunder yang sudah Diberikan Label atau Anotasi Oil Palm\\(Sumber: JS, 2022)}\label{img:Data-Sekunder-yang-Sudah-Diberikan-Label}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Pada data sekunder ditambah untuk mendapatkan lebih banyak citra dan representasi dengan menambahkan citra menjadi 3987 citra dengan melakukan augmentasi seperti pada Tabel \ref{tbl:Augmentasi-Dataset-Sekunder}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{singlespace}
+		\begin{table}[H]
+			\centering
+			\caption{Augmentasi Dataset Sekunder untuk Menambahkan Data}
+			\label{tbl:Augmentasi-Dataset-Sekunder}
+			\begin{tabular}{|p{4cm}|p{8cm}|}
+				\hline
+				Augmentasi & Deskripsi                           \\ \hline
+				
+				Crop       & 0\% Minimum Zoom, 40\% Maximum Zoom \\ \hline
+				
+				Rotation   & Between -39$^{\circ}$ and +39$^{\circ}$               \\ \hline
+				Hue & Between -30$^{\circ}$ and +3$^{\circ}$\\ \hline
+				
+				Exposure & Between -17$^{\circ}$ and +17$^{\circ}$ \\ \hline
+				
+				Blur & Up to 2.5px \\ \hline
+				
+				Noise & Up to 2\% of pixels \\ \hline
+				
+				Mosaic & Applied \\ \hline
+			\end{tabular}
+		\end{table}
+	\end{singlespace}
+	%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Proses Tabel \ref{tbl:Augmentasi-Dataset-Sekunder}. dilakukan pada roboflow. Roboflow merupakan sebuah platform yang memfasilitasi proses anotasi dataset dan juga menyimpan data citra. Untuk data citra primer yang digunakan menggunakan drone DJI Mavic 2 Pro yang diambil dari Perkebunan Kelapa Sawit Institut Pertanian Bogor yang terletak di Jonggol dan di Universitas Gunadarma Kalimantan. Dataset primer yang diambil di Universitas Gunadarma di Kalimantan menghasilkan 205 citra, sedangkan data citra primer yang diambil dari Jonggol, Jawa Barat pada blok 3 dan 4 dipecah, sehingga menghasilkan 69 citra seperti yang ditunjukkan pada Gambar \ref{img:Gambar-Dataset-Sekunder}.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture9.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{(a) Gambar Dataset Sekunder; (b) Gambar Dataset Primer di Kalimantan; (c) Gambar Dataset Primer di Jonggol;.}\label{img:Gambar-Dataset-Sekunder}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{enumerate}
+
+\subsection{Membersihkan Data}
+Bagian ini dikenal dengan \textit{clean data} atau membersihkan data. Pada penelitian ini yang dilakukan pada tahap membersihkan data adalah memvalidasi citra yang ditangkap oleh drone berada pada tangkapan citra yang tegak, tidak diambil dari sisi samping dari kamera drone untuk menjaga keseragaman data yang dimiliki pada dataset, serta dilihat juga apakah gambar tersebut memiliki tangkapan citra pohon kelapa sawit atau tidak, seperti pada Gambar 3.10.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture10.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Citra yang tidak digunakan sebagai dataset (a) tidak ada pohon citra kelapa sawit; (b) tangkapan citra dari drone tidak dari sisi atas yang tegak}\label{img:Citra-Yang-Tidak-Digunakan}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Membangun Data}
+\hspace{1,2cm}Persiapan dan pemahaman data dari data primer dan sekunder merupakan tugas paling penting. Tugas ini membutuhkan dan menghabiskan waktu hampir 70\% waktunya untuk menganalisis kumpulan data. Tugas yang dilakukan dalam dataset diantaranya persiapan dan pemahaman data, seperti memberi anotasi atau label pada data atau dengan istilah lain membangun data (\textit{construct data}). Selama ini, dalam melakukan anotasi atau pemberian label dilakukan masih manual atau memberikan tanda kotak (\textit{bounding box}) untuk setiap data atau objek pada gambar yang ditandai sebagai dataset. Maka, dibutuhkan suatu pendekatan untuk melakukan anotasi atau labelisasi secara otomatis, yaitu pembentukan dataset berbasis \textit{object-based image analysis} (OBIA). Pendekatan dalam penelitian ini menggunakan OBIA. Secara umum OBIA menawarkan sebuah alternatif untuk pemrosesan citra berbasis objek. Mengekstrak informasi tutupan lahan/penggunaan lahan yang merupakan tantangan baru, tetapi dengan prinsip dasar klasifikasi dan segmentasi dapat digunakan untuk membuat dataset secara otomatis. Dataset yang digunakan berupa gambar primer yang sudah dimiliki berasal data tangkap citra drone. Algoritma \textit{template matching} dan \textit{balanced iterative reducing and clustering using hierarchies} (BIRCH) dapat digunakan untuk pengenalan gambar, yaitu membandingkan dua atau lebih gambar yang identik pada waktu dan kondisi yang berbeda, sehingga dapat menyaring objek dengan nilai ambang batas atau (thereshold) dan membentuk \textit{fine tuning} atau nilai yang lebih baik untuk dapat dideteksi secara otomatis. Pembentukan atau pemberian label dengen pendekatan OBIA inilah menjadi kebaruan atau \textit{novelty} untuk mendukung proses tersebut menjadi lebih cepat dan signifikan dalam pemberian label atau anotasi pada dataset citra.
+
+Pengembangan sistem untuk membangun dataset dengan anotasi atau label otomatis dengan sarana penelitian seperti pada Tabel \ref{tbl:Sarana-Penelitian-Pengembangan-Sistem-Untuk-Membangun-Dataset}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Sarana Penelitian Pengembangan Sistem untuk Membangun Dataset dengan Anotasi atau Label Otomatis}
+		\label{tbl:Sarana-Penelitian-Pengembangan-Sistem-Untuk-Membangun-Dataset}
+		\begin{tabular}{|c|c|}
+			\hline
+			Alat                  & Keterangan                        \\ \hline
+			Drone                 & DJI Mavic 2 Pro                   \\ \hline
+			Jupyter Notebook      & V 6.4.11                          \\ \hline
+			Python                & Python 3                          \\ \hline
+			OS Name               & Microsoft Windows 10 Pro          \\ \hline
+			Processor             & Intel Core i5-6300U CPU @2.40 GHz \\ \hline
+			Phsyical Memory (RAM) & 8,00 GB                           \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Diagram alur untuk membuat dataset otomatis seperti pada Gambar \ref{img:Diagram-Alir-Pembangunan-Dataset}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture11.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Diagram Alir Pembangunan Dataset Berdasarkan Pendekatan OBIA}\label{img:Diagram-Alir-Pembangunan-Dataset}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Membuat Templates}
+\hspace{1,2cm}Pada bagian ini, pembuatan template awal dilakukan dalam beberapa tahap, antara lain:
+\begin{enumerate}
+	\item Input Image
+	
+	Proses input pertama dilakukan sebagai proses input gambar yang nantinya dilakukan pengenalan objek pohon kelapa sawit. File input tersebut berformat *.jpg.
+	
+	\item Preprocessing
+	
+	Proses preprocessing pada gambar digunakan untuk menyamakan ukuran matriks yang akan dicocokkan dengan algoritma \textit{Template Matching Correlation} dan menghilangkan noise pada gambar.
+	Pertama, dipersiapkan dimensi citra berukuran 5472 x 3078, kemudian dibuat fungsi untuk menampilkan citra dan fungsi \textit{click view} agar pengguna dapat menekan sebagai simbol untuk menentukan citra dengan titik lokasi dalam koordinat (x, y) mana yang digunakan sebagai citra template dasar.
+	
+\end{enumerate}
+
+\subsubsection{Menyesuaikan Template}
+\hspace{1,2cm}Menyesuaikan template digunakan sebagai dasar untuk dapat menentukan dan mengoreksi titik tengah (x, y) gambar dasar yang digunakan, dan memastikan bahwa titik tengah gambar berada di tengah. Mengubah posisi ini dengan menggunakan titik geser sebanyak 2 piksel, bisa ke kiri, kanan, atas, atau bawah. Dalam menerapkan ukuran gambar yang dipilih sebagai template gambar dasar yaitu 12 x 12. Adapun persamaan yang diterapkan untuk menyesuaikan template sebagai berikut.
+
+\begin{table}[H]
+	\begin{tabular}{lr}
+		$function\ down\left(no_id,\ MPixel=a\right):\ \ pixel\left[no_id\right]\left[1\right]+=MPixelNow$ & (1) \\
+		
+		$function\ up\left(no_id,\ MPixel=a\right):\ \ pixel\left[no_id\right]\left[1\right]-=MPixelNow$ & (2) \\
+		
+		$function\ left\left(no_id,\ MPixel=a\right):\ pixel\left[no_id\right]\left[0\right]-=MPixelNow$ & (3) \\
+		
+		$function\ right\left(no_id,\ MPixel=a\right):\ \ pixel\left[no_id\right]\left[0\right]+=MPixelNow$ & (4) \\
+		
+		$function\ delete\left(no_id\right):\ \ pixel\left[no_id_new\right]=list(pixel[[no_id_new])$ & (5)
+	\end{tabular}
+\end{table}
+Keterangan:
 \begin{itemize}
-	\item Perangkat \textit{Edge Computing} untuk pengambilan data dan juga pengukuran secara waktu nyata menggunakan Raspberry Pi 4 model B dengan prosesor Cortex-A72 ARM v8 64-bit up to 1.5 Mhz, VideoCore VI support Openg GL 3.0, dan RAM LPDDR4 8GB.
-	\item Perangkat \textit{tv-tunner} untuk \textit{edge computing} yang digunakan adalah raspberry pi TV HAT \textit{(Hardware Attach on Top)} dengan Tuner Sony CXD2880, mendukung DVB-T2 dengan frekuensi pembawa VHF dan UHV, mendukung format video MPEG-2 dan H.264, yang umum digunakan dalam siaran televisi digital.
-	\item Perangkat pengukuran video subyektif  yang digunakan adalah Macbook 2019, prosesor intel hexa-core i7 Gen-9, GPU AMD Radeon Pro 555X, RAM DDR4 16GB, layar 15.4 inci resolusi $2880\times1800$.
-	\item Perangkat untuk pengukuran dan  membuat model \textit{neural network} menggunakan \textit{Super Computer }NVIDIA DGX A100 dengan virtual machine yang digunakan RAM 20GB dan GPU 40GB
+	\item no\textunderscore id = nomor identifikasi gambar yang digunakan sebagai template.
+	
+	\item MPixel = variabel seberapa jauh piksel bergerak.
+	
+	\item a = angka seberapa jauh piksel bergerak.
+	
+	\item [1] = matriks id yang digunakan untuk referensi arah y.
+	
+	\item [0] = matriks id yang digunakan untuk referensi arah x.
+	
+	\item MPixelNow = nilai pembaruan setelah bergeser sebanyak piksel tertentu.
 	
 \end{itemize}
 
-Pemilihan perangkat komputer yang digunakan sebagai \textit{edge computing} berdasarkan pada kemampuan untuk dapat dapat terhubung langsung dengan modul TV Hat yang bisa menerima siaran televisi digital DVB-T2. Sedangkan perangkat yang digunakan dalam membuat model NN berdasarkan pada kecepatan memproses data dan juga merupakan salah satu fasilitas dari Universitas Gunadarma. Kedua perangkat tersebut menggunakan versi perangkat lunak yang sama untuk memudahkan proses duplikasi program.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[H]
-	\centering
-	\caption{Versi bahasa pemprograman python dan librarinya}
-	\label{tabel-spek-sw}
-	\begin{tabular}{|c|c|c|c|c|c|}
-		\hline
-		Nama Library & python & opencv & matplotlib & numpy  & tensorflow \\ \hline
-		Versi        & 3.8.5  & 4.6.0  & 3.2.2      & 1.21.6 & 2.11.0     \\ \hline
-	\end{tabular}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Fokus dari penelitian terdapat pada sisi penerima siaran televisi digital. Siaran DVB-T2 yang diterima dari antenna menuju \textit{receiver} dan mengalami beberapa tahapan \textit{decoder} untuk memperoleh video dan audio. Frame gambar dari video hasil akhir proses tersebut yang akan diukur dan didapat nilai kualitasnya berdasarkan beberapa parameter.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/fokus-penelitian.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Fokus Penelitian} \label{fokus-penelitian}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Luaran akhir dari penelitian ini adalah mendapat model yang sesuai untuk dapat melakukan pengukuran kualitas gambar pada siaran DVB-T2. Pengukuran juga dilakukan terhadap parameter sinyal dari siaran yang sedang dilakukan pengukuran gambarnya. Hasil dari pengukuran akan secara waktu nyata ditampilkan pada \textit{website} dan tersimpan secara berkala.
-
-
-\section{Pembentukan \textit{Dataset}}
-\hspace{1.2cm}
-Dalam mencapai tujuan  dari penelitian maka dibuat sebuah rancangan dari sistem secara keseluruhan. Sistem terdiri dari beberapa perangkat keras dan lunak yang memiliki tugas dan fungsi masing-masing yang saling terhubung. Keterbaruan dari penelitian ini juga adalah sistem secara keseluruhan yang ditunjukkan pada gambar \ref{rancangan-sistem} dan NN untuk dalam proses pengukuran kualitas gambar secara waktu nyata.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/rancangan-sistem.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Rancangan Sistem Pengukuran Kualitas Gambar Siaran DVB-T2} \label{rancangan-sistem}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Sistem diawali dari pengambilan sinyal siaran tv digital menggunakan Antenna yang kemudian di split ke dua alat yaitu yang pertama adalah mikro komputer \textit{Raspberry Pi }dengan \textit{tv tunner}, kedua \textit{signal analyzer}. Aplikasi yang digunakan pada raspberry pi adalah \textit{tvheadend} yang berfungsi menampilkan siaran tv digital pada perangkat \textit{rapsberry pi} dan menampilkan status pengukuran sinyalnya. Spectrum analyzer digunakan hanya untuk melakukan validasi pada parameter sinyal siaran tv digital. Selanjutnya dengan menggunakan aplikasi ffmpeg dan pemprograman python setiap video yang sedang ditayangkan dapat diambil frame gambarnya. Frame yang diambil diukur menggunakan obyektif metriks untuk memperoleh parameter input dari kualitas gambar frame tersebut. Hasil pengukuran berupa angka yang nantinya akan dimasukkan ke dalam model NN untuk memperoleh nilai kualitas yang sudah disesuaikan dengan penilaian subyektif manusia. Hasil akhir pengukuran sinyal dan juga kualitas gambar ditampilkan dalam sebuat \textit{website}.
-
-\subsection{Akuisisi \textit{Dataset} Video}
-\hspace{1,2cm}
-Video yang dijadikan dataset adalah video yang diperoleh dari siaran DVB-T2 secara langsung dengan resolusi HD dan FHD, yaitu resolusi 1280x720 piksel (720p) dan 1920x1080 piksel (1080p). Proses pengambilan video dilakukan dengan menggunakan perangkat keras \textit{Raspberry Pi 4} dengan modul \textit{TV HAT}. Kemudian perangkat tersebut harus terhubung dengan antena televisi agar dapat menerima siaran DVB-T2. Antena yang digunakan pada penelitian ini adalah PX HDA-5000. 
-
-Perangkat lunak yang digunakan dalam proses pengambilan data video adalah \textit{tvheadend}. Aplikasi tersebut dapat menampilkan siaran televisi digital dari tv \textit{tunner} ke perangkat komputer. Aplikasi tvheadend kemudian diatur untuk melakukan perekaman video HD dari siaran televisi digital. Beberapa layanan televisi yang sudah HD diantaranya TVRI HD, TVRI World, Net TV HD dan Metro TV HD. Dalam pengambilan dataset, diambil sejumlah 100 video dari masing-masing layanan tersebut dengan durasi per video adalah 10 detik. 
-
-
-\subsection{Metrik Obyektif Pengukuran Kualitas Gambar}
-\hspace{1,2cm}
-Metrik obyektif merupakan suatu ukuran atau parameter yang dapat diukur secara kuantitaf. Pada penelitian digunakan beberapa metrik obyektif untuk melakukan pengukuran pada kualitas video. Metrik obyektif yang digunakan diantarauntuk pengukuran spatial pada gambar seperti  blocking  dan blur, ada juga metrik yang digunakan untuk melakukan pengukuran temporal terhadap frame yang terdapat pada video. Metrik obyektif  juga digunakan untuk melakukan pemilihan dataset dan sebagai parameter masukan yang nantinya digunakan dalam NN.
-
-\subsubsection{Metrik Bloking}
-\hspace{1,2cm}
-\textit{Blocking} pada gambar adalah efek visual yang terjadi ketika akibat kompresi data yang dilakukan pada gambar atau video dengan mengurangi jumlah bit yang digunakan untuk merepresentasikan piksel di dalamnya. Saat terjadi kerusakan pada bit data tersebut dan gambar didekompresi kembali, maka akan muncul kerusakan seperti  munculnya kotak-kotak besar yang terlihat di dalam gambar, yang disebut sebagai \textit{bloking}. Gambar dengan kondisi \textit{blocking} dapat dilihat pada gambar \ref{gambar-blocking}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/gambar-blocking.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Perbandingan gambar normal dan \textit{blocking}} \label{gambar-blocking}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-Pada penelitian ini digunakan salah satu algoritma pengukuran tingkat \textit{blocking} pada gambar yang dikemukakan oleh \textit{Zhou Wang}. Teknik pengkodean gambar yang membagi gambar menjadi sub-blok 8x8 piksel. Proses transformasi dan kuantisasi kemudian diterapkan pada masing-masing sub-blok secara individual dan independen. Teknik pengkodean gambar ini umumnya digunakan dalam teknologi kompresi gambar, seperti pada standar kompresi JPEG, dan dapat menyebabkan munculnya artefak blok atau blocking artifact pada gambar. Sehingga pengukuran \textit{bloking} pada gambar dilakukan setiap 8 piksel secara horizontal dan vertikal.
-
-\begin{equation} 
-	\label{eq3-1}
-	\begin{split}
-		&image\_resolution = x(m,n) \\
-		&dimana, \ m \in \left[ 1,M \right], \ n\in \left[ 1,N \right]
-	\end{split}
-\end{equation}
-
-Gambar diubah ke dalam skala keabuan (grayscale) untuk dapat memperoleh satu saluran warna dengan jumlah m baris dan n kolom. Kemudian dilakukan pengukuran secara terpisah antara baris dan kolom. Ide dasar dari algoritma ini adalah untuk mendeteksi sinyal blok dan memperkirakan dayanya dengan menggunakan asumsi bahwa gambar yang berblok adalah gambar yang tidak berblok yang terganggu oleh sinyal blok ideal. Algoritma ini dimulai dengan menghitung selisih antara piksel-piksel sepanjang baris untuk mendapatkan selisih horizontal d\textsubscript{h} dan sepanjang kolom untuk mendapatkan selisih vertikal d\textsubscript{v}. 
-
-\begin{equation} 
-	\label{eq3-2}
-	d_{h}(m,n)=x(m,n+1)-x(m,n), \ n\in [1, N-1] 
-\end{equation}
-
-\begin{equation} 
-	\label{eq3-3}
-	d_{v}(m,n)=x(m+1,n)-x(m,n), \ n\in [1, M-1]
-	\vspace{0.5cm}
-\end{equation}
-
-Setelah selisih-selisih ini dihitung, gambar selisih dapat diperoleh. Selanjutnya, keberblokan dihitung dengan mengambil rata-rata selisih di sepanjang batas blok. Untuk gambar berukuran M x N, pengukuran horizontal didefinisikan sebagai persamaan berikut:
-
-\begin{equation} 
-	\label{eq3-4}
-	B_{h}=\frac{1}{M(\left\lfloor N/8 \right\rfloor-1)}\sum_{i=1}^{M}\sum_{j=1}^{\left\lfloor N/8 \right\rfloor-1}\left| d_h(i,8j) \right|
-	\vspace{0.5cm}
-\end{equation}
-
-Selanjutkan dilakukan pengukuran tingkat aktifitas sinyal. Aktivitas sinyal gambar mengacu pada ukuran intensitas sinyal atau informasi yang terkandung dalam gambar. Semakin tinggi aktivitas sinyal, semakin banyak detail yang terdapat dalam gambar dan semakin sedikit pengaburan atau keberblokan yang terlihat. Pengukuran aktivitas sinyal dapat membantu dalam mengidentifikasi pengaburan atau keberblokan pada gambar. Pada metode ini dilakukan pengukuran aktifitas sinyal gambar meliputi rata-rata selisih absolut (A) antar sampel gambar di dalam blok dan tingkat  \textit{zero-crossing}  (Z) \citep{Wang2002}.
-
-\begin{equation} 
-	\label{eq3-5}
-	A_h=\frac{1}{7}\left[\frac{8}{M(N-1)}\sum_{i=1}^{M}\sum_{j=1}^{N-1}\left| d_h(i,j) \right|-B_h\right]
-	\vspace{0.5cm}
-\end{equation}
-
-Pengukuran aktifitas gambar kedua adalah menghitung rata-rata dari \textit{zero-crossing}. Zero crossing adalah fenomena di mana sinyal atau gelombang melintasi sumbu nol. Hal ini dapat dihitung dengan menghitung jumlah kali di mana sinyal melintasi sumbu nol dalam interval waktu tertentu. Semakin banyak tingkat nol-crossing yang terjadi, semakin tinggi aktivitas sinyal dan semakin banyak detail yang terdapat dalam gambar atau sinyal tersebut. 
-
-\begin{equation} 
-	\label{eq3-6}
-	z_h(m,n)=\begin{cases}1 & horizontal \ ZC \ pada \ d_h(m,n) \\0 & selain \ itu\end{cases}
-	\vspace{0.5cm}
-\end{equation}
-
-\begin{equation} 
-	\label{eq3-7}
-	Z_h=\frac{1}{M(N-2)}\sum_{i=1}^{M}\sum_{j=1}^{N-2} d_h(i,j)
-	\vspace{0.5cm}
-\end{equation}
-
-Metode yang sama dilakukan pada pengukuran secara vertikal pada B\textsubscript{v}, A\textsubscript{v}, dan Z\textsubscript{v}. Kemudian, rata-rata blockiness, B, rata-rata perbedaan absolut, A, dan rata-rata tingkat \textit{zero crossing,} Z, diperoleh dengan menggunakan pengukuran vertikal dan horizontal yang dijumlahkan dan dibagi dua.
-
-\begin{equation} 
-	\label{eq3-8}
-	B=\frac{B_h+B_v}{2}, \ A=\frac{A_h+A_v}{2}, \ B=\frac{Z_h+Z_v}{2}
-	\vspace{0.5cm}
-\end{equation}
-
-
-Ukuran blockiness akhir, S, kemudian dapat diperoleh menggunakan rumus:
-\begin{equation} 
-	\label{eq3-9}
-	S=\alpha+\beta B^{\gamma_1}A^{\gamma_2}B^{\gamma_3}
-	\vspace{0.5cm}
-\end{equation}
-
-Dimana  $\alpha, \beta,{\gamma _1}, {\gamma _2}, $ dan $ {\gamma _3}$, mewakili parameter prediksi yang diperoleh melalui fitting kurva data eksperimen subjektif  yang dilakukan oleh Wang. Kemudian berdasarkan algoritma diatas maka dibuatlah program ke dalam bahasa pemprograman python.
-
-\subsubsection{Metrik Blur}
-\hspace{1,2cm}
-Blur pada gambar adalah kondisi di mana gambar menjadi kurang tajam dan terlihat kabur seperti yang ditunjukkan pada gambar \ref{lena-blur}. Hal ini disebabkan oleh hilangnya komponen frekuensi tinggi pada gambar, yang dapat terjadi karena berbagai faktor seperti pergerakan kamera saat pengambilan gambar atau ketidakfokusan saat pemotretan. Gambar bisa menjadi blur juga karena transmisi, yaitu ketika sinyal gambar dikirimkan melalui jaringan atau media transmisi, seperti kabel atau gelombang radio. Selama transmisi, sinyal gambar dapat terdistorsi atau terganggu oleh kebisingan dan interferensi. Hal ini dapat menyebabkan kehilangan atau penyimpangan data gambar, terutama pada detail halus dan frekuensi tinggi, yang akhirnya menyebabkan gambar tampak blur atau kabur. Kualitas transmisi bergantung pada faktor-faktor seperti kecepatan transfer data, kualitas sinyal, dan jarak antara pemancar dan penerima. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=0.8\columnwidth]{bab3/Gambar/lena-blur.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Perbandingan Gambar Blur dan tidak, dari kiri ke kanan: Tumbling Es, Lena, Street View \citep{Xu_2021}} \label{lena-blur}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Gejala blur pada gambar dapat diidentifikasi dengan melihat kehalusan tepi atau kekurangan detail halus pada gambar. Terdapat beberapa teknik yang dapat digunakan untuk mengukur tingkat blur pada gambar, salah satunya adalah dengan menggunakan deteksi tepi. Metode ini didasarkan pada observasi bahwa gambar yang kabur memiliki tepian yang kurang tajam atau tidak jelas, karena kehilangan komponen frekuensi tinggi. Oleh karena itu, dengan mendeteksi tepi pada gambar, kita dapat mengukur tingkat kejelasan tepi yang terdapat pada gambar dan menggunakan nilai ini untuk mengindikasikan tingkat blur pada gambar tersebut \citep{Ferzli_2009}. 
-
-Deteksi tepi dapat dilakukan dengan menggunakan algoritma Sobel. Dalam metode ini, gambar diubah menjadi citra grayscale dan dilakukan operasi perataan pada gambar dengan kernel tertentu untuk menghilangkan noise.
-
-\begin{equation} 
-	\label{eq3-10}
-	G_x = 
-	\begin{bmatrix}
-		-1 & 0 & +1 \\
-		-2 & 0 & +2 \\
-		-1 & 0 & +1
-	\end{bmatrix} \ \ \ \ \ \ \ \    
-	G_y=
-	\begin{bmatrix}
-		+1 & +2 & +1 \\
-		0  & 0  & +2 \\
-		-1 & -2 & -1
-	\end{bmatrix}\\
-	\vspace{0.5cm}
-\end{equation}
-
-
-Selanjutnya, operasi deteksi tepi dilakukan dengan menghitung turunan parsial gambar pada arah vertikal dan horizontal. Hasil dari kedua arah ini kemudian digabungkan dengan menghitung magnitude gradien pada setiap titik pada gambar seperti yang terlihat pada gambar \ref{lenna-edge}. Hasil akhir yang dihasilkan adalah citra biner dengan nilai 0 dan 1, yang menunjukkan lokasi tepi pada gambar.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=0.8\columnwidth]{bab3/Gambar/lenna-edge.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Hasil Transformasi ke bentuk deteksi tepi menggunakan sobal pada gambar Lenna} \label{lenna-edge}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Dalam deteksi tepi, local minimum dan local maximum mengacu pada titik-titik di mana perubahan intensitas mencapai minimum atau maksimum dalam sekelompok piksel pada gambar. Dalam konteks algoritma Marziliano, local minimum dan local maximum digunakan untuk menentukan spread dari tepi vertikal pada gambar yang kabur. Local minimum dan local maximum pada tepi vertikal dihitung pada setiap baris gambar, dan jarak antara kedua titik tersebut memberikan informasi tentang tingkat blur pada gambar \citep{Marziliano}.
-
-Detailnya jika tepi ditemukan, maka lokal ekstremum (maksimum lokal dan minimum lokal) dicari ke arah kiri dan kanan dari piksel tepi. Untuk mencari jarak atau panjang tepi, selisih antara maksimum lokal dan minimum lokal dihitung. Hasilnya diidentifikasi sebagai ukuran blur lokal untuk lokasi tepi saat ini. Akhirnya, ukuran blur global dihitung dengan menghitung rata-rata \textit{blur} lokal di seluruh lokasi tepi. Algoritma dari teknik pengukuran blur ini ditunjukkan pada Gambar \ref{diagram-blur}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=0.6\columnwidth]{bab3/Gambar/algoritma-blur.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Diagram alur algoritma pengukuran blur pada gambar \citep{Marziliano}} \label{algoritma-blur}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Metrik pengukuran \textit{blur} tersebut digunakan pada penelitian ini sebagai salah satu parameter masukan untuk pembuatan model NN. Metrik tersebut ditulis kembali menggunakan bahas apemprograman python untuk mempermudah proses pengukuran yang dilakukan pada hardware yang digunakan.
-
-\subsubsection{Metrik Temporal}
-\hspace{1,2cm}
-Metrik temporal merujuk pada metode pengukuran kualitas video yang fokus pada perubahan dari waktu ke waktu. Metrik ini digunakan untuk mengukur bagaimana perubahan frame dari video yang dihasilkan mempengaruhi kualitas keseluruhan dari video tersebut. Beberapa faktor yang dapat mempengaruhi metrik temporal meliputi jumlah frame yang hilang atau rusak, kualitas gambar pada setiap frame, dan kehalusan perpindahan antar frame. Metrik temporal dapat digunakan untuk mengukur kualitas video pada berbagai jenis aplikasi, termasuk video streaming dan komunikasi video.
-
-Pendekatan umum untuk mendeteksi frame yang beku adalah dengan menghitung mean-squared error (MSE) antara frame saat ini dan frame sebelumnya, dan mempertimbangkan frame saat ini sebagai frame yang beku jika MSE=0. Pertama, video input dikonversi ke ruang warna YUV. Frame yang potensial beku kemudian diidentifikasi berdasarkan MSE antara frame saat ini dan frame sebelumnya:
-
-\begin{equation}
-	\begin{aligned}
-		YM_{1}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(Y(x,y,i)-Y(x,y,i-1))^{2}
-	\end{aligned}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		UM_{1}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(U(x,y,i)-U(x,y,i-1))^{2}
-	\end{aligned}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		VM_{1}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(V(x,y,i)-V(x,y,i-1))^{2}
-	\end{aligned}
-\end{equation}
-
-Dimana:
-\newline
-$Y$ 	\hspace{0.4cm}: saluran warna \textit{luminance}\newline
-$U$ 	\hspace{0.4cm}: sarulan warna \textit{chrominance} hijau ke merah \newline
-$V$ 	\hspace{0.4cm}: sarulan warna \textit{chrominance} biru ke kuning \newline
-$M$ 	\hspace{0.3cm}: veriabel pengukuran antar frame \newline
-$W$ 	\hspace{0.3cm}: lebar resolusi gambar \newline
-$H$ 	\hspace{0.4cm}: panjang resolusi gambar \newline
-$x$ 	\hspace{0.5cm}: piksel baris pada gambar \newline
-$y$ 	\hspace{0.4cm}: piksel kolom pada gambar\newline
-$i$ 	\hspace{0.5cm}: jumlah frame dalam video (i = 2,...,n) \newline
-
-Konten dengan gerakan sangat rendah dapat menghasilkan MSE yang sangat kecil antara \textit{frame} yang berurutan meskipun \textit{frame} ini tidak beku (\textit{freeze}). Untuk membatasi jumlah positif palsu, mekanisme berikut diterapkan: jika sebuah \textit{frame} berpotensi dibekukan maka \textit{frame} tersebut juga diperiksa terhadap \textit{frame} pertama dari peristiwa pembekuan (kecuali jika \textit{frame} saat ini juga merupakan \textit{frame} pertama dari peristiwa pembekuan). $YM_2(i)$, $UM_2(i)$ dan $VM_2(i)$ menunjuk MSE (masing-masing dalam bidang warna Y, U dan V) antara \textit{frame} saat ini dan \textit{frame} pertama dari peristiwa pembekuan\citep{Quan_Huynh_Thu_2009}.
-
-\begin{equation}
-	\begin{aligned}
-		YM_{2}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(Y(x,y,i)-Y(x,y,i-k))^{2}
-	\end{aligned}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		UM_{2}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(U(x,y,i)-U(x,y,i-k))^{2}
-	\end{aligned}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		VM_{2}(i)=\frac{1}{W*H}\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}(V(x,y,i)-V(x,y,i-k))^{2}
-	\end{aligned}
-\end{equation}
-
-di mana $(i-k)$ adalah indeks temporal dari \textit{frame} pertama dari peristiwa pembekuan di mana \textit{frame} $i$ berada. Sebuah \textit{frame} $i$ akan ditandai sebagai beku jika MSE antara \textit{frame} sekarang dan \textit{frame} sebelumnya tetapi juga antara \textit{frame} ini dan \textit{frame} pertama dari \textit{event freeze} berada dibawah \textit{threshold} T yang sangat kecil dimana \textit{threshold} T ditetapkan ke 1  \citep{Quan_Huynh_Thu_2009}.
-
-\begin{equation}
-	\begin{aligned}
-		FreezeFlag=\left\{\begin{matrix}
-			1 & if(YM,UM,VM)_{1,2}(1)<T  \\
-			0 & lainnya \\
-		\end{matrix}\right.
-	\end{aligned}
-\end{equation}
-
-Selanjutnya, nilai durasi freze dijumlahkan untuk memperolah nilai seberapa besar freeze yang terjadi dalam interveal waktu tertentu. Metrik untuk mendeteksi kebekuan pada video ini juga dituliskan dalam bahasa pemprograman phthon sebagai parameter masukan.
-
-\subsection{Pengukuran Subyektif Kualitas Gambar}
-\hspace{1,2cm}
-Subyektif assessment adalah metode pengukuran yang melibatkan partisipasi manusia untuk memberikan penilaian kualitatif terhadap suatu produk atau layanan berdasarkan pengalaman mereka secara langsung. Dalam konteks pengolahan citra atau video, subyektif assessment dapat digunakan untuk mengukur kualitas visual dari hasil pengolahan tersebut berdasarkan persepsi pengguna. Pada penelitian ini digunakan standar pengukuran subyektif berdasarkan rekomendasi ITU-R BT.500-14 yang diterbitkan Oktober 2019. Standar tersebut menyediakan pedoman dan prosedur untuk penilaian subyektif kualitas gambar televisi \citep{IRB2019}. 
-
-\subsubsection{Single Stimulus Standar ITU-R 500-14}
-\hspace{1,2cm}
-Single stimulus methods (SS) dipilih sebagai salah satu metode subjective assessment pada ITU-R BT.500-14 karena lebih mudah dilakukan dan lebih efisien dalam hal waktu. Metode ini hanya memerlukan satu gambar  atau video per \textit{sample} sebagai stimulus, sehingga tidak memerlukan waktu yang lama dalam proses evaluasi. Selain itu, metode ini juga tidak memerlukan gambar referensi atau acuan, sehingga lebih fleksibel dan dapat digunakan dalam berbagai kondisi yang berbeda. Meskipun demikian, single stimulus methods juga memiliki kekurangan yaitu rentan terhadap bias pengamat, sehingga perlu dilakukan pengujian ulang dan dilakukan dengan panelis yang berbeda untuk menghasilkan hasil yang lebih akurat dan konsisten.
-
-Metode Single Stimulus dapat digunakan untuk mengevaluasi kualitas video dan gambar. Namun, karena video adalah sekuens gambar yang saling terkait, maka pada pengujian video, stimulus yang diberikan pada setiap pengujian harus sesuai dengan konteks dari adegan yang dipresentasikan. Hal ini bisa dilakukan dengan memilih frame yang mewakili adegan atau dengan memilih klip video pendek yang mewakili adegan tersebut \citep{Seshadrinathan_2010}.
-
-Terdapat beberapa persyaratan pengukuran Single Stimulus (SS) pada ITU-R BT.500-14 yang terdiri dari beberapa hal, antara lain:
+\subsubsection{Evaluasi Korelasi diantara Template}
+\hspace{1,2cm}Pada bagian ini, setelah gambar template awal diambil, langkah berikutnya adalah mengevaluasi korelasi di antara template yang ada. Hal ini digunakan dalam mengambil template untuk melihat gambar yang sesuai. Untuk mencocokkan gambar, gunakan korelasi silang dan normalisasi untuk menemukan contoh template dalam gambar. Dalam mengevaluasi korelasi antara template, menggunakan cara kerja pencocokan template dan \textit{normalized cross correlation} (NCC).
 
 \begin{enumerate}
-	\item Pemilihan materi uji yang representatif dan bervariasi, serta disajikan dalam kondisi yang sama untuk semua panelis.
-	\item Jumlah panelis minimal 15 orang, yang diwajibkan untuk memenuhi syarat tertentu, seperti usia, pengalaman dalam menonton televisi, kesehatan mata, dan tidak memiliki kecacatan warna.
-	\item Prosedur pelatihan yang ketat untuk panelis dalam memberikan penilaian yang konsisten dan obyektif.
-	\item Penggunaan skala pengukuran yang sesuai, yaitu skala likert yang terdiri dari 5 hingga 7 pilihan untuk menilai kualitas gambar.
-	\item Pelaksanaan pengujian dan pengolahan data dengan standar yang ketat dan terdokumentasi dengan baik.
+	\item \textit{Template Matching}
+	
+	Metode gambar yang besar untuk menemukan bagian kecil yang cocok dengan gambar template disebut pencocokan template. Metode ini membandingkan template yang diberikan dengan ukuran jendela yang sama dan gambar yang paling mirip dengan template tersebut. Dalam template matching, proses pencarian dimulai dengan mencari lokasi pusat dari template gambar dan mengisi nilai nol dari referensi gambar. Gambar \ref{img:Template-Referensi-Matriks}. template dan referensi matriks. 
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[H]
+		\vspace{-0.1cm}
+		%\rule{\columnwidth}{0.1pt}
+		\begin{center}
+			\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture12.png}
+		\end{center}
+		\vspace{-0.2cm}
+		%\rule{\columnwidth}{0.1pt}
+		\captionsetup{justification=centering}
+		\caption{Template and Referensi Matriks}\label{img:Template-Referensi-Matriks}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	Gambar \ref{img:Template-Referensi-Matriks} (a) menunjukkan dua matriks yang digambarkan sebagai template dan referensi gambar sebelum proses pencocokan gambar. Pertama kali proses dimulai, lokasi di tengah template harus diidentifikasi terlebih dahulu, sehingga titik tengah akan jatuh pada piksel referensi pertama seperti yang ditunjukkan pada Gambar \ref{img:Template-Referensi-Matriks} (a). Dalam menemukan titik tengah lokasi template, akan lebih mudah untuk membagi gambar template menjadi dua. Pada contoh template ini, titik tengah lokasi berada pada koordinat (2,2) dengan nilai 4. Pada gambar referensi ditambahkan baris dan kolom dengan nilai nol pada setiap sisi gambar. Jumlah baris dan kolom yang diisi dengan angka nol sama dengan panjang sumbu x dan sumbu y pada template dibagi dua. Gambar \ref{img:Template-Referensi-Matriks} (b) menunjukkan bagaimana gambar template mengisi piksel referensi ketika proses dimulai. Setiap sisi dari gambar referensi berhasil ditambahkan dengan baris dan kolom dengan nilai 0. Dengan menambahkan gambar dengan nilai nol, template tengah dengan mudah ditempatkan pada piksel pertama dari gambar referensi. Untuk setiap lokasi, nilai gambar ditambahkan dan template dijumlahkan dengan menggunakan metode ukuran kemiripan atau \textit{normalized cross correlation} (NCC) dan hasil komputasi disimpan dalam matriks tertentu yang memiliki jumlah gambar referensi yang sama. Akhirnya, matriks dihasilkan setelah semua area gambar diisi. Komputasi gambar digunakan untuk menentukan seberapa tepat template dari area referensi gambar.
+	
+	\item \textit{Normalized Cross Correlation} (NCC)
+	
+	Korelasi Silang Ternormalisasi (\textit{Normalized Cross Correlation}, NCC) selalu dipilih karena memiliki keuntungan sebagai ukuran kemiripan yang kuat.  NCC untuk nilai korelasi dengan persamaan sebagai berikut:
+	
+	$r=\ \frac{\sum_{k=1}^{n}{\left(x_{ik}-\ {\bar{x}}_i\right)\ .\ (x_{jk\ }-{\bar{x}}_i)}}{\sqrt{\left[\sum_{k=1}^{n}{\left(x_{ik}-\ {\bar{x}}_i\right)^2\ .\ \ }\sum_{k=1}^{n}{\left(x_{jk}-\ {\bar{x}}_j\right)^2\ \ }\right]}}$ \hfill (6)\\
+	Dengan, xi dan xj adalah rata-rata matriks i dan j yang dapat dihitung dengan:\\
+	${\bar{x}}_i=\ \frac{1}{n}\ \sum_{k=1}^{n}x_{ik}$ \hfill (7)\\
+	${\bar{x}}_j=\ \frac{1}{n}\ \sum_{k=1}^{n}x_{jk}$ \hfill (8)\\
+	
+	Keterangan:
+	\begin{itemize}
+		\item 	$r$ = nilai korelasi antara dua matriks.
+		\item $xik$ = nilai piksel ke-k dalam matriks i.
+		\item $xjk$ = nilai piksel ke-k dalam matriks j.
+		\item ${\bar{x}}_i$ = nilai piksel rata-rata dari matriks i.
+		\item ${\bar{x}}_j$ = nilai rata-rata piksel dari matriks j.
+		\item n = jumlah piksel dalam sebuah matriks.
+	\end{itemize}
+	Setelah mendapatkan nilai korelasi antar template, langkah selanjutnya adalah menentukan hasil rata-rata korelasi antar template untuk dijadikan nilai minimum dari nilai acuan yang akan digunakan dalam klasifikasi hasil pengujian pada bagian match template. Perhitungannya sebagai berikut:
+	
+	${mean\ }_r=\ \frac{(\sum_{r,\ k=1}^{n})}{(\sum_{k=1}^{n})}\ $ \hfill (9)
+	
+	Keterangan:
+	\begin{itemize}
+		\item $(\ \sum_{r,\ k=1}^{n})$ = jumlah nilai r dari k-1 hingga n
+		
+		\item $(\sum_{k=1}^{n})$ = jumlah data dari k-1 to n
+	\end{itemize}
+	
+	Deteksi akhir dari nilai korelasi yang diperoleh, nilai tersebut kemudian dikonversi dalam rentang 0 hingga 255 pada kanal hijau untuk digambarkan dalam bentuk persegi panjang pada koordinat gambar yang terdeteksi pohon.
+	
 \end{enumerate}
 
-Selain dari faktor pemilihan panelis dan materi uji, standar ITU-R BT.500-14 memberikan panduan yang mencakup beberapa faktor, seperti cahaya lingkungan, warna dinding, dan pencahayaan ruangan yang diperlukan untuk  memastikan konsistensi dan validitas penilaian subjektif. Selain itu, panduan ini juga menyarankan penggunaan layar televisi yang sesuai dengan kondisi pengujian dan memberikan instruksi tentang posisi penonton dan jarak pandang yang optimal. Tujuannya adalah untuk meminimalkan faktor-faktor yang dapat memengaruhi hasil penilaian subjektif dan memastikan bahwa penilaian dilakukan dalam kondisi yang optimal untuk memberikan hasil yang akurat dan dapat diandalkan. Panduan ini sangat penting untuk memastikan bahwa hasil penilaian subjektif kualitas gambar televisi dapat dipertanggungjawabkan dan diandalkan untuk digunakan dalam pengembangan produk dan teknologi baru dalam industri televisi.
+\subsubsection{Penambahan Template}
+\hspace{1,2cm}Pada bagian ini, untuk menambahkan gambar template asli, yaitu dengan memutar setiap gambar template sebesar 30 derajat. Hal ini dapat diatur sesuai dengan kebutuhan pengguna. Hal ini dilakukan untuk menambahkan gambar template, sehingga jika mendapatkan gambar yang ternyata dirotasi dari gambar aslinya, maka dapat menemukan kecocokan dari gambar template. Rumusnya sebagai berikut:
 
-Pada pengujiannya dipilih standar \textit{home environment} dengan alasan konteks penggunaan yang lebih realistis dibandingkan dengan di lab, biaya pengujian yang lebih renda, dan waktu yang lebih fleksibel disesuaian dengan panelis. Namun tetap terdapat  beberapa syarat untuk pengujian SS dengan \textit{home environment} yang ditunjukkan pada tabel??.
+$rotations=[i\ast30\ for\ i\ in\ range\ \left(1,4\right)]$ \hfill (10)
+Di mana gambar i dirotasi 30 derajat sebanyak 4 kali dari gambar template yang ada.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[H]
-	\centering
-	\caption{Standar pengujian SS dengan \textit{home-environment}}
-	\label{tabel-ss}
-	\begin{tabular}{|l|c|}
-		\hline
-		\begin{tabular}[c]{@{}l@{}}Penerangan sekitar pada layar \\ (cahaya insiden dari lingkungan \\ yang jatuh pada layar harus diukur \\ secara tegak lurus ke layar\end{tabular} & 200 lux                                                                     \\ \hline
-		\begin{tabular}[c]{@{}l@{}}Pencahayaan puncak dari layar \\ (peak luminance)\end{tabular}                                                                                     & 70-500 lux                                                                  \\ \hline
-		\begin{tabular}[c]{@{}l@{}}Rasio pencahaayan antara \\ kondisi layar tidak aktif dan \\ kondisi layar puncak\end{tabular}                                                     & $\le 0.02$                                                                  \\ \hline
-		Resolusi gambar/video                                                                                                                                                         & $1920\times1080$                                                            \\ \hline
-		Aspect rasio                                                                                                                                                                  & 16:9                                                                        \\ \hline
-		Sudut lihat optimal dari layar                                                                                                                                                & $31^\circ$                                                                  \\ \hline
-		Jarak lihat optimal dari layar                                                                                                                                                & \begin{tabular}[c]{@{}c@{}}3.2 H\\ (H = lebar gambar di layar)\end{tabular} \\ \hline
-		Durasi keseluruhan pengujian                                                                                                                                                  & $\le 30$  menit                                                             \\ \hline
-	\end{tabular}
-	
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Menjalankan Template Matching}
+\hspace{1,2cm}	Proses penentuan klasifikasi citra yang telah diuji menggunakan algoritma Template Matching Normal Cross Correlation, seperti pada persamaan (6) pada citra yang akan ditentukan anotasi citranya dan sesuai dengan nilai minimum mean r.
 
-Pada umumnya durasi klip yang digunakan berkisar antara 5 hingga 10 detik. Durasi ini dianggap cukup untuk menampilkan adegan yang mewakili isi dari keseluruhan konten. Selain itu, durasi klip yang terlalu lama dapat membuat panelis cepat lelah dan mempengaruhi konsistensi hasil penilaian. Oleh karena itu, durasi klip perlu dipertimbangkan secara cermat untuk memastikan keakuratan dan konsistensi dari hasil penilaian \citep{IRB2019}.
-
-\subsubsection{Tahap 1 - Pemilihan materi dan luaran}
-
-\hspace{1,2cm}
-Sebelum memulai pengujian subyektif dipilih terlebih dahulu materi/video yang akan dinilai. Video dipilih dari dataset yang sudah diambil dari siaran DVB-T2. Jumlah materi/video klip yang diujikan sebanyak 105 video FHD dengan durasi per video 10 detik. Perangkat yang digunakan dalam proses pengujian adalah Macbook Pro 2019 dengan ukuran layar 16 inci. Penilaian pada video uji menggunakan skala kualitas gambar ITU-R yang ditunjukkan pada tabel \ref{tabel-skala-quality}.   
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[H]
-	\centering
-	\caption{Skala ITU-R Quality dan Impairment}
-	\label{tabel-skala-quality}
-	\begin{tabular}{|ll|}
-		\hline
-		\multicolumn{2}{|c|}{Skala lima kelas}                              \\ \hline
-		\multicolumn{1}{|c|}{Quality}     & \multicolumn{1}{c|}{Impairment} \\ \hline
-		\multicolumn{1}{|l|}{5 Excellent} & 5 Imperceptible                 \\ \hline
-		\multicolumn{1}{|l|}{4 Good}      & 4 Perceptible, but not annoying \\ \hline
-		\multicolumn{1}{|l|}{3 Fair}      & 3 Slightly annoying             \\ \hline
-		\multicolumn{1}{|l|}{2 Poor}      & 2 Annoying                      \\ \hline
-		\multicolumn{1}{|l|}{1 Bad}       & 1 Very annoying                 \\ \hline
-	\end{tabular}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Luaran dari subyektif assessment pada gambar siaran televisi berupa skala pengukuran. Terdapat dua jenis skala pengukuran, yaitu skala kualitas dan skala \textit{impairment}. Skala kualitas digunakan untuk mengukur sejauh mana penonton merasakan kualitas gambar atau video yang ditampilkan. Skala ini biasanya berbentuk angka atau kata-kata yang merepresentasikan level kualitas. Responden diminta untuk memilih nilai yang paling sesuai dengan pengalaman menonton mereka. Sedangkan skala impairment digunakan untuk mengukur sejauh mana gangguan pada gambar atau video memengaruhi kualitas tampilan secara keseluruhan. Responden diminta untuk memilih nilai yang paling sesuai dengan tingkat gangguan pada gambar atau video. Dalam beberapa kasus, skala kualitas dan skala \textit{impairment} digunakan bersamaan untuk memberikan gambaran yang lebih lengkap tentang kualitas gambar atau video yang ditampilkan \citep{Mittal_2012}.
-
-\subsubsection{Tahap 2 - Sesi tes}
-\hspace{1,2cm}
-Terdapat dua bagian pada tes seperti yang ditunjukkan pada gambar \ref{structure-tes}, yang pertama adalah urutan latihan atau \textit{training sequence}, dan selanjutnya sesi tes (test session). \textit{Training sequence} atau urutan latihan berupa serangkaian langkah atau instruksi yang diberikan kepada panelis dalam rangka melatih mereka untuk melakukan penilaian subyektif dengan konsisten dan akurat. \textit{Training sequence} biasanya mencakup langkah-langkah seperti familiarisasi dengan peralatan pengujian, instruksi tentang melaksanakan tugas penilaian, dan latihan tentang mengenali dan mengevaluasi aspek-aspek kualitas gambar yang berbeda. Langkah ini penting untuk memastikan bahwa panelis memahami dan menggunakan skala penilaian dengan konsisten dan bahwa hasil penilaian subyektif akurat dan dapat diandalkan. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/structure-tes.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Struktur presentasi dari subyektif tes} \label{structure-tes}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Pada awal sesi pertama, sekitar lima "presentasi \textit{dummy}" harus diperkenalkan untuk menstabilkan pendapat para pengamat. Data yang dihasilkan dari presentasi ini tidak boleh dipertimbangkan dalam hasil pengujian. Selanjutnya secara langsung tanpa sepengetahuan pengamat dilakukan bagian utama dari sesi tes. Setiap presentasi diawali dan diakhiri dengan \textit{midgrey} yang diantara berupa materi uji. \textit{Midgrey} merupakan citra dengan nilai keabuan antara putih dan hitam dengan nilai RGB (128,128,128) atau HEX \#808080. Mid-grey biasanya digunakan sebagai referensi dalam pengujian subyektif untuk mengevaluasi kualitas kontras, ketajaman, dan keseimbangan warna.
-
-Durasi yang umumnya digunakan adalah sekitar 10 detik untuk materi uji dan 1 hingga 2 detik untuk \textit{midgrey}. Durasi ini dapat disesuaikan tergantung pada kebutuhan pengujian dan karakteristik materi uji yang digunakan. Waktu antara \textit{midgrey} dan materi uji pada penelitian adalah 1, 10, dan 3 detik seperti yang ditunjukkan pada gambar \ref{midgrey-time}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/midgrey-time.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Interval antara \textit{midgrey} dan materi uji} \label{midgrey-time}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Berdasarkan interval tersebut maka dapat dihitung jumlah waktu yang dibutuhkan untuk menyelesaikan rangkaian pengukuran subyektif. Jumlah materi yang digunakan sesi tes termasuk \textit{dummy} sebanyak 100 + 5 video klip. Waktu yang dibutuhkan dalam 1 video adalah 14 detik termasuk dengan \textit{midgrey}. Sehingga waktu yang dibutuhkan sebanyak $105\times14 = 1470$ detik atau sekitar 24.5 menit. Jika ditambah dengan \textit{training sequence} yang membutuhkan waktu 3-5 menit, maka total waktu yang dibutuhkan untuk melakukan rangkaian secara keseluruhan masih $\le 30$ menit.
-
-
-\subsubsection{Tahap 3 - Pengukuran hasil tes}
-\hspace{1,2cm}
-Pengukuran hasil pengukuran subyektif  \textit{single stimulus}melibatkan sejumlah panelis yang menilai kualitas gambar dari materi uji pada layar monitor. Skor subyektif diberikan dan dianalisis untuk menentukan rata-rata skor, standar deviasi, dan interval kepercayaan. Materi uji terdiri dari beberapa klip video yang dipilih secara acak dari berbagai jenis siaran televisi, yang ditampilkan dalam urutan acak. Panelis diberikan klip latihan sebelumnya untuk membiasakan diri dengan tampilan antarmuka dan jenis gambar yang akan dinilai. Skor diberikan pada skala kualitas ITU-R dengan 1 menunjukkan kualitas gambar yang sangat buruk dan 5 menunjukkan kualitas gambar yang sangat baik. Hasil pengukuran dapat digunakan untuk mengevaluasi kualitas gambar pada siaran televisi dengan menghitung skor rata-rata, standar deviasi, dan interval kepercayaan \citep{IRP2022}.
-
-Pengukuran hasil yang pertama adalah mengukur rata-rata dari setiap materi yang dipresentasikan ke panelis, dengan persamaan berikut:
-
-\begin{equation}
-	\begin{aligned}
-		\bar{u}_{ijkr}=\frac{1}{N}\sum_{i=1}^{N}u_{ijkr}
-	\end{aligned}
-\end{equation}
-
-\hspace{-1,2cm}dimana:
-\vspace{-0.5cm}
-\begin{tabbing}
-	$\bar{u}_{ijkr}$ \hspace{2em} \= : nilai dari panelis i untuk kondisi tes j, urutan ke k, pengulangan r \\
-	$N$ \> : jumlah panelis \\
-\end{tabbing}
-\vspace{-0.5cm}
-
-Demikian pula, skor rata-rata keseluruhan, $u_j$ dan $u_k$, dapat dihitung untuk setiap kondisi uji dan setiap urutan/gambar uji. Selanjutnya saat menyajikan hasil pengujian, semua skor rata-rata harus memiliki interval kepercayaan yang terkait yang berasal dari standar deviasi dan ukuran masing-masing sampel. Berdasarkan ITU-R BT.500-14 dianjurkan untuk menggunakan interval kepercayaan 95\% yang dinyatakan sebagai berikut:
-
-\begin{equation}
-	\begin{aligned}
-		\left[ \bar{u}_{jkr}-\delta_{jkr}, \bar{u}_{jkr}+\delta_{jkr} \right]
-	\end{aligned}
-\end{equation}
-
-\hspace{-1,2cm}dimana:
-\vspace{0.5cm}
-\begin{equation}
-	\begin{aligned}
-		\delta_{jkr}=1.96 \frac{S_{jkr}}{N}
-	\end{aligned}
-\end{equation}
-\vspace{0.25cm}
-
-\hspace{-1,2cm}Standar deviasi untuk setiap presentasi $S_{jkr}$ dapat dinyatakan dalam persamaan:
-\begin{equation}
-	\begin{aligned}
-		{S_{jkr}}=\sqrt{\sum_{i=1}^{N}\frac{(\bar{u}_{jkr}-\bar{u}_{ijkr})^{2}}{(N-1)}}
-	\end{aligned}
-\end{equation}
-\vspace{0.25cm}
-
-Dengan probabilitas 95\%, nilai mutlak dari selisih antara skor rata-rata eksperimental dan skor rata-rata sebenarnya (untuk jumlah pengamat yang sangat tinggi) lebih kecil dari interval kepercayaan 95\%, asalkan distribusi skor individual memenuhi persyaratan tertentu. Demikian pula, deviasi standar $S_j$ dapat dihitung untuk setiap kondisi uji. Namun, perlu dicatat bahwa deviasi standar ini, dalam kasus penggunaan jumlah urutan/gambar uji yang sedikit, akan lebih dipengaruhi oleh perbedaan antara urutan/gambar uji yang digunakan daripada variasi antara penilai yang berpartisipasi dalam penilaian.
-
-
-\subsubsection{Desain Aplikasi Subyektif \textit{Assessment}}
-\hspace{1,2cm}
-Subyektif \textit{assessment} yang dilakukan untuk pengukuran kualitas gambar menggunakan perangkat lunak berbasis \textit{local website}. Perangkat lunak dirancang untuk memudahkan proses pengambilan data dan juga memudahkan panelis dalam melakukan penilaian. Pada awal tampilan terdapat pilihan antara \textit{training sequence} dan sesi tes. Pada tampilan utama saat tes terdapat jendela pemutaran materi video dan juga tab penilaian seperti yang ditunjukkan pada gambar \ref{single_stimulus} rancangan aplikasi subyektif \textit{assessment}. Rangkaian materi video dan \textit{mid-grey} akan ditampilkan secara berkala sesuai dengan skema yang sudah direncanakan.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/single_stimulus.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Rancangan tampilan aplikasi web subyektif \textit{assessment}} \label{single_stimulus}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Aplikasi ditujukan untuk mempermudah proses pengujian pada subyektif \textit{assessment}. Beberapa fitur yang dibutuhkan seperti melakukan input materi video yang akan diujikan, melakukan pengambilan datadan perekaman jawaban dari panelis, dan menarik keseluruhan data uji hasil evaluasi serta dapat di export ke dalam format .csv. Setiap panelis juga memilki ID masing-masing sehingga data bisa dikelompokkan berdasarkan panelis atau berdasarkan materi yang diujikan.
-
-
-
-
-\section{Pembuatan Model NN}
-\hspace{1,2cm}
-Jaringan saraf tiruan \textit{(Neural network, NN)} digunakan dalam subyektif \textit{assessment} untuk memprediksi kualitas gambar atau video berdasarkan fitur-fitur tertentu. Proses pembuatan model NN dimulai dengan pemilihan fitur-fitur yang relevan dengan kualitas gambar atau video yang ingin diprediksi. Fitur-fitur tersebut dapat berupa metrik kualitas gambar seperti metrik \textit{blocking}, metrik \textit{blur}, dan metrik \textit{temporal}. Setelah pemilihan fitur, langkah selanjutnya adalah pemilihan arsitektur dan parameter untuk model NN. Pada penelitian ini dipilih \textit{Recurrent Neural Network (RNN)} untuk memodelkan hubungan antara penilaian kualitas gambar/video oleh manusia dengan fitur-fitur gambar/video yang dijadikan input pada model seperti yang ditunjukkan pada gambar \ref{tahap-nn}. Diharapkan penilaian kualitas gambar/video yang dihasilkan oleh model dengan RNN lebih akurat karena model dapat mengambil informasi sebelumnya pada urutan input yang diberikan.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/tahap-nn.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Diagram parameter I/O untuk membangun model NN} \label{tahap-nn}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-Setelah arsitektur dan parameter ditentukan, langkah selanjutnya adalah pelatihan model NN menggunakan data latih yang telah dilabeli dengan nilai kualitas yang sesuai. Data latih harus mencakup variasi yang cukup dari kualitas gambar atau video yang ingin diprediksi. Setelah model dilatih, kinerjanya dievaluasi menggunakan data uji yang belum pernah dilihat oleh model \citep{Otroshi_Shahreza_2019}. Berikut proses dan tahapan untuk membangun arsitektur NN yang akan dilakukan pada penelitan ini meliputi:
-
-\begin{enumerate}
-	\item Menentukan masukan (input) dan keluaran (output) dari model: Langkah pertama adalah menentukan jenis data masukan yang akan digunakan dan keluaran yang diharapkan dari model. 
-	
-	\item Memilih arsitektur NN: Berdasarkan jenis masukan dan keluaran yang telah ditentukan, kemudian dipilih arsitektur NN yang tepat.
-	
-	\item Menentukan jumlah lapisan dan neuron: Setelah memilih arsitektur NN yang tepat, selanjutnya ditentukan jumlah lapisan dan neuron pada setiap lapisan. Jumlah lapisan dan neuron ini dapat disesuaikan dengan kompleksitas data dan sumber daya komputasi yang tersedia.
-	
-	\item Menentukan fungsi aktivasi: Fungsi aktivasi digunakan untuk mengaktifkan neuron pada setiap lapisan. Beberapa fungsi aktivasi yang umum digunakan adalah sigmoid, relu, dan tanh.
-	
-	\item Mengatur hyperparameter: Hyperparameter adalah parameter yang diatur sebelum memulai pelatihan model. Beberapa hyperparameter yang perlu diatur adalah learning rate, batch size, dan jumlah epoch.
-	
-	\item Pelatihan model: Setelah menentukan arsitektur NN dan hyperparameter, selanjutnya model dilatih dengan menggunakan data latih. Proses pelatihan ini dilakukan dengan mengoptimalkan fungsi loss yang dihasilkan.
-	
-	\item Evaluasi model: Setelah selesai dilatih, model dievaluasi dengan menggunakan data uji untuk mengevaluasi performa dan akurasi model. Apabila hasil evaluasi masih belum memuaskan, dapat dilakukan iterasi kembali pada tahap pelatihan model atau penyesuaian parameter lainnya.
-	
-	\item Prediksi atau inferensi: Setelah model dievaluasi dan dianggap cukup baik, model dapat digunakan untuk memprediksi nilai output dari data yang baru atau melakukan inferensi.
-	
-	\item Penggunaan dan pemeliharaan model: Setelah berhasil dibuat, model dapat digunakan untuk memproses data yang baru. Namun, model juga perlu dipelihara secara berkala agar tetap optimal dalam memproses data.
-\end{enumerate}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=1\columnwidth]{bab3/Gambar/langkah-model.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{Tahapan pembuatan arsitektur dan model NN}
-	\label{langkah-model}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Seluruh tahapan dilakukan dalam penelitian ini untuk memperoleh model RNN yang tepat seperti pada gambar \ref{langkah-model}. Seperti memilih jenis RNN yang sesuai dengan jenis data dan tugas yang akan dilakukan. Beberapa jenis RNN yang umum digunakan adalah LSTM, GRU, dan SimpleRNN. Kemudian penentuan hyperparameter seperti jumlah neuron, learning rate, jumlah epochs, dan batch size sangat penting untuk membangun model yang optimal. Evaluasi model secara sistematis setelah model dibangun, model harus dievaluasi secara sistematis menggunakan metrik yang tepat seperti akurasi, presisi, dan recall. Hal ini dapat membantu memastikan bahwa model dapat digunakan dengan efektif untuk tugas yang diberikan.
-
-
-\section{Hasil dan Perhitungan Model}
-\hspace{1.2cm}
-Setelah model NN terbentuk, yang perlu dilakukan adalah melakukan pengukuran model tersebut. Akurasi, presisi, \textit{recall}, \textit{F1-score}, \textit{confusion matrix}, dan \textit{loss function} merupakan parameter yang perlu diukur pada model NN. Akurasi dihitung dengan membandingkan nilai prediksi dengan nilai sebenarnya pada data uji. Presisi dihitung dengan membagi jumlah prediksi positif benar dengan jumlah keseluruhan prediksi positif. Recall dihitung dengan membagi jumlah prediksi positif benar dengan jumlah keseluruhan data positif pada data uji. \textit{F1-score} merupakan ukuran gabungan antara presisi dan \textit{recall} dan dihitung dengan menghitung rata-rata harmonis antara presisi dan recall.
-
-\subsection{\textit{Confusion} matriks}
-\hspace{1.2cm}
-\textit{Confusion matrix} digunakan untuk mengevaluasi performa model NN dengan memperlihatkan jumlah prediksi benar dan salah yang dibuat oleh model. Confusion matrix digunakan untuk menghitung akurasi, presisi, dan \textit{recall}. \textit{Loss function} merupakan fungsi yang digunakan untuk mengukur seberapa besar kesalahan prediksi model pada setiap iterasi selama proses pelatihan. Loss function digunakan untuk mengoptimalkan bobot pada model NN. Semua parameter ini penting untuk mengukur dan mengevaluasi performa model NN dalam memprediksi hasil pengukuran subyektif pada sistem monitoring kualitas siaran DVB-T2.
-
-Pada penelitian ini terdapat 5 klasifikasi pada hasil NN, yaitu nilai kualitas 1 sampai 5 berdasarkan ITU-R. Sehingga digunakan \textit{multiple class confusion matrix} (MCCM) untuk mengevaluasi performa dari model NN. Sama seperti confusion matrix sederhana terdapat juga parameter TP, TN, FP, dan FN  yang merupakan empat nilai dalam confusion matrix yang digunakan untuk mengevaluasi performa model pada tugas klasifikasi. 
-
+\subsubsection{Analisis Kluster dengan BIRCH}
+\hspace{1,2cm}\textit{Balanced Iterative Reducing and Clustering Using Hierarchies} (BIRCH) sebagai algoritma data mining tanpa pengawasan yang digunakan untuk melakukan pengelompokan hirarkis pada kumpulan data yang besar. Algoritma ini menggunakan pengelompokan fitur (feature clustering/FC) dan pengelompokan pohon fitur (CF Tree), dua konsep untuk deskripsi klaster secara umum. BIRCH mampu meningkatkan algoritma dalam melakukan clustering data set yang besar pada kecepatan dan skalabilitas dan sangat cocok untuk menangani masalah pengelompokan data atribut diskrit dan kontinu, seperti piksel yang berdekatan dan menyaring hasil untuk menemukan nilai ambang batas yang lebih baik dari objek yang terdeteksi dari template matching. Objek-objek dalam data set disusun dalam bentuk sub-clustering CF. CF ini kemudian digabungkan menjadi k-kelompok dengan menggunakan prosedur pengelompokan hirarki tradisional. CF adalah tiga informasi yang berisi CF = (N, LS, SS).\\
+Keterangan:
 \begin{itemize}
-	\item TP (true positive) adalah jumlah kasus positif yang terdeteksi dengan benar oleh model.
-	\item TN (true negative) adalah jumlah kasus negatif yang terdeteksi dengan benar oleh model.
-	\item FP (false positive) adalah jumlah kasus negatif yang salah terdeteksi sebagai positif oleh model.
-	\item FN (false negative) adalah jumlah kasus negatif yang salah terdeteksi sebagai negatif oleh model.
+	\item N adalah jumlah titik data,
+	
+	\item LS adalah jumlah nilai X (nilai atribut), 
+	
+	\item SS adalah jumlah X kuadrat.
+	
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-	\vspace{-0.1cm}
-	%\rule{\columnwidth}{0.1pt}
-	\begin{center}
-		\includegraphics[width=0.5\columnwidth]{bab3/Gambar/mc-cm.png}
-	\end{center}
-	\vspace{-0.2cm}
-	%\rule{\columnwidth}{0.1pt}
-	\caption{\textit{Multiple Class Confusion Matrix} \citep{Markoulidakis_2021}}
-	\label{mc-cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Jika ada 2 CF yang digabungkan, maka teorema:\\
+$CF12=(N1+N2,\ {\bar{LS}}_1+\ {\bar{LS}}_2,\ SS1+SS2)$ \hfill (11)
 
+Selanjutnya, untuk mencari lokasi fitur cluster yang cocok untuk digunakan beserta rumus jaraknya. rumus jarak yang digunakan D2 adalah sebagai berikut:
 
-Dalam konteks MCCM, TP, TN, FP, dan FN dihitung berdasarkan kelas target dan prediksi yang berbeda pada data uji yang memiliki lebih dari dua kelas. Diagonal matriks MCCM menunjukkan jumlah prediksi benar untuk setiap kelas, sementara sel di luar diagonal menunjukkan jumlah prediksi salah untuk setiap kelas seperti yang ditunjukkan pada gambar \ref{mc-cm}. Oleh karena itu, TP, TN, FP, dan FN pada MCCM terdapat pada setiap sel matriks dan digunakan untuk menghitung akurasi, presisi, dan recall pada setiap kelas.
-Akurasi digunakan untuk mengukur seberapa sering model NN dapat memprediksi dengan benar kelas target pada seluruh data uji \citep{Powers2020}. Menghitung akurasi pada MCCM dapat dilakukan dengan menjumlahkan seluruh TP dibagi dengan seluruh data pada matriks, atau dapat dituliskan dalam rumus:
+$D2=\ \frac{\sqrt{\left(N_1{SS}_2\right)+\left(N_2{SS}_1\right)-2{LS}_1{LS}_2}}{N_1N_2}$ \hfill (12)
 
-\begin{equation}
-	\begin{aligned}
-		Akurasi=\frac{\sum_{i=1}^{k}TP_i}{\sum_{i=1}^{k}(TP_i+FP_i)}
-	\end{aligned}
-\end{equation}
+Selanjutnya, untuk dapat menghitung jari-jari daun CF dengan menggunakan rumus:
 
-\hspace{-1,2cm}dimana:
-\vspace{-0.5cm}
-\begin{tabbing}
-	$TP_{i}$ \hspace{2em} \= : jumlah prediksi model yang benar dari kelas $i$\\
-	$FP_{i}$ \> : jumlah prediksi model yang salah pada kelas $i$. \\
-	$k$ \> : jumlah kelas pada model $i$. \\
-\end{tabbing}
-\vspace{-0.5cm}
+$R=\ \frac{\sqrt{SS-{(LS)}^2}/n}{n}$ \hfill (13)
 
-Presisi digunakan mengukur seberapa sering model NN dapat memprediksi dengan benar kelas positif dari semua prediksi positif yang dibuat. Presisi dapat dianggap sebagai tingkat ketepatan dari prediksi positif model NN. Rumus untuk menghitung presisi adalah sebagai berikut:
+Setelah mendapatkan nilai radius dalam kisaran titik tengah gambar, kemudian digunakan threshold. Threshold digunakan pada BIRCH untuk memisahkan objek dari latar belakang pada sebuah citra dengan menggunakan nilai 0,5 sebagai nilai ambang batas atau threshold. Setelah dilakukan perhitungan dengan BIRCH untuk mereduksi atau mengurangi data yang tidak seharusnya masuk, maka data citra ditampilkan dengan ukuran 12 x 12 dengan nilai minimum dari mean r dan citra terdeteksi sebagai citra yang akan dianotasi. Hasil citra juga menampilkan nilai kecocokan dari korelasi yang ditentukan.
 
-\begin{equation}
-	\begin{aligned}
-		Presisi_i =\frac{TP_i}{(TP_i+FP_i)}
-	\end{aligned}
-\end{equation}
+\subsubsection{Menjalankan Auto-Annotate Datasets}
+\hspace{1,2cm}Proses auto annotation ini merupakan proses dimana mendapatkan data citra (\textit{data collecting}) yang dimiliki, yaitu 205 citra yang telah berhasil dideteksi untuk didapatkan sebagai dataset. Keluaran dari proses ini adalah number, koordinat x, koordinat y, \textit{width}, dan \textit{height} setiap objek yang terdeteksi dari gambar yang disimpan dalam sebuah file berekstensi *.txt. Hasil ini membutuhkan waktu sesuai dengan perangkat yang digunakan. Hasil anotasi dataset ini juga menjadi kebaruan atau \textit{novelty} dalam penelitian ini karena data primer yang diambil secara langsung, serta sudah memiliki anotasi atau label 'oil palm' pada citra pohon kelapa sawit di area lahan. 
 
-Kemudian untuk menghitung \textit{recall} atau True Positive Rate (TPR) atau sensitivitas, adalah metrik kinerja yang digunakan untuk mengukur seberapa baik model klasifikasi mengidentifikasi hasil positif yang benar dari keseluruhan hasil positif yang sebenarnya. Recall dihitung dengan menggunakan rumus berikut:
+\subsubsection{Integrasi Data}
+\hspace{1,2cm}Pada tahap ini dilakukan proses menggabungkan atau menyatukan dua dataset, yaitu dataset primer dan sekunder ke dalam satu sumber. Dataset sekunder digunakan layanan roboflow untuk menampung data, dan hasil dari pembangunan dataset dengan anotasi atau pelabelan otomatis yang telah dilakukan, maka diunggah data citra dan file *.txt untuk dapat disesuaikan dengan format data yang sama.
 
-\begin{equation}
-	\begin{aligned}
-		Recall_i =\frac{TP_i}{(TP_i+FN_i)}
-	\end{aligned}
-\end{equation}
+\subsubsection{Format Data}
+\hspace{1,2cm}Pada tahap format data ini, salah satu tahap yang sangat penting karena kesuksesan suatu model machine atau deep learning sangat tergantung pada kualitas data yang digunakan untuk pelatihan model tersebut. Pada tahap ini yang dilakukan adalah memeriksa dan memastikan bahwa dataset yang digunakan tidak memiliki nilai yang hilang (yaitu adanya \textit{bounding box}) yang menyatakan bahwa objek tersebut adalah objek kelapa sawit dengan kelas 'oil palm' yang dapat terlihat pada layanan roboflow, kemudian menyesuaikan tipe data pada citra yaitu pada dataset primer dan sekunder sama-sama *.jpg, dan mengurangi dimensi dataset citra dengan melakukan resize citra menjadi 640 x 640 untuk mengurangi \textit{noise} pada data dan menyamakan dataset primer dan sekunder dengan menggunakan layanan roboflow.
 
-Parameter berikutnya adalah F1-score, merupakan metrik kinerja yang digunakan untuk mengukur kinerja model klasifikasi, terutama dalam situasi di mana distribusi kelas tidak seimbang. F1-score merupakan rata-rata harmonik dari presisi dan recall, yang memperhitungkan keduanya dalam satu metrik. Rumus F1-score:
+\section{Citra untuk Komputasi}
+\hspace{1,2cm}	Citra gambar untuk komputasi merupakan kumpulan dari citra dataset primer dan sekunder. Pada tahap ini dataset dikumpulkan dalam satu folder dengan menggunakan layanan Google Drive untuk dapat diakses dan dibagi dalam pelatihan, validasi, dan pengujian. Dataset mengandung 6056 data, yang terbagi ke dalam 78\% data pelatihan, 20\% data validasi dan 2\% data pengujian.
 
-\begin{equation}
-	\begin{aligned}
-		F1-score_i =2 \frac{Presisi_i*Recall_i}{(Presisi_i +Recall_i)}
-	\end{aligned}
-\end{equation}
+\section{Pelatihan Model CNN}
+\hspace{1,2cm}Algoritma CNN model yang digunakan adalah YOLOv7 (sesuai hasil pelatihan dan pengujian) yang divalidasi dengan menggunakan K-Fold Cross-Validation, dimana semua bagian dataset dapat digunakan untuk training dan testing. Teknik ini digunakan untuk evaluasi performance dari model untuk mengurangi overfitting. Langkah awal dalam menggunakan metode cross validation adalah memilih nilai k, kemudian membagi dataset menjadi beberapa nilai k yang digunakan.  Pada penelitian ini menggunakan k = 5, dimana proses ini diulang sebanyak k = 5 kali. K=5, berarti, diberikan dataset and dibagi ke dalam 5 folds yang digunakan untuk menjalankan data pelatihan dan data uji. Model kemudian dilatih pada dataset pelatihan dan divalidasi pada dataset pengujian.  Pada penelitian ini, dipilih nilai k = 5, mengacu pada scikit learn, dengan menerapkan 5-folds. 
 
-Dalam konteks klasifikasi multi-kelas, presisi, \textit{recall}, dan \textit{f1-score} dihitung untuk setiap kelas secara terpisah dan kemudian digabungkan menggunakan metode seperti rata-rata sederhana \textit{(macro-average)}, rata-rata mikro \textit{(micro-average)}, atau rata-rata tertimbang \textit{(weighted average)}, tergantung pada konteks masalah dan jumlah sampel per kelas. 
+Masing-masing setiap fold terdiri dari pelatihan dan pengujian. Data pelatihan merupakan gabungan dari data pelatihan sebanyak 4744 data dan 1187 validasi, untuk data test sebanyak 125 data citra. Setiap fold berisi data ini untuk dapat diketahui pada fold mana hasil model yang dilatih hasilnya lebih baik. 
 
-Rumus rata-rata sederhana \textit{(macro-average)}:
+\section{Optimisasi Parameter}
+\hspace{1,2cm}Dalam meningkatkan performa dari model CNN yang digunakan, maka dilakukan optimisasi parameter. Optimisasi parameter pada penelitian ini menggunakan epoch, batch size, initial learning rate, final one cycle learning rate, momentum, dan weight decay sebagai optimizer weight decay seperti pada Tabel \ref{tbl:Optimisasi-Parameter}.
 
-\begin{equation}
-	\begin{aligned}
-		Average_{macro} = \frac {\sum_{i=1}^{k}Metrik_i}{k}
-	\end{aligned}
-\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Optimisasi Parameter}
+		\label{tbl:Optimisasi-Parameter}
+		\begin{tabular}{|c|c|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Parameter    & Nilai         \\ \hline
+			lr0          & 0.01 (1E-2)   \\ \hline
+			rf           & 0.1           \\ \hline
+			Momentum     & 0.937         \\ \hline
+			Weight decay & 0.0005 (5e-4) \\ \hline
+			Epoch        & 30            \\ \hline
+			Batch size   & 16            \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Rumus rata-rata mikro \textit{micro-average}:
+Parameter yang digunakan diantaranya adalah learning rate dengan nilai 0.01 \textit{stochastic gradient descent} (SGD). Learning rate ini hyperparameter yang paling penting ketika mengonfigurasi neural network. Hal sangat penting untuk mengetahui bagaimana menyelidiki efek dari laju pembelajaran pada kinerja model dan untuk membangun intuisi tentang dinamika laju pembelajaran pada perilaku model. Nilai \textit{learning rate} yang terlalu kecil dapat menyebabkan proses pelatihan yang lama dan bisa \textit{stuck} atau berhenti, sedangkan nilai yang terlalu besar dapat menyebabkan pembelajaran set bobot yang tidak optimal menjadi terlalu cepat atau proses pelatihan yang tidak stabil. Penelitian ini menggunakan learning rate dari SGD 0.001 karena metode optimasi adaptif lainnya diketahui memiliki generalisasi yang buruk dibandingkan dengan SGD. Metode lainnya cenderung berkinerja baik pada data pelatihan tetapi, tidak saat data pengujian. Parameter yang digunakan berikutnya adalah momentum. Momentum digunakan sebagai metode yang membantu mempercepat vektor gradien ke arah yang benar, sehingga menghasilkan konvergen yang lebih cepat, atau dengan kata lain sebagai pengoptimal yang meminimalisir dampak noise dalam konvergensi ke bobot optimal.
 
-\begin{equation}
-	\begin{aligned}
-		Average_{micro} =\frac{\sum_{i=1}^{k}TP_i}{(\sum_{i=1}^{k}TP_i+\sum_{i=1}^{k}FP_i)}
-	\end{aligned}
-\end{equation}
+Pada penelitian ini menggunakan epoch sebesar 30 epoch karena sebelumnya sudah diujicoba kan dengan epoch 55 dan 50, maka tidak bisa berjalan hingga selesai karena adanya \textit{out of memory} dan batas GPU dari Google, sehingga digunakan 30 epoch dengan batch size 16. Epoch menjadi penting karena hyperparameter yang menentukan berapa kali algoritma \textit{deep learning} bekerja melewati seluruh dataset. Batch size yang digunakan adalah 16, ini mengacu pada jumlah contoh data pelatihan yang digunakan dalam satu iterasi.
 
-
-Rumus rata-rata tertimbang \textit{weighted-average}:
-
-\begin{equation}
-	\begin{aligned}
-		Average_{weighted} =\frac{\sum_{i=1}^{k}(Metrik_i\times Bobot_i)}{(\sum_{i=1}^{k}Bobot_i)}
-	\end{aligned}
-\end{equation}
-
-Memilih rata-rata yang tepat untuk klasifikasi multi-kelas bergantung pada konteks masalah dan tujuan evaluasi. Macro-average memberikan bobot yang sama pada setiap kelas, cocok untuk menekankan kinerja seimbang di semua kelas, terutama ketika ada ketidakseimbangan kelas yang signifikan. Micro-average memberikan bobot yang sama pada setiap sampel, lebih cocok jika Anda lebih peduli tentang kinerja model secara keseluruhan daripada kinerja kelas individu. Weighted average memberikan bobot yang proporsional terhadap jumlah sampel per kelas, lebih memperhatikan kinerja kelas yang lebih besar dalam evaluasi.
-
-\subsection{Pengukuran Korelasi}
-\hspace{1.2cm}
-Korelasi antara pengukuran subyektif dan obyektif dapat digunakan untuk mengevaluasi sejauh mana metode pengukuran obyektif dapat memprediksi pengukuran subyektif yang dilakukan oleh manusia. Dengan mengetahui korelasi antara hasil pengukuran subyektif dan objektif, kita dapat mengevaluasi seberapa baik pengukuran objektif dapat merepresentasikan penilaian kualitas gambar atau video oleh manusia. Untuk mengukur korelasi antara pengukuran subyektif dan obyektif, seringkali digunakan koefisien korelasi Pearson. Koefisien korelasi Pearson mengukur hubungan linier antara dua variabel, dalam hal ini pengukuran subyektif dan obyektif. Koefisien ini memiliki nilai antara -1 hingga 1, di mana 1 menunjukkan hubungan positif sempurna, -1 menunjukkan hubungan negatif sempurna, dan 0 menunjukkan tidak ada hubungan linier antara kedua variabel. 
-
-Selain koefisien korelasi Pearson, terdapat juga metode pengukuran korelasi lainnya yang dapat digunakan, seperti koefisien korelasi Spearman dan koefisien korelasi Kendall. Korelasi Spearman juga merupakan salah satu jenis korelasi yang digunakan untuk mengukur hubungan antara dua variabel. Korelasi Spearman menghitung koefisien korelasi rho ($\rho$) antara peringkat dua variabel yang tidak berdistribusi normal atau tidak memiliki asumsi normal \citep{Pinson2004}. Korelasi Spearman dapat digunakan untuk mengukur korelasi antara nilai subyektif dan obyektif dalam penilaian kualitas video atau gambar. 
-
-Berikut rumus yang digunakan untuk menghitung nilai koefisien korelasi Pearson:
-
-\begin{equation}
-	\begin{aligned}
-		r _xy= \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n (x_i-\bar{x})^2 \sum_{i=1}^n (y_i - \bar{y})^2}}
-	\end{aligned}
-\end{equation}
-
-\hspace{-1,2cm}dimana:
-\vspace{-0.5cm}
-\begin{tabbing}
-	$r_xy$ \hspace{2em} \= : koefisien korelasi Pearson $i$\\
-	$x_{i}$ \> : nilai dari variabel x dalam sample $i$. \\
-	$\bar{x}$ \> : rata-rata variabel x. \\
-	$y_{i}$ \> : nilai dari variabel y dalam sample $i$. \\
-	$\bar{x}$ \> : rata-rata variabel y. \\
-	$n$ \> : jumlah sample. \\
-\end{tabbing}
-\vspace{-0.5cm}
-
-Sedangkan untuk menghitung nilai koefisien korelasi Spearman digunakan rumus sebagai berikut:
-
-\begin{equation}
-	\begin{aligned}
-		\rho = 1 - \frac{6 \sum_{i=1}^n d_i^2}{n(n^2 - 1)}
-	\end{aligned}
-\end{equation}
-
-\hspace{-1,2cm}dimana:
-\vspace{-0.5cm}
-\begin{tabbing}
-	$\rho$ \hspace{2em} \= : koefisien korelasi peringkat Spearman $i$\\
-	$d_{i}$ \> : perbedaan antara peringkat variabel X dan Y pada observasi ke-$i$. \\
-	$n$ \> : jumlah sample. \\
-\end{tabbing}
-\vspace{-0.5cm}
-
-Korelasi Pearson dan Spearman merupakan metode yang berbeda untuk mengukur hubungan antara dua variabel. Korelasi Pearson mengukur hubungan linier antara variabel dengan menggunakan nilai aktual, dan mengasumsikan distribusi normal serta hubungan linier. Sementara itu, korelasi Spearman mengukur hubungan monoton dengan menggunakan peringkat variabel, dan tidak mengharuskan distribusi normal atau hubungan linier, sehingga lebih cocok untuk data ordinal atau data yang tidak berdistribusi normal \citep{Akoglu2018}.
-
-\section{Sistem Pengukuran Waktu Nyata}
-\hspace{1.2cm}
-Sistem pengukuran waktu nyata pada kualitas gambar siaran DVB-T2 dilakukan setelah didapat model yang dapat melakukan pengukuran dengan tingkat akurasi yang cukup tinggi dibandingkan dengan penilaian subyektif manusia. Prosedur yang dilakukan dalam melakukan pengukuran waktu nyata seperti yang digambarkan pada gambar \ref{realtime-measurement}. Hardware yang digunakan adalah raspberry pi 4 model B dengan menggunakan TV HAT dan juga antena. Raspberry pi sudah terisntall raspbian OS 64-bit, dan sudah diinstall aplikasi \textit{tvheadend}, \textit{ffmpeg}, dan juga \textit{python} dengan \textit{library}-nya.
+\section{Menjalankan Model CNN}
+\hspace{1,2cm}Pada tahap ini menjalankan hasil training dan test dari dataset yang sudah disiapkan dengan menggunakan parameter tercantum pada Tabel 3.4 dengan YOLOv7 menggunakan teknik K-Fold Cross-validation untuk evaluasi model untuk setiap segmen. Pada tahap ini, model dijalankan dengan menggunakan YOLOv7, yang dimana algoritma ini bekerja berdasarkan empat pendekatan seperti pada alur diagram Gambar \ref{img:Cara-Kerja-Pendekatan-Algoritma-YOLOv7}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\vspace{-0.1cm}
 	%\rule{\columnwidth}{0.1pt}
 	\begin{center}
-		\includegraphics[width=0.6\columnwidth]{bab3/Gambar/realtime-measurement.png}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture13.png}
 	\end{center}
 	\vspace{-0.2cm}
 	%\rule{\columnwidth}{0.1pt}
-	\caption{Diagram alur program python pada pengukuran kualitas gambar siaran DVB-T2 waktu nyata}
-	\label{realtime-measurement}
+	\captionsetup{justification=centering}
+	\caption{Cara Kerja Pendekatan Aloritma YOLOv7}\label{img:Cara-Kerja-Pendekatan-Algoritma-YOLOv7}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Pertama gambar ditangkap dari  web aplikasi \textit{tvheadend} yang diperoleh langsung pada siaran DVB-T2. Gambar ditangkap menggunakan aplikasi \textit{ffmpeg} yang sudah diprogram menggunakan python untuk melakukan pengambilan data gambar dengan interval tertentu secara berkala. Gambar yang diambil merupakan urutan frame video sebanyak 5 frame dengan interval 0.5 detik. Frame gambar tersebut kemudian diukur satu persatu menggunakan metrik obyektif blur, blok, dan temporal. Hasil pengukuran obyektif  dirata-ratakan kemudian digunakan sebagai parameter masukan pada model NN. Nilai yang diperoleh dari model NN selanjutnya akan dikirim ke IoT dashboard menggunakan protokol IoT seperti \textit{thingspeak} milik \textit{Matlab}. 
+Langkah pertama ini dimulai dengan membagi gambar asli menjadi sel grid S x S dengan bentuk yang sama. Setiap sel grid bertanggung jawab untuk menentukan dan memprediksi lokasi kelas dan nilai probabilitas/\textit{confidence} objek tersebut. Langkah selanjutnya adalah menentukan kotak pembatas yang sesuai dengan persegi panjang yang menyoroti semua objek dalam gambar. YOLO menentukan sifat-sifat kotak pembatas ini menggunakan modul regresi tunggal dalam bentuk berikut, di mana Y adalah representasi vektor akhir dari setiap kotak pembatas.
 
+Y = [pc, bx, by, bh, bw, c1, c2] \hfill (14)
 
-\subsection{Tahapan pembuatan \textit{website} pemantauan}
-\hspace{1,2cm}
-Web aplikasi monitoring kualitas penyiaran DVBT-2 merupakan sebuah aplikasi web yang dapat digunakan untuk memonitor kualitas penyiaran televisi secara waktu nyata \textit{real-time}. Aplikasi ini dapat menampilkan informasi tentang kualitas siaran seperti kualitas video dan kualitas sinyal. Aplikasi ini dilengkapi dengan fitur-fitur seperti pemantauan kualitas siaran secara real-time, pemantauan kualitas siaran secara historis, analisis data kualitas siaran, serta notifikasi jika terjadi gangguan atau perbaikan dalam kualitas siaran. Web aplikasi ini dapat berguna bagi stasiun televisi atau radio untuk memastikan bahwa kualitas siaran yang mereka kirimkan kepada pemirsa adalah yang terbaik, serta memastikan bahwa siaran tidak mengalami gangguan atau masalah teknis. Tahapan dari pembuatan web ditunjuukan pada gambar 
+Keterangan:
+\begin{itemize}
+	\item pc: sesuai dengan skor probabilitas dari sisi yang berisi objek
+	
+	\item bx, by: koordinat tengah x dan y dari pusat kotak pembatas (bounding box)
+	
+	\item bh, bw: tinggi dan lebar kotak pembatas.
+	
+	\item c1 dan c2: berhubungan dengan kelas (dalam penelitian ini menggunakan 1 kelas, yaitu \textit{oil palm})
+\end{itemize}
+
+Sering kali, satu objek dalam sebuah gambar dapat memiliki beberapa kandidat kotak grid untuk prediksi, meskipun tidak semuanya relevan. Tujuan \textit{Interception of Union} (IOU) (nilai antara 0 dan 1) untuk membuang kotak-kotak tersebut dan hanya menyimpan kotak-kotak yang relevan, kotak ini lah yang nantinya menjadi \textit{bounding box} yaitu klasifikasi kelas dan juga lokalisasi, yaitu titik tengah koordinat dari \textit{bounding box} tersebut. Terkadang IoU menetapkan nilai ambang batas untuk IoU yang tidak cukup untuk sebuah objek, Di sinilah, dapat menggunakan non-maximum suppresion untuk menyimpan hanya kotak dengan nilai probabilitas deteksi tertinggi, sehingga kotak tersebut dapat menentukan atau mendeteksi kelas apa dalam \textit{bounding box} tersebut. Hasil dari menjalankan model ini, didapatkan hasil evaluasi kualitas model terbaik, dan hasil tersebut akan dipilih sebagai model terbaik.
+
+Pada Gambar \ref{img:Skema-Diagram-Algoritma-YOLO} skema diagram dari algoritma YOLOv7 yang digunakan dalam penelitian ini, bagaimana dataset dapat dideteksi sebagai oil palm.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\vspace{-0.1cm}
 	%\rule{\columnwidth}{0.1pt}
 	\begin{center}
-		\includegraphics[width=0.8\columnwidth]{bab3/Gambar/pembuatan-web.png}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture14.png}
 	\end{center}
 	\vspace{-0.2cm}
 	%\rule{\columnwidth}{0.1pt}
-	\caption{Tahapan pembuatan \textit{website monitoring real-time} kualitas gambar DVB-T2}
-	\label{pembuatan-web}
+	\captionsetup{justification=centering}
+	\caption{Skema Diagram Algoritma YOLO}\label{img:Skema-Diagram-Algoritma-YOLO}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Perancangan sistem web aplikasi monitoring televisi digital melibatkan beberapa tahapan yang harus dilakukan secara terstruktur. Tahapan pertama adalah melakukan analisis kebutuhan untuk menentukan fitur dan fungsi yang diperlukan dalam aplikasi. Analisis kebutuhan dilakukan dengan mengumpulkan informasi dari stakeholder dan melakukan studi literatur. Selanjutnya, dilakukan perancangan arsitektur sistem, yang mencakup infrastruktur server, database, dan interaksi antarmuka pengguna dengan sistem. Arsitektur ini harus dirancang dengan mempertimbangkan aspek keamanan, skalabilitas, dan kinerja sistem.
+Pada penelitian ini dataset yang digunakan sebagai \textit{input image} atau data citra yang masuk ke YOLO (\textit{neural network}) dengan resolusi 640 x 640. Artinya, ukuran gambar yang lebih besar diubah ke resolusi 640 x 640 yang merupakan ukuran \textit{default} dari YOLO. Hal ini dilakukan untuk mengurangi resiko kehilangan akurasi prediksi yang baik. Berdasarkan Gambar \ref{img:Cara-Kerja-Pendekatan-Algoritma-YOLOv7} bahwa kalkulasi box properties menjadi penting untuk mendapatkan objek yang berhasil dideteksi dengan tampilanya bounding box, dan diketahui titik tengah (x, y) atau lokasi dari setiap objek kelas oil palm yang berhasil dideteksi.
 
-Setelah perancangan arsitektur, dilakukan perancangan database untuk menyimpan data yang dibutuhkan oleh aplikasi, seperti data pengguna, data channel televisi, dan data kualitas sinyal. Tahapan selanjutnya adalah implementasi, yang mencakup pembuatan kode program, integrasi komponen sistem, pengujian, dan debugging. Penting juga untuk melakukan integrasi dengan perangkat perekam dan alat ukur kualitas sinyal agar aplikasi dapat merekam dan memonitor kualitas siaran secara real-time. Tahap pengujian dilakukan untuk memastikan aplikasi berfungsi sesuai dengan yang diharapkan dan memenuhi standar kualitas yang ditetapkan. Setelah aplikasi diuji dan dirasa siap untuk digunakan, dilakukan tahap peluncuran dengan menginstal aplikasi di server dan memberikan akses kepada pengguna. Perlu diingat bahwa setelah aplikasi diluncurkan, perlu dilakukan pemeliharaan sistem secara berkala untuk menjaga kinerja dan keamanan sistem.
+Setelah berhasil mengetahui bagaimana diagram skema kerja algoritma YOLO untuk mendeteksi objek \textit{oil palm} pada data citra, maka dibutuhkan evaluasi model performance dari model yang dijalankan dalam penelitian ini. Evaluasi performance untuk mendapatkan model terbaik dengan evaluasi performa dari sebuah model pendeteksian objek biasanya menggunakan precision, recall, dan F1-score serta \textit{best Mean Average Precision} atau yang dikenal dengan best mAP yang umumnya digunakan untuk menganalisis kinerja sistem deteksi dan segmentasi objek.
 
-\subsection{Arsitektur \textit{Website Monitoring}}
+Precision = $\frac{(TP)}{(\left(TP\right)+\left(FP\right))}$ \hfill (15)
 
-Penerapan hasil pengukuran kualitas gambar pada siaran DVB-T2 ditampilkan pada halaman situs online untuk melakukan pemantauan secara waktu nyata. Pada penelitian ini rancangan arsitektur \textit{website} ditunjukkan pada gambar \ref{web-arsitektur}. Aplikasi pemantauan dapat diakses melalui web browser. Aplikasi ini ditujukan untuk mempermudah pengguna untuk melihat hasil pengukuran yang sedang berlangsung secara realtime. 
+Recall = $\frac{(TP)}{(\left(TP\right)+\left(FN\right))}$ \hfill (16)
+
+F1-Score = 2 x $\frac{Precision\ x\ Recall}{Precision+\ Recall}$ \hfill (17)
+
+$mAP=\ \frac{1}{N}\sum_{i=1}^{N}{AP}_{i}$ \hfill (18)
+	
+Keterangan:
+\begin{itemize}
+	\item TP: True Positive untuk jumlah piksel yang benar diklasifikasikan sebagai pohon kelapa sawit
+	
+	\item FP: False Positive untuk jumlah piksel yang tidak benar diklasifikasikan sebagai pohon kelapa sawit. 
+	
+	\item FN: False Negative untuk jumlah piksel yang tidak benar diklasifikasikan sebagai latar belakang. 
+	
+\end{itemize}
+
+Pada tahap ini model yang dijalankan dengan menggunakan sarana penelitian dengan menggunakan mesin untuk komputasi dengan mengakses Google Colab Pro (DGX-SM4-A100, 40 GB) dan mesin (DGX-A100, 20 GB) milik Universitas Gunadarma.
+
+\section{Hasil Deteksi dan Penghitungan Akhir}
+\hspace{1,2cm}Tahap ini menggunakan sebuah web framework react js untuk menerapkan hasil best model dari performance terbaik untuk dapat digunakan pada citra satelit realtime yang terhubung dengan Google Maps API. Untuk model terbaik dari YOLOv7 harus dikonversi yang bisa dikenali dalam backend pada pengembangan sistem. Format yang digunakan adalah \textit{open neural network exchange} (ONNX) yang merupakan untuk merepresentasikan model pembelajaran mesin dan format file yang umum untuk memungkinkan menggunakan model dengan berbagai kerangka kerja, alat, waktu proses, dan compiler. File onnx ini diletakkan di server dengan menggunakan FastAPI sebagai backend. Dalam mendapatkan titik tengah koordinat latitude dan longitude setiap object dari bounding box, dibutuhkan titik tengah awal sebagai titik koordinat latitude dan longitude kunci, sehingga bisa didapatkan titik tersebut yang di \textit{request} ke Google Maps API dengan menggunakan bantuan library mapping dari leaflet js.
+
+Adapun diagram alur hasil deteksi dan penghitungan akhir pada Gambar \ref{img:Diagram-ALur-Hasil-Deteksi-dan-Perhitungan-Akhir}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\vspace{-0.1cm}
 	%\rule{\columnwidth}{0.1pt}
 	\begin{center}
-		\includegraphics[width=0.8\columnwidth]{bab3/Gambar/web-arsitektur.png}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture15.png}
 	\end{center}
 	\vspace{-0.2cm}
 	%\rule{\columnwidth}{0.1pt}
-	\caption{Diagram arsitektur \textit{website} pemantauan kualitas gambar siaran DVB-T2}
-	\label{web-arsitektur}
+	\captionsetup{justification=centering}
+	\caption{Diagram Alur Hasil Deteksi dan Penghitungan Akhir}\label{img:Diagram-ALur-Hasil-Deteksi-dan-Perhitungan-Akhir}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Laman yang diakses atau diminta, memiliki tampilan antarmuka atau yang dikenal dengan user interface. Front end pada penerapan sistem ini menggunakan \textit{native javascript}. Frontend Native JavaScript merujuk pada pengembangan antarmuka pengguna (user interface) berbasis web yang dibangun menggunakan bahasa pemrograman JavaScript murni tanpa mengandalkan framework atau library tertentu. Frontend Native JavaScript memungkinkan pengembang untuk lebih fleksibel dalam menyesuaikan dan mengubah kode mereka karena mereka memiliki kontrol penuh atas kode tersebut. 
+Hasil objek yang dideteksi yang ditandai dengan bounding box, masih dengan menggunakan format YOLO. \textit{Bounding box} yang dihasilkan tersebut merepresentasikan posisi relative dari titik tengah \textit{bounding box} (x,y) dan width, serta height dari objek yang dideteksi, sedangkan format COCO merepresentasikan piksel asli \textit{bounding box} dari citra gambar tersebut. Terdapat perbedaan titik-titik bounding box antara format YOLO dengan COCO. Pada format COCO bounding box dengan format <top left x, top left y, width, height>, dimana lebar dan tinggi adalah dimensi dari \textit{bounding box}. Perbedaan format COCO dan YOLO seperti pada Gambar \ref{img:Bounding-Box-Pada-COCO-dan-YOLO}. 
 
-Server yang digunakan pada penelitian ini adalah virtual machine yang terdapat pada server universitas gunadarma. Sistem operasi yang digunakan Ubuntu 22.1 dan \textit{apache} web server. Penyimpanan basis data menggunakan MySQL.  Tampilan Maps yang ditampilkan pada front end merupakan hasil dari permintaan yang terintegrasi terhubung dari Mapbox API. Peta digunakan hanya untuk mengukur jarak antara alat pengukur dengan stasiun pemancar. Kemudian digunakan juga protokol IoT yang berfungsi untuk mengirimkan data pengukuran kualitas sinyal dan gambar ke IoT dashboard yang kemudian API dari IoT tersebut diambil dari web server. Pengguna hanya dapat memilih lokasi pemantauan yang sebelumnya sudah dibuat oleh admin. Lokasi pemantauan merupakan titik dimana perangkat melakukan pengukuran. Selanjutnya data hasil pengukuran ditampilkan secara realtime pada antarmuka web.
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture16.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{\textit{Bounding Box} pada COCO dan YOLO format}\label{img:Bounding-Box-Pada-COCO-dan-YOLO}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Berdasarkan Gambar \ref{img:Bounding-Box-Pada-COCO-dan-YOLO}, maka persamaan untuk mengubah format dari YOLO ke COCO, adalah:
 
+$x_{coco}=x_{yolo}\ast image\ width$ \hfill(19)
+
+$y_{coco}=y_{yolo}\ast image\ height$ \hfill(20)
+
+$w_{coco}\ =w_{yolo}\ast image\ width-x_{coco}$ \hfill(21)
+
+$h_{coco}\ =h_{yolo}\ast image\ height-y_{coco}$ \hfill(22)
+
+$x_{center}=x+\frac{w}{2} $ \hfill(23)
+
+$y_{center}=y+\frac{h}{2}$ \hfill(24)
+
+Selanjutnya, setelah didapatkan titik dari format COCO, kemudian dilanjutkan dengan dikonversi untuk menghitung piksel koordinat dari latitude-longitude awal ke titik tengah ke piksel koordinat dari web mercator projection pada zoom 0 (base world map) sebesar ukuran 256 x 256 piksel. Persamaan berikut ini menempatkan sumbu x proyeksi pada khatulistiwa dan sumbu y pada bujur $\lambda 0$, di mana $\lambda O$ adalah garis bujur, di mana y adalah proyeksi Mercator dari garis lintang dan $\varphi$ adalah garis lintang dalam radian. $\lambda$ adalah longitude dan $\phi$ adalah latitude.
+
+$\mathbit{x}=\mathbit{R}(\mathbit{\lambda}-\ \mathbit{\lambda}_\mathbf{0})\, y = R ln[\mathbf{tan}({\frac{\mathbit{\pi}}{\mathbf{4}}+}\frac{\mathbit{\phi}}{\mathbf{2}})$ \hfill (25)
+
+Berikutnya mengubah pixel coordinates menjadi latitude-longitude untuk setiap titik tengah dari bounding box tersebut dengan menggunakan invers transformation dari persamaan 26. Ekspresi pada kanan kedua equation menggambarkan longitude, dan latitude pada sisi kiri, sedangkan nanti pada penulisan titik koordinat, dituliskan latitude-longitude.
+
+$\mathbit{\lambda}=\ \mathbit{\lambda}_\mathbf{0}+\ \frac{\mathbit{x}}{\mathbit{R}}\ , \mathbit{\phi} = 2 tan-1 [exp(yR]-π2)$ \hfill (26)
+
+Dari persamaan 25 dan 26, maka dihasilkan titik koordinat latitude dan longitude dari setiap bounding box yang merepresentasikan keberadaan objek, dan untuk menghitung banyaknya pohon didasarkan pada banyaknya yang terdeteksi objek pohon kelapa sawit tersebut. Catatan bahwa yang digunakan untuk nilai $\pi$ adalah 3.141592653589793.
+
+Penerapan hasil deteksi dan penghitungan akhir, diterapkan pada diagram sistem arsitektur Gambar \ref{img:Diagram-Arsitektur-Sistem}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab3/Gambar/Picture17.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Diagram Arsitektur Sistem}\label{img:Diagram-Arsitektur-Sistem}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gambar \ref{img:Diagram-Arsitektur-Sistem}. merupakan diagram sistem arsitektur pada penerapan penelitian ini. Penguna untuk dapat mengakses melalui browser untuk dapat membuka laman penerapan sistem dari mendeteksi dan menghitung pohon kelapa sawit, serta mengetahui letak titik koordinat setiap pohon kelapa sawit tersebut. Pengguna dapat menggunakan perangkat lunak atau aplikasi yang dikenal dengan browser, seperti Google Chrome untuk dapat meminta laman yang dapat memberikan tampilan antarmuka.
+
+Laman yang diakses atau diminta, memiliki tampilan antarmuka atau yang dikenal dengan \textit{user interface}. Front end pada penerapan sistem ini menggunakan react js. React js digunakan untuk dapat membuat \textit{user interface} pada tampilan berbasis web dan berisi library kode javascript yang memudahkan dalam web development. Tampilan antarmuka merupakan permintaan dan menampilkan ke pada server.
+
+Server pada penelitian ini menggunakan FastAPI. FastAPI digunakan karena sebuah web framework untuk membangun sebuah \textit{application programming interface} (API) untuk produksi atau model \textit{machine learning}. Model CNN ini-lah yang diletakkan pada server untuk dapat mengenali objek yang akan diprediksi melalui gambar yang diminta melalui maps atau pemetaan satelit. Hasil prediksi merupakan data yang harus disimpan. Penyimpanan basis data menggunakan PostgreSQL. PostgreSQL basis data yang digunakan pada web app, aplikasi mobile, dan aplikasi analytics. Aplikasi yang membutuhkan pengolahan data yang lebih kompleks akan lebih cocok menggunakan PostgreSQL.
+
+Tampilan Maps yang ditampilkan pada front end merupakan hasil dari permintaan yang terintegrasi terhubung dari Google Maps API. Dari Google Maps API maka dapat melihat sebuah peta datar (\textit{mercator projection}) untuk dapat dipetakan suatu lahan pada area tertentu dan kemudian dideteksi citra kelapa sawit dan kemudian diketahui jumlah, serta letak posisi dari pohon kelapa sawit tersebut yang berguna untuk hasil pemantauan dari pohon kelapa sawit. Berikut ini komponen implementasi dalam prototype perangkat lunak Tabel \ref{tbl:Komponen-Implementasi-Prototype}. dan perangkat keras Tabel \ref{tbl:Komponen-Implementasi-Prototype-Perangkat-Keras}. dalam menerapkan model terbaik di dalam prototype berbasis web.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Komponen Implementasi Prototype Perangkat Lunak}
+		\label{tbl:Komponen-Implementasi-Prototype}
+		\begin{tabular}{|p{1cm}|p{4cm}|p{7cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			No                 & Komponen                  & Keterangan                                                                                                                                                                                                                                                                                                                                        \\ \hline
+			1                  & Browser                   & Google Chrome v. 113.0.5672.64                                                                                                                                                                                                                                                                                                                    \\ \hline
+			2                  & Google Maps API           & Layanan Google Static Map API                                                                                                                                                                                                                                                                                                                     \\ \hline
+			3                  & Back End                  &                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+			& a. Web Server FastAPI     & v.0.85.0 (FastAPI adalah sebuah web framework untuk membangun sebuah API yang berbahasa Python).                                                                                                                                                                                                                                                  \\ \cline{2-3} 
+			& b. SQLAlchemy             & v.1.4.41 (Library yang memfasilitasi komunikasi antara program Python dan database. Library ini digunakan sebagai alat Object Relational Mapper (ORM) yang menerjemahkan kelas-kelas Python ke tabel-tabel di database relasional dan secara otomatis mengubah panggilan fungsi menjadi pernyataan SQL).                                          \\ \cline{2-3} 
+			& c. numpy                  & v.1.24.1 (NumPy (Numerical Python) adalah library Python yang fokus pada scientific computing. Library ini digunakan untuk melakukan perhitungan saintifik, seperti matriks, aljabar, dan statistik). Pada pengolahan gambar digunakan untuk manipulasi dan transformasi gambar, seperti memotong, merotasi, membalik dan mengubah ukuran gambar. \\ \cline{2-3} \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\caption{Komponen Implementasi Prototype Perangkat Lunak}
+		%\label{tbl:Komponen-Implementasi-Prototype}
+		\begin{tabular}{|p{1cm}|p{4cm}|p{7cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			No                 & Komponen                  & Keterangan                                                                                                                                                                                                                                                                                                                                        \\ \hline
+			& d. onnxruntime            & v.1.13.1. (Format model machine learning yang dapat dioperasikan pada berbagai platform dan dapat dijalankan pada berbagai platform seperti web)                                                                                                                                                                                                  \\ \cline{2-3} 
+			& e. opencv-python-headless & v.4.6.0.66 (Library OpenCV untuk Python yang digunakan untuk pengolahan gambar, seperti pengolahan citra, deteksi objek, dan visi komputer)                                                                                                                                                                                                       \\ \cline{2-3} 
+			\multirow{-6}{*}{} & f. DBMS: PostgreSQL       & v.14.7 (Sistem manajemen basis data yang dapat menyimpan data dalam bentuk array atau JSON dan berguna dalam Machine Learning)                                                                                                                                                                                                                    \\ \hline
+			4                  & Front End                 &                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+			& a. react js               & v.18.2.0 (Digunakan untuk dapat membuat user interface pada tampilan berbasis web dan berisi library kode javascript)                                                                                                                                                                                                                             \\ \cline{2-3} 
+			& b. tailwindcss            & v.3.2.4 (Framework CSS yang digunakan untuk mempercepat pengembangan tampilan (UI) web)                                                                                                                                                                                                                                                           \\ \cline{2-3}
+			& c. typescript             & v.4.9.3 (Bahasa pemrograman yang digunakan untuk mengembangkan aplikasi Machine Learning berbasis web dengan menggunakan framework react)                                                                                                                                                                                                         \\ \cline{2-3} 
+			\multirow{-4}{*}{} & d. leaflet js             & v.1.9.3 (library JavaScript yang digunakan untuk memvisualisasikan peta interaktif pada halaman web dan dapat digunakan dalam konteks Machine Learning untuk memvisualisasikan data geospasial dan membuat aplikasi peta interaktif)                                                                                                              \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Komponen Implementasi Prototype Perangkat Keras}
+		\label{tbl:Komponen-Implementasi-Prototype-Perangkat-Keras}
+		\begin{tabular}{|p{1cm}|p{4cm}|p{7cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			No & Layanan                       & Keterangan                                                                                                                                                                      \\ \hline
+			1  & Back End                      &                                                                                                                                                                                 \\ \hline
+			& Layanan Google Compute Engine & \begin{tabular}[c]{@{}l@{}}Tipe Mesin: n2-standard-2\\    vCPUs: 2 Core (@ 4GB)\\    CPU Platform: Intel Cascade Lake\\    \\ RAM: 8 GB \\    Architecture: x86/64\end{tabular} \\ \hline
+			2  & Front End                     &                                                                                                                                                                                 \\ \hline
+			& Layanan Google Compute Engine & \begin{tabular}[c]{@{}l@{}}Tipe Mesin: e2-medium \\    vCPU: 2 Core (@ 4GB) \\    CPU: Platform: Intel Broadwell\\    RAM: 4 GB\\    Architecture: x86/64\end{tabular}          \\ \hline
+			\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
