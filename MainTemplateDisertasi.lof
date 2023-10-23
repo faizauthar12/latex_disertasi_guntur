@@ -73,26 +73,9 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Bounding Box} pada COCO dan YOLO format}}{109}{figure.caption.90}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagram Arsitektur Sistem}}{110}{figure.caption.91}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Perangkat keras yang digunakan untuk akuisisi video siaran DVB-T2}}{116}{figure.caption.95}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pengukuran kekuatan sinyal menggunakan \textit {signal analyzer, TinySA}}}{117}{figure.caption.96}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Penempatan antena outdoor PX HDA-5000}}{117}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Fitur melakukan perekaman video siaran DVB-T2 menggunakan \textit {tvheadend}}}{118}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Jarak stasiun pemancar terhadap lokasi pengambilan data siaran DVB-T2}}{120}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Citra/frame video dengan resolusi FHD $1920\times 1080$ piksel hasil rekaman dari siaran DVB-T2}}{121}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pengukuran metrik obyektif blok pada citra normal dan \textit {blocking artifact}}}{124}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Contoh pengukuran metrik obyektif blok pada beberapa citra siaran televisi DVB-T2}}{125}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Pengukuran metrik obyektif blur pada citra normal dan blur}}{127}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Contoh pengukuran metrik obyektif blur pada beberapa citra siaran televisi DVB-T2}}{128}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Pengukuran metrik temporal \textit {freeze} dengan MSE skor}}{130}{figure.caption.107}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Contoh pengukuran metrik obyektif temporal pada video \textit {dataset} no.84 siaran televisi DVB-T, temporal skor : 90}}{132}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Contoh pengukuran metrik obyektif temporal pada video \textit {dataset} no.15 siaran televisi DVB-T, temporal skor : 65}}{134}{figure.caption.110}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Tampilan aplikasi pengukuran subyektif kualitas citra video siaran DVB-T2}}{138}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Tampilan dashboard aplikasi pengukuran subyektif dari sisi administrator}}{139}{figure.caption.113}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Sebaran MOS pengukuran tes subyektif dari dataset video}}{141}{figure.caption.115}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Pembagian kelas MOS pengukuran subyektif dataset }}{141}{figure.caption.116}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Varian pengukuran subyektif dataset dengan skor terurut}}{142}{figure.caption.117}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Diagram scatter pengukuran metrik spatial terhadap MOS pada pengukuran subyektif (a) metrik blok, (b) metrik blur.}}{145}{figure.caption.120}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagram scatter pengukuran metrik temporal terhadap MOS pada pengukuran subyektif (a) metrik freeze, (b) metrik variansi gradien .}}{146}{figure.caption.121}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Diagram hasil prediksi terhadap MOS}}{148}{figure.caption.123}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Diagram Scater hasil prediksi terhadap MOS}}{149}{figure.caption.124}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Peta Sebaran Area Inisialisasi Lahan Kebun Pendidikan dan Penelitian Kelapa Sawit milik Institut Pertanian Bogor-Cargil}}{116}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Luas Area Blok 1 Kebun Pendidikan dan Penelitian Kelapa Sawit Institut Pertanian Bogor-Cargil}}{117}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Luas Area Blok 2 Kebun Pendidikan dan Penelitian Kelapa Sawit Institut Pertanian Bogor-Cargil}}{117}{figure.caption.99}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Hasil Citra Sampel Universitas Gunadarma di Penajam Paser Utara, Kalimantan Timur}}{120}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Hasil Citra Sampel Universitas Gunadarma di Penajam Paser Utara, Kalimantan Timur}}{121}{figure.caption.102}%
 \addvspace {10\p@ }

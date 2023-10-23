@@ -9,9 +9,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{x}{figure.caption.2}%
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
 \contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
-\contentsline {chapter}{DAFTAR TABEL}{xx}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxvi}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxvi}{chapter*.5}%
+\contentsline {chapter}{DAFTAR TABEL}{xix}{chapter*.4}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxiv}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxiv}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -66,31 +66,13 @@
 \contentsline {section}{\numberline {3.7}Menjalankan Model CNN}{104}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Hasil Deteksi dan Penghitungan Akhir}{107}{section.3.8}%
 \contentsline {chapter}{\numberline {IV\bfseries }HASIL DAN PEMBAHASAN}{115}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Material yang digunakan}{115}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Proses akuisi material video}{115}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Koleksi data}{121}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Perangkat pengolahan data}{122}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Pengujian metrik obyektif}{123}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pengujian metrik \textit {blocking}}{123}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Pengujian metrik \textit {blur}}{126}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Pengujian metrik \textit {temporal}}{130}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Pengukuran obyektif pada keseluruhan \textit {dataset}}{135}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Hasil pengambilan data pengukuran subyektif}{136}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Material pengukuran subyektif}{136}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Perangkat yang digunakan}{137}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Proses pengukuran subyektif }{137}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Hasil pengukuran subyektif}{139}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Pengujian dan hasil pada NN}{143}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Data masukan dan luaran model}{144}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Pengujian arsitektur NN}{147}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Hasil regresi multivariabel}{147}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Hasil ANN tanpa klasifikasi}{149}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Hasil ANN dengan klasifikasi}{149}{subsubsection.4.4.2.3}%
-\contentsline {section}{\numberline {4.5}Aplikasi pemantauan kualitas gambar siaran DVB-T2}{149}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Arsitektur aplikasi}{149}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Pengujian dan implementasi aplikasi}{150}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{151}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{151}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{152}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{153}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{168}{table.caption.130}%
+\contentsline {section}{\numberline {4.1}Area Studi}{115}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Persiapan Data}{118}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Deskripsi Dataset dan Pemilihan}{118}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Dataset Primer}{118}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Dataset Sekunder}{121}{subsubsection.4.2.1.2}%
+\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{123}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{123}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{124}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{125}{section.5.2}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{140}{table.caption.108}%
