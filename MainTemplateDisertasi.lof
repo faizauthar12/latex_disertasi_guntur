@@ -78,4 +78,15 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Luas Area Blok 2 Kebun Pendidikan dan Penelitian Kelapa Sawit Institut Pertanian Bogor-Cargil}}{117}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Hasil Citra Sampel Universitas Gunadarma di Penajam Paser Utara, Kalimantan Timur}}{120}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Hasil Citra Sampel Universitas Gunadarma di Penajam Paser Utara, Kalimantan Timur}}{121}{figure.caption.102}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Proses Augmentasi Data Sekunder }}{122}{figure.caption.103}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Data Citra Asli Data Sekunder (kiri: original; kanan: tampak dengan \textit {bounding box}) }}{124}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Data Citra Primer yang tidak Digunakan (kiri: tidak terdapat pohon kelapa sawit; kanan: tampak area yang tidak tangkapan dari atas) }}{127}{figure.caption.109}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \textit {Home Page} Jupyter Notebook}}{128}{figure.caption.110}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Data citra untuk membuat template (5472 x 3078)}}{128}{figure.caption.111}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Membuat Template yang Ditandai dengan Titik Objek Pohon Kelapa Sawit}}{129}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Citra Template dari Objek Pohon Kelapa Sawit}}{130}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Menyesuaikan Template pada ID 2}}{131}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Hasil Rotasi 30$^{\circ }$ pada Citra template}}{132}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Objek yang terdeteksi untuk Dataset dengan \textit {Template Matching}}}{133}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Hasil objek yang terdeteksi untuk Dataset dengan algoritma BIRCH}}{134}{figure.caption.119}%
 \addvspace {10\p@ }

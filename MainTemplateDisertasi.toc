@@ -9,9 +9,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{x}{figure.caption.2}%
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
 \contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
-\contentsline {chapter}{DAFTAR TABEL}{xix}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxiv}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxiv}{chapter*.5}%
+\contentsline {chapter}{DAFTAR TABEL}{xx}{chapter*.4}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxv}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxv}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -71,8 +71,20 @@
 \contentsline {subsection}{\numberline {4.2.1}Deskripsi Dataset dan Pemilihan}{118}{subsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.1.1}Dataset Primer}{118}{subsubsection.4.2.1.1}%
 \contentsline {subsubsection}{\numberline {4.2.1.2}Dataset Sekunder}{121}{subsubsection.4.2.1.2}%
-\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{123}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{123}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{124}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{125}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{140}{table.caption.108}%
+\contentsline {subsection}{\numberline {4.2.2}Membersihkan Data}{126}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Membangun Data}{127}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Membuat Template}{128}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Menyesuaikan Template}{130}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Evaluasi Korelasi diantara Template}{131}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Penambahan Template}{132}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Menjalankan Template Matching}{133}{subsubsection.4.2.4.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.5}Analisis Cluster dengan BIRCH}{134}{subsubsection.4.2.4.5}%
+\contentsline {subsubsection}{\numberline {4.2.4.6}Menjalankan Auto-Annotate Datasets}{135}{subsubsection.4.2.4.6}%
+\contentsline {subsubsection}{\numberline {4.2.4.7}Integrasi Data}{136}{subsubsection.4.2.4.7}%
+\contentsline {subsubsection}{\numberline {4.2.4.8}Format Data}{137}{subsubsection.4.2.4.8}%
+\contentsline {section}{\numberline {4.3}Citra untuk Komputasi}{138}{section.4.3}%
+\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{139}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{139}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{140}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{141}{section.5.2}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{156}{table.caption.125}%
