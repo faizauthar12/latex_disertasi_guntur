@@ -233,7 +233,7 @@ Tabel 4.5 . menampilkan hasil data citra untuk dataset yang telah dilakukan pros
 		\centering
 		\caption{Hasil Proses Augmentasi Citra Dataset Sekunder}
 		\label{tbl:Hasil-Proses-Augmentasi-Citra-Dataset-Sekunder}
-		\begin{tabular}{|p{3cm}|p{3cm}|p{6cm}|}
+		\begin{tabular}{|m{3cm}|m{3cm}|m{6cm}|}
 			\hline
 			\rowcolor[HTML]{D9D9D9} 
 			Augmentasi & Deskripsi                                                                & Citra Hasil Augmentasi \\ \hline
@@ -253,7 +253,7 @@ Tabel 4.5 . menampilkan hasil data citra untuk dataset yang telah dilakukan pros
 		\centering
 		%\caption{Hasil Proses Augmentasi Citra Dataset Sekunder}
 		%\label{tbl:Hasil-Proses-Augmentasi-Citra-Dataset-Sekunder}
-		\begin{tabular}{|p{3cm}|p{3cm}|p{6cm}|}
+		\begin{tabular}{|m{3cm}|m{3cm}|m{6cm}|}
 			\hline
 			\rowcolor[HTML]{D9D9D9} 
 			Augmentasi & Deskripsi                                                                & Citra Hasil Augmentasi \\ \hline
@@ -277,7 +277,7 @@ Tabel 4.5 . menampilkan hasil data citra untuk dataset yang telah dilakukan pros
 		\centering
 		%\caption{Hasil Proses Augmentasi Citra Dataset Sekunder}
 		%\label{tbl:Hasil-Proses-Augmentasi-Citra-Dataset-Sekunder}
-		\begin{tabular}{|p{3cm}|p{3cm}|p{6cm}|}
+		\begin{tabular}{|m{3cm}|m{3cm}|m{6cm}|}
 			\hline
 			\rowcolor[HTML]{D9D9D9} 
 			Augmentasi & Deskripsi                                                                & Citra Hasil Augmentasi \\ \hline
@@ -503,11 +503,26 @@ Tahap ini dilakukan setelah berhasil dideteksi dengan menggunakan \textit{templa
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Berdasarkan Gambar \ref{img:Objek-Yang-Terdeteksi-Untuk-Dataset} diketahui template matching dari citra berhasil mendeteksi objek untuk dataset, namun masih terjadi tumpang tindih atau overlapping dan berdasarkan hasil dari algoritma BIRCH pada Gambar \ref{img:Hasil-Objek-Yang-Terdeteksi}., dihasilkan pengurangan nilai dan terdeteksi objek pohon kelapa sawit pada citra. Hasil waktu yang digunakan untuk mendeteksi objek sebagai dataset ditunjukkan pada Tabel 4.8.
+Berdasarkan Gambar \ref{img:Objek-Yang-Terdeteksi-Untuk-Dataset} diketahui template matching dari citra berhasil mendeteksi objek untuk dataset, namun masih terjadi tumpang tindih atau overlapping dan berdasarkan hasil dari algoritma BIRCH pada Gambar \ref{img:Hasil-Objek-Yang-Terdeteksi}., dihasilkan pengurangan nilai dan terdeteksi objek pohon kelapa sawit pada citra. Hasil waktu yang digunakan untuk mendeteksi objek sebagai dataset ditunjukkan pada Tabel \ref{tbl:Hasil-Waktu-Yang-Dibutuhkan-Untuk-Deteksi-Objek-Sebagai-Dataset}.
 
-TABEL
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Hasil Waktu yang Dibutuhkan untuk Deteksi Objek sebagai Dataset}
+		\label{tbl:Hasil-Waktu-Yang-Dibutuhkan-Untuk-Deteksi-Objek-Sebagai-Dataset}
+		\begin{tabular}{|m{5cm}|m{3cm}|m{4cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Deskripsi                                    & Waktu (detik) & Jumlah yang Terdeteksi \\ \hline
+			Waktu yang dibutuhkan pada Template Matching & 334              & 463                    \\ \hline
+			Waktu yang dibutuhkan pada BIRCH             & 24               & 148                    \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Berdasarkan hasil Tabel 4.8. diketahui bahwa \textit{template matching} membutuhkan waktu 334 detik untuk berhasil mendeteksi 463 objek, sedangkan dengan BIRCH membutuhkan waktu 24 detik dan berhasil direduksi untuk menemukan nilai ambang batas yang baik menjadi 148 yang terdeteksi sesuai dengan nilai yang telah ditentukan. 
+Berdasarkan hasil Tabel \ref{tbl:Hasil-Waktu-Yang-Dibutuhkan-Untuk-Deteksi-Objek-Sebagai-Dataset}. diketahui bahwa \textit{template matching} membutuhkan waktu 334 detik untuk berhasil mendeteksi 463 objek, sedangkan dengan BIRCH membutuhkan waktu 24 detik dan berhasil direduksi untuk menemukan nilai ambang batas yang baik menjadi 148 yang terdeteksi sesuai dengan nilai yang telah ditentukan. 
 
 \subsubsection{Menjalankan Auto-Annotate Datasets}
 \hspace{1,2cm}
@@ -515,14 +530,40 @@ Proses dengan \textit{template matching} dan BIRCH berhasil dideteksi objek pada
 
 Berdasarkan hasil anotasi otomatis membutuhkan waktu yang signifikan untuk membuat dataset dengan anotasi otomatis dari citra yang berjumlah 205. Waktu yang dibutuhkan proses ini seperti terlihat pada Tabel 4.9.
 
-TABEL
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Hasil Waktu Yang Dibutuhkan untuk Anotasi Otomatis}
+		\label{tbl:Hasil-Waktu-Yang-Dibutuhkan-Untuk-Anotasi-Otomatis}
+		\begin{tabular}{|m{10cm}|m{2cm}}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Deskripsi                                            & Waktu (mm:dd) \\ \hline
+			Waktu yang dibutuhkan untuk Anotasi Otomatis Dataset & 30:24         \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Berikut ini adalah contoh hasil anotasi otomatis pada file berekstensi *.txt yang berisi kelas, koordinat x, koordinat y, width, dan height terlihat pada Gambar 4.18.
 
-GAMBAR
-GAMBAR
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.6\columnwidth]{bab4/Gambar/Picture18.1.png}
+		\includegraphics[width=0.6\columnwidth]{bab4/Gambar/Picture18.2.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Anotasi Otomatis dalam format file *.txt}\label{img:Hasil-Anotasi-Otomatis}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Pada Gambar 4.18. terdapat 5 bilangan berurutan, nilai ke-1 menunjukkan bilangan yang sama, untuk digunakan sebagai kelas yang terdeteksi yaitu kelas 'oil palm', untuk barisan ke-2, ke-3, ke-4, dan ke-5 masing-masing menunjukkan koordinat x, koordinat y, lebar dan tinggi. Lebar dan tinggi dapat terlihat sama, karena dataset memiliki karakteristik dimensi ukuran citra yang sama.
+Pada Gambar \ref{img:Hasil-Anotasi-Otomatis}. terdapat 5 bilangan berurutan, nilai ke-1 menunjukkan bilangan yang sama, untuk digunakan sebagai kelas yang terdeteksi yaitu kelas 'oil palm', untuk barisan ke-2, ke-3, ke-4, dan ke-5 masing-masing menunjukkan koordinat x, koordinat y, lebar dan tinggi. Lebar dan tinggi dapat terlihat sama, karena dataset memiliki karakteristik dimensi ukuran citra yang sama.
 
 Setelah itu, pada penelitian ini dilakukan pengujian dengan 10 citra yang dapat dilihat pada Tabel 4.10.
 
@@ -567,3 +608,22 @@ TABEL 11
 Dataset tersebut dikumpulkan atau digabungkan, serta dibagi menjadi 5 bagian. Karena pada proses pelatihan dan pengujian mengunakan teknik evaluasi K-Fold Cross-Validation. Berikut ini contoh citra yang digunakan dengan file *.txt yang berisi anotasi objek yang digunakan untuk dataset pelatihan, dataset validasi, dan dataset pengujian seperti tampak pada Gambar 4.24.
 
 GAMBAR 24 ADA 6
+
+\section{Pelatihan Model CNN}
+\hspace{1,2cm}
+Pada proses pelatihan ini dengan menggunakan model CNN pada YOLOv5, YOLOv6, dan YOLOv7 yang divalidasi dengan menggunakan K-Fold Cross-Validation, dimana semua bagian dataset dapat digunakan untuk pelatihan dan pengujian. Teknik ini digunakan untuk evaluasi performance dari model untuk mengurangi overfitting.  Pada penelitian ini menggunakan k = 5, dimana proses ini diulang sebanyak k = 5 kali. Setiap fold masing-masing terdiri dari data pelatihan yang merupakan gabungan dari data pelatihan sebanyak 4744 data dan 1187 validasi, untuk data test sebanyak 125 data citra. Setiap fold berisi data ini untuk dapat diketahui pada fold mana hasil model yang dilatih hasilnya lebih baik. Pada proses pelatihan ini data citr auntuk dataset dikonversi untuk data masukkan gambar pada proses pelatihan dengan menggunakan ukuran gambar yang diatur oleh YOLO, yaitu secara default 640 x 640. Pada pelatihan model dan pengujian menggunakan parameter optimasi seperti pada Tabel 4.12.
+
+TABEL 4.12
+
+Pada pelatihan menggunakan mesin pada Google Colab Pro dan DGX-A-100 yang dimiliki oleh Universitas Gunadarma. Mesin NVIDIA yang digunakan, seperti pada Tabel 4.13. 
+
+
+TABEL 4.13
+
+Pelatihan model CNN pada penelitian ini menggunakan validasi performance yang menghasilkan 4 hasil yang berbeda dengan menggunakan \textit{Precision}, \textit{Recall}, \textit{F1-Score}, dan \textit{best mean Average Precision} atau best mAP@0.5.
+
+\subsection{Pelatihan Model CNN YOLOv5}
+\hspace{1,2cm}
+Pelatihan model pertama dilatih dengan menggunakan YOLOv5. Pada Tabel 4.13 hasil pelatihan model CNN dengan YOLOv5 dengan 30 epoch dan batch size 16 pada Google Colab Pro. Pada mesin DGX-A-100 milik Universitas Gunadarma dengan menggunakan batch size sebesar 16 tidak dapat dijalankan karena permasalahan \textit{suificient memory} (runs out memory) atau kehabisan shared virtual memori untuk dapat digunakan, sehingga menggunakan batch size dibawahnya dalam 1 iterasi, yaitu 10. Hasil evaluasi model menunjukkan hasil yang cukup signifikan bahwa rata-rata dengan hasil pelatihan dengan Google Colab Pro lebih baik dibandingkan dengan hasil DGX A 100, berturut turut \textit{Precision}, \textit{Recall}, \textit{F1-Score}, best mAP@0.5. Adalah 0,957, 0,955, 0,955 dan 0,974, sedangkan dengan menggunakan DGX-A100 sedikit menurun yaitu 0,949, 0,955, 0,955, dan 0,974, hal ini karena memory pemrosesan dan penggunaan GFlops pada saat pelatihan model. Hasil Fold evaluasi pelatihan model dengan YOLOv5 tampak pada Tabel 4.14.
+
+Hasil pelatihan terbaik ditampilkan pada fold ke-4 dengan menggunakan mesin Goole Collab Pro. 

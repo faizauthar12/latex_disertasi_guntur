@@ -89,4 +89,5 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Hasil Rotasi 30$^{\circ }$ pada Citra template}}{132}{figure.caption.116}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Objek yang terdeteksi untuk Dataset dengan \textit {Template Matching}}}{133}{figure.caption.118}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Hasil objek yang terdeteksi untuk Dataset dengan algoritma BIRCH}}{134}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Hasil Anotasi Otomatis dalam format file *.txt}}{136}{figure.caption.122}%
 \addvspace {10\p@ }
