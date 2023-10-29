@@ -1084,4 +1084,618 @@ Hasil pengujian menunjukkan bahwa hasil best \textit{mean average} (best mAP) un
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Dari hasil gambar menunjukkan bahwa best mAP terendah bernilai di bawah 0,70 pada mesin DGX-A-100 pada fold ke-3. Hal ini disebabkan bahwa pada fold 3 nilai rata-rata presisi cukup rendah untuk mendeteksi dengan benar bahwa itu adalah objek pohon kelapa sawit, kemudian hasil naik kembali pada fold ke 4 dan 5. 
+Dari hasil gambar menunjukkan bahwa best mAP terendah bernilai di bawah 0,70 pada mesin DGX-A-100 pada fold ke-3. Hal ini disebabkan bahwa pada fold 3 nilai rata-rata presisi cukup rendah untuk mendeteksi dengan benar bahwa itu adalah objek pohon kelapa sawit, kemudian hasil naik kembali pada fold ke 4 dan 5.
+
+Waktu yang dibutuhkan untuk proses pengujian ini adalah tampak pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv5}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pengujian Model CNN YOLOv5}
+		\label{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv5}
+		\begin{tabular}{|l|ll|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu (detik)}                \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 \\ \hline
+			1                                              & \multicolumn{1}{l|}{122}                                      & 54        \\ \hline
+			2                                              & \multicolumn{1}{l|}{119}                                      & 50        \\ \hline
+			3                                              & \multicolumn{1}{l|}{118}                                      & 54        \\ \hline
+			4                                              & \multicolumn{1}{l|}{122}                                      & 52        \\ \hline
+			5                                              & \multicolumn{1}{l|}{123}                                      & 54        \\ \hline
+			Rata-Rata                                      & \multicolumn{1}{l|}{121}                                      & 53        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil dari waktu proses pengujian model dengan 125 data citra pada YOLOv5 oleh Google Colab Pro rata-rata membutuhkan waktu 121 detik, sedangkan waktu pada DGX-A-100 dibutuhkan 53 detik. Perbedaan waktu ini, lebih baik waktu yang diproses pada DGX-A-100 milik Universitas Gunadarma. Waktu komputasi pengujian lebih baik pada penggunan DGX-A-100. 
+
+Berdasarkan hasil pengujian tersebut, berikut ini hasil confusion matrix dan hasil keluaran pada dataset pengujian pada Gambar \ref{img:Confusion-Matrix-dan-Citra-Sampel-Prediksi-Pohon-Kelapa} (a) dan (b).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture29.1.png}
+		(a)
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	%\captionsetup{justification=centering}
+	%\caption{(a) Confusion Matrix dan (b) Citra Sampel Prediksi Pohon Kelapa Sawit dari Citra Dataset Pengujian}\label{img:Confusion-Matrix-dan-Citra-Sampel-Prediksi-Pohon-Kelapa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture29.2.jpg}
+		(b)
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{(a) Confusion Matrix dan (b) Citra Sampel Prediksi Pohon Kelapa Sawit dari Citra Dataset Pengujian}\label{img:Confusion-Matrix-dan-Citra-Sampel-Prediksi-Pohon-Kelapa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gambar \ref{img:Confusion-Matrix-dan-Citra-Sampel-Prediksi-Pohon-Kelapa}. menunjukkan confusion matrik yang bernilai positif, bahwa hasil menunjukkan nilai 1.00 pada oil palm, hal ini berarti model dapat berhasil memprediksi dengan benar bahwa objek tersebut merupakan oil palm (pohon kelapa sawit) dataset citra  pengujian, dan yang gambar yang sebelah kanan merupakan hasil pengujian dengan menampilkan kotak batas (\textit{bounding box}) yang disertai nilai \textit{confidence} yang menunjukkan bahwa nilai tersebut termasuk ke dalam kelas oil palm. Berdasarkan data pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv5}, k-fold terbaik pada fold ke 2 untuk pengujian YOLOv5.
+
+\subsection{Pengujian Model CNN YOLOv6}
+\hspace{1,2cm}
+Pengujian model yang kedua menggunakan model YOLOv6. Input image dengan menggunakan 640 x 640 dan batch size yang digunakan 32 batch size untuk satu iterasi. Hasil pengujian model dengan dua mesin yang digunakan, tampak seperti pada Tabel \ref{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv6-Colab-DGX}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pengujian Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv6-Colab-DGX}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{BFBFBF}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,801}                                    & 0,826     & \multicolumn{1}{p{1cm}|}{0,949}                                    & 0,880     & \multicolumn{1}{p{1cm}|}{0,869}                                    & 0,852     & \multicolumn{1}{p{1cm}|}{0,902}                                     & 0,866     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,819}                                    & 0,788     & \multicolumn{1}{p{1cm}|}{0,930}                                    & 0,920     & \multicolumn{1}{p{1cm}|}{0,871}                                    & 0,849     & \multicolumn{1}{p{1cm}|}{0,903}                                     & 0,870     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,805}                                    & 0,795     & \multicolumn{1}{p{1cm}|}{0,946}                                    & 0,910     & \multicolumn{1}{p{1cm}|}{0,870}                                    & 0,849     & \multicolumn{1}{p{1cm}|}{0,902}                                     & 0,872     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,815}                                    & 0,784     & \multicolumn{1}{p{1cm}|}{0,939}                                    & 0,920     & \multicolumn{1}{p{1cm}|}{0,873}                                    & 0,847     & \multicolumn{1}{p{1cm}|}{0,902}                                     & 0,871     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,804}                                    & 0,795     & \multicolumn{1}{p{1cm}|}{0,949}                                    & 0,910     & \multicolumn{1}{p{1cm}|}{0,871}                                    & 0,849     & \multicolumn{1}{p{1cm}|}{0,912}                                     & 0,872     \\ \hline
+			
+			Rata-rata                                      & \multicolumn{1}{p{1cm}|}{0,809}                                    & 0,798     & \multicolumn{1}{p{1cm}|}{0,943}                                    & 0,908     & \multicolumn{1}{p{1cm}|}{0,871}                                    & 0,849     & \multicolumn{1}{p{1cm}|}{0,898}                                     & 0,870     \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Berdasarkan Tabel \ref{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv6-Colab-DGX} hasil terbaik pada best mAP fold ke 5, dengan nilai rata-rata terbaik presisi sebesari 0,912 dan berdasarkan hasil rata-rata best mAP dengan Google Colab Pro juga lebih tinggi dibandingkan dengan DGX-A-100. Hasil sebaran evaluasi pengujian model dengan YOLOv6 seperti tampak pada Gambar \ref{img:Hasil-Evaluasi-Pengujian-Model-YOLOv6-Colab-DGX}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture30.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pengujian Model YOLOv6 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pengujian-Model-YOLOv6-Colab-DGX}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Berdasarkan dari waktu yang dibutuhkan pada proses pengujian model pada YOLOv6 dengan DGX-A-100 lebih cepat dibandingkan dengan Google Colab Pro. Hasil tampak pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv6}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pengujian Model CNN YOLOv6}
+		\label{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv6}
+		\begin{tabular}{|l|ll|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu (detik)}                \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 \\ \hline
+			1                                              & \multicolumn{1}{l|}{54}                                      & 53        \\ \hline
+			2                                              & \multicolumn{1}{l|}{56}                                      & 53        \\ \hline
+			3                                              & \multicolumn{1}{l|}{59}                                      & 50        \\ \hline
+			4                                              & \multicolumn{1}{l|}{57}                                      & 52        \\ \hline
+			5                                              & \multicolumn{1}{l|}{59}                                      & 50        \\ \hline
+			Rata-Rata                                      & \multicolumn{1}{l|}{57}                                      & 54        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil dari waktu proses pengujian model pada YOLOv6 dengan data pengujian 125 citra, dihasilkan waktu yang tidak terlalu berbeda. Waktu yang dibutuhkan oleh Google Colab Pro rata-rata membutuhkan waktu 57 detik, sedangkan waktu pada DGX-A-100 dibutuhkan 54 detik. Perbedaan waktu ini, waktu DGX-A-100 lebih baik dibandingkan dengan DGX-A-100.
+
+Berdasarkan hasil dari pengujian YOLOv6 pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv6}, pada Gambar 4.31. merupakan \textit{confusion matriks} dari pengujian YOLOv6.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.5\columnwidth]{bab4/Gambar/Picture31.1.png}\\
+		(a)
+	\end{center}
+	\begin{center}
+		\includegraphics[width=0.5\columnwidth]{bab4/Gambar/Picture31.2.jpg}\\
+		(b)
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{(a) Confusion Matrix Pengujian YOLOv6 (b) Citra Sampel Pengujian}\label{img:Confusion-Matrix-Pengujian-YOLOv6-Citra-Sampel}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gambar \ref{img:Confusion-Matrix-Pengujian-YOLOv6-Citra-Sampel}. menampilkan bahwa interpretasi dari \textit{false positive} bernilai 0.0 dan benar memprediksi objek kelas oil palm, sedangkan pada \textit{false negative} bernilai 0.01, ini menandakan bahwa model mendeteksi bahwa tersebut bukan 'oil palm' dan ternyata bernilai negative atau salah, tetapi model masih memiliki akurasi yang baik karena nilai oil palm berada pada 0,99.
+
+\subsection{Pengujian Model CNN YOLOv7}
+\hspace{1,2cm}
+Pengujian ketiga adalah pengujian YOLOv7, hasil dari pengujian dengan data test sebanyak 125 citra seperti pada Tabel \ref{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv7-Colab-DGX}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pengujian Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv7-Colab-DGX}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{BFBFBF}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,975}                                    & 0,967     & \multicolumn{1}{p{1cm}|}{0,992}                                    & 0,974     & \multicolumn{1}{p{1cm}|}{0,983}                                    & 0,970     & \multicolumn{1}{p{1cm}|}{0,996}                                     & 0,992     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,984}                                    & 0,964     & \multicolumn{1}{p{1cm}|}{0,989}                                    & 0,975     & \multicolumn{1}{p{1cm}|}{0,986}                                    & 0,969     & \multicolumn{1}{p{1cm}|}{0,997}                                     & 0,991     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,981}                                    & 0,956     & \multicolumn{1}{p{1cm}|}{0,989}                                    & 0,972     & \multicolumn{1}{p{1cm}|}{0,985}                                    & 0,964     & \multicolumn{1}{p{1cm}|}{0,997}                                     & 0,990     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,981}                                    & 0,971     & \multicolumn{1}{p{1cm}|}{0,989}                                    & 0,977     & \multicolumn{1}{p{1cm}|}{0,985}                                    & 0,974     & \multicolumn{1}{p{1cm}|}{0,997}                                     & 0,992     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,983}                                    & 0,954     & \multicolumn{1}{p{1cm}|}{0,985}                                    & 0,967     & \multicolumn{1}{p{1cm}|}{0,984}                                    & 0,960     & \multicolumn{1}{p{1cm}|}{0,997}                                     & 0,989     \\ \hline
+			
+			Rata-rata                                      & \multicolumn{1}{p{1cm}|}{0,981}                                    & 0,962     & \multicolumn{1}{p{1cm}|}{0,989}                                    & 0,973     & \multicolumn{1}{p{1cm}|}{0,985}                                    & 0,968     & \multicolumn{1}{p{1cm}|}{0,997}                                     & 0,991     \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Berdasarkan hasil pengujian model CNN YOLOv7 pada Tabel \ref{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv7-Colab-DGX}. dinyatakan bahwa hasil best MAP terbaik dengan rata-rata sebesar 0,997 pada Google Colab Pro, dibanding dengan DGX-A-100. Hasil sebaran nilai pengujian YOLOv7 pada Gambar \ref{img:Hasil-Evaluasi-Pengujian-Model-YOLOv7}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture32.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pengujian Model YOLOv7 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pengujian-Model-YOLOv7}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada gambar \ref{img:Confusion-Matrix-Pengujian-YOLOv7-Citra-Sampel} terlihat perbedaan dari evaluasi performance antara DGX-A-100 dengan Google Colab Pro, best mAP pada dengan mesin Google Colab Pro lebih tinggi, dan nilai \textit{precision} dari DGX-A-100 di bawah dari nilai lainnya.
+
+Di samping itu, pada proses waktu yang dibutuhkan dalam proses pengujian, DGX-A-100 milik Universitas Gunadarma lebih cepat dibandingkan Google Colab Pro, tampak seperti pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv7}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pengujian Model CNN YOLOv7}
+		\label{tbl:Evaluasi-Waktu-Proses-Pengujian-Model-CNN-YOLOv7}
+		\begin{tabular}{|m{2cm}|m{5cm}m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu (detik)} \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}   & DGX A 100  \\ \hline
+			1                                              & \multicolumn{1}{l|}{55}                                       & 55        \\ \hline
+			2                                              & \multicolumn{1}{l|}{55}                                       & 55        \\ \hline
+			3                                              & \multicolumn{1}{l|}{52}                                       & 56        \\ \hline
+			4                                              & \multicolumn{1}{l|}{52}                                       & 52        \\ \hline
+			5                                              & \multicolumn{1}{l|}{52}                                       & 52        \\ \hline
+			Rata-Rata                                      & \multicolumn{1}{l|}{53}                                       & 54        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil dari waktu proses pengujian model pada YOLOv7 dengan data pengujian 125 citra, dihasilkan waktu yang tidak terlalu berbeda. Waktu yang dibutuhkan oleh Google Colab Pro rata-rata membutuhkan waktu 53 detik, sedangkan waktu pada DGX-A-100 dibutuhkan 54 detik. Hasil ini menyatakan bahwa waktu proses pada Google Colab Pro lebih baik 1 detik dibanding DGX-A-100. 
+
+Berdasarkan hasil dari pengujian YOLOv7 pada Gambar \ref{img:Confusion-Matrix-Pengujian-YOLOv7-Citra-Sampel}. merupakan \textit{confusion matriks} hasil gambar pengujian dari pengujian YOLOv7.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.5\columnwidth]{bab4/Gambar/Picture33.1.png}\\
+		(a)
+	\end{center}
+	\begin{center}
+		\includegraphics[width=0.5\columnwidth]{bab4/Gambar/Picture33.2.jpg}\\
+		(b)
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{(a) Confusion Matrix Pengujian YOLOv7 (b) Citra Sampel Pengujian;}\label{img:Confusion-Matrix-Pengujian-YOLOv7-Citra-Sampel}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil YOLOv7 lebih tinggi dibandingkan dengan pengujian pada model CNN YOLOv5 dan YOLOv6. Hasil rata-rata presisi dari kelas oil palm tinggi, dan best model pada fold pada pengujian pada YOLOv7, pada fold ke 2 dengan evaluasi performance berurutan \textit{precision}, \textit{recall}, \textit{f1-score}, dan mAP@.5 sebesar 0,984, 0,989, 0,986, dan 0,997. Best mAP ini mendekati nilai sempurna yaitu 1.0 atau senilai 100\% model sangat baik dalam mendeteksi pohon kelapa sawit pada citra. Disamping itu, pada hasil pelatihan dengan dataset pelatihan bahwa fold terbaik pada proses pelatihan dengan YOLOv7 juga terletak pada fold ke 2, dengan nilai sebesar 0,970, 0,976, 0,973, dan 0,993. Terjadi peningkatan pada pelatihan model dengan pengujian model, dari 0,993 ke 0,997 meningkat senilai 0,004. Berdasarkan hasil akurasi yang dicapai pengujian sebesar 0,997 atau 99,70\% bahwa penelitian ini memberikan peningkatan dari penelitian sebelumnya pada H. M. Rizeei et al. tahun 2018 integrasi OBIA dan SVM dengan mencapai akurasi 98\% (H. M. Rizeei et al, 2018), tahun 2021 Y. Nurmasari \& Wijayanto menggunakan SVM dan Naïve Bayes mencapai akurasi 92\% (Y. Nurmasari, 2021), dan tahun 2022 H. Wibowo et al. dengan menggunakan YOLO dengan akurasi 97,74\% (H. Wibowo, 2022), sehingga ini menjadi nilai kebaruan bahwa hasil akurasi dari penelitian ini lebih baik dibandingkan dengan penelitian yang telah dilakukan sebelumnya.
+
+Berdasarkan hasil pelatihan dan pengujian dari kecepatan waktu proses, secara umum DGX-A-100 Universitas Gunadarma lebih baik dibandingkan dengan Google Colab Pro. Hal ini disebabkan beberapa faktor, diantaranya:
+
+\begin{enumerate}
+	\item Keterbatasan Jaringan: Waktu proses pada Google Colab Pro dipengaruhi oleh keterbatasan jaringan dan memiliki \textit{idle time} (waktu tunggu) untuk respon. Disamping itu, pada Google Colab Pro, data dan file disimpan di cloud (Google Drive), sehingga waktu akses dan transfer data dapat lebih lambat dibandingkan dengan akses dengan DGX-A-100 Universitas Gunadarma, data dan file disimpan pada lingkungan yang sama dengan tools yang digunakan. 
+	
+	\item Beban Server: Jumlah pengguna yang menggunakan Google Colab Pro pada saat bersamaan dapat mempengaruhi waktu proses. Jika terdapat banyak pengguna yang menggunakan sumber daya yang sama pada saat bersamaan, waktu proses dapat lebih lama karena Google Colab Pro harus menangani permintaan dari banyak pengguna, dibandingkan DGX-A-100 Universitas Gunadarma. 
+	
+	\item Konfigurasi Perangkat Keras dan Lunak: Konfigurasi ini mungkin dapat berbeda, sehingga mempengaruhi waktu proses yang digunakan oleh Google Colab Pro karena banyak pengguna yang mengakses (shared sources), dibandingkan dengan DGX-A-100 yang terbatas akses pengguna tidak sebanyak dengan Google Colab Pro.
+	
+\end{enumerate}
+
+\section{Hasil Model YOLOv7 Pelatihan dengan Inferensi}
+\hspace{1,2cm}
+Pada fase pelatihan dan pengujian dihasilkan bahwa model terbaik pada YOLOv7, yaitu pada saat pelatihan dihasilkan akurasi matrik pada best MAP sebesar 0,993 pada fold ke 2 dengan waktu terbaik pada fold ke 2 dengan DGX-A-100 milik Universitas Gunadarma selama 2866 detik. Pada fase pelatihan ini, model dengan dataset telah dikurasi atau diolah, sehingga model tersebut dapat mempelajari semua yang diperlukan mengenai objek pohon kelapa sawit 'oil palm'. Kemudian, pada fase inferensi pada \textit{machine learning} dibutuhkan untuk menilai kemampuan sistem membuat prediksi berdasarkan data baru dan menghasilkan hasil yang dapat ditindaklanjuti untuk diterapkan dalam sistem.
+
+Model yang digunakan adalah model terbaik pada fold ke 2 pada pelatihan dengan YOLOv7 dan diuji dengan dataset pada fold ke 1 untuk menilai kemampuan dari kecepatan waktu yang tercatat pada tools seperti pada Tabel \ref{tbl:Hasil-Kecepatan-Waktu-Proses-Dataset-Dengan-Model-YOLOv7}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Hasil Kecepetan Waktu Proses Dataset dengan Model YOLOv7 Pelatihan dengan Inferensi}
+		\label{tbl:Hasil-Kecepatan-Waktu-Proses-Dataset-Dengan-Model-YOLOv7}
+		\begin{tabular}{|m{5cm}|m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Hasil dari & Waktu Proses (detik) \\ \hline
+			Pelatihan  & 2866                 \\ \hline
+			Inferensi  & 2511                 \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Berdasarkan Tabel \ref{tbl:Hasil-Kecepatan-Waktu-Proses-Dataset-Dengan-Model-YOLOv7} kecepatan waktu proses inferensi lebih baik dan ini menjadi salah satu hal yang penting dalam \textit{machine learning}, terutama untuk model yang dibuat ini digunakan dalam sistem yang memerlukan pemrosesan secara real-time untuk penelitian ini. Disamping itu, waktu inferensi yang lebih cepat dapat memastikan bahwa model dapat memberikan hasil dalam waktu yang sesingkat mungkin dan tidak menggangu respons sistem secara keseluruhan.
+
+\section{Hasil Deteksi dan Penghitungan Akhir}
+\hspace{1,2cm}
+Pelatihan dan pengujian model telah dilakukan, berdasarkan hasil pelatihan dan pengujian dengan model CNN YOLOv5, YOLOv6, dan YOLOv7 bahwa model CNN dengan YOLOv7 lebih baik dibandingkan dengan model lainnya yang telah dilakukan pada pelatihan dan pengujian model dalam penelitian ini. Dalam penelitian ini, model YOLOv7 diimplementasikan untuk mendeteksi dan menghitung pohon kelapa sawit melalui citra satelit yang diambil melalui Google Maps API yang terintegrasi dengan citra dari Maxar Technologies yang memberikan citra satelit dari Sentinel-2. Penerapan deteksi dan penghitungan memiliki beberapa tahap.
+
+\subsection{Mengubah Model CNN ke Format ONNX}
+\hspace{1,2cm}
+Model CNN yang digunakan pada penelitian ini dari hasil pelatihan dan pengujian adalah YOLOv7. Mengkonversi format ini dengan menggunakan repository resmi model dari YOLOv7 dengan menggunakan git dan menggunakan kode program atau script \textit{export.py}. Model ini harus dikonversi atau diubah ke ONNX atau \textit{open neural network exchange} karena ONNX merupakan format terbuka untuk merepresentasikan dan berbagi model deep learning. ONNX menyediakan format standar yang memungkinkan interoperabilitas antara kerangka kerja deep learning yang berbeda, sehingga lebih mudah untuk berbagi model di berbagai platform dan perangkat. Hasil konversi model ONNX ini berisi dua kompoenen utama, yaitu kombinasi grafik komputasi dan seperangkat parameter terlatih dari hasil pelatihan dan pengujian pada model CNN. ONNX diletakkan pada sisi backend server yaitu tepatnya di FastAPI. 
+
+\subsection{Mendapatkan titik tengah koordinat (latitude - longitude)}
+\hspace{1,2cm}
+Tahap berikutnya sesuai pada pembahasan bab 3 subbab mengenai diagram arsitektur, maka untuk mendapatkan titik tengah koordinat latitude - longitude dari sistem yang diterapkan untuk mendeteksi dan menghitung kelapa sawit, serta diketahui titik koordinat tersebut, menggunakan sistem yang terintegrasi dengan Google Maps API. Pengguna register terlebih dahulu untuk mendapatkan akun dan menggunakan sistem, setelah itu dapat login dan menggunakan sistem tersebut, seperti pada Gambar \ref{img:Halaman-Register-dan-Login}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture34.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Halaman Register dan Login}\label{img:Halaman-Register-dan-Login}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Setelah berhasil mengaktifkan akun, maka berikutnya ditampilkan halaman yang menampilkan peta maps yang terintegrasi Google Maps API.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture35.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Tampilan Citra Maps Satelit}\label{img:Tampilan-Citra-Maps-Satelit}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Selanjutnya, untuk dapat mendeteksi dan menghitung pohon kelapa sawit pada suatu area lahan dari citra maps satelit. Untuk mendapatkan titik tengah koordinat tersebut menggunakan polygon. Poligon ini mencakup area 100 x 100 m yang merupakan kesesuaian yang dimiliki atau yang diberikan dari layanan Google Maps API ini, seperti pada Gambar \ref{img:Polygon-Untuk-Mendeteksi-dan-Menghitung-Pohon-Kelapa}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture36.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Polygon untuk Mendeteksi dan Menghitung Pohon Kelapa Sawit}\label{img:Polygon-Untuk-Mendeteksi-dan-Menghitung-Pohon-Kelapa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dapat diperhatikan bahwa Gambar \ref{img:Polygon-Untuk-Mendeteksi-dan-Menghitung-Pohon-Kelapa} ini tampilan dengan sebuah polygon sebesar 100 x 100 m yang digunakan untuk memetakan suatu area lahan yang akan dideteksi dan dihitung jumlah pohon kelapa sawit, untuk dapat diketahui setiap letak posisi koordinat, maka ditampilkan dan digunakan terlebih dahulu titik tengah berupa titik latitude dan longitude dengan menggunakan library bantuan yaitu \textit{leaflet js} yang merupakan \textit{mapping library}. Titik koordinat dari gambar ini sebagai kunci untuk dapat bisa dihitung dan ditampilkan titik koordinat dari setiap objek yang berhasil dideteksi dan diketahui lokasi setiap titik koordinat tersebut. Titik koordinat terdeteksi yaitu latitude: -6.47484745212241 dan longitude: 107.03319672664993.
+
+\subsection{Mendeteksi dan Menghitung berdasarkan Existing Model}
+\hspace{1,2cm}
+Pada tahap ini untuk mendeteksi pohon kelapa sawit dengan menggunakan model yang tersimpan pada backend server dengan menggunakan FastAPI. Konsep mendeteksi pohon kelapa sawit sama seperti pada penjelasan subbab 3.7 pada cara kerja algoritma YOLO. Jika berhasil terdeteksi data citra ditunjukkan dengan kotak pembatas atau \textit{bounding box}. Jumlah bounding box yang tampil (berhasil dideteksi) ini yang digunakan untuk dapat menghitung banyaknya pohon kelapa sawit, seperti pada Gambar \ref{img:Hasil-Mendeteksi-dan-Menghitung-Pohon-Kelapa-Sawit}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture37.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Mendeteksi dan Menghitung Pohon Kelapa Sawit}\label{img:Hasil-Mendeteksi-dan-Menghitung-Pohon-Kelapa-Sawit}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Mendapatkan objek yang terdeteksi dengan format YOLO}
+\hspace{1,2cm}
+Pada setiap kotak pembatas atau \textit{bounding box} yang tampil menandakan bahwa itu merupakan objek pohon kelapa sawit. Setiap \textit{bounding box} ini berisi kelas oil palm, koordinat x, koordinat y, width, dan height. Tetapi, objek yang terdeteksi yang memiliki titik tengah (koordinat x dan y) saat ini bukan lah lokasi atau piksel koordinat yang sebenarnya. Titik-titik ini masih menggunakan format YOLO. Format YOLO hanya merepresentasikan posisi relative, maka dibutuhkan konversi terlebih dahulu ke format COCO. Format COCO merepresentasikan lokasi piksel asli dari \textit{bounding box} pohon kelapa sawit.
+
+Untuk mendapatkan gambaran bagaimana setiap objek pohon kelapa sawit tidak hanya terdeteksi dan dihitung, tetapi dapat memiliki posisi atau titik koordinat latitude dan longitude yang dapat digunakan untuk pemantauaan lebih lanjut, maka dijelaskan dalam simulasi sesuai diagram alir pada Gambar \ref{img:Skema-Diagram-Algoritma-YOLO}.
+
+Setiap objek yang berhasil dideteksi sebagai pohon kelapa sawit, maka ditandai dengan \textit{bounding box} didalam polygon 100 x 100m, dan memiliki ID, lokasi koordinat latitude, longitude, serta nilai confidence, tampak seperti Gambar \ref{img:Hasil-Deteksi-dan-Penghitungan-Serta-Menampilkan-Titik-Titik}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture38.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil deteksi dan penghitungan, serta menampilkan titik-titik koordinat latitude-longitude lokasi setiap objek pohon kelapa sawit}\label{img:Hasil-Deteksi-dan-Penghitungan-Serta-Menampilkan-Titik-Titik}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gambar \ref{img:Hasil-Deteksi-dan-Penghitungan-Serta-Menampilkan-Titik-Titik} merupakan salah satu objek yang terdeteksi sebagai pohon kelapa sawit yang masuk dalam area deteksi polygon pada Gambar \ref{img:Hasil-Mendeteksi-dan-Menghitung-Pohon-Kelapa-Sawit}. yang telah diketahui ID, koordinat latitude, koordinat longitude, serta nilai confidence. Titik tengah dari setiap bounding box ini merepresentasikan koordinat latitude dan latitude.
+
+Dalam mendapatkan gambaran bagaimana setiap objek memiliki titik koordinat tersebut, maka diacu pada satu objek pohon kelapa sawit pada Gambar \ref{img:Hasil-Mendeteksi-dan-Menghitung-Pohon-Kelapa-Sawit}. Gambar \ref{img:Hasil-Deteksi-dan-Penghitungan-Serta-Menampilkan-Titik-Titik} merupakan nilai dari titik-titik awal hingga bisa ditampilkan titik koordinat latitude dan longitude objek pohon kelapa sawit pada Gambar \ref{img:Nilai-Awal-dari-Titik-titik-pada-objek-pohon-kelapa}. Perhitungan ini berlaku sama pada objek pohon kelapa sawit lainnya yang berhasil dideteksi pada sistem.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture39.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Nilai Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}\label{img:Nilai-Awal-dari-Titik-titik-pada-objek-pohon-kelapa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Berikut ini nilai yang dimiliki pada Tabel 4.27 agar tampak lebih jelas. Pada Gambar \ref{img:Hasil-Deteksi-dan-Penghitungan-Serta-Menampilkan-Titik-Titik}. sudah diketahui nilai-nilai dari format COCO.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Nilai Titik Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}
+		\label{tbl:Nilai-Titik-Awal-dari-Titik-Titik-Pada-Objek-Pohon-Kelapa-Sawit}
+		\begin{tabular}{|m{2cm}|m{8cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Komponen        & Nilai                                                     \\ \hline
+			Center lat long & Latitude: -6.47484745212241;Longitude: 107.03319672664993 \\ \hline
+			ID              & 5588                                                      \\ \hline
+			x yolo          & 0,6543537378311157                                        \\ \hline
+			y yolo          & 0,312351763248443                                         \\ \hline
+			Width yolo      & 0,7570236921310425                                        \\ \hline
+			Height yolo     & 0,42296940088272095                                       \\ \hline
+			Confidence      & 0,9860687255859375                                        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Nilai pada format YOLO tercantum pada Tabel \ref{tbl:Nilai-Titik-Awal-dari-Titik-Titik-Pada-Objek-Pohon-Kelapa-Sawit}, yaitu diketahui x yolo, y yolo, width yolo, dan height yolo. Nilai-nilai ini digunakan untuk mengubah format YOLO menjadi format COCO.
+
+\subsection{Mengubah objek ke format COCO}
+\hspace{1,2cm}
+Adanya perbedaan pada format YOLO dan COCO mengenai letak posisi dari objek, maka dibutuhkan konversi atau mengubah format YOLO ke format COCO. Karena format YOLO hanya merepresentasikan posisi relative dari titik tengah objek, maka diubah menjadi format COCO yang dimana merupakan titik piksel asli dari objek yang terdeteksi. Dengan menggunakan persamaan 20 hingga 25 pada subbab 3.8. nilai dari format YOLO ke COCO seperti pada Tabel 4.28.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Nilai Komponen Format COCO}
+		\label{tbl:Nilai-Komponen-Format-COCO}
+		\begin{tabular}{|m{2cm}|m{8cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Komponen    & Nilai              \\ \hline
+			x coco      & 418,78639221191406 \\ \hline
+			y coco      & 199,9051284790039  \\ \hline
+			Width coco  & 65,70877075195312  \\ \hline
+			Height coco & 70,7952880859375   \\ \hline
+			x\_center   & 451,6407775878906  \\ \hline
+			y\_center   & 235,30277252197266 \\ \hline
+			Confidence  & 0,9860687255859375 \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Mengubah Titik Piksel ke Piksel Koordinat}
+\hspace{1,2cm}
+Setelah nilai format COCO didapatkan yang berupa nilai dari piksel setiap \textit{bounding box} objek yang terdeteksi pohon kelapa sawit, maka berikutnya mengubaj titik piksel menjadi titik koordinat dengan menggunakan \textit{Mercator projection}.
+
+Tahap ini digunakan untuk mendapatkan koordinat \textit{easting} dan \textit{northing}, dengan menggunakan persamaan 26 subabb 3.8. Koordinat \textit{easting} dan \textit{northing} mengacu pada koordinat geografis kartesius suatu titik. Koordinat easting mengacu pada koordinat x yang diproyeksikan atau jarak yang diukur ke arah timur (khatulistiwa), sedangkan koordinat \textit{northing} disebut sebagai koordinat y yang diproyeksikan atau jarak yang dikur ke arah utara. Koordinat ini memproyeksikan seperti map yang datar dengan ukuran map 256 x 256. Berdasarkan persamaan 25 subab 3.8, maka dapat dihitung titik piksel ke piksel koordinat sebagai berikut.\\
+Diketahui: \\
+latitude   	= -6.47484745212241; // ($\varphi$) \\
+longitude      = 107.03319672664993 // ($\lambda$) \\
+mapWidth    = 256; \\
+mapHeight   = 256; \\
+Mendapatkan nilai koordinat x:\\
+\hspace{1,2cm} x = (longitude+180)*(mapWidth/360)\\
+\hspace{1,2cm} x = (107.03319672664993+ 180)*(256/360)\\
+\hspace{1,2cm}  x = 204.11249545006217\\
+Mengkonversi dari derajat ke radians:\\
+\hspace{1,2cm} latRad = latitude*PI/180;\\
+\hspace{1,2cm} latRad = -6.47484745212241*3.141592653589793/180\\
+\hspace{1,2cm} latRad = -0.1130074066 \\
+Mendapatkan nilai koordinat y: //MercN = Mercator North\\
+\hspace{1,2cm} mercN = ln(tan((PI/4)+(latRad/2)));\\
+\hspace{1,2cm} mercN = ln(tan((3.141592653589793/4)+(-0.1130074066/2))\\
+\hspace{1,2cm} mercN = ln(tan0.72889446009)\\
+\hspace{1,2cm} mercN = ln(0.89292855444)\\
+\hspace{1,2cm} mercN = -0.11324870753S\\
+Maka, nilai y:\\
+\hspace{1,2cm} y = (mapHeight/2)-(mapWidth*mercN/(2*PI));\\
+\hspace{1,2cm} y = (256/2)-(256*(-0.11324870753))/(2*3.141592653589793))\\
+\hspace{1,2cm} y = 132.61416744978712
+
+Maka, nilai piksel koordinat (x, y) diketahui senilai (204.11249545006217, 132.61416744978712). Nilai ini merupakan titik piksel koordinat dari 1 objek pohon kelapa sawit yang digunakan pada Gambar 4.37.
+
+\subsection{Mengubah Piksel Koordinat ke Latitude-Longitude}
+\hspace{1,2cm}
+Tahap selanjutnya mengubah piksel koordinat ke latitude-longitude, yang dimana bahwa setiap objek pohon kelapa sawit yang terdeteksi memiliki lokasi masing-masing. Titik latitude-longitude merupakan titik koordinat geografis yang digunakan untuk mengetahui letak atau posisi dari suatu pohon, hasil ini dpaat digunakan untuk pemantauan setiap pohon kelapa sawit yang ada di suatu area atau lahan tertentu.
+
+Dengan menggunakan persamaan 26, hasil latitude dan longitude sebagai berikut.\\
+Diketahui: math.pi ($\phi$= 3.141592653589793)\\
+Mendapatkan Longitude:\\
+longitude = (point.x - origin.x) / self.pixelsPerLonDegree\textunderscore \\
+longitude = (point.x - (mapWidth/2)) / (mapWidth/360)\\
+longitude = (204.11262099249-128)/(256/360)\\
+longitude = 107.03337332706901\\
+Mendapatkan Latitude: \\
+latRadians = (point.y - origin.y) / -self.pixelsPerLonRadian\_ \\
+latRadians = (132.61416744978712-128)/-(256/(2* $\phi$))\\
+latRadians = -0.1132467250392861\\
+latitude = proj.radiansToDegrees(2*math.atan(math.exp(latRadians)) - math.pi / 2)\\
+latitude = proj.radiansToDegrees(2*math.atan(\[2.718281^{-0.1132467250392861}\])) - math.pi/2)\\
+latitude = proj.radiansToDegrees(2 * math.atan(0.892930324666564)) - math.pi/2)\\
+latitude = proj.radiansToDegrees(2 * 0.7288954450137763 - math.pi/2)\\
+latitude = proj.radiansToDegrees(2 * 0.7288954450137763 - (3.141592653589793/2)\\
+latitude = radiansToDegrees(-0.11300543676)\\
+latitude = -0.11300543676/(math.pi /180)\\
+latitude = -0.11300543676/(3.141592653589793/180)\\
+latitude = -6.474734588801301
+
+Maka, titik koordinat latitude dan longitude diketahui senilai (-6.474734588801301, 107.03337332706901). Nilai ini merupakan titik koordinat geografis dari 1 objek pohon kelapa sawit yang digunakan pada Gambar 4.37, dan terbukti bahwa penerapan pada sistem berhasil untuk mendapatkan lokasi setiap pohon kelapa sawit.
+
+Selanjutnya dilakukan ujicoba dengan 4 blok pada lahan area di Kebun Pendidikan Kelapa Sawit IPB-Cargil, Jonggol, seperti pada Gambar \ref{img:Hasil-Uji-Blok-1} blok 1, Gambar \ref{img:Hasil-Uji-Blok-2} blok 2, Gambar \ref{img:Hasil-Uji-Blok-3} blok 3, dan Gambar \ref{img:Hasil-Uji-Blok-4} blok 4.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture40.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Uji Blok 1}\label{img:Hasil-Uji-Blok-1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture41.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Uji Blok 2}\label{img:Hasil-Uji-Blok-2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture42.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Uji Blok 3}\label{img:Hasil-Uji-Blok-3}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture43.jpg}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Uji Blok 4}\label{img:Hasil-Uji-Blok-4}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tabel \ref{tbl:Hasil-Presentase-Prediksi-Pohon-Kelapa-Sawit-Pada-4-Blok} merupakan akumulasi hasil uji penerapan deteksi dan menghitung pohon kelapa sawit dengan menggunakan sistem yang diterapkan. Berdasarkan hasil studi lapang dan wawancara bahwa pohon kelapa sawit awal menurut perhitungan tanam sebanyak 5670 pohon. Hasil akumulasi dan persentase keberhasilan menggunakan sistem dari citra yang berhasil dideteksi seperti pada Tabel \ref{tbl:Hasil-Presentase-Prediksi-Pohon-Kelapa-Sawit-Pada-4-Blok}. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Hasil Presentase Prediksi Pohon Kelapa Sawit pada 4 Blok}
+		\label{tbl:Hasil-Presentase-Prediksi-Pohon-Kelapa-Sawit-Pada-4-Blok}
+		\begin{tabular}{|m{4cm}|m{4cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Blok                       & Pohon Yang Terdeteksi \\ \hline
+			1                          & 961                   \\ \hline
+			2                          & 955                   \\ \hline
+			3                          & 1898                  \\ \hline
+			4                          & 1724                  \\ \hline
+			Jumlah                     & 5538                  \\ \hline
+			Persentase \% (Terdeteki/Perhitungan Tanam (5670)) & 97.67\%               \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gambar \ref{img:Hasil-Uji-Blok-1} hingga Gambar \ref{img:Hasil-Uji-Blok-4} merupakan bukti penerapan yang telah dilakukan dengan menggunakan \textit{convolutional neural network} dan perhitungan lokasi dari setiap pohon sawit untuk dapat dimonitoring dengan menggunakan \textit{Mercator projection}. \textit{Bounding box} berwarna merupakan pohon kelapa sawit yang berhasil terdeteksi secara otomatis. Pada penelitian ini juga dihasilkan kebaruan atau novelty bahwa dihasilkan suatu identifier berdasarkan koordinat latitude-longitude untuk setiap satu pohon kelapa sawit yang terdeteksi pada sistem, sehingga bisa menjadi identifier yang unik untuk dapat bisa dimonitoring setiap pohon kelapa sawit tersebut.

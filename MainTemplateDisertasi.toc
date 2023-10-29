@@ -9,9 +9,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{x}{figure.caption.2}%
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
 \contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
-\contentsline {chapter}{DAFTAR TABEL}{xx}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxvi}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxvi}{chapter*.5}%
+\contentsline {chapter}{DAFTAR TABEL}{xxii}{chapter*.4}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxix}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxix}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -89,8 +89,19 @@
 \contentsline {subsection}{\numberline {4.4.3}Pelatihan Model CNN YOLOv7}{150}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Pengujian Model CNN}{153}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Pengujian Model CNN YOLOv5}{153}{subsection.4.5.1}%
-\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{156}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{156}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{157}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{158}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{173}{table.caption.149}%
+\contentsline {subsection}{\numberline {4.5.2}Pengujian Model CNN YOLOv6}{159}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Pengujian Model CNN YOLOv7}{162}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Hasil Model YOLOv7 Pelatihan dengan Inferensi}{166}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Hasil Deteksi dan Penghitungan Akhir}{167}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Mengubah Model CNN ke Format ONNX}{168}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Mendapatkan titik tengah koordinat (latitude - longitude)}{168}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Mendeteksi dan Menghitung berdasarkan Existing Model}{171}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Mendapatkan objek yang terdeteksi dengan format YOLO}{171}{subsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.7.5}Mengubah objek ke format COCO}{174}{subsection.4.7.5}%
+\contentsline {subsection}{\numberline {4.7.6}Mengubah Titik Piksel ke Piksel Koordinat}{174}{subsection.4.7.6}%
+\contentsline {subsection}{\numberline {4.7.7}Mengubah Piksel Koordinat ke Latitude-Longitude}{176}{subsection.4.7.7}%
+\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{181}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{181}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{182}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{184}{section.5.2}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{199}{table.caption.174}%

@@ -14,7 +14,7 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Persamaan IoU (Sumber: A. Patel, 2020)}}{25}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Skema Supervised Learning (Sumber: M. Kozan, 2021)}}{27}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Skema Unsupervised Learning (Sumber: M. Kozan, 2021)}}{29}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Skema Semi-Supervised Learning (Sumber: A. B. Nassif et al, 2019)}}{32}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Skema Semi-Supervised Learning (Sumber: \citep {SpeechRecognitionUsingDeepNeuralNetworks}}}{32}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Skema Reinforcement Learning (Sumber: R. Sutton, 1998)}}{33}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Skema Umum \textit {Deep Learning} (Sumber: A. Feizollah et al, 2022)}}{36}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Skema \textit {Deep Learning} dengan Penambahan beberapa \textit {hidden layer} (Sumber: H. Kaur et al, 2021)}}{37}{figure.caption.24}%
@@ -100,4 +100,19 @@
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Hasil Evaluasi Pelatihan Model YOLOv6 antara Google Colab Pro dengan DGX-A-100}}{149}{figure.caption.137}%
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Hasil Evaluasi Pelatihan Model YOLOv7 antara Google Colab Pro dengan DGX-A-100}}{152}{figure.caption.140}%
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Hasil Evaluasi Pengujian Model YOLOv5 antara Google Colab Pro dengan DGX-A-100}}{155}{figure.caption.143}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces (a) Confusion Matrix dan (b) Citra Sampel Prediksi Pohon Kelapa Sawit dari Citra Dataset Pengujian}}{158}{figure.caption.146}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Hasil Evaluasi Pengujian Model YOLOv6 antara Google Colab Pro dengan DGX-A-100}}{160}{figure.caption.148}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces (a) Confusion Matrix Pengujian YOLOv6 (b) Citra Sampel Pengujian}}{161}{figure.caption.150}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Hasil Evaluasi Pengujian Model YOLOv7 antara Google Colab Pro dengan DGX-A-100}}{163}{figure.caption.152}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces (a) Confusion Matrix Pengujian YOLOv7 (b) Citra Sampel Pengujian;}}{164}{figure.caption.154}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Halaman Register dan Login}}{169}{figure.caption.156}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Tampilan Citra Maps Satelit}}{169}{figure.caption.157}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Polygon untuk Mendeteksi dan Menghitung Pohon Kelapa Sawit}}{170}{figure.caption.158}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Hasil Mendeteksi dan Menghitung Pohon Kelapa Sawit}}{171}{figure.caption.159}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Hasil deteksi dan penghitungan, serta menampilkan titik-titik koordinat latitude-longitude lokasi setiap objek pohon kelapa sawit}}{172}{figure.caption.160}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Nilai Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}}{173}{figure.caption.161}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Hasil Uji Blok 1}}{177}{figure.caption.164}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Hasil Uji Blok 2}}{178}{figure.caption.165}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Hasil Uji Blok 3}}{178}{figure.caption.166}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Hasil Uji Blok 4}}{179}{figure.caption.167}%
 \addvspace {10\p@ }

@@ -35,5 +35,14 @@
 \contentsline {table}{\numberline {4.18}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{151}{table.caption.139}%
 \contentsline {table}{\numberline {4.19}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv7}}{152}{table.caption.141}%
 \contentsline {table}{\numberline {4.20}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}}{154}{table.caption.142}%
+\contentsline {table}{\numberline {4.21}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv5}}{156}{table.caption.144}%
+\contentsline {table}{\numberline {4.22}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}}{159}{table.caption.147}%
+\contentsline {table}{\numberline {4.23}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv6}}{160}{table.caption.149}%
+\contentsline {table}{\numberline {4.24}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{162}{table.caption.151}%
+\contentsline {table}{\numberline {4.25}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv7}}{163}{table.caption.153}%
+\contentsline {table}{\numberline {4.26}{\ignorespaces Hasil Kecepetan Waktu Proses Dataset dengan Model YOLOv7 Pelatihan dengan Inferensi}}{167}{table.caption.155}%
+\contentsline {table}{\numberline {4.27}{\ignorespaces Nilai Titik Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}}{173}{table.caption.162}%
+\contentsline {table}{\numberline {4.28}{\ignorespaces Nilai Komponen Format COCO}}{174}{table.caption.163}%
+\contentsline {table}{\numberline {4.29}{\ignorespaces Hasil Presentase Prediksi Pohon Kelapa Sawit pada 4 Blok}}{179}{table.caption.168}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces A sample long table.}}{167}{table.5.1}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces A sample long table.}}{193}{table.5.1}%
