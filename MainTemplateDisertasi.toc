@@ -10,8 +10,8 @@
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
 \contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
 \contentsline {chapter}{DAFTAR TABEL}{xx}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxv}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxv}{chapter*.5}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxvi}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxvi}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -80,13 +80,17 @@
 \contentsline {subsubsection}{\numberline {4.2.4.4}Menjalankan Template Matching}{133}{subsubsection.4.2.4.4}%
 \contentsline {subsubsection}{\numberline {4.2.4.5}Analisis Cluster dengan BIRCH}{134}{subsubsection.4.2.4.5}%
 \contentsline {subsubsection}{\numberline {4.2.4.6}Menjalankan Auto-Annotate Datasets}{135}{subsubsection.4.2.4.6}%
-\contentsline {subsubsection}{\numberline {4.2.4.7}Integrasi Data}{137}{subsubsection.4.2.4.7}%
-\contentsline {subsubsection}{\numberline {4.2.4.8}Format Data}{138}{subsubsection.4.2.4.8}%
-\contentsline {section}{\numberline {4.3}Citra untuk Komputasi}{139}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Pelatihan Model CNN}{139}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Pelatihan Model CNN YOLOv5}{140}{subsection.4.4.1}%
-\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{141}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{141}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{142}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{143}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{158}{table.caption.128}%
+\contentsline {subsubsection}{\numberline {4.2.4.7}Integrasi Data}{138}{subsubsection.4.2.4.7}%
+\contentsline {subsubsection}{\numberline {4.2.4.8}Format Data}{140}{subsubsection.4.2.4.8}%
+\contentsline {section}{\numberline {4.3}Citra untuk Komputasi}{141}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Pelatihan Model CNN}{144}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Pelatihan Model CNN YOLOv5}{145}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Pelatihan Model CNN YOLOv6}{148}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Pelatihan Model CNN YOLOv7}{150}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Pengujian Model CNN}{153}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pengujian Model CNN YOLOv5}{153}{subsection.4.5.1}%
+\contentsline {chapter}{\numberline {V\bfseries }PENUTUP}{156}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{156}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{157}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{158}{section.5.2}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{173}{table.caption.149}%

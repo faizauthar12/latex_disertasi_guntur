@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.21)  25 OCT 2023 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  29 OCT 2023 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,7 +24,7 @@ File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
@@ -50,7 +50,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks18
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2023/09/29 v3.95 The Babel package
 \babel@savecnt=\count197
@@ -100,7 +100,7 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \backup@length=\skip51
 \ar@cellbox=\box52
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+(C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip52
 \multirow@cntb=\count199
@@ -149,25 +149,25 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.st
-y
+(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
-eys.sty
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+))
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -201,13 +201,13 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box58
 \rot@mess@toks=\toks23
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/subfig\subfig.sty
+(C:\Program Files\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen156
 \captionmargin=\dimen157
@@ -223,7 +223,7 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count273
 Package caption Info: longtable package is loaded.
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
@@ -252,7 +252,7 @@ LaTeX Info: Redefining \cite on input line 467.
 Package natbib Warning: If you use both babel and natbib
 (natbib)                then load babel AFTER natbib.
 
-) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+) (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count282
 \float@exts=\toks24
@@ -272,7 +272,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 ** CRC Press, 1999. 
 Package: pseudocode 
 \pcode@width=\skip67
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/fancybox\fancybox.sty
+(C:\Program Files\MiKTeX\tex/latex/fancybox\fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -374,7 +374,7 @@ LaTeX Info: Redefining \] on input line 2954.
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks35
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
+(C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip80
 \enit@outerparindent=\dimen175
@@ -391,7 +391,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Program Files\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks37
 \minrowclearance=\skip81
@@ -439,29 +439,30 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.st
-y
+(C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/letltxmacro\letltxmacro.
-sty
+(C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitl
-estring.sty
+(C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count308
-) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count309
 )
@@ -474,7 +475,7 @@ File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count312
@@ -502,11 +503,10 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 LaTeX Info: Redefining \url on input line 4772.
 \XeTeXLinkMargin=\dimen177
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.
-sty
+(C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -520,7 +520,8 @@ Package hyperref Info: backreferencing OFF on input line 6066.
 Package hyperref Info: Link coloring OFF on input line 6071.
 Package hyperref Info: Link coloring with OCG OFF on input line 6076.
 Package hyperref Info: PDF/A mode OFF on input line 6081.
- (C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -541,12 +542,10 @@ with kernel methods
 \Fld@listcount=\count318
 \c@bookmark@seq@number=\count319
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfile
-check.sty
+(C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniqueco
-unter.sty
+(C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -580,18 +579,18 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/psnfss\pifont.sty
+(C:\Program Files\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
 
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/psnfss\upzd.fd
+(C:\Program Files\MiKTeX\tex/latex/psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/psnfss\upsy.fd
+(C:\Program Files\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
@@ -622,7 +621,7 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/base\alltt.sty
 Package: alltt 2021/01/29 v2.0g defines alltt environment
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen184
 \lightrulewidth=\dimen185
@@ -896,8 +895,7 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
 rytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/breakurl\breakurl.sty
+))) (C:\Program Files\MiKTeX\tex/latex/breakurl\breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
 
 (C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
@@ -964,9 +962,7 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 ) (trimclip.sty
 Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
-
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/collectbox\collectbox.st
-y
+ (C:\Program Files\MiKTeX\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box81
 )
@@ -976,7 +972,7 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@ury=\dimen311
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+(C:\Program Files\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen312
@@ -988,16 +984,18 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen318
 \adjbox@ptotalheight=\dimen319
 
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+(C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count355
-) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/varwidth\varwidth.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box82
 \sift@deathcycles=\count356
 \@vwid@loff=\dimen320
 \@vwid@roff=\dimen321
-)) (C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/ulem\ulem.sty
+))
+(C:\Program Files\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box83
 \UL@hyphenbox=\box84
 \UL@skip=\skip86
@@ -1009,7 +1007,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: ulem 2019/11/18
 \ULdepth=\dimen324
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 LaTeX Info: Redefining \subref on input line 189.
 Package subcaption Info: The counter `subfigure' was already defined by
@@ -1019,7 +1017,7 @@ Package subcaption Info: The counter `subtable' was already defined by
 (subcaption)             \newsubfloat (offered by the subfig package) on input 
 line 238.
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithm.sty
+(C:\Program Files\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks56
@@ -1028,7 +1026,8 @@ nment
 Package: makecell 2006/06/28 v0.1c Multilined Cells and Tabular Heads
 \rotheadsize=\dimen325
 \TeXr@lab=\toks57
-) (graphbox.sty
+)
+(graphbox.sty
 Package: graphbox 2018/01/17 v1.1 extension for graphicx to adjust containing b
 ox
 \Gin@box@box=\box86
@@ -1038,8 +1037,7 @@ ox
 \Gin@box@hspace=\skip90
 \Gin@box@bwidth=\skip91
 \Gin@box@bheight=\skip92
-)
-(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
+) (C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count359
 \mult@box=\box87
@@ -1109,7 +1107,7 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \colbreak@box=\box132
 \mc@col@check@num=\count368
 )
-(C:\Users\Faiz_Authar\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
+(C:\Program Files\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box133
 \beforetitleunit=\skip95
@@ -1235,16 +1233,16 @@ Package hyperref Info: Link coloring ON on input line 275.
 
  (cover.tex
 Package epstopdf Info: Source file: <LogoGundar.eps>
-(epstopdf)                    date: 2023-10-21 00:38:50
-(epstopdf)                    size: 104158 bytes
+(epstopdf)                    date: 2020-07-27 21:36:06
+(epstopdf)                    size: 102448 bytes
 (epstopdf)             Output file: <LogoGundar-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-21 00:38:50
+(epstopdf)                    date: 2020-07-27 21:36:10
 (epstopdf)                    size: 11256 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=LogoGundar-eps-conve
 rted-to.pdf LogoGundar.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<LogoGundar-eps-converted-to.pdf, id=266, 201.75375pt x 205.76875pt>
+<LogoGundar-eps-converted-to.pdf, id=282, 201.75375pt x 205.76875pt>
 File: LogoGundar-eps-converted-to.pdf Graphic file (type pdf)
 <use LogoGundar-eps-converted-to.pdf>
 Package pdftex.def Info: LogoGundar-eps-converted-to.pdf  used on input line 7.
@@ -1301,10 +1299,10 @@ df>]
 
  (cover_judul.tex
 Package epstopdf Info: Source file: <LogoGundar.eps>
-(epstopdf)                    date: 2023-10-21 00:38:50
-(epstopdf)                    size: 104158 bytes
+(epstopdf)                    date: 2020-07-27 21:36:06
+(epstopdf)                    size: 102448 bytes
 (epstopdf)             Output file: <LogoGundar-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-21 00:38:50
+(epstopdf)                    date: 2020-07-27 21:36:10
 (epstopdf)                    size: 11256 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=LogoGundar-eps-conve
 rted-to.pdf LogoGundar.eps>
@@ -1448,15 +1446,21 @@ ct De-tec-tion (Sum-
 
 [21
 
-] [22] [23] [24])
+] [22] [23] [24] [25]
+Overfull \hbox (0.83539pt too wide) in paragraph at lines 98--98
+ [][] [][][]\T1/lmr/m/n/12 Contoh Ci-tra yang di-gu-nakan un-tuk kom-putasi (a)
+ Ci-tra dataset 
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `MainTemplateDisertasi.lof'.
 
- [25] (MainTemplateDisertasi.loa)
+ [26] (MainTemplateDisertasi.loa)
 \tf@loa=\write9
 \openout9 = `MainTemplateDisertasi.loa'.
 
- [26
+ [27
 
 ]
 
@@ -1486,24 +1490,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2] [3] [4]
-<bab1/Gambar/Picture1.png, id=812, 213.04594pt x 214.55156pt>
+<bab1/Gambar/Picture1.png, id=888, 213.04594pt x 214.55156pt>
 File: bab1/Gambar/Picture1.png Graphic file (type png)
 <use bab1/Gambar/Picture1.png>
 Package pdftex.def Info: bab1/Gambar/Picture1.png  used on input line 43.
 (pdftex.def)             Requested size: 199.1693pt x 200.5883pt.
  [5 <./bab1/Gambar/Picture1.png>]
-<bab1/Gambar/Picture2.jpg, id=821, 176.15813pt x 216.05719pt>
+<bab1/Gambar/Picture2.jpg, id=896, 176.15813pt x 216.05719pt>
 File: bab1/Gambar/Picture2.jpg Graphic file (type jpg)
 <use bab1/Gambar/Picture2.jpg>
 Package pdftex.def Info: bab1/Gambar/Picture2.jpg  used on input line 58.
 (pdftex.def)             Requested size: 199.1693pt x 244.28021pt.
-<bab1/Gambar/Picture3.png, id=823, 399.74344pt x 145.29282pt>
+<bab1/Gambar/Picture3.png, id=898, 399.74344pt x 145.29282pt>
 File: bab1/Gambar/Picture3.png Graphic file (type png)
 <use bab1/Gambar/Picture3.png>
 Package pdftex.def Info: bab1/Gambar/Picture3.png  used on input line 73.
 (pdftex.def)             Requested size: 398.3386pt x 144.78918pt.
  [6 <./bab1/Gambar/Picture2.jpg>]
-<bab1/Gambar/Picture4.png, id=829, 396.609pt x 217.248pt>
+<bab1/Gambar/Picture4.png, id=904, 396.609pt x 217.248pt>
 File: bab1/Gambar/Picture4.png Graphic file (type png)
 <use bab1/Gambar/Picture4.png>
 Package pdftex.def Info: bab1/Gambar/Picture4.png  used on input line 88.
@@ -1533,18 +1537,18 @@ BAB II\bfseries .
 
 ] [18{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [19]
 [20]
-<bab2/Gambar/Picture1.jpg, id=912, 394.47375pt x 158.84344pt>
+<bab2/Gambar/Picture1.jpg, id=987, 394.47375pt x 158.84344pt>
 File: bab2/Gambar/Picture1.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture1.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture1.jpg  used on input line 78.
 (pdftex.def)             Requested size: 398.3386pt x 160.3991pt.
  [21 <./bab2/Gambar/Picture1.jpg>]
-<bab2/Gambar/Picture2.png, id=919, 387.69844pt x 136.25906pt>
+<bab2/Gambar/Picture2.png, id=994, 387.69844pt x 136.25906pt>
 File: bab2/Gambar/Picture2.png Graphic file (type png)
 <use bab2/Gambar/Picture2.png>
 Package pdftex.def Info: bab2/Gambar/Picture2.png  used on input line 98.
 (pdftex.def)             Requested size: 398.3386pt x 140.00116pt.
-<bab2/Gambar/Picture3.png, id=921, 335.00156pt x 141.52875pt>
+<bab2/Gambar/Picture3.png, id=996, 335.00156pt x 141.52875pt>
 File: bab2/Gambar/Picture3.png Graphic file (type png)
 <use bab2/Gambar/Picture3.png>
 Package pdftex.def Info: bab2/Gambar/Picture3.png  used on input line 113.
@@ -1555,12 +1559,12 @@ Overfull \hbox (4.56917pt too wide) in paragraph at lines 121--122
 m/n/12 ). Keti-ka gam-bar adalah in-put ke CNN, masalah
  []
 
-<bab2/Gambar/Picture4.png, id=928, 338.01282pt x 113.67468pt>
+<bab2/Gambar/Picture4.png, id=1004, 338.01282pt x 113.67468pt>
 File: bab2/Gambar/Picture4.png Graphic file (type png)
 <use bab2/Gambar/Picture4.png>
 Package pdftex.def Info: bab2/Gambar/Picture4.png  used on input line 128.
 (pdftex.def)             Requested size: 398.3386pt x 133.96669pt.
-<bab2/Gambar/Picture5.png, id=930, 350.05782pt x 107.65219pt>
+<bab2/Gambar/Picture5.png, id=1006, 350.05782pt x 107.65219pt>
 File: bab2/Gambar/Picture5.png Graphic file (type png)
 <use bab2/Gambar/Picture5.png>
 Package pdftex.def Info: bab2/Gambar/Picture5.png  used on input line 143.
@@ -1573,12 +1577,12 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [24{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./bab2/Gambar/Pic
 ture5.png>]
-<bab2/Gambar/Picture6.png, id=944, 316.18124pt x 160.34906pt>
+<bab2/Gambar/Picture6.png, id=1019, 316.18124pt x 160.34906pt>
 File: bab2/Gambar/Picture6.png Graphic file (type png)
 <use bab2/Gambar/Picture6.png>
 Package pdftex.def Info: bab2/Gambar/Picture6.png  used on input line 169.
 (pdftex.def)             Requested size: 398.3386pt x 202.02864pt.
-<bab2/Gambar/Picture7.png, id=945, 149.8097pt x 117.43875pt>
+<bab2/Gambar/Picture7.png, id=1020, 149.8097pt x 117.43875pt>
 File: bab2/Gambar/Picture7.png Graphic file (type png)
 <use bab2/Gambar/Picture7.png>
 Package pdftex.def Info: bab2/Gambar/Picture7.png  used on input line 186.
@@ -1603,13 +1607,13 @@ Overfull \hbox (2.69608pt too wide) in paragraph at lines 207--208
  []
 
 [26]
-<bab2/Gambar/Picture8.png, id=958, 381.67593pt x 214.55156pt>
+<bab2/Gambar/Picture8.png, id=1033, 381.67593pt x 214.55156pt>
 File: bab2/Gambar/Picture8.png Graphic file (type png)
 <use bab2/Gambar/Picture8.png>
 Package pdftex.def Info: bab2/Gambar/Picture8.png  used on input line 217.
 (pdftex.def)             Requested size: 398.3386pt x 223.92715pt.
  [27 <./bab2/Gambar/Picture8.png>] [28]
-<bab2/Gambar/Picture9.png, id=976, 383.18156pt x 188.20313pt>
+<bab2/Gambar/Picture9.png, id=1052, 383.18156pt x 188.20313pt>
 File: bab2/Gambar/Picture9.png Graphic file (type png)
 <use bab2/Gambar/Picture9.png>
 Package pdftex.def Info: bab2/Gambar/Picture9.png  used on input line 262.
@@ -1639,13 +1643,13 @@ dimensional
  []
 
 [30] [31]
-<bab2/Gambar/Picture10.png, id=1005, 398.99063pt x 121.20282pt>
+<bab2/Gambar/Picture10.png, id=1080, 398.99063pt x 121.20282pt>
 File: bab2/Gambar/Picture10.png Graphic file (type png)
 <use bab2/Gambar/Picture10.png>
 Package pdftex.def Info: bab2/Gambar/Picture10.png  used on input line 319.
 (pdftex.def)             Requested size: 398.3386pt x 121.01016pt.
  [32 <./bab2/Gambar/Picture10.png>]
-<bab2/Gambar/Picture11.png, id=1012, 293.59688pt x 145.29282pt>
+<bab2/Gambar/Picture11.png, id=1087, 293.59688pt x 145.29282pt>
 File: bab2/Gambar/Picture11.png Graphic file (type png)
 <use bab2/Gambar/Picture11.png>
 Package pdftex.def Info: bab2/Gambar/Picture11.png  used on input line 340.
@@ -1657,13 +1661,13 @@ earn-ing \T1/lmr/m/n/12 da-p-at dipresen-tasikan
  []
 
 [33 <./bab2/Gambar/Picture11.png>] [34]
-<bab2/Gambar/Picture12.png, id=1027, 287.57437pt x 162.6075pt>
+<bab2/Gambar/Picture12.png, id=1103, 287.57437pt x 162.6075pt>
 File: bab2/Gambar/Picture12.png Graphic file (type png)
 <use bab2/Gambar/Picture12.png>
 Package pdftex.def Info: bab2/Gambar/Picture12.png  used on input line 385.
 (pdftex.def)             Requested size: 398.3386pt x 225.24715pt.
  [35] [36 <./bab2/Gambar/Picture12.png>]
-<bab2/Gambar/Picture13.png, id=1040, 362.85562pt x 216.81pt>
+<bab2/Gambar/Picture13.png, id=1115, 362.85562pt x 216.81pt>
 File: bab2/Gambar/Picture13.png Graphic file (type png)
 <use bab2/Gambar/Picture13.png>
 Package pdftex.def Info: bab2/Gambar/Picture13.png  used on input line 404.
@@ -1681,70 +1685,70 @@ p learn-ing yang umum.
  []
 
 [38]
-<bab2/Gambar/Picture14.png, id=1059, 281.55188pt x 194.22563pt>
+<bab2/Gambar/Picture14.png, id=1134, 281.55188pt x 194.22563pt>
 File: bab2/Gambar/Picture14.png Graphic file (type png)
 <use bab2/Gambar/Picture14.png>
 Package pdftex.def Info: bab2/Gambar/Picture14.png  used on input line 456.
 (pdftex.def)             Requested size: 318.67209pt x 219.84581pt.
-<bab2/Gambar/Picture15.png, id=1061, 253.69781pt x 225.09094pt>
+<bab2/Gambar/Picture15.png, id=1136, 253.69781pt x 225.09094pt>
 File: bab2/Gambar/Picture15.png Graphic file (type png)
 <use bab2/Gambar/Picture15.png>
 Package pdftex.def Info: bab2/Gambar/Picture15.png  used on input line 473.
 (pdftex.def)             Requested size: 318.67209pt x 282.74712pt.
  [39 <./bab2/Gambar/Picture14.png>]
-<bab2/Gambar/Picture16.png, id=1068, 95.6072pt x 100.12407pt>
+<bab2/Gambar/Picture16.png, id=1143, 95.6072pt x 100.12407pt>
 File: bab2/Gambar/Picture16.png Graphic file (type png)
 <use bab2/Gambar/Picture16.png>
 Package pdftex.def Info: bab2/Gambar/Picture16.png  used on input line 492.
 (pdftex.def)             Requested size: 119.50279pt x 125.15475pt.
  [40 <./bab2/Gambar/Picture15.png>]
-<bab2/Gambar/Picture17.jpg, id=1074, 398.99063pt x 135.50626pt>
+<bab2/Gambar/Picture17.jpg, id=1150, 398.99063pt x 135.50626pt>
 File: bab2/Gambar/Picture17.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture17.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture17.jpg  used on input line 509.
 (pdftex.def)             Requested size: 398.3386pt x 135.29086pt.
 
 [41 <./bab2/Gambar/Picture16.png> <./bab2/Gambar/Picture17.jpg>]
-<bab2/Gambar/Picture18.png, id=1082, 300.3722pt x 99.37125pt>
+<bab2/Gambar/Picture18.png, id=1157, 300.3722pt x 99.37125pt>
 File: bab2/Gambar/Picture18.png Graphic file (type png)
 <use bab2/Gambar/Picture18.png>
 Package pdftex.def Info: bab2/Gambar/Picture18.png  used on input line 533.
 (pdftex.def)             Requested size: 398.3386pt x 131.79211pt.
-<bab2/Gambar/Picture19.png, id=1084, 257.46187pt x 97.11281pt>
+<bab2/Gambar/Picture19.png, id=1159, 257.46187pt x 97.11281pt>
 File: bab2/Gambar/Picture19.png Graphic file (type png)
 <use bab2/Gambar/Picture19.png>
 Package pdftex.def Info: bab2/Gambar/Picture19.png  used on input line 549.
 (pdftex.def)             Requested size: 278.83578pt x 105.18404pt.
-<bab2/Gambar/Picture20.png, id=1086, 155.83218pt x 109.91063pt>
+<bab2/Gambar/Picture20.png, id=1161, 155.83218pt x 109.91063pt>
 File: bab2/Gambar/Picture20.png Graphic file (type png)
 <use bab2/Gambar/Picture20.png>
 Package pdftex.def Info: bab2/Gambar/Picture20.png  used on input line 565.
 (pdftex.def)             Requested size: 278.83578pt x 196.69012pt.
  [42 <./bab2/Gambar/Picture18.png> <./bab2/Gambar/Picture19.png>]
-<bab2/Gambar/Picture21.png, id=1094, 268.00125pt x 409.53pt>
+<bab2/Gambar/Picture21.png, id=1169, 268.00125pt x 409.53pt>
 File: bab2/Gambar/Picture21.png Graphic file (type png)
 <use bab2/Gambar/Picture21.png>
 Package pdftex.def Info: bab2/Gambar/Picture21.png  used on input line 581.
 (pdftex.def)             Requested size: 239.00558pt x 365.21791pt.
  [43 <./bab2/Gambar/Picture20.png>]
-<bab2/Gambar/Picture22.png, id=1101, 325.215pt x 146.04562pt>
+<bab2/Gambar/Picture22.png, id=1176, 325.215pt x 146.04562pt>
 File: bab2/Gambar/Picture22.png Graphic file (type png)
 <use bab2/Gambar/Picture22.png>
 Package pdftex.def Info: bab2/Gambar/Picture22.png  used on input line 599.
 (pdftex.def)             Requested size: 239.00558pt x 107.33443pt.
  [44 <./bab2/Gambar/Picture21.png>]
-<bab2/Gambar/Picture23.1.png, id=1109, 156.585pt x 126.4725pt>
+<bab2/Gambar/Picture23.1.png, id=1184, 156.585pt x 126.4725pt>
 File: bab2/Gambar/Picture23.1.png Graphic file (type png)
 <use bab2/Gambar/Picture23.1.png>
 Package pdftex.def Info: bab2/Gambar/Picture23.1.png  used on input line 626.
 (pdftex.def)             Requested size: 119.50279pt x 96.52534pt.
-<bab2/Gambar/Picture23.2.png, id=1110, 244.66406pt x 114.4275pt>
+<bab2/Gambar/Picture23.2.png, id=1185, 244.66406pt x 114.4275pt>
 File: bab2/Gambar/Picture23.2.png Graphic file (type png)
 <use bab2/Gambar/Picture23.2.png>
 Package pdftex.def Info: bab2/Gambar/Picture23.2.png  used on input line 627.
 (pdftex.def)             Requested size: 239.00558pt x 111.78374pt.
  [45 <./bab2/Gambar/Picture22.png>]
-<bab2/Gambar/Picture24.png, id=1118, 249.18094pt x 117.43875pt>
+<bab2/Gambar/Picture24.png, id=1193, 249.18094pt x 117.43875pt>
 File: bab2/Gambar/Picture24.png Graphic file (type png)
 <use bab2/Gambar/Picture24.png>
 Package pdftex.def Info: bab2/Gambar/Picture24.png  used on input line 646.
@@ -1752,12 +1756,12 @@ Package pdftex.def Info: bab2/Gambar/Picture24.png  used on input line 646.
 
 [46 <./bab2/Gambar/Picture23.1.png> <./bab2/Gambar/Picture23.2.png> <./bab2/Gam
 bar/Picture24.png>]
-<bab2/Gambar/Picture25.png, id=1128, 243.15843pt x 128.73094pt>
+<bab2/Gambar/Picture25.png, id=1204, 243.15843pt x 128.73094pt>
 File: bab2/Gambar/Picture25.png Graphic file (type png)
 <use bab2/Gambar/Picture25.png>
 Package pdftex.def Info: bab2/Gambar/Picture25.png  used on input line 664.
 (pdftex.def)             Requested size: 199.1693pt x 105.44217pt.
-<bab2/Gambar/Picture26.png, id=1131, 397.485pt x 102.3825pt>
+<bab2/Gambar/Picture26.png, id=1207, 397.485pt x 102.3825pt>
 File: bab2/Gambar/Picture26.png Graphic file (type png)
 <use bab2/Gambar/Picture26.png>
 Package pdftex.def Info: bab2/Gambar/Picture26.png  used on input line 680.
@@ -1768,25 +1772,25 @@ Overfull \hbox (14.64839pt too wide) in paragraph at lines 692--693
 nn Ma-chines \T1/lmr/m/n/12 (RBM) atau kadan-
  []
 
-<bab2/Gambar/Picture27.png, id=1133, 192.72pt x 167.87718pt>
+<bab2/Gambar/Picture27.png, id=1209, 192.72pt x 167.87718pt>
 File: bab2/Gambar/Picture27.png Graphic file (type png)
 <use bab2/Gambar/Picture27.png>
 Package pdftex.def Info: bab2/Gambar/Picture27.png  used on input line 699.
 (pdftex.def)             Requested size: 239.00558pt x 208.19629pt.
 [47 <./bab2/Gambar/Picture25.png> <./bab2/Gambar/Picture26.png>]
-<bab2/Gambar/Picture28.png, id=1143, 149.05687pt x 213.79875pt>
+<bab2/Gambar/Picture28.png, id=1218, 149.05687pt x 213.79875pt>
 File: bab2/Gambar/Picture28.png Graphic file (type png)
 <use bab2/Gambar/Picture28.png>
 Package pdftex.def Info: bab2/Gambar/Picture28.png  used on input line 716.
 (pdftex.def)             Requested size: 159.333pt x 228.55034pt.
  [48 <./bab2/Gambar/Picture27.png>] [49 <./bab2/Gambar/Picture28.png>]
-<bab2/Gambar/Picture29.png, id=1155, 265.99374pt x 142.5325pt>
+<bab2/Gambar/Picture29.png, id=1230, 265.99374pt x 142.5325pt>
 File: bab2/Gambar/Picture29.png Graphic file (type png)
 <use bab2/Gambar/Picture29.png>
 Package pdftex.def Info: bab2/Gambar/Picture29.png  used on input line 741.
 (pdftex.def)             Requested size: 159.333pt x 85.38095pt.
  [50 <./bab2/Gambar/Picture29.png>]
-<bab2/Gambar/Picture30.png, id=1166, 392.46625pt x 215.80624pt>
+<bab2/Gambar/Picture30.png, id=1241, 392.46625pt x 215.80624pt>
 File: bab2/Gambar/Picture30.png Graphic file (type png)
 <use bab2/Gambar/Picture30.png>
 Package pdftex.def Info: bab2/Gambar/Picture30.png  used on input line 772.
@@ -1797,7 +1801,7 @@ Overfull \hbox (7.33015pt too wide) in paragraph at lines 789--790
 rop-ut, masing-
  []
 
-<bab2/Gambar/Picture31.png, id=1173, 362.35374pt x 164.615pt>
+<bab2/Gambar/Picture31.png, id=1248, 362.35374pt x 164.615pt>
 File: bab2/Gambar/Picture31.png Graphic file (type png)
 <use bab2/Gambar/Picture31.png>
 Package pdftex.def Info: bab2/Gambar/Picture31.png  used on input line 800.
@@ -1808,25 +1812,25 @@ Overfull \hbox (14.09886pt too wide) in paragraph at lines 809--810
 ba-gai berikut: 
  []
 
-<bab2/Gambar/Picture32.png, id=1175, 362.35374pt x 162.6075pt>
+<bab2/Gambar/Picture32.png, id=1250, 362.35374pt x 162.6075pt>
 File: bab2/Gambar/Picture32.png Graphic file (type png)
 <use bab2/Gambar/Picture32.png>
 Package pdftex.def Info: bab2/Gambar/Picture32.png  used on input line 820.
 (pdftex.def)             Requested size: 358.50229pt x 160.88268pt.
 [52 <./bab2/Gambar/Picture31.png>]
-<bab2/Gambar/Picture33.png, id=1183, 350.30875pt x 170.6375pt>
+<bab2/Gambar/Picture33.png, id=1259, 350.30875pt x 170.6375pt>
 File: bab2/Gambar/Picture33.png Graphic file (type png)
 <use bab2/Gambar/Picture33.png>
 Package pdftex.def Info: bab2/Gambar/Picture33.png  used on input line 842.
 (pdftex.def)             Requested size: 358.50229pt x 174.64157pt.
  [53 <./bab2/Gambar/Picture32.png>]
-<bab2/Gambar/Picture34.png, id=1192, 339.2675pt x 176.66pt>
+<bab2/Gambar/Picture34.png, id=1267, 339.2675pt x 176.66pt>
 File: bab2/Gambar/Picture34.png Graphic file (type png)
 <use bab2/Gambar/Picture34.png>
 Package pdftex.def Info: bab2/Gambar/Picture34.png  used on input line 863.
 (pdftex.def)             Requested size: 358.50229pt x 186.68452pt.
  [54 <./bab2/Gambar/Picture33.png> <./bab2/Gambar/Picture34.png>]
-<bab2/Gambar/Picture35.png, id=1200, 368.37625pt x 208.78pt>
+<bab2/Gambar/Picture35.png, id=1275, 368.37625pt x 208.78pt>
 File: bab2/Gambar/Picture35.png Graphic file (type png)
 <use bab2/Gambar/Picture35.png>
 Package pdftex.def Info: bab2/Gambar/Picture35.png  used on input line 892.
@@ -1837,7 +1841,7 @@ Overfull \hbox (4.9362pt too wide) in paragraph at lines 907--908
  berkem-
  []
 
-<bab2/Gambar/Picture36.png, id=1208, 390.915pt x 223.38pt>
+<bab2/Gambar/Picture36.png, id=1283, 390.915pt x 223.38pt>
 File: bab2/Gambar/Picture36.png Graphic file (type png)
 <use bab2/Gambar/Picture36.png>
 Package pdftex.def Info: bab2/Gambar/Picture36.png  used on input line 914.
@@ -1872,7 +1876,7 @@ Overfull \hbox (18.48419pt too wide) in paragraph at lines 962--963
  YOLOv2,
  []
 
-<bab2/Gambar/Picture37.png, id=1222, 302.12875pt x 238.8925pt>
+<bab2/Gambar/Picture37.png, id=1297, 302.12875pt x 238.8925pt>
 File: bab2/Gambar/Picture37.png Graphic file (type png)
 <use bab2/Gambar/Picture37.png>
 Package pdftex.def Info: bab2/Gambar/Picture37.png  used on input line 976.
@@ -1896,13 +1900,13 @@ kan
  []
 
 [59 <./bab2/Gambar/Picture37.png>]
-<bab2/Gambar/Picture38.png, id=1235, 374.14781pt x 151.3153pt>
+<bab2/Gambar/Picture38.png, id=1310, 374.14781pt x 151.3153pt>
 File: bab2/Gambar/Picture38.png Graphic file (type png)
 <use bab2/Gambar/Picture38.png>
 Package pdftex.def Info: bab2/Gambar/Picture38.png  used on input line 1008.
 (pdftex.def)             Requested size: 318.67209pt x 128.88643pt.
  [60 <./bab2/Gambar/Picture38.png>]
-<bab2/Gambar/Picture39.png, id=1243, 338.6835pt x 215.8245pt>
+<bab2/Gambar/Picture39.png, id=1318, 338.6835pt x 215.8245pt>
 File: bab2/Gambar/Picture39.png Graphic file (type png)
 <use bab2/Gambar/Picture39.png>
 Package pdftex.def Info: bab2/Gambar/Picture39.png  used on input line 1026.
@@ -1949,7 +1953,7 @@ Overfull \hbox (11.44016pt too wide) in paragraph at lines 1053--1057
 n YOLOv4,
  []
 
-<bab2/Gambar/Picture40.png, id=1251, 213.525pt x 132.714pt>
+<bab2/Gambar/Picture40.png, id=1326, 213.525pt x 132.714pt>
 File: bab2/Gambar/Picture40.png Graphic file (type png)
 <use bab2/Gambar/Picture40.png>
 Package pdftex.def Info: bab2/Gambar/Picture40.png  used on input line 1063.
@@ -1960,7 +1964,7 @@ Overfull \hbox (13.22044pt too wide) in paragraph at lines 1074--1078
  (MT-YOLOv6)
  []
 
-<bab2/Gambar/Picture41.png, id=1258, 391.4625pt x 139.52126pt>
+<bab2/Gambar/Picture41.png, id=1333, 391.4625pt x 139.52126pt>
 File: bab2/Gambar/Picture41.png Graphic file (type png)
 <use bab2/Gambar/Picture41.png>
 Package pdftex.def Info: bab2/Gambar/Picture41.png  used on input line 1084.
@@ -1977,7 +1981,7 @@ Overfull \hbox (5.07979pt too wide) in paragraph at lines 1098--1099
 atan
  []
 
-<bab2/Gambar/Picture42.png, id=1265, 293.095pt x 216.81pt>
+<bab2/Gambar/Picture42.png, id=1340, 293.095pt x 216.81pt>
 File: bab2/Gambar/Picture42.png Graphic file (type png)
 <use bab2/Gambar/Picture42.png>
 Package pdftex.def Info: bab2/Gambar/Picture42.png  used on input line 1111.
@@ -1988,7 +1992,7 @@ Overfull \hbox (21.36055pt too wide) in paragraph at lines 1124--1126
 ungkan
  []
 
-<bab2/Gambar/Picture43.png, id=1272, 362.35374pt x 136.51pt>
+<bab2/Gambar/Picture43.png, id=1348, 362.35374pt x 136.51pt>
 File: bab2/Gambar/Picture43.png Graphic file (type png)
 <use bab2/Gambar/Picture43.png>
 Package pdftex.def Info: bab2/Gambar/Picture43.png  used on input line 1132.
@@ -2005,13 +2009,13 @@ Overfull \hbox (3.6573pt too wide) in paragraph at lines 1151--1152
 -cil men-
  []
 
-<bab2/Gambar/Picture44.png, id=1279, 385.44pt x 168.63pt>
+<bab2/Gambar/Picture44.png, id=1354, 385.44pt x 168.63pt>
 File: bab2/Gambar/Picture44.png Graphic file (type png)
 <use bab2/Gambar/Picture44.png>
 Package pdftex.def Info: bab2/Gambar/Picture44.png  used on input line 1158.
 (pdftex.def)             Requested size: 398.3386pt x 174.27234pt.
 [66 <./bab2/Gambar/Picture43.png>]
-<bab2/Gambar/Picture45.png, id=1285, 392.96812pt x 171.64125pt>
+<bab2/Gambar/Picture45.png, id=1360, 392.96812pt x 171.64125pt>
 File: bab2/Gambar/Picture45.png Graphic file (type png)
 <use bab2/Gambar/Picture45.png>
 Package pdftex.def Info: bab2/Gambar/Picture45.png  used on input line 1174.
@@ -2028,7 +2032,7 @@ Overfull \hbox (32.76117pt too wide) in paragraph at lines 1195--1196
 an pre-sisi mam-pu meingkatkan
  []
 
-<bab2/Gambar/Picture46.png, id=1296, 305.64188pt x 212.29312pt>
+<bab2/Gambar/Picture46.png, id=1371, 305.64188pt x 212.29312pt>
 File: bab2/Gambar/Picture46.png Graphic file (type png)
 <use bab2/Gambar/Picture46.png>
 Package pdftex.def Info: bab2/Gambar/Picture46.png  used on input line 1205.
@@ -2039,7 +2043,7 @@ Overfull \hbox (19.24385pt too wide) in paragraph at lines 1237--1238
 but atau monokotil.
  []
 
-<bab2/Gambar/Picture47.jpg, id=1306, 111.41624pt x 167.87718pt>
+<bab2/Gambar/Picture47.jpg, id=1382, 111.41624pt x 167.87718pt>
 File: bab2/Gambar/Picture47.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture47.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture47.jpg  used on input line 1244.
@@ -2055,13 +2059,13 @@ Overfull \hbox (2.8911pt too wide) in paragraph at lines 1346--1347
  karak-
  []
 
-<bab2/Gambar/Picture48.png, id=1325, 142.28156pt x 99.37125pt>
+<bab2/Gambar/Picture48.png, id=1400, 142.28156pt x 99.37125pt>
 File: bab2/Gambar/Picture48.png Graphic file (type png)
 <use bab2/Gambar/Picture48.png>
 Package pdftex.def Info: bab2/Gambar/Picture48.png  used on input line 1365.
 (pdftex.def)             Requested size: 159.333pt x 111.29199pt.
 [74 <./bab2/Gambar/Picture48.png>]
-<bab2/Gambar/Picture49.jpg, id=1337, 152.82094pt x 187.45032pt>
+<bab2/Gambar/Picture49.jpg, id=1412, 152.82094pt x 187.45032pt>
 File: bab2/Gambar/Picture49.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture49.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture49.jpg  used on input line 1391.
@@ -3717,7 +3721,7 @@ Underfull \hbox (badness 3895) in paragraph at lines 1518--1518
 
 [80]) (bab3/Bab3_Metodologi.tex [81]
 BAB III\bfseries .
-<bab3/Gambar/Picture1.png, id=1375, 401.24907pt x 283.0575pt>
+<bab3/Gambar/Picture1.png, id=1450, 401.24907pt x 283.0575pt>
 File: bab3/Gambar/Picture1.png Graphic file (type png)
 <use bab3/Gambar/Picture1.png>
 Package pdftex.def Info: bab3/Gambar/Picture1.png  used on input line 12.
@@ -3725,35 +3729,35 @@ Package pdftex.def Info: bab3/Gambar/Picture1.png  used on input line 12.
 [82
 
  <./bab3/Gambar/Picture1.png>] [83]
-<bab3/Gambar/Picture2.png, id=1387, 398.23781pt x 193.47281pt>
+<bab3/Gambar/Picture2.png, id=1462, 398.23781pt x 193.47281pt>
 File: bab3/Gambar/Picture2.png Graphic file (type png)
 <use bab3/Gambar/Picture2.png>
 Package pdftex.def Info: bab3/Gambar/Picture2.png  used on input line 31.
 (pdftex.def)             Requested size: 398.3386pt x 193.52841pt.
-<bab3/Gambar/Picture3.png, id=1388, 398.23781pt x 189.70876pt>
+<bab3/Gambar/Picture3.png, id=1463, 398.23781pt x 189.70876pt>
 File: bab3/Gambar/Picture3.png Graphic file (type png)
 <use bab3/Gambar/Picture3.png>
 Package pdftex.def Info: bab3/Gambar/Picture3.png  used on input line 45.
 (pdftex.def)             Requested size: 398.3386pt x 189.76328pt.
  [84 <./bab3/Gambar/Picture2.png> <./bab3/Gambar/Picture3.png>]
-<bab3/Gambar/Picture4.png, id=1395, 288.3272pt x 207.77625pt>
+<bab3/Gambar/Picture4.png, id=1470, 288.3272pt x 207.77625pt>
 File: bab3/Gambar/Picture4.png Graphic file (type png)
 <use bab3/Gambar/Picture4.png>
 Package pdftex.def Info: bab3/Gambar/Picture4.png  used on input line 62.
 (pdftex.def)             Requested size: 239.00558pt x 172.2418pt.
  [85 <./bab3/Gambar/Picture4.png>]
-<bab3/Gambar/Picture5.png, id=1402, 398.23781pt x 225.84375pt>
+<bab3/Gambar/Picture5.png, id=1477, 398.23781pt x 225.84375pt>
 File: bab3/Gambar/Picture5.png Graphic file (type png)
 <use bab3/Gambar/Picture5.png>
 Package pdftex.def Info: bab3/Gambar/Picture5.png  used on input line 85.
 (pdftex.def)             Requested size: 398.3386pt x 225.90866pt.
  [86 <./bab3/Gambar/Picture5.png>]
-<bab3/Gambar/Picture6.jpg, id=1412, 395.514pt x 237.5055pt>
+<bab3/Gambar/Picture6.jpg, id=1487, 395.514pt x 237.5055pt>
 File: bab3/Gambar/Picture6.jpg Graphic file (type jpg)
 <use bab3/Gambar/Picture6.jpg>
 Package pdftex.def Info: bab3/Gambar/Picture6.jpg  used on input line 120.
 (pdftex.def)             Requested size: 398.3386pt x 239.2082pt.
-<bab3/Gambar/Picture7.jpg, id=1413, 395.1855pt x 197.757pt>
+<bab3/Gambar/Picture7.jpg, id=1488, 395.1855pt x 197.757pt>
 File: bab3/Gambar/Picture7.jpg Graphic file (type jpg)
 <use bab3/Gambar/Picture7.jpg>
 Package pdftex.def Info: bab3/Gambar/Picture7.jpg  used on input line 134.
@@ -3764,26 +3768,26 @@ Overfull \hbox (1.62035pt too wide) in paragraph at lines 146--147
 alm), dan dikatakan
  []
 
-<bab3/Gambar/Picture8.png, id=1419, 292.09125pt x 289.08pt>
+<bab3/Gambar/Picture8.png, id=1494, 292.09125pt x 289.08pt>
 File: bab3/Gambar/Picture8.png Graphic file (type png)
 <use bab3/Gambar/Picture8.png>
 Package pdftex.def Info: bab3/Gambar/Picture8.png  used on input line 153.
 (pdftex.def)             Requested size: 398.3386pt x 394.26839pt.
 [88 <./bab3/Gambar/Picture7.jpg>] [89 <./bab3/Gambar/Picture8.png>]
-<bab3/Gambar/Picture9.png, id=1434, 393.72093pt x 267.24844pt>
+<bab3/Gambar/Picture9.png, id=1509, 393.72093pt x 267.24844pt>
 File: bab3/Gambar/Picture9.png Graphic file (type png)
 <use bab3/Gambar/Picture9.png>
 Package pdftex.def Info: bab3/Gambar/Picture9.png  used on input line 198.
 (pdftex.def)             Requested size: 398.3386pt x 270.3796pt.
  [90]
-<bab3/Gambar/Picture10.png, id=1439, 567.3195pt x 247.52475pt>
+<bab3/Gambar/Picture10.png, id=1514, 567.3195pt x 247.52475pt>
 File: bab3/Gambar/Picture10.png Graphic file (type png)
 <use bab3/Gambar/Picture10.png>
 Package pdftex.def Info: bab3/Gambar/Picture10.png  used on input line 216.
 (pdftex.def)             Requested size: 398.3386pt x 173.79868pt.
 
 [91 <./bab3/Gambar/Picture9.png>] [92 <./bab3/Gambar/Picture10.png>]
-<bab3/Gambar/Picture11.png, id=1452, 396.7322pt x 268.75406pt>
+<bab3/Gambar/Picture11.png, id=1527, 396.7322pt x 268.75406pt>
 File: bab3/Gambar/Picture11.png Graphic file (type png)
 <use bab3/Gambar/Picture11.png>
 Package pdftex.def Info: bab3/Gambar/Picture11.png  used on input line 257.
@@ -3806,7 +3810,7 @@ angkah berikut-
  []
 
 [95]
-<bab3/Gambar/Picture12.png, id=1472, 747.9945pt x 296.307pt>
+<bab3/Gambar/Picture12.png, id=1547, 747.9945pt x 296.307pt>
 File: bab3/Gambar/Picture12.png Graphic file (type png)
 <use bab3/Gambar/Picture12.png>
 Package pdftex.def Info: bab3/Gambar/Picture12.png  used on input line 325.
@@ -3817,25 +3821,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--344
  []
 
 [97] [98] [99] [100] [101] [102] [103]
-<bab3/Gambar/Picture13.png, id=1516, 395.97937pt x 60.225pt>
+<bab3/Gambar/Picture13.png, id=1591, 395.97937pt x 60.225pt>
 File: bab3/Gambar/Picture13.png Graphic file (type png)
 <use bab3/Gambar/Picture13.png>
 Package pdftex.def Info: bab3/Gambar/Picture13.png  used on input line 456.
 (pdftex.def)             Requested size: 398.3386pt x 60.58507pt.
  [104 <./bab3/Gambar/Picture13.png>]
 [105]
-<bab3/Gambar/Picture14.png, id=1527, 385.44pt x 237.88875pt>
+<bab3/Gambar/Picture14.png, id=1602, 385.44pt x 237.88875pt>
 File: bab3/Gambar/Picture14.png Graphic file (type png)
 <use bab3/Gambar/Picture14.png>
 Package pdftex.def Info: bab3/Gambar/Picture14.png  used on input line 489.
 (pdftex.def)             Requested size: 398.3386pt x 245.84848pt.
  [106 <./bab3/Gambar/Picture14.png>] [107]
-<bab3/Gambar/Picture15.png, id=1540, 392.96812pt x 210.7875pt>
+<bab3/Gambar/Picture15.png, id=1615, 392.96812pt x 210.7875pt>
 File: bab3/Gambar/Picture15.png Graphic file (type png)
 <use bab3/Gambar/Picture15.png>
 Package pdftex.def Info: bab3/Gambar/Picture15.png  used on input line 532.
 (pdftex.def)             Requested size: 398.3386pt x 213.6817pt.
-<bab3/Gambar/Picture16.png, id=1542, 398.23781pt x 108.405pt>
+<bab3/Gambar/Picture16.png, id=1617, 398.23781pt x 108.405pt>
 File: bab3/Gambar/Picture16.png Graphic file (type png)
 <use bab3/Gambar/Picture16.png>
 Package pdftex.def Info: bab3/Gambar/Picture16.png  used on input line 548.
@@ -3969,7 +3973,7 @@ l.577 ...}\ , \mathbit{\phi} = 2 tan-1 [exp(yR]-π
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-<bab3/Gambar/Picture17.png, id=1557, 368.1253pt x 298.86656pt>
+<bab3/Gambar/Picture17.png, id=1632, 368.1253pt x 298.86656pt>
 File: bab3/Gambar/Picture17.png Graphic file (type png)
 <use bab3/Gambar/Picture17.png>
 Package pdftex.def Info: bab3/Gambar/Picture17.png  used on input line 588.
@@ -4049,18 +4053,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 [115
 
 ]
-<bab4/Gambar/Picture1.png, id=1590, 393.72093pt x 216.81pt>
+<bab4/Gambar/Picture1.png, id=1665, 393.72093pt x 216.81pt>
 File: bab4/Gambar/Picture1.png Graphic file (type png)
 <use bab4/Gambar/Picture1.png>
 Package pdftex.def Info: bab4/Gambar/Picture1.png  used on input line 36.
 (pdftex.def)             Requested size: 398.3386pt x 219.35019pt.
  [116 <./bab4/Gambar/Picture1.png>]
-<bab4/Gambar/Picture2.jpg, id=1597, 393.543pt x 195.4575pt>
+<bab4/Gambar/Picture2.jpg, id=1672, 393.543pt x 195.4575pt>
 File: bab4/Gambar/Picture2.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture2.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture2.jpg  used on input line 72.
 (pdftex.def)             Requested size: 278.83578pt x 138.48947pt.
-<bab4/Gambar/Picture3.jpg, id=1598, 393.8715pt x 229.95pt>
+<bab4/Gambar/Picture3.jpg, id=1673, 393.8715pt x 229.95pt>
 File: bab4/Gambar/Picture3.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture3.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture3.jpg  used on input line 86.
@@ -4087,23 +4091,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--119
  []
 
 [118]
-<bab4/Gambar/Picture4.1.png, id=1611, 258.9675pt x 267.24844pt>
+<bab4/Gambar/Picture4.1.png, id=1687, 258.9675pt x 267.24844pt>
 File: bab4/Gambar/Picture4.1.png Graphic file (type png)
 <use bab4/Gambar/Picture4.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture4.1.png  used on input line 133.
 (pdftex.def)             Requested size: 239.00558pt x 246.65857pt.
-<bab4/Gambar/Picture4.2.png, id=1612, 261.22594pt x 280.79906pt>
+<bab4/Gambar/Picture4.2.png, id=1688, 261.22594pt x 280.79906pt>
 File: bab4/Gambar/Picture4.2.png Graphic file (type png)
 <use bab4/Gambar/Picture4.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture4.2.png  used on input line 135.
 (pdftex.def)             Requested size: 239.00558pt x 256.92004pt.
  [119]
-<bab4/Gambar/Picture5.1.png, id=1618, 255.95625pt x 252.945pt>
+<bab4/Gambar/Picture5.1.png, id=1693, 255.95625pt x 252.945pt>
 File: bab4/Gambar/Picture5.1.png Graphic file (type png)
 <use bab4/Gambar/Picture5.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture5.1.png  used on input line 149.
 (pdftex.def)             Requested size: 239.00558pt x 236.1936pt.
-<bab4/Gambar/Picture5.2.png, id=1619, 252.945pt x 253.69781pt>
+<bab4/Gambar/Picture5.2.png, id=1694, 252.945pt x 253.69781pt>
 File: bab4/Gambar/Picture5.2.png Graphic file (type png)
 <use bab4/Gambar/Picture5.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture5.2.png  used on input line 151.
@@ -4115,7 +4119,7 @@ Overfull \hbox (0.33736pt too wide) in paragraph at lines 168--169
 meng-gu-nakan
  []
 
-<bab4/Gambar/Picture7.png, id=1632, 387.69844pt x 185.94469pt>
+<bab4/Gambar/Picture7.png, id=1707, 387.69844pt x 185.94469pt>
 File: bab4/Gambar/Picture7.png Graphic file (type png)
 <use bab4/Gambar/Picture7.png>
 Package pdftex.def Info: bab4/Gambar/Picture7.png  used on input line 177.
@@ -4125,12 +4129,12 @@ Underfull \hbox (badness 4316) in paragraph at lines 204--204
 []|\T1/lmr/m/n/12 Menambahkan mo-saik un-tuk mem-ban-tu
  []
 
-<bab4/Gambar/Picture8.1.png, id=1640, 179.16937pt x 196.48407pt>
+<bab4/Gambar/Picture8.1.png, id=1715, 179.16937pt x 196.48407pt>
 File: bab4/Gambar/Picture8.1.png Graphic file (type png)
 <use bab4/Gambar/Picture8.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture8.1.png  used on input line 220.
 (pdftex.def)             Requested size: 170.71652pt x 187.22543pt.
-<bab4/Gambar/Picture8.2.png, id=1641, 197.23688pt x 197.23688pt>
+<bab4/Gambar/Picture8.2.png, id=1716, 197.23688pt x 197.23688pt>
 File: bab4/Gambar/Picture8.2.png Graphic file (type png)
 <use bab4/Gambar/Picture8.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture8.2.png  used on input line 222.
@@ -4145,7 +4149,7 @@ Underfull \hbox (badness 6825) in paragraph at lines 242--242
 \T1/lmr/m/n/12 40% Max-i-mum
  []
 
-<bab4/Gambar/tbl-5-pic1.png, id=1646, 158.09062pt x 169.38281pt>
+<bab4/Gambar/tbl-5-pic1.png, id=1721, 158.09062pt x 169.38281pt>
 File: bab4/Gambar/tbl-5-pic1.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic1.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic1.png  used on input line 242.
@@ -4155,12 +4159,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/lmr/m/n/12 Between -39$[]$
  []
 
-<bab4/Gambar/tbl-5-pic2.png, id=1647, 252.945pt x 137.7647pt>
+<bab4/Gambar/tbl-5-pic2.png, id=1722, 252.945pt x 137.7647pt>
 File: bab4/Gambar/tbl-5-pic2.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic2.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic2.png  used on input line 244.
 (pdftex.def)             Requested size: 159.333pt x 86.7817pt.
-<bab4/Gambar/tbl-5-pic3.png, id=1648, 254.45062pt x 141.52875pt>
+<bab4/Gambar/tbl-5-pic3.png, id=1723, 254.45062pt x 141.52875pt>
 File: bab4/Gambar/tbl-5-pic3.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic3.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic3.png  used on input line 262.
@@ -4170,79 +4174,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--264
 []|\T1/lmr/m/n/12 Between -17$[]$
  []
 
-<bab4/Gambar/tbl-5-pic4.png, id=1649, 246.9225pt x 140.02313pt>
+<bab4/Gambar/tbl-5-pic4.png, id=1724, 246.9225pt x 140.02313pt>
 File: bab4/Gambar/tbl-5-pic4.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic4.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic4.png  used on input line 264.
 (pdftex.def)             Requested size: 159.333pt x 90.35161pt.
-<bab4/Gambar/tbl-5-pic5.png, id=1650, 188.20313pt x 192.72pt>
+<bab4/Gambar/tbl-5-pic5.png, id=1725, 188.20313pt x 192.72pt>
 File: bab4/Gambar/tbl-5-pic5.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic5.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic5.png  used on input line 266.
 (pdftex.def)             Requested size: 159.333pt x 163.16875pt.
-<bab4/Gambar/tbl-5-pic6.png, id=1651, 190.46156pt x 190.46156pt>
+<bab4/Gambar/tbl-5-pic6.png, id=1726, 190.46156pt x 190.46156pt>
 File: bab4/Gambar/tbl-5-pic6.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic6.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic6.png  used on input line 268.
 (pdftex.def)             Requested size: 159.333pt x 159.33852pt.
 [124 <./bab4/Gambar/Picture8.1.png> <./bab4/Gambar/Picture8.2.png> <./bab4/Gamb
 ar/tbl-5-pic1.png> <./bab4/Gambar/tbl-5-pic2.png>]
-<bab4/Gambar/tbl-5-pic7.png, id=1662, 185.19188pt x 185.94469pt>
+<bab4/Gambar/tbl-5-pic7.png, id=1738, 185.19188pt x 185.94469pt>
 File: bab4/Gambar/tbl-5-pic7.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic7.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic7.png  used on input line 286.
 (pdftex.def)             Requested size: 159.333pt x 159.98306pt.
  [125 <./bab4/Gambar/tbl-5-pic3.png> <./bab4/Gambar/tbl-5-pic4.png> <./bab4/Gam
 bar/tbl-5-pic5.png> <./bab4/Gambar/tbl-5-pic6.png>]
-<bab4/Gambar/Picture9.1.png, id=1675, 191.21437pt x 164.11313pt>
+<bab4/Gambar/Picture9.1.png, id=1750, 191.21437pt x 164.11313pt>
 File: bab4/Gambar/Picture9.1.png Graphic file (type png)
 <use bab4/Gambar/Picture9.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture9.1.png  used on input line 307.
 (pdftex.def)             Requested size: 170.71652pt x 146.52849pt.
-<bab4/Gambar/Picture9.2.png, id=1676, 182.18062pt x 164.11313pt>
+<bab4/Gambar/Picture9.2.png, id=1751, 182.18062pt x 164.11313pt>
 File: bab4/Gambar/Picture9.2.png Graphic file (type png)
 <use bab4/Gambar/Picture9.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture9.2.png  used on input line 309.
 (pdftex.def)             Requested size: 170.71652pt x 153.79056pt.
  [126 <./bab4/Gambar/tbl-5-pic7.png>] [127 <./bab4/Gambar/Picture9.1.png> <./ba
 b4/Gambar/Picture9.2.png>]
-<bab4/Gambar/Picture10.png, id=1693, 365.11406pt x 50.43843pt>
+<bab4/Gambar/Picture10.png, id=1768, 365.11406pt x 50.43843pt>
 File: bab4/Gambar/Picture10.png Graphic file (type png)
 <use bab4/Gambar/Picture10.png>
 Package pdftex.def Info: bab4/Gambar/Picture10.png  used on input line 329.
 (pdftex.def)             Requested size: 398.3386pt x 55.03065pt.
-<bab4/Gambar/Picture11.png, id=1695, 388.45125pt x 224.33812pt>
+<bab4/Gambar/Picture11.png, id=1770, 388.45125pt x 224.33812pt>
 File: bab4/Gambar/Picture11.png Graphic file (type png)
 <use bab4/Gambar/Picture11.png>
 Package pdftex.def Info: bab4/Gambar/Picture11.png  used on input line 348.
 (pdftex.def)             Requested size: 398.3386pt x 230.05417pt.
  [128 <./bab4/Gambar/Picture10.png> <./bab4/Gambar/Picture11.png>]
-<bab4/Gambar/Picture12.png, id=1703, 358.33875pt x 206.27063pt>
+<bab4/Gambar/Picture12.png, id=1778, 358.33875pt x 206.27063pt>
 File: bab4/Gambar/Picture12.png Graphic file (type png)
 <use bab4/Gambar/Picture12.png>
 Package pdftex.def Info: bab4/Gambar/Picture12.png  used on input line 364.
 (pdftex.def)             Requested size: 398.3386pt x 229.30931pt.
-<bab4/Gambar/Picture13.png, id=1705, 359.09157pt x 202.50656pt>
+<bab4/Gambar/Picture13.png, id=1780, 359.09157pt x 202.50656pt>
 File: bab4/Gambar/Picture13.png Graphic file (type png)
 <use bab4/Gambar/Picture13.png>
 Package pdftex.def Info: bab4/Gambar/Picture13.png  used on input line 380.
 (pdftex.def)             Requested size: 398.3386pt x 224.65514pt.
  [129 <./bab4/Gambar/Picture12.png>]
-<bab4/Gambar/Picture14.png, id=1712, 891.33pt x 338.4645pt>
+<bab4/Gambar/Picture14.png, id=1787, 891.33pt x 338.4645pt>
 File: bab4/Gambar/Picture14.png Graphic file (type png)
 <use bab4/Gambar/Picture14.png>
 Package pdftex.def Info: bab4/Gambar/Picture14.png  used on input line 398.
 (pdftex.def)             Requested size: 398.3386pt x 151.2592pt.
 
 [130 <./bab4/Gambar/Picture13.png>] [131 <./bab4/Gambar/Picture14.png>]
-<bab4/Gambar/Picture15.png, id=1727, 387.69844pt x 203.25937pt>
+<bab4/Gambar/Picture15.png, id=1802, 387.69844pt x 203.25937pt>
 File: bab4/Gambar/Picture15.png Graphic file (type png)
 <use bab4/Gambar/Picture15.png>
 Package pdftex.def Info: bab4/Gambar/Picture15.png  used on input line 441.
 (pdftex.def)             Requested size: 398.3386pt x 208.84152pt.
 
 [132 <./bab4/Gambar/Picture15.png>]
-<bab4/Gambar/Picture16.png, id=1735, 398.23781pt x 235.63031pt>
+<bab4/Gambar/Picture16.png, id=1810, 398.23781pt x 235.63031pt>
 File: bab4/Gambar/Picture16.png Graphic file (type png)
 <use bab4/Gambar/Picture16.png>
 Package pdftex.def Info: bab4/Gambar/Picture16.png  used on input line 477.
@@ -4279,22 +4283,633 @@ Underfull \hbox (badness 2913) in paragraph at lines 543--543
 []|\T1/lmr/m/n/12 Waktu yang dibu-tuhkan un-tuk An-o-tasi Otoma-tis
  []
 
-<bab4/Gambar/Picture18.1.png, id=1755, 277.035pt x 150.5625pt>
+<bab4/Gambar/Picture18.1.png, id=1830, 277.035pt x 150.5625pt>
 File: bab4/Gambar/Picture18.1.png Graphic file (type png)
 <use bab4/Gambar/Picture18.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture18.1.png  used on input line 556.
 (pdftex.def)             Requested size: 239.00558pt x 129.89474pt.
-<bab4/Gambar/Picture18.2.png, id=1756, 275.52937pt x 156.585pt>
+<bab4/Gambar/Picture18.2.png, id=1831, 275.52937pt x 156.585pt>
 File: bab4/Gambar/Picture18.2.png Graphic file (type png)
 <use bab4/Gambar/Picture18.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture18.2.png  used on input line 557.
 (pdftex.def)             Requested size: 239.00558pt x 135.8336pt.
-[136 <./bab4/Gambar/Picture18.1.png> <./bab4/Gambar/Picture18.2.png>] [137]
-[138] [139]) (bab5/Bab5_Kesimpulan.tex [140]
-BAB V\bfseries .
-[141
+[136 <./bab4/Gambar/Picture18.1.png> <./bab4/Gambar/Picture18.2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
+[]|\T1/lmr/m/n/12 Jumlah ob-jek
+ []
 
-]) [142] (MainTemplateDisertasi.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
+[]|\T1/lmr/m/n/12 Jumlah ob-jek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
+\T1/lmr/m/n/12 Po-hon yang
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 580--580
+[]|\T1/lmr/m/n/12 Hasil % Ter-de-
+ []
+
+<bab4/Gambar/Picture19.png, id=1843, 275.52937pt x 189.70876pt>
+File: bab4/Gambar/Picture19.png Graphic file (type png)
+<use bab4/Gambar/Picture19.png>
+Package pdftex.def Info: bab4/Gambar/Picture19.png  used on input line 617.
+(pdftex.def)             Requested size: 318.67209pt x 219.43414pt.
+[137]
+<bab4/Gambar/Picture20.png, id=1848, 394.47375pt x 201.00093pt>
+File: bab4/Gambar/Picture20.png Graphic file (type png)
+<use bab4/Gambar/Picture20.png>
+Package pdftex.def Info: bab4/Gambar/Picture20.png  used on input line 635.
+(pdftex.def)             Requested size: 398.3386pt x 202.96945pt.
+ [138 <./bab4/Gambar/Picture19.png>]
+<bab4/Gambar/Picture21.png, id=1858, 373.395pt x 152.06813pt>
+File: bab4/Gambar/Picture21.png Graphic file (type png)
+<use bab4/Gambar/Picture21.png>
+Package pdftex.def Info: bab4/Gambar/Picture21.png  used on input line 653.
+(pdftex.def)             Requested size: 398.3386pt x 162.23328pt.
+ [139 <./bab4/Gambar/Picture20.png>]
+<bab4/Gambar/Picture22.png, id=1865, 291.33844pt x 113.67468pt>
+File: bab4/Gambar/Picture22.png Graphic file (type png)
+<use bab4/Gambar/Picture22.png>
+Package pdftex.def Info: bab4/Gambar/Picture22.png  used on input line 673.
+(pdftex.def)             Requested size: 398.3386pt x 155.43675pt.
+
+[140 <./bab4/Gambar/Picture21.png>]
+<bab4/Gambar/Picture23.png, id=1872, 153.57375pt x 143.78719pt>
+File: bab4/Gambar/Picture23.png Graphic file (type png)
+<use bab4/Gambar/Picture23.png>
+Package pdftex.def Info: bab4/Gambar/Picture23.png  used on input line 689.
+(pdftex.def)             Requested size: 159.333pt x 149.18849pt.
+ [141 <./bab4/Gambar/Picture22.png> <./bab4/Gambar/Picture23.png>]
+<bab4/Gambar/Picture24.1.1.jpg, id=1881, 177.66376pt x 177.66376pt>
+File: bab4/Gambar/Picture24.1.1.jpg Graphic file (type jpg)
+<use bab4/Gambar/Picture24.1.1.jpg>
+Package pdftex.def Info: bab4/Gambar/Picture24.1.1.jpg  used on input line 731.
+
+(pdftex.def)             Requested size: 170.71652pt x 170.72063pt.
+<bab4/Gambar/Picture24.1.2.png, id=1882, 197.23688pt x 115.18031pt>
+File: bab4/Gambar/Picture24.1.2.png Graphic file (type png)
+<use bab4/Gambar/Picture24.1.2.png>
+Package pdftex.def Info: bab4/Gambar/Picture24.1.2.png  used on input line 732.
+
+(pdftex.def)             Requested size: 142.26378pt x 83.07736pt.
+<bab4/Gambar/Picture24.2.1.png, id=1883, 167.87718pt x 166.37157pt>
+File: bab4/Gambar/Picture24.2.1.png Graphic file (type png)
+<use bab4/Gambar/Picture24.2.1.png>
+Package pdftex.def Info: bab4/Gambar/Picture24.2.1.png  used on input line 736.
+
+(pdftex.def)             Requested size: 170.71652pt x 169.18646pt.
+<bab4/Gambar/Picture24.2.2.png, id=1884, 185.19188pt x 106.89937pt>
+File: bab4/Gambar/Picture24.2.2.png Graphic file (type png)
+<use bab4/Gambar/Picture24.2.2.png>
+Package pdftex.def Info: bab4/Gambar/Picture24.2.2.png  used on input line 737.
+
+(pdftex.def)             Requested size: 142.26378pt x 82.12027pt.
+<bab4/Gambar/Picture24.3.1.png, id=1885, 177.66376pt x 179.16937pt>
+File: bab4/Gambar/Picture24.3.1.png Graphic file (type png)
+<use bab4/Gambar/Picture24.3.1.png>
+Package pdftex.def Info: bab4/Gambar/Picture24.3.1.png  used on input line 741.
+
+(pdftex.def)             Requested size: 170.71652pt x 172.1674pt.
+<bab4/Gambar/Picture24.3.2.png, id=1886, 193.47281pt x 115.93312pt>
+File: bab4/Gambar/Picture24.3.2.png Graphic file (type png)
+<use bab4/Gambar/Picture24.3.2.png>
+Package pdftex.def Info: bab4/Gambar/Picture24.3.2.png  used on input line 742.
+
+(pdftex.def)             Requested size: 142.26378pt x 85.24785pt.
+ [142] [143 <./bab4/Gambar/Picture24.1.1.jpg> <./bab4/Gambar/Picture24.1.2.png>
+ <./bab4/Gambar/Picture24.2.1.png> <./bab4/Gambar/Picture24.2.2.png> <./bab4/Ga
+mbar/Picture24.3.1.png> <./bab4/Gambar/Picture24.3.2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T1/lmr/m/n/12 A-100-SXM4-40GB,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T1/lmr/m/n/12 DGX-A-100 Uni-ver-si-tas
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 791--791
+[]|\T1/lmr/m/n/12 A-100-SXM4-40GB, 20096
+ []
+
+[144]
+Overfull \hbox (18.1207pt too wide) in paragraph at lines 814--814
+[]|\T1/lmr/m/n/12 Precision| 
+ []
+
+
+Overfull \hbox (3.0412pt too wide) in paragraph at lines 814--814
+[]|\T1/lmr/m/n/12 Recall| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T1/lmr/m/n/12 F1-
+ []
+
+
+Overfull \hbox (16.41975pt too wide) in paragraph at lines 814--814
+[]|\T1/lmr/m/n/12 mAP@.5[]| 
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/12 A
+ []
+
+[145]
+<bab4/Gambar/Picture25.png, id=1919, 401.208pt x 324.996pt>
+File: bab4/Gambar/Picture25.png Graphic file (type png)
+<use bab4/Gambar/Picture25.png>
+Package pdftex.def Info: bab4/Gambar/Picture25.png  used on input line 842.
+(pdftex.def)             Requested size: 398.3386pt x 322.68428pt.
+ [146] [147 <./bab4/Gambar/Picture25.png>]
+Overfull \hbox (18.1207pt too wide) in paragraph at lines 891--891
+[]|\T1/lmr/m/n/12 Precision| 
+ []
+
+
+Overfull \hbox (3.0412pt too wide) in paragraph at lines 891--891
+[]|\T1/lmr/m/n/12 Recall| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--891
+[]|\T1/lmr/m/n/12 F1-
+ []
+
+
+Overfull \hbox (16.41975pt too wide) in paragraph at lines 891--891
+[]|\T1/lmr/m/n/12 mAP@.5[]| 
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
+\T1/lmr/m/n/12 A
+ []
+
+[148]
+<bab4/Gambar/Picture26.png, id=1938, 401.208pt x 340.764pt>
+File: bab4/Gambar/Picture26.png Graphic file (type png)
+<use bab4/Gambar/Picture26.png>
+Package pdftex.def Info: bab4/Gambar/Picture26.png  used on input line 918.
+(pdftex.def)             Requested size: 398.3386pt x 338.34013pt.
+ [149 <./bab4/Gambar/Picture26.png>]
+Overfull \hbox (18.1207pt too wide) in paragraph at lines 967--967
+[]|\T1/lmr/m/n/12 Precision| 
+ []
+
+
+Overfull \hbox (3.0412pt too wide) in paragraph at lines 967--967
+[]|\T1/lmr/m/n/12 Recall| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+[]|\T1/lmr/m/n/12 F1-
+ []
+
+
+Overfull \hbox (16.41975pt too wide) in paragraph at lines 967--967
+[]|\T1/lmr/m/n/12 mAP@.5[]| 
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+\T1/lmr/m/n/12 A
+ []
+
+[150]
+File: bab4/Gambar/Picture26.png Graphic file (type png)
+<use bab4/Gambar/Picture26.png>
+Package pdftex.def Info: bab4/Gambar/Picture26.png  used on input line 995.
+(pdftex.def)             Requested size: 398.3386pt x 338.34013pt.
+ [151] [152]
+Overfull \hbox (18.1207pt too wide) in paragraph at lines 1049--1049
+[]|\T1/lmr/m/n/12 Precision| 
+ []
+
+
+Overfull \hbox (3.0412pt too wide) in paragraph at lines 1049--1049
+[]|\T1/lmr/m/n/12 Recall| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+[]|\T1/lmr/m/n/12 F1-
+ []
+
+
+Overfull \hbox (16.41975pt too wide) in paragraph at lines 1049--1049
+[]|\T1/lmr/m/n/12 mAP@.5[]| 
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 A
+ []
+
+
+Overfull \hbox (7.20357pt too wide) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 lab
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+[]|\T1/lmr/m/n/12 DGX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/12 A
+ []
+
+[153]
+Overfull \hbox (11.33636pt too wide) in paragraph at lines 1070--1071
+\T1/lmr/m/n/12 sar 0,989 diband-ingkan den-gan DGX-A-100 sebe-sar 0,879. Hasil 
+ini menampilkan
+ []
+
+<bab4/Gambar/Picture28.png, id=1966, 404.055pt x 372.738pt>
+File: bab4/Gambar/Picture28.png Graphic file (type png)
+<use bab4/Gambar/Picture28.png>
+Package pdftex.def Info: bab4/Gambar/Picture28.png  used on input line 1078.
+(pdftex.def)             Requested size: 398.3386pt x 367.48181pt.
+[154]) (bab5/Bab5_Kesimpulan.tex [155 <./bab4/Gambar/Picture28.png>]
+BAB V\bfseries .
+[156
+
+]) [157] (MainTemplateDisertasi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 20--24
 []\T1/lmr/m/n/12 Annur, C. M. (2023), `De-mografi Peng-gu-na Tele-
  []
@@ -4328,9 +4943,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--31
 
  []
 
-[143
+[158
 
-] [144]
+] [159]
 Underfull \hbox (badness 10000) in paragraph at lines 121--124
 []\T1/lmr/m/n/12 Foundation, T. (2015), `Tv-head-end 4.0 Us-er Guide', URL:
  []
@@ -4353,7 +4968,7 @@ Overfull \hbox (118.34778pt too wide) in paragraph at lines 147--152
 les/Compression/mpegproj/.
  []
 
-[145]
+[160]
 Underfull \hbox (badness 10000) in paragraph at lines 154--158
 []\T1/lmr/m/n/12 Hou, H.-A. (2010), `DVB-T2 tech-nol-o-gy overview
  []
@@ -4363,7 +4978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--158
 \T1/lmr/m/n/12 - In-dus-tri-al Tech-nol-o-gy Re-search In-sti-tute', URL:
  []
 
-[146]
+[161]
 Underfull \hbox (badness 10000) in paragraph at lines 203--208
 \T1/lmr/m/n/12 URL: https://www.kominfo.go.id/content/detail/43905/siaran-pers-
 no-
@@ -4375,7 +4990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--208
 -
  []
 
-[147] [148]
+[162] [163]
 Underfull \hbox (badness 6173) in paragraph at lines 353--358
 []\T1/lmr/m/n/12 Suryanto (2021), `In-done-sia mu-lai ma-su-ki era TV Dig-i-tal
 ', URL:
@@ -4393,7 +5008,7 @@ Underfull \hbox (badness 3861) in paragraph at lines 360--364
 ference-
  []
 
-[149] [150]) [151]
+[164] [165]) [166]
 \openout2 = `daftarlampiran.aux'.
 
  (daftarlampiran.tex
@@ -4402,16 +5017,16 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 
 (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [152
+) [167
 
-] [153] [154]) [155]
+] [168] [169]) [170]
 (cv.tex
-<foto_cv_sandy.jpg, id=1920, 2452.16125pt x 3269.21375pt>
+<foto_cv_sandy.jpg, id=2115, 2452.16125pt x 3269.21375pt>
 File: foto_cv_sandy.jpg Graphic file (type jpg)
 <use foto_cv_sandy.jpg>
 Package pdftex.def Info: foto_cv_sandy.jpg  used on input line 17.
 (pdftex.def)             Requested size: 122.61523pt x 163.47026pt.
- [156
+ [171
 
 
  <./foto_cv_sandy.jpg>]
@@ -4439,7 +5054,7 @@ Overfull \hbox (9.14336pt too wide) in paragraph at lines 112--124
 [][] 
  []
 
-[157]) [158] (MainTemplateDisertasi.aux (cover.aux) (cover_judul.aux)
+[172]) [173] (MainTemplateDisertasi.aux (cover.aux) (cover_judul.aux)
 (Lembar_Pengesahan.aux) (Lembar_Penguji.aux) (originalitas.aux) (abstrak.aux)
 (abstract.aux) (katapengantar.aux) (daftaristilah.aux) (daftarlampiran.aux))
  ***********
@@ -4451,13 +5066,13 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MainTemplateDisertasi.out' has not changed.
-(rerunfilecheck)             Checksum: 7DC5B7FC968D1708964B0BE2125827F7;9934.
+(rerunfilecheck)             Checksum: B936F43824ACB1144C6914105A8DAD49;10689.
  ) 
 Here is how much of TeX's memory you used:
- 31480 strings out of 475248
- 573747 string characters out of 5767609
+ 31650 strings out of 475248
+ 575539 string characters out of 5767609
  2102785 words of memory out of 5000000
- 51723 multiletter control sequences out of 15000+600000
+ 51846 multiletter control sequences out of 15000+600000
  639957 words of font info for 92 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  84i,18n,87p,2663b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4475,9 +5090,9 @@ c/lm/lmro12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 mtt9.pfb>
-Output written on MainTemplateDisertasi.pdf (184 pages, 13485979 bytes).
+Output written on MainTemplateDisertasi.pdf (200 pages, 14849041 bytes).
 PDF statistics:
- 2147 PDF objects out of 2487 (max. 8388607)
- 570 named destinations out of 1000 (max. 500000)
- 1054 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2353 PDF objects out of 2487 (max. 8388607)
+ 617 named destinations out of 1000 (max. 500000)
+ 1156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -565,65 +565,523 @@ Berikut ini adalah contoh hasil anotasi otomatis pada file berekstensi *.txt yan
 
 Pada Gambar \ref{img:Hasil-Anotasi-Otomatis}. terdapat 5 bilangan berurutan, nilai ke-1 menunjukkan bilangan yang sama, untuk digunakan sebagai kelas yang terdeteksi yaitu kelas 'oil palm', untuk barisan ke-2, ke-3, ke-4, dan ke-5 masing-masing menunjukkan koordinat x, koordinat y, lebar dan tinggi. Lebar dan tinggi dapat terlihat sama, karena dataset memiliki karakteristik dimensi ukuran citra yang sama.
 
-Setelah itu, pada penelitian ini dilakukan pengujian dengan 10 citra yang dapat dilihat pada Tabel 4.10.
+Setelah itu, pada penelitian ini dilakukan pengujian dengan 10 citra yang dapat dilihat pada Tabel \ref{tbl:Pengujian-Dengan-10-Citra-Dataset-Primer}.
 
-TABEL TABEL
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Pengujian dengan 10 Citra Dataset Primer}
+		\label{tbl:Pengujian-Dengan-10-Citra-Dataset-Primer}
+		%\begin{tabular}{|m{0.5cm}|m{2cm}|m{3cm}|m{3cm}|m{3cm}|}
+		\begin{tabular}{|m{0.5cm}m{1cm}m{3cm}m{3cm}|m{3cm}|}
+			\hline
+		
+			\multicolumn{1}{|m{0.5cm}|}{No} & \multicolumn{1}{m{2cm}|}{ID\_Image} & \multicolumn{1}{m{3cm}|}{Jumlah objek Pohon yang Asli} & Jumlah objek Pohon yang terdeteksi & Hasil \% Terdeteksi \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{1}  & \multicolumn{1}{m{2cm}|}{ID 1}      & \multicolumn{1}{m{3cm}|}{253}                          & 233                                & 92,1\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{2}  & \multicolumn{1}{m{2cm}|}{ID 2}      & \multicolumn{1}{m{3cm}|}{273}                          & 250                                & 91,6\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{3}  & \multicolumn{1}{m{2cm}|}{ID 3}      & \multicolumn{1}{m{3cm}|}{157}                          & 142                                & 90,4\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{4}  & \multicolumn{1}{m{2cm}|}{ID 4}      & \multicolumn{1}{m{3cm}|}{167}                          & 148                                & 88,6\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{5}  & \multicolumn{1}{m{2cm}|}{ID 5}      & \multicolumn{1}{m{3cm}|}{113}                          & 101                                & 89,4\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{6}  & \multicolumn{1}{m{2cm}|}{ID 6}      & \multicolumn{1}{m{3cm}|}{110}                          & 97                                 & 88,2\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{7}  & \multicolumn{1}{m{2cm}|}{ID 7}      & \multicolumn{1}{m{3cm}|}{84}                           & 75                                 & 89,3\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{8}  & \multicolumn{1}{m{2cm}|}{ID 8}      & \multicolumn{1}{m{3cm}|}{138}                          & 121                                & 87,7\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{9}  & \multicolumn{1}{m{2cm}|}{ID 9}      & \multicolumn{1}{m{3cm}|}{160}                          & 144                                & 90,0\%              \\ \hline
+			
+			\multicolumn{1}{|m{0.5cm}|}{10} & \multicolumn{1}{m{2cm}|}{ID 10}     & \multicolumn{1}{m{3cm}|}{210}                          & 186                                & 88,6\%              \\ \hline
+		
+			\multicolumn{4}{|l|}{\textbf{Rata-Rata}}                                                                                                           & \textbf{89,9\%}     \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Berdasarkan hasil pengujian terhadap 10 citra dari hasil pada Tabel 4.10 didapatkan rata-rata akurasi yang terdeteksi pada penelitian ini sebesar 89.90\% dengan menggunakan metode \textit{template matching} dan algoritma BIRCH. Hal ini menunjukkan hal penting yang signifikan yang harus dilakukan dalam proses anotasi otomatis yang dapat digunakan untuk memberikan deteksi gambar yang lebih akurat dan lebih cepat.
+Berdasarkan hasil pengujian terhadap 10 citra dari hasil pada Tabel \ref{tbl:Pengujian-Dengan-10-Citra-Dataset-Primer} didapatkan rata-rata akurasi yang terdeteksi pada penelitian ini sebesar 89.90\% dengan menggunakan metode \textit{template matching} dan algoritma BIRCH. Hal ini menunjukkan hal penting yang signifikan yang harus dilakukan dalam proses anotasi otomatis yang dapat digunakan untuk memberikan deteksi gambar yang lebih akurat dan lebih cepat.
 
-Setelah dilakukan pengujian dan juga dilakukan anotasi otomatis dari citra dan deteksi objek pohon kelapa sawit, maka citra yang tersimpan pada folder di local komputer beserta format file *.txt yang merupakan dataset. Hasil tersebut seperti pada Gambar 4.19.
+Setelah dilakukan pengujian dan juga dilakukan anotasi otomatis dari citra dan deteksi objek pohon kelapa sawit, maka citra yang tersimpan pada folder di local komputer beserta format file *.txt yang merupakan dataset. Hasil tersebut seperti pada Gambar \ref{img:Gambar-Dan-File.txt}
 
-GAMBAR GAMBAR
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.8\columnwidth]{bab4/Gambar/Picture19.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Gambar dan File *.txt}\label{img:Gambar-Dan-File.txt}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Integrasi Data}
 \hspace{1,2cm}
 Proses integrasi data dilakukan untuk menggabungkan atau menyatukan dua dataset, yaitu dataset primer dan sekunder ke dalam satu sumber. Dataset sekunder digunakan layanan roboflow untuk menampung data yang sudah tersimpan pada layanan tersebut. Selanjutnya, hasil dari pembangunan dataset dengan anotasi atau pelabelan otomatis yang telah dilakukan, maka diunggah data citra dan file *.txt. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture20.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Dataset Data Primer Drone di Roboflow}\label{img:Dataset-Data-Primer-Drone-di-Roboflow}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-GAMBAR 20
+Pada Gambar \ref{img:Dataset-Data-Primer-Drone-di-Roboflow} terlihat kumpulan gambar sebanyak 205 gambar yang menandakan bahwa dataset dari citra asli sebanyak 205 berhasil terunggah, dan satu citra dapat memiliki lebih dari objek pohon kelapa sawit dengen kelas 'oil palm' pada satu citra. 
 
+Pada Gambar \ref{img:Dataset-Data-Primer-Drone-di-Roboflow} dan \ref{img:Banyaknya-Objek-Yang-Terdeteksi-Sebagai-Pohon-Kelapa} terlihat kotak pembatas atau yang dikenal dengan nama \textit{bounding box} yang berwarna hijau, hal ini menandakan objek yang terdeteksi sebagai dataset. Setiap 1 citra dataset primer memiliki jumlah \textit{bounding box} yang berbeda-beda karena tergantung hasil yang dideteksi, seperti pada Gambar \ref{img:Banyaknya-Objek-Yang-Terdeteksi-Sebagai-Pohon-Kelapa} terdapat 414 objek pohon kelapa sawit yang terdeteksi dalam anotasi atau label dari 1 citra. 
 
-Pada Gambar 4.20. terlihat kumpulan gambar sebanyak 205 gambar yang menandakan bahwa dataset dari citra asli sebanyak 205 berhasil terunggah, dan satu citra dapat memiliki lebih dari objek pohon kelapa sawit dengen kelas 'oil palm' pada satu citra. 
-
-Pada Gambar 4.20 dan 4.21 terlihat kotak pembatas atau yang dikenal dengan nama \textit{bounding box} yang berwarna hijau, hal ini menandakan objek yang terdeteksi sebagai dataset. Setiap 1 citra dataset primer memiliki jumlah \textit{bounding box} yang berbeda-beda karena tergantung hasil yang dideteksi, seperti pada Gambar 4.21 terdapat 414 objek pohon kelapa sawit yang terdeteksi dalam anotasi atau label dari 1 citra. 
-
-GAMBAR 21
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture21.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Banyaknya Objek yang Terdeteksi sebagai Pohon Kelapa Sawit}\label{img:Banyaknya-Objek-Yang-Terdeteksi-Sebagai-Pohon-Kelapa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Berdasarkan hasil yang telah dilakukan pada pembentukan dataset secara otomatis dengan pendekatan OBIA berhasil dilakukan, dan citra yang menjadi dataset primer dapat digunakan dan di integrasikan (digabungkan) dengan dataset sekunder untuk komputasi. 
 
 \subsubsection{Format Data}
 \hspace{1,2cm}
-Pada proses ini dilakukan format data primer dan sekunder dengan menggunakan bantuan layanan roboflow sebelum dapat digunakan untuk citra komputasi yang dibagi menjadi dataset pelatihan, validasi, dan test.  Pada tahap ini menyesuaikan tipe data pada citra yaitu pada dataset primer dan sekunder sama-sama *.jpg, dan mengurangi dimensi dataset citra dengan melakukan resize citra menjadi 640 x 640, seperti pada Gambar 4.22. 
+Pada proses ini dilakukan format data primer dan sekunder dengan menggunakan bantuan layanan roboflow sebelum dapat digunakan untuk citra komputasi yang dibagi menjadi dataset pelatihan, validasi, dan test.  Pada tahap ini menyesuaikan tipe data pada citra yaitu pada dataset primer dan sekunder sama-sama *.jpg, dan mengurangi dimensi dataset citra dengan melakukan resize citra menjadi 640 x 640, seperti pada Gambar \ref{img:Format-Data}.
 
-GAMBAR 22
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture22.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Format Data}\label{img:Format-Data}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Ketika proses pada Gambar 4.22 sudah dilakukan, maka selanjutnya dataset yang telah sesuai dengan format data yang ditentukan dapat digunakan untuk citra komputasi. Dataset dipindahkan ke layanan Google Drive untuk kemudian dilakukan citra komputasi yang membagi data untuk data pelatihan, validasi dan pengujian sesuai dengan fold yang digunakan, yaitu sebanyak 5 fold (dengan nama dataset folds 0 sampai 4) seperti Gambar 4.23.
+Ketika proses pada Gambar 4.22 sudah dilakukan, maka selanjutnya dataset yang telah sesuai dengan format data yang ditentukan dapat digunakan untuk citra komputasi. Dataset dipindahkan ke layanan Google Drive untuk kemudian dilakukan citra komputasi yang membagi data untuk data pelatihan, validasi dan pengujian sesuai dengan fold yang digunakan, yaitu sebanyak 5 fold (dengan nama dataset folds 0 sampai 4) seperti Gambar \ref{img:Dataset-Pada-Gdrive}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=0.4\columnwidth]{bab4/Gambar/Picture23.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Dataset pada layanan Google Drive}\label{img:Dataset-Pada-Gdrive}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Citra untuk Komputasi}
 \hspace{1,2cm}
-Pada tahap ini citra gambar untuk komputasi merupakan kumpulan dari citra dataset primer dan sekunder. Jumlah dataset sebanyak 6056 data, yang terbagi ke dalam 78\% data pelatihan, 20\% data validasi dan 2\% data pengujian, seperti pada Tabel 4.11.
+Pada tahap ini citra gambar untuk komputasi merupakan kumpulan dari citra dataset primer dan sekunder. Jumlah dataset sebanyak 6056 data, yang terbagi ke dalam 78\% data pelatihan, 20\% data validasi dan 2\% data pengujian, seperti pada Tabel \ref{tbl:Dataset-Untuk-Komputasi}.
 
-TABEL 11
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Dataset untuk Komputasi}
+		\label{tbl:Dataset-Untuk-Komputasi}
+		\begin{tabular}{|m{5cm}|m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Dataset   & Jumlah \\ \hline
+			Pelatihan & 4744   \\ \hline
+			Validasi  & 1187   \\ \hline
+			Pengujian & 125    \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Dataset tersebut dikumpulkan atau digabungkan, serta dibagi menjadi 5 bagian. Karena pada proses pelatihan dan pengujian mengunakan teknik evaluasi K-Fold Cross-Validation. Berikut ini contoh citra yang digunakan dengan file *.txt yang berisi anotasi objek yang digunakan untuk dataset pelatihan, dataset validasi, dan dataset pengujian seperti tampak pada Gambar 4.24.
+Dataset tersebut dikumpulkan atau digabungkan, serta dibagi menjadi 5 bagian. Karena pada proses pelatihan dan pengujian mengunakan teknik evaluasi K-Fold Cross-Validation. Berikut ini contoh citra yang digunakan dengan file *.txt yang berisi anotasi objek yang digunakan untuk dataset pelatihan, dataset validasi, dan dataset pengujian seperti tampak pada Gambar \ref{img:Contoh-Citra-Yang-Digunakan-Untuk-Komputasi}.
 
-GAMBAR 24 ADA 6
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	%\begin{center}
+	%	\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture7.png}
+	%\end{center}
+	\centering
+	
+	\subfloat{{\includegraphics[width=6cm]{bab4/Gambar/Picture24.1.1.jpg} }}%
+	\subfloat{{\includegraphics[width=5cm]{bab4/Gambar/Picture24.1.2.png} }}%
+	\vspace{-0.2cm}\\
+	(a)
+	
+	\subfloat{{\includegraphics[width=6cm]{bab4/Gambar/Picture24.2.1.png} }}%
+	\subfloat{{\includegraphics[width=5cm]{bab4/Gambar/Picture24.2.2.png} }}%
+	\vspace{-0.2cm}\\
+	(b)
+	
+	\subfloat{{\includegraphics[width=6cm]{bab4/Gambar/Picture24.3.1.png} }}%
+	\subfloat{{\includegraphics[width=5cm]{bab4/Gambar/Picture24.3.2.png} }}%
+	\vspace{-0.2cm}\\
+	(b)
+	
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Contoh Citra yang digunakan untuk komputasi (a) Citra dataset pelatihan; (b) Citra dataset validasi; (c) Citra dataset pengujian;}\label{img:Contoh-Citra-Yang-Digunakan-Untuk-Komputasi}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Pelatihan Model CNN}
 \hspace{1,2cm}
-Pada proses pelatihan ini dengan menggunakan model CNN pada YOLOv5, YOLOv6, dan YOLOv7 yang divalidasi dengan menggunakan K-Fold Cross-Validation, dimana semua bagian dataset dapat digunakan untuk pelatihan dan pengujian. Teknik ini digunakan untuk evaluasi performance dari model untuk mengurangi overfitting.  Pada penelitian ini menggunakan k = 5, dimana proses ini diulang sebanyak k = 5 kali. Setiap fold masing-masing terdiri dari data pelatihan yang merupakan gabungan dari data pelatihan sebanyak 4744 data dan 1187 validasi, untuk data test sebanyak 125 data citra. Setiap fold berisi data ini untuk dapat diketahui pada fold mana hasil model yang dilatih hasilnya lebih baik. Pada proses pelatihan ini data citr auntuk dataset dikonversi untuk data masukkan gambar pada proses pelatihan dengan menggunakan ukuran gambar yang diatur oleh YOLO, yaitu secara default 640 x 640. Pada pelatihan model dan pengujian menggunakan parameter optimasi seperti pada Tabel 4.12.
+Pada proses pelatihan ini dengan menggunakan model CNN pada YOLOv5, YOLOv6, dan YOLOv7 yang divalidasi dengan menggunakan K-Fold Cross-Validation, dimana semua bagian dataset dapat digunakan untuk pelatihan dan pengujian. Teknik ini digunakan untuk evaluasi performance dari model untuk mengurangi overfitting.  Pada penelitian ini menggunakan k = 5, dimana proses ini diulang sebanyak k = 5 kali. Setiap fold masing-masing terdiri dari data pelatihan yang merupakan gabungan dari data pelatihan sebanyak 4744 data dan 1187 validasi, untuk data test sebanyak 125 data citra. Setiap fold berisi data ini untuk dapat diketahui pada fold mana hasil model yang dilatih hasilnya lebih baik. Pada proses pelatihan ini data citr auntuk dataset dikonversi untuk data masukkan gambar pada proses pelatihan dengan menggunakan ukuran gambar yang diatur oleh YOLO, yaitu secara \textit{default} 640 x 640. Pada pelatihan model dan pengujian menggunakan parameter optimasi seperti pada Tabel \ref{tbl:Optimisasi-Parameter2}.
 
-TABEL 4.12
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Optimisasi Parameter}
+		\label{tbl:Optimisasi-Parameter2}
+		\begin{tabular}{|m{5cm}|m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Parameter    & Nilai         \\ \hline
+			lr0          & 0.01 (1E-2)   \\ \hline
+			lrf          & 0.1           \\ \hline
+			Momentum     & 0.937         \\ \hline
+			Weight decay & 0.0005 (5e-4) \\ \hline
+			Epoch        & 30            \\ \hline
+			Batch size   & 16            \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Pada pelatihan menggunakan mesin pada Google Colab Pro dan DGX-A-100 yang dimiliki oleh Universitas Gunadarma. Mesin NVIDIA yang digunakan, seperti pada Tabel 4.13. 
+Pada pelatihan menggunakan mesin pada Google Colab Pro dan DGX-A-100 yang dimiliki oleh Universitas Gunadarma. Mesin NVIDIA yang digunakan, seperti pada Tabel \ref{tbl:Sarana-Penelitian-Mesin-Nvidia}.
 
 
-TABEL 4.13
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Sarana Penelitian Mesin NVIDIA (Super Komputer)}
+		\label{tbl:Sarana-Penelitian-Mesin-Nvidia}
+		\begin{tabular}{|m{5cm}|m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			Mesin NVIDIA                    & Keterangan                       \\ \hline
+			Google Colab Pro                & A-100-SXM4-40GB, 40536.1875 MB   \\ \hline
+			DGX-A-100 Universitas Gunadarma & A-100-SXM4-40GB, 20096 MB        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Pelatihan model CNN pada penelitian ini menggunakan validasi performance yang menghasilkan 4 hasil yang berbeda dengan menggunakan \textit{Precision}, \textit{Recall}, \textit{F1-Score}, dan \textit{best mean Average Precision} atau best mAP@0.5.
 
 \subsection{Pelatihan Model CNN YOLOv5}
 \hspace{1,2cm}
-Pelatihan model pertama dilatih dengan menggunakan YOLOv5. Pada Tabel 4.13 hasil pelatihan model CNN dengan YOLOv5 dengan 30 epoch dan batch size 16 pada Google Colab Pro. Pada mesin DGX-A-100 milik Universitas Gunadarma dengan menggunakan batch size sebesar 16 tidak dapat dijalankan karena permasalahan \textit{suificient memory} (runs out memory) atau kehabisan shared virtual memori untuk dapat digunakan, sehingga menggunakan batch size dibawahnya dalam 1 iterasi, yaitu 10. Hasil evaluasi model menunjukkan hasil yang cukup signifikan bahwa rata-rata dengan hasil pelatihan dengan Google Colab Pro lebih baik dibandingkan dengan hasil DGX A 100, berturut turut \textit{Precision}, \textit{Recall}, \textit{F1-Score}, best mAP@0.5. Adalah 0,957, 0,955, 0,955 dan 0,974, sedangkan dengan menggunakan DGX-A100 sedikit menurun yaitu 0,949, 0,955, 0,955, dan 0,974, hal ini karena memory pemrosesan dan penggunaan GFlops pada saat pelatihan model. Hasil Fold evaluasi pelatihan model dengan YOLOv5 tampak pada Tabel 4.14.
+Pelatihan model pertama dilatih dengan menggunakan YOLOv5. Pada Tabel 4.13 hasil pelatihan model CNN dengan YOLOv5 dengan 30 epoch dan batch size 16 pada Google Colab Pro. Pada mesin DGX-A-100 milik Universitas Gunadarma dengan menggunakan batch size sebesar 16 tidak dapat dijalankan karena permasalahan \textit{suificient memory} (runs out memory) atau kehabisan shared virtual memori untuk dapat digunakan, sehingga menggunakan batch size dibawahnya dalam 1 iterasi, yaitu 10. Hasil evaluasi model menunjukkan hasil yang cukup signifikan bahwa rata-rata dengan hasil pelatihan dengan Google Colab Pro lebih baik dibandingkan dengan hasil DGX A 100, berturut turut \textit{Precision}, \textit{Recall}, \textit{F1-Score}, best mAP@0.5. Adalah 0,957, 0,955, 0,955 dan 0,974, sedangkan dengan menggunakan DGX-A100 sedikit menurun yaitu 0,949, 0,955, 0,955, dan 0,974, hal ini karena memory pemrosesan dan penggunaan GFlops pada saat pelatihan model. Hasil Fold evaluasi pelatihan model dengan YOLOv5 tampak pada Tabel \ref{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv5-Colab-DGX}.
 
-Hasil pelatihan terbaik ditampilkan pada fold ke-4 dengan menggunakan mesin Goole Collab Pro. 
+Hasil pelatihan terbaik ditampilkan pada fold ke-4 dengan menggunakan mesin Goole Collab Pro.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pelatihan Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv5-Colab-DGX}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,961}                                    & 0,947     & \multicolumn{1}{p{1cm}|}{0,963}                                    & 0,956     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,951     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,975     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,946     & \multicolumn{1}{p{1cm}|}{0,963}                                    & 0,956     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,951     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,975     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,959}                                    & 0,941     & \multicolumn{1}{p{1cm}|}{0,965}                                    & 0,958     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,950     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,974     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,961}                                    & 0,946     & \multicolumn{1}{p{1cm}|}{0,965}                                    & 0,949     & \multicolumn{1}{p{1cm}|}{0,963}                                    & 0,949     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,972     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,943}                                    & 0,963     & \multicolumn{1}{p{1cm}|}{0,965}                                    & 0,955     & \multicolumn{1}{p{1cm}|}{0,959}                                    & 0,972     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,973     \\ \hline
+			
+			Rata-Rata                                      & \multicolumn{1}{p{1cm}|}{0,957}                                    & 0,949     & \multicolumn{1}{p{1cm}|}{0,964}                                    & 0,955     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,955     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,974     \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Evaluasi Pelatihan model YOLOv5 dalam bentuk bagan, untuk dapat melihat perbedaan yang signifikan dalam evaluasi model seperti tampak pada Gambar \ref{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv5-Colab-DGX}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture25.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pelatihan Model YOLOv5 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pelatihan-Model-YOLOv5-Colab-DGX}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil dari proses pelatihan ini juga membutuhkan waktu proses yang digunakan antara Google Colab Pro dengan DGX-A-100 milik Universitas Gunadarma yang tercantum pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv5}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pelatihan Model CNN YOLOv5}
+		\label{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv5}
+		\begin{tabular}{|m{2cm}|m{5cm}m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu yang Dibutuhkan Pelatihan} \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}   & DGX A 100  \\ \hline
+			1                                              & \multicolumn{1}{l|}{4727}                                       & 922        \\ \hline
+			2                                              & \multicolumn{1}{l|}{4724}                                       & 918        \\ \hline
+			3                                              & \multicolumn{1}{l|}{4695}                                       & 926        \\ \hline
+			4                                              & \multicolumn{1}{l|}{4655}                                       & 900        \\ \hline
+			5                                              & \multicolumn{1}{l|}{4708}                                       & 936        \\ \hline
+			Rata-Rata                                      & \multicolumn{1}{l|}{4702}                                       & 920        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Waktu proses yang dibutuhkan oleh Google Colab Pro rata-rata membutuhkan waktu 4702 detik untuk setiap fold yang harus dijalankan dengan 30 epoch dan 1 iterasi dengan 16 batch size, sedangkan waktu pada DGX-A-100 dibutuhkan 920 waktu DGX-A-100 dengan batch size 10. Perbedaan waktu ini, lebih baik waktu yang diproses pada DGX-A-100 milik Universitas Gunadarma. Berdasarkan data pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv5}, model k-fold terbaik pada fold ke 2 untuk pelatihan YOLOv5.
+
+\subsection{Pelatihan Model CNN YOLOv6}
+\hspace{1,2cm}
+Pelatihan model kedua yaitu dengan model CNN YOLOv6 dengan menggunakan Google Colab Pro dan DGX-A-100. Batch size yang digunakan dalam satu iterasi sama-sama menggunakan 16 dan 30 epoch. Hasil evaluasi pelatihan model CNN dengan YOLOv6 tampak pada Tabel \ref{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv6}
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pelatihan Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv6}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{BFBFBF}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,944}                                    & 0,919     & \multicolumn{1}{p{1cm}|}{0,774}                                    & 0,738     & \multicolumn{1}{p{1cm}|}{0,85}                                     & 0,818     & \multicolumn{1}{p{1cm}|}{0,944}                                     & 0,918     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,945}                                    & 0,920     & \multicolumn{1}{p{1cm}|}{0,772}                                    & 0,736     & \multicolumn{1}{p{1cm}|}{0,85}                                     & 0,817     & \multicolumn{1}{p{1cm}|}{0,944}                                     & 0,919     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,943}                                    & 0,918     & \multicolumn{1}{p{1cm}|}{0,775}                                    & 0,742     & \multicolumn{1}{p{1cm}|}{0,85}                                     & 0,821     & \multicolumn{1}{p{1cm}|}{0,943}                                     & 0,918     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,944}                                    & 0,911     & \multicolumn{1}{p{1cm}|}{0,771}                                    & 0,736     & \multicolumn{1}{p{1cm}|}{0,848}                                    & 0,814     & \multicolumn{1}{p{1cm}|}{0,943}                                     & 0,918     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,944}                                    & 0,918     & \multicolumn{1}{p{1cm}|}{0,771}                                    & 0,739     & \multicolumn{1}{p{1cm}|}{0,848}                                    & 0,818     & \multicolumn{1}{p{1cm}|}{0,943}                                     & 0,917     \\ \hline
+			
+			Rata-Rata                                      & \multicolumn{1}{p{1cm}|}{0,944}                                    & 0,917     & \multicolumn{1}{p{1cm}|}{0,773}                                    & 0,738     & \multicolumn{1}{p{1cm}|}{0,849}                                    & 0,818     & \multicolumn{1}{p{1cm}|}{0,943}                                     & 0,918     \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil pada Tabel tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv6 menunjukkan bahwa hasil evaluasi model dengan menggunakan mesin Google Colab Pro masih lebih tinggi dibandingkan dengan DGX-A-100, yaitu beruturut-turut sebesar 0,944, 0,773, 0,849, dan 0,943 dengan 4 evaluasi model. Nilai rata-rata Precision cukup tinggi berada di atas 0,90, tetapi recall di bawah 0,80, hal ini menunjukkan bahwa pada YOLOv6 rasio prediksi benar positif dibandingkan dengan keseluruhan data yang benar positif yaitu pohon kelapa sawit masih dibawah nilai dari proses pelatihan YOLOv5. Berikut ini hasil evaluasi performance dalam bentuk diagram tampak seperti pada Gambar \ref{img:Hasil-Evaluasi-Pelatihan-Model-YOLOv6-Colab-DGX}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture26.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pelatihan Model YOLOv6 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pelatihan-Model-YOLOv6-Colab-DGX}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Sementara itu, Proses pelatihan ini juga membutuhkan waktu untuk pemrosesan pelatihan yang tampak pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv6}.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pelatihan Model CNN YOLOv6}
+		\label{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv6}
+		\begin{tabular}{|m{2cm}|m{5cm}m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu yang Dibutuhkan Pelatihan} \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}   & DGX A 100  \\ \hline
+			1 & \multicolumn{1}{l|}{7359} & 2668 \\ \hline
+			2 & \multicolumn{1}{l|}{6696} & 2618 \\ \hline
+			3 & \multicolumn{1}{l|}{6689} & 2675 \\ \hline
+			4 & \multicolumn{1}{l|}{6707} & 2657 \\ \hline
+			5 & \multicolumn{1}{l|}{8957} & 2654 \\ \hline
+			Rata-Rata & \multicolumn{1}{l|}{7282} & 2654 \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Waktu proses yang dibutuhkan oleh Google Colab Pro rata-rata membutuhkan waktu 7282 detik untuk setiap fold yang harus dijalankan dengan 30 epoch dan 1 iterasi dengan 16 batch size, sedangkan waktu pada DGX-A-100 dibutuhkan 2654 waktu DGX-A-100. Perbedaan waktu ini, lebih baik waktu yang diproses pada DGX-A-100 milik Universitas Gunadarma. Berdasarkan data pada Tabel \ref{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv6}, model k-fold terbaik pada fold ke 2 untuk pelatihan YOLOv6.
+
+\subsection{Pelatihan Model CNN YOLOv7}
+\hspace{1,2cm}
+Pelatihan model ketiga yaitu dengan model CNN YOLOv7 dengan menggunakan Google Colab Pro dan DGX-A-100. Batch size yang digunakan dalam pelatihan model ini dalam satu iterasi sama-sama menggunakan 16 batch size dan 30 epoch. Hasil evaluasi pelatihan model CNN dengan YOLOv7 tampak pada Tabel 4.18.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pelatihan Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv7}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{BFBFBF}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,967}                                    & 0,961     & \multicolumn{1}{p{1cm}|}{0,977}                                    & 0,970     & \multicolumn{1}{p{1cm}|}{0,972}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,989     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,970}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,976}                                    & 0,966     & \multicolumn{1}{p{1cm}|}{0,973}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,989     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,967}                                    & 0,961     & \multicolumn{1}{p{1cm}|}{0,979}                                    & 0,970     & \multicolumn{1}{p{1cm}|}{0,973}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,989     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,972}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,973}                                    & 0,966     & \multicolumn{1}{p{1cm}|}{0,973}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,989     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,971}                                    & 0,963     & \multicolumn{1}{p{1cm}|}{0,974}                                    & 0,964     & \multicolumn{1}{p{1cm}|}{0,972}                                    & 0,963     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,988     \\ \hline
+			
+			Rata-Rata                                      & \multicolumn{1}{p{1cm}|}{0,969}                                    & 0,963     & \multicolumn{1}{p{1cm}|}{0,976}                                    & 0,967     & \multicolumn{1}{p{1cm}|}{0,973}                                    & 0,965     & \multicolumn{1}{p{1cm}|}{0,993}                                     & 0,989     \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil pada Tabel \ref{tbl:Evaluasi-Pelatihan-Model-Dengan-YOLOv7} menunjukkan bahwa hasil evaluasi model dengan menggunakan mesin Google Colab Pro masih lebih tinggi dibandingkan dengan DGX-A-100, yaitu beruturut-turut sebesar 0,969, 0,976, 0,973, dan 0,993 dari 4 evaluasi model yang digunakan. Nilai rata-rata best mAP@.5 berada pada posisi nilai 0,993 yang dimana dari fold 1 hingga fold 5 berada pada nilai yang konsisten 0,993, hal ini membuktikan bahwa algoritma YOLOv7 mencapai akurasi tertinggi diantara model pendeteksian objek secara real-time lainnya, dan telah ditetapkan berdasarkan artikel secara resmi yang ditulis mengenai YOLOv7. Berikut ini hasil evaluasi performance dalam bentuk diagram tampak seperti pada Gambar \ref{img:Hasil-Evaluasi-Pelatihan-Model-YOLOv7-Colab-DGX}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture26.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pelatihan Model YOLOv7 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pelatihan-Model-YOLOv7-Colab-DGX}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Selanjutnya, waktu proses pelatihan model pada YOLOv7 tampak pada Tabel 4.19.
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Waktu Proses Pelatihan Model CNN YOLOv7}
+		\label{tbl:Evaluasi-Waktu-Proses-Pelatihan-Model-CNN-YOLOv7}
+		\begin{tabular}{|m{2cm}|m{5cm}m{5cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{l|}{\cellcolor[HTML]{D9D9D9}Waktu yang Dibutuhkan Pelatihan} \\ \cline{2-3} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}   & DGX A 100  \\ \hline
+			1                                              & \multicolumn{1}{l|}{4857}                                       & 2988        \\ \hline
+			2                                              & \multicolumn{1}{l|}{4794}                                       & 2866        \\ \hline
+			3                                              & \multicolumn{1}{l|}{4820}                                       & 2966        \\ \hline
+			4                                              & \multicolumn{1}{l|}{4888}                                       & 2952        \\ \hline
+			5                                              & \multicolumn{1}{l|}{4874}                                       & 2968        \\ \hline
+			Rata-Rata                                      & \multicolumn{1}{l|}{4847}                                       & 2948        \\ \hline
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Waktu proses yang dibutuhkan untuk setiap fold yang harus dijalankan dengan 30 epoch dan 1 iterasi dengan 16 batch size oleh Google Colab Pro rata-rata membutuhkan waktu 4847 detik, sedangkan waktu pada DGX-A-100 dibutuhkan 2948 waktu. Perbedaan waktu ini, lebih baik waktu yang diproses pada DGX-A-100 milik Universitas Gunadarma. Berdasarkan data pada Tabel 4.19, model k-fold terbaik pada fold ke 2 untuk pelatihan YOLOv7. 
+
+\section{Pengujian Model CNN}
+\hspace{1,2cm}
+Proses pelatihan dengan dataset pelatihan telah dilakukan, selanjutnya dilakukan proses pengujian dengan dataset uji. Dataset uji yang digunakan pada setiap k-fold yaitu 125 citra. Pada tahap ini dilakukan pengujian yang dilakukan pada model CNN YOLOv5, YOLOv6, dan YOLOv7. Pada proses pengujian ini juga menggunakan mesin super komputer DGX-A-100 milik Universitas Gunadarma dan Google Colab Pro.
+
+\subsection{Pengujian Model CNN YOLOv5}
+\hspace{1,2cm}
+Pengujian model CNN yang pertama dengan menggunakan YOLOv5 dengan data citra pengujian sebanyak 125 citra pada 5 k-fold cross-validation. Pada proses pengujian ini batch size yang digunakan adalah 32 batch size yang berarti 32 jumlah sampel data yang melewati jaringan untuk setiap 1 iterasi atau putaran. Hasil dari pengujian model YOLOv5 dengan menggunakan mesin Google Colab Pro dan DGX-A-100 tampak pada Tabel \ref{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv5-Colab-DGX}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\caption{Evaluasi Pengujian Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}
+		\label{tbl:Evaluasi-Pengujian-Model-Dengan-YOLOv5-Colab-DGX}
+		\begin{tabular}{|p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|p{1cm}p{1cm}|}
+			\hline
+			\rowcolor[HTML]{D9D9D9} 
+			\cellcolor[HTML]{D9D9D9}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Precision}                    & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Recall}                       & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}F1-Score}                     & \multicolumn{2}{p{1cm}|}{\cellcolor[HTML]{BFBFBF}{\color[HTML]{333333} mAP@.5}} \\ \cline{2-9} 
+			\rowcolor[HTML]{D9D9D9} 
+			\multirow{-2}{*}{\cellcolor[HTML]{D9D9D9}Fold} & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro} & DGX A 100 & \multicolumn{1}{p{1cm}|}{\cellcolor[HTML]{D9D9D9}Google Colab Pro}  & DGX A 100 \\ \hline
+			
+			1                                              & \multicolumn{1}{p{1cm}|}{0,951}                                    & 0,805     & \multicolumn{1}{p{1cm}|}{0,970}                                    & 0,959     & \multicolumn{1}{p{1cm}|}{0,960}                                    & 0,875     & \multicolumn{1}{p{1cm}|}{0,989}                                     & 0,927     \\ \hline
+			
+			2                                              & \multicolumn{1}{p{1cm}|}{0,966}                                    & 0,800     & \multicolumn{1}{p{1cm}|}{0,976}                                    & 0,958     & \multicolumn{1}{p{1cm}|}{0,971}                                    & 0,872     & \multicolumn{1}{p{1cm}|}{0,992}                                     & 0,926     \\ \hline
+			
+			3                                              & \multicolumn{1}{p{1cm}|}{0,945}                                    & 0,799     & \multicolumn{1}{p{1cm}|}{0,969}                                    & 0,671     & \multicolumn{1}{p{1cm}|}{0,957}                                    & 0,729     & \multicolumn{1}{p{1cm}|}{0,987}                                     & 0,673     \\ \hline
+			
+			4                                              & \multicolumn{1}{p{1cm}|}{0,955}                                    & 0,809     & \multicolumn{1}{p{1cm}|}{0,969}                                    & 0,955     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,876     & \multicolumn{1}{p{1cm}|}{0,988}                                     & 0,934     \\ \hline
+			
+			5                                              & \multicolumn{1}{p{1cm}|}{0,947}                                    & 0,811     & \multicolumn{1}{p{1cm}|}{0,969}                                    & 0,956     & \multicolumn{1}{p{1cm}|}{0,958}                                    & 0,878     & \multicolumn{1}{p{1cm}|}{0,987}                                     & 0,936     \\ \hline
+			
+			Rata-rata                                      & \multicolumn{1}{p{1cm}|}{0,953}                                    & 0,805     & \multicolumn{1}{p{1cm}|}{0,971}                                    & 0,900     & \multicolumn{1}{p{1cm}|}{0,962}                                    & 0,846     & \multicolumn{1}{p{1cm}|}{0,989}                                     & 0,879     \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%TABEL SEDERHANA%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Hasil pengujian menunjukkan bahwa hasil best \textit{mean average} (best mAP) untuk YOLOv5 dengan mesin Google Colab Pro lebih tinggi yaitu sebesar 0,989 dibandingkan dengan DGX-A-100 sebesar 0,879. Hasil ini menampilkan bahwa rata-rata presisi pada kelas pohon kelapa sawit di pengujian signifikan. Sebaran hasil pengujian model dengan YOLOv5 tampak seperti pada Gambar \ref{img:Hasil-Evaluasi-Pengujian-Model-YOLOv5-Colab-DGX}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+	\vspace{-0.1cm}
+	%\rule{\columnwidth}{0.1pt}
+	\begin{center}
+		\includegraphics[width=1\columnwidth]{bab4/Gambar/Picture28.png}
+	\end{center}
+	\vspace{-0.2cm}
+	%\rule{\columnwidth}{0.1pt}
+	\captionsetup{justification=centering}
+	\caption{Hasil Evaluasi Pengujian Model YOLOv5 antara Google Colab Pro dengan DGX-A-100}\label{img:Hasil-Evaluasi-Pengujian-Model-YOLOv5-Colab-DGX}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%% GAMBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dari hasil gambar menunjukkan bahwa best mAP terendah bernilai di bawah 0,70 pada mesin DGX-A-100 pada fold ke-3. Hal ini disebabkan bahwa pada fold 3 nilai rata-rata presisi cukup rendah untuk mendeteksi dengan benar bahwa itu adalah objek pohon kelapa sawit, kemudian hasil naik kembali pada fold ke 4 dan 5. 

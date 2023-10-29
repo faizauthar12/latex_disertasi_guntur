@@ -90,4 +90,14 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Objek yang terdeteksi untuk Dataset dengan \textit {Template Matching}}}{133}{figure.caption.118}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Hasil objek yang terdeteksi untuk Dataset dengan algoritma BIRCH}}{134}{figure.caption.119}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Hasil Anotasi Otomatis dalam format file *.txt}}{136}{figure.caption.122}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Gambar dan File *.txt}}{138}{figure.caption.124}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Dataset Data Primer Drone di Roboflow}}{139}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Banyaknya Objek yang Terdeteksi sebagai Pohon Kelapa Sawit}}{140}{figure.caption.126}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Format Data}}{141}{figure.caption.127}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Dataset pada layanan Google Drive}}{141}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Contoh Citra yang digunakan untuk komputasi (a) Citra dataset pelatihan; (b) Citra dataset validasi; (c) Citra dataset pengujian;}}{143}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Hasil Evaluasi Pelatihan Model YOLOv5 antara Google Colab Pro dengan DGX-A-100}}{147}{figure.caption.134}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Hasil Evaluasi Pelatihan Model YOLOv6 antara Google Colab Pro dengan DGX-A-100}}{149}{figure.caption.137}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Hasil Evaluasi Pelatihan Model YOLOv7 antara Google Colab Pro dengan DGX-A-100}}{152}{figure.caption.140}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Hasil Evaluasi Pengujian Model YOLOv5 antara Google Colab Pro dengan DGX-A-100}}{155}{figure.caption.143}%
 \addvspace {10\p@ }
