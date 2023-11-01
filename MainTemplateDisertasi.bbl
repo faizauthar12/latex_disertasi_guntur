@@ -1,414 +1,488 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{Abid~Haleem}{2022}{UnderstandingTheRoleOfDigital2022}
-Abid~Haleem, Mohd~Javaid, M. A. Q. R.~S.  \harvardyearleft
+\harvarditem[Ahmad et~al.]{Ahmad, Lopulisa, Imran \harvardand\
+  Baja}{2018}{Mineral-Water-Sebagai-Indikator}
+Ahmad, A., Lopulisa, C., Imran, A. \harvardand\ Baja, S.  \harvardyearleft
+  2018\harvardyearright , `Mineral tanah sebagai indikator stabilitas tanah
+  pada daerah berlereng: Studi kasus tombolopao kabupaten gowa'.
+\newline\harvardurl{https://doi.org/10.20956/ecosolum.v7i1.5214}
+
+\harvarditem{Anamisa}{2015}{Anamisa2015}
+Anamisa, D.~R.  \harvardyearleft 2015\harvardyearright , `Aplikasi segmentasi
+  objek menggunakan celluar neural network (cnn)', {\em Jurnal Ilmiah NERO}
+  {\bf 1}(3),~157--163.
+
+\harvarditem{Bakar \harvardand\ Fajar}{2014}{OBIA}
+Bakar, A. \harvardand\ Fajar, E.  \harvardyearleft 2014\harvardyearright ,
+  `Obia (object base image analysis)'.
+\newline\harvardurl{https://www.citrasatelit.com/obia/}
+
+\harvarditem{Boesch}{2022}{G-Boesch}
+Boesch, G.  \harvardyearleft 2022\harvardyearright , `Yolov7: The most powerful
+  object detection algorithm (2022 guide)'.
+\newblock Waktu Akses: 24 Desember 2022.
+\newline\harvardurl{https://viso.ai/deep-learning/yolov7-guide/}
+
+\harvarditem{Das}{2020}{KaushikDas2020}
+Das, K.  \harvardyearleft 2020\harvardyearright , `How recurrent neural network
+  (rnn) works'.
+\newblock URL: https://dataaspirant.com/how-recurrent-neural-network-rnn-works/
+  Waktu Akses: 2 Januari 2023.
+
+\harvarditem[Dedrick et~al.]{Dedrick, Kraemer \harvardand\
+  Shih}{2013}{Dedrick2013-dq}
+Dedrick, J., Kraemer, K.~L. \harvardand\ Shih, E.  \harvardyearleft
+  2013\harvardyearright , `Information technology and productivity in developed
+  and developing countries', {\em J. Manag. Inf. Syst.} {\bf 30}(1),~97--122.
+
+\harvarditem[Deng et~al.]{Deng, Hutchinson \harvardand\ Yu}{2012}{Deng2012-dy}
+Deng, L., Hutchinson, B. \harvardand\ Yu, D.  \harvardyearleft
+  2012\harvardyearright , Parallel training for deep stacking networks, {\em
+  in} `Interspeech 2012', ISCA, ISCA.
+
+\harvarditem{Dephub}{2019}{Dephub}
+Dephub  \harvardyearleft 2019\harvardyearright , `Drone regulation'.
+\newline\harvardurl{http://dephub.go.id/org/otbanwil2/post/read/regulasi-drone}
+
+\harvarditem{Disebun}{2014}{Disebun-Maksimalisasi-CPO}
+Disebun  \harvardyearleft 2014\harvardyearright , `Maksimalisasi cpo terkendala
+  infrastruktur'.
+\newblock Akses: 1 Mei 2023.
+\newline\harvardurl{https://disbun.kaltimprov.go.id/artikel/maksimalisasi-cpo-terkendala-infrastruktur}
+
+\harvarditem{Ditjenbun}{2022}{DItjenbun-2022-Statistik-Perkebunan-Unggulan}
+Ditjenbun  \harvardyearleft 2022\harvardyearright , `Statistik perkebunan
+  unggulan nasional 2021-2023, statistical of national leading estate crops
+  commodity 2021-2023'.
+\newblock Waktu akses: 1 Mei 2023.
+\newline\harvardurl{https://ditjenbun.pertanian.go.id/?publikasi=buku-statistik-perkebunan-2021-2023}
+
+\harvarditem{EOS}{2020}{EOS2020}
+EOS  \harvardyearleft 2020\harvardyearright , `Sentinel-2 imagery'.
+\newline\harvardurl{https://eos.com/sentinel-2/}
+
+\harvarditem[Fairhurst et~al.]{Fairhurst, Caliman, Hardter \harvardand\
+  Witt}{2006}{Fairhurt2006}
+Fairhurst, T., Caliman, J., Hardter, R. \harvardand\ Witt, C.  \harvardyearleft
+  2006\harvardyearright , `Kelapa sawit: kelainan hara dan pengelolaannya.
+  potash and phosphate institute (ppi), potash and phosphate institute of
+  canada (ppic), international potash institute (ipi), french agricultural
+  research centre for international development (cirad)'.
+
+\harvarditem{FastAPI}{2018}{FastAPI}
+FastAPI  \harvardyearleft 2018\harvardyearright , `Fastapi'.
+\newline\harvardurl{https://fastapi.tiangolo.com/}
+
+\harvarditem[Feizollah et~al.]{Feizollah, Anuar, Mehdi, Firdaus \harvardand\
+  Sulaiman}{2022}{Feizollah2022-tn}
+Feizollah, A., Anuar, N.~B., Mehdi, R., Firdaus, A. \harvardand\ Sulaiman, A.
+  \harvardyearleft 2022\harvardyearright , `Understanding {COVID-19} halal
+  vaccination discourse on facebook and twitter using aspect-based sentiment
+  analysis and text emotion analysis', {\em Int. J. Environ. Res. Public
+  Health} {\bf 19}(10),~6269.
+\newline\harvardurl{https://doi.org/10.3390/ijerph19106269}
+
+\harvarditem{GDMorganic}{2018}{GDMorganic}
+GDMorganic  \harvardyearleft 2018\harvardyearright , `Cara budidaya kelapa
+  sawit hingga panen, terbukti panen berlimpah'.
+\newblock Tersedia di: https://gdmorganic.com/budidaya-kelapa-sawit/ (Akses: 2
+  Juli 2020).
+
+\harvarditem{Geography}{2020}{GISGeography}
+Geography, G.  \harvardyearleft 2020\harvardyearright , `Obia - object-based
+  image anaylis (geobia) - think objects, not pixels'.
+\newblock Tersedia di:
+  https://gisgeography.com/obia-object-based-image-analysis-geobia/ (Akses: 3
+  Juli 2020).
+
+\harvarditem[Gong et~al.]{Gong, Biging, Lee, Mei, Sheng, Pu, Xu, Schwarzr
+  \harvardand\ Mostafa}{1999}{gong1999photo}
+Gong, P., Biging, G.~S., Lee, S., Mei, X., Sheng, Y., Pu, R., Xu, B., Schwarzr,
+  K.-P. \harvardand\ Mostafa, M.  \harvardyearleft 1999\harvardyearright ,
+  `Photo ecometrics for forest inventory', {\em Geographic Information
+  Sciences} {\bf 5}(1),~9--14.
+
+\harvarditem[Haleem et~al.]{Haleem, Javaid, Qadri \harvardand\
+  Suman}{2022}{UnderstandingTheRoleOfDigital2022}
+Haleem, A., Javaid, M., Qadri, M.~A. \harvardand\ Suman, R.  \harvardyearleft
   2022\harvardyearright , `Understanding the role of digital technologies in
   education: A review',  {\bf 3},~275--285.
-
-\harvarditem{Akoglu}{2018}{Akoglu2018}
-Akoglu, H.  \harvardyearleft 2018\harvardyearright , `User{\textquotesingle}s
-  guide to correlation coefficients', {\em Turkish Journal of Emergency
-  Medicine} {\bf 18}(3),~91--93.
-
-\harvarditem{Altunian}{2021}{Altunian2021}
-Altunian, G.  \harvardyearleft 2021\harvardyearright , `{What Is
-  Signal-to-Noise Ratio and Why Does It Matter?}', URL:
-  https://www.lifewire.com/signal-to-noise-ratio-3134701.
-\newblock (Diakses tanggal 07 Juli 2022).
-
-\harvarditem{Annur}{2023}{Annur2023}
-Annur, C.~M.  \harvardyearleft 2023\harvardyearright , `{Demografi Pengguna
-  Televisi di Indonesia Berdasarkan Usia (2022)}', URL:
-  https://databoks.katadata.co.id/datapublish/2022/12/09/survei-nielsen-indonesia-mayoritas-pengguna-televisi-di-ri-berusia-50-tahun-ke-atas.
-\newblock (diakses tanggal 20 Januari 2023).
-
-\harvarditem{Apple-Inc.}{2012}{Inc.2012}
-Apple-Inc.  \harvardyearleft 2012\harvardyearright , `{Compressor 4 - User
-  Manual, MPEG-2 Reference Information}', URL:
-  https://help.apple.com/compressor/ mac/4.0/en/compressor/usermanual/
-  \#chapter=18\%26section=5.
-\newblock (Diakses tanggal 25 April 2021).
-
-\harvarditem{Baek \harvardand\ Kim}{2008}{Baek2008}
-Baek, S. \harvardand\ Kim, B.~J.  \harvardyearleft 2008\harvardyearright ,
-  {Digital Multimedia Broadcasting ({DMB}) in Korea}, {\em in} `Multimedia
-  Technologies', {IGI} Global, pp.~1377--1390.
-
-\harvarditem{Centauri}{2013}{Centauri2013}
-Centauri, A.  \harvardyearleft 2013\harvardyearright , `{Why Decibels are used
-  to measure Signal to Noise Ratio?}',
-  URL:https://electronics.stackexchange.com/q/82823.
-\newblock (Diakses tanggal 21 Juli 2022).
-
-\harvarditem{Cheon \harvardand\ Lee}{2016}{Cheon2016}
-Cheon, M. \harvardand\ Lee, J.-S.  \harvardyearleft 2016\harvardyearright , `On
-  ambiguity of objective image quality assessment', {\em Electronics Letters}
-  {\bf 52}(1),~34--35.
-
-\harvarditem[Cheon et~al.]{Cheon, Vigier, Krasula, Lee, Callet \harvardand\
-  Lee}{2021}{Cheon2021}
-Cheon, M., Vigier, T., Krasula, L., Lee, J., Callet, P.~L. \harvardand\ Lee,
-  J.-S.  \harvardyearleft 2021\harvardyearright , `Ambiguity of objective image
-  quality metrics: A new methodology for performance evaluation', {\em Signal
-  Processing: Image Communication} {\bf 93},~116150.
-
-\harvarditem{Chochliouros}{2009}{Chochliouros2009}
-Chochliouros, I.  \harvardyearleft 2009\harvardyearright , `{Digital Video
-  Broadcasting (DVB) Evolution, Encyclopedia of Multimedia Technology and
-  Networking, Second Edition}', {\em IGI Global Science and Technology} .
-
-\harvarditem[Dai et~al.]{Dai, Wang \harvardand\ Yang}{2012}{Dai2012}
-Dai, L., Wang, Z. \harvardand\ Yang, Z.  \harvardyearleft 2012\harvardyearright
-  , `Next-generation digital television terrestrial broadcasting systems: Key
-  technologies and research trends', {\em {IEEE} Communications Magazine} {\bf
-  50}(6),~150--158.
-
-\harvarditem[Dihin et~al.]{Dihin, Hamza \harvardand\ Toman}{2020}{Dihin2020}
-Dihin, R.~A., Hamza, N.~R. \harvardand\ Toman, Z.~H.  \harvardyearleft
-  2020\harvardyearright , `{Full-Reference Facial Image Quality Assessment and
-  Identification by Two Proposed Measures}', {\em Journal of Southwest Jiaotong
-  University} {\bf 55}(2),~1.
-
-\harvarditem[Ding et~al.]{Ding, Ma, Wang \harvardand\
-  Simoncelli}{2021}{Ding2021}
-Ding, K., Ma, K., Wang, S. \harvardand\ Simoncelli, E.~P.  \harvardyearleft
-  2021\harvardyearright , `{Comparison of Full-Reference Image Quality Models
-  for Optimization of Image Processing Systems}', {\em International Journal of
-  Computer Vision} {\bf 129}(4),~1258--1281.
-
-\harvarditem[Dost et~al.]{Dost, Saud, Shabbir, Khan, Shahid \harvardand\
-  Lovstrom}{2022}{Dost2022}
-Dost, S., Saud, F., Shabbir, M., Khan, M.~G., Shahid, M. \harvardand\ Lovstrom,
-  B.  \harvardyearleft 2022\harvardyearright , `Reduced reference image and
-  video quality assessments: review of methods', {\em {EURASIP} Journal on
-  Image and Video Processing} {\bf 2022}(1).
-
-\harvarditem{DTVstatus}{2017}{dtvstatus2017}
-DTVstatus  \harvardyearleft 2017\harvardyearright , `{DTV Status Compares The
-  Worldwide Digital Broadcasting Systems ATSC, DTMB, DVB-T/DVB-T2, and
-  ISDB-T}', URL: http://en.dtvstatus.net/.
-\newblock (Diakses tanggal 27 Juni 2021).
-
-\harvarditem{DVBProject}{2013}{DVBProject2013}
-DVBProject  \harvardyearleft 2013\harvardyearright , {Digital Video
-  Broadcasting (DVB) Bluebook A116-2}, {\em in} `Digital Video Broadcasting',
-  Digital Video Broadcasting.
-
-\harvarditem{Ebrahimi \harvardand\ Pereira}{2002}{Ebrahimi2002}
-Ebrahimi, T. \harvardand\ Pereira, F.  \harvardyearleft 2002\harvardyearright ,
-  {\em {The MPEG-4 Book}}, illustrated edition edn, Prentice Hall PTR.
-
-\harvarditem{El-Saba}{2018}{ElSaba2018}
-El-Saba, M.  \harvardyearleft 2018\harvardyearright , {\em {Telecommunication
-  Systems and Data Networks}}, third edn.
-
-\harvarditem{Emmet}{2022}{Emmet2022}
-Emmet  \harvardyearleft 2022\harvardyearright , `{Stream TV from your Raspberry
-  Pi with Tvheadend}', URL: https://pimylifeup.com/raspberry-pi-tvheadend/.
-\newblock (Diakses tanggal April 2022).
-
-\harvarditem{Ferzli \harvardand\ Karam}{2009}{Ferzli_2009}
-Ferzli, R. \harvardand\ Karam, L.  \harvardyearleft 2009\harvardyearright , `A
-  no-reference objective image sharpness metric based on the notion of just
-  noticeable blur ({JNB})', {\em {IEEE} Transactions on Image Processing} {\bf
-  18}(4),~717--728.
-
-\harvarditem{Fischer}{2010}{Fischer2010}
-Fischer, W.  \harvardyearleft 2010\harvardyearright , {\em {Digital Video and
-  Audio Broadcasting Technology}}, third edn, Springer Berlin Heidelberg.
-
-\harvarditem{Foundation}{2015}{tvheadend2015}
-Foundation, T.  \harvardyearleft 2015\harvardyearright , `{Tvheadend 4.0 User
-  Guide}', URL: https://docs.tvheadend.org/about\textunderscore project/.
-\newblock (Diakses tanggal 5 Oktober 2021).
-
-\harvarditem{Frost}{2014}{Frost2014}
-Frost, P.  \harvardyearleft 2014\harvardyearright , `{How is signal strength
-  calculated?}', Electrical Engineering Stack Exchange.
-\newblock URL:https://electronics.stackexchange.com/q/98691 (version:
-  2014-02-04). (Diakses tanggal 30 Oktober 2022).
-
-\harvarditem{Gultom}{2018}{Gultom_2018}
-Gultom, A.~D.  \harvardyearleft 2018\harvardyearright , `{Digitalisasi
-  Penyiaran Televisi di Indonesia}', {\em Buletin Pos dan Telekomunikasi} {\bf
-  16}(2),~91.
+\newblock DOI: 10.1016/j.susoc.2022.05.004.
 
 \harvarditem{Havinal}{2020}{TheRoleandPotential2020}
 Havinal, R.  \harvardyearleft 2020\harvardyearright , `The role and potential
   of information technology in agricultural development'.
 
-\harvarditem{Hendrickson}{2022}{Hendrickson2022}
-Hendrickson, J.  \harvardyearleft 2022\harvardyearright , `{How to Check Your
-  Wi-Fi Signal Strength}', URL:
-  https://www.howtogeek.com/426642/how-to-check-your-wi-fi-signal-strength/.
-\newblock (Diakses tanggal 30 Oktorber 2022).
+\harvarditem{Havinal \harvardand\ {Maharaja Institute of Technology
+  Mysore}}{2020}{Havinal2020-aq}
+Havinal, R. \harvardand\ {Maharaja Institute of Technology Mysore}
+  \harvardyearleft 2020\harvardyearright , `The role and potential of
+  information technology in agricultural development', {\em Int. J. Eng. Res.
+  Technol. (Ahmedabad)} {\bf V9}(07).
+\newblock 1604-1609. doi: 10.17577/IJERTV9IS070663.
 
-\harvarditem{Hoelzer}{2005}{Hoelzer2005}
-Hoelzer, S.  \harvardyearleft 2005\harvardyearright , `{MPEG-2 overview and
-  MATLAB codec project}', URL:
-  https://users.cs.cf.ac.uk/Dave.Marshall/Multimedia/Lecture\textunderscore
-  Examples/Compression/mpegproj/.
-\newblock (Diakses tanggal 25 April 2021).
+\harvarditem{Hay \harvardand\ Castilla}{2008}{Hay2008-vt}
+Hay, G.~J. \harvardand\ Castilla, G.  \harvardyearleft 2008\harvardyearright ,
+  Geographic {Object-Based} image analysis ({GEOBIA)}: A new name for a new
+  discipline, {\em in} `Lecture Notes in Geoinformation and Cartography',
+  Lecture notes in geoinformation and cartography, Springer Berlin Heidelberg,
+  Berlin, Heidelberg, pp.~75--89.
 
-\harvarditem{Hou}{2010}{Hou2010}
-Hou, H.-A.  \harvardyearleft 2010\harvardyearright , `{DVB-T2 technology
-  overview - Industrial Technology Research Institute}', URL:
-  https://www.ncc.gov.tw/chinese/files/10051/1661\textunderscore 2.pdf.
-\newblock (Diakses tanggal 2 Oktober 2021).
+\harvarditem[Hayata et~al.]{Hayata, Nursanti \harvardand\
+  Kriswibowo}{2020}{Hayata2020-hk}
+Hayata, H., Nursanti, I. \harvardand\ Kriswibowo, P.  \harvardyearleft
+  2020\harvardyearright , `Pengaruh jarak tanam yang berbeda terhadap
+  pertumbuhan dan produksi kelapa sawit (elaeis guineensis jacq)', {\em jagro}
+  {\bf 5}(1),~22.
+\newblock doi: http://dx.doi.org/10.33087/jagro.v5i1.92.
 
-\harvarditem{Huynh-Thu \harvardand\ Gha}{2009}{Quan_Huynh_Thu_2009}
-Huynh-Thu, Q. \harvardand\ Gha, M.  \harvardyearleft 2009\harvardyearright ,
-  `No-reference temporal quality metric for video impaired by frame freezing
-  artefacts'.
+\harvarditem{IBM}{2020}{IBMComputerVision}
+IBM  \harvardyearleft 2020\harvardyearright , `What is computer vision?'.
+\newblock URL: https://www.ibm.com/id-en/topics/computer-vision (Waktu Akses:
+  23 Desember 2022).
 
-\harvarditem{ISO \harvardand\ IEC}{2022}{ISO/IEC2022}
-ISO \harvardand\ IEC  \harvardyearleft 2022\harvardyearright , `{13818-1:2022
-  Information technology - Generic coding of moving pictures and associated
-  audio information - Part 1: Systems}', URL:
-  https://www.iso.org/obp/ui/\#0023iso:std:83239:en.
-\newblock (Diakses tanggal 25 Juli 2022.
+\harvarditem{Isbaex \harvardand\ Margarida~Coelho}{2021}{Isbaex2021-ii}
+Isbaex, C. \harvardand\ Margarida~Coelho, A.  \harvardyearleft
+  2021\harvardyearright , The potential of sentinel-2 satellite images for
+  land-cover/land-use and forest biomass estimation: A review, {\em in} `Forest
+  Biomass - From Trees to Energy', IntechOpen.
+\newline\harvardurl{https://doi.org/10.5772/intechopen.93363}
 
-\harvarditem{{ITU-R BT500}}{2019}{IRB2019}
-{ITU-R BT500}  \harvardyearleft 2019\harvardyearright , {\em {BT500-14:
-  Methodology for the Subjective Assessment of the Quality of Television
-  Pictures}}, International Telecommunication Union - Radiocommunication,
-  International Telecommunication Union - Radiocommunication.
-
-\harvarditem{{ITU-R P.910}}{2022}{IRP2022}
-{ITU-R P.910}  \harvardyearleft 2022\harvardyearright , `International
-  telecommunication union - telecommunication standarization'.
+\harvarditem[Jabal et~al.]{Jabal, Supijatno \harvardand\
+  Sudradjat}{2018}{AlbariJabal2018}
+Jabal, A., Supijatno \harvardand\ Sudradjat  \harvardyearleft
+  2018\harvardyearright , `Peranan pupuk nitrogen dan fosfor pada tanaman
+  kelapa sawit (elaeis guineensis jacq.) belum menghasilkan umur tiga tahun',
+  {\bf 1},~42--49.
 
 \harvarditem{Jason~Dedrick}{2014}{InformationTechnologyAndProductivity2014}
 Jason~Dedrick, Kenneth L.~Kraemer, E.~S.  \harvardyearleft
   2014\harvardyearright , `Information technology and productivity in developed
   and developing countries',  pp.~97--122.
+\newline\harvardurl{https://doi.org/10.2753/MIS0742-1222300103}
 
-\harvarditem{Kennedy \harvardand\ Davis}{2009}{GeorgeKennedy2009}
-Kennedy, G. \harvardand\ Davis, B.  \harvardyearleft 2009\harvardyearright ,
-  {\em {Electronic Communication System, Fourth Edision}}, 4 edn, Tata McGraw
-  Hill Education Private Limited.
+\harvarditem{Jusoff \harvardand\ Pathan}{2009}{Jusoff2009-qj}
+Jusoff, K. \harvardand\ Pathan, M.  \harvardyearleft 2009\harvardyearright ,
+  `Mapping of individual oil palm trees using airborne hyperspectral sensing:
+  An overview', {\em Appl. Phys. Res.} {\bf 1}(1).
+\newblock DOI: 10.5539/apr.v1n1p15.
 
-\harvarditem{Kessel}{2018}{Kessel2018}
-Kessel, R.  \harvardyearleft 2018\harvardyearright , `{Why isn't
-  signal-to-noise ratio expressed in a percentage instead of in dB?}'.
+\harvarditem{Kaplan}{2018}{Kaplan2018-ts}
+Kaplan, G.  \harvardyearleft 2018\harvardyearright , `Sentinel-2 pan
+  sharpening---comparative analysis', {\em Proc. (MPDI)} {\bf 2}(7),~345.
+\newblock DOI: 10.3390/ecrs-2-05158.
 
-\harvarditem[Kieser et~al.]{Kieser, Reynisson \harvardand\
-  Mulligan}{2005}{Kieser2005}
-Kieser, R., Reynisson, P. \harvardand\ Mulligan, T.~J.  \harvardyearleft
-  2005\harvardyearright , `Definition of signal-to-noise ratio and its critical
-  role in split-beam measurements', {\em {ICES} Journal of Marine Science} {\bf
-  62}(1),~123--130.
+\harvarditem[Kaur et~al.]{Kaur, Ahsaan, Alankar \harvardand\
+  Chang}{2021}{Kaur2021-pn}
+Kaur, H., Ahsaan, S.~U., Alankar, B. \harvardand\ Chang, V.  \harvardyearleft
+  2021\harvardyearright , `A proposed sentiment analysis deep learning
+  algorithm for analyzing {COVID-19} tweets', {\em Inf. Syst. Front.} {\bf
+  23}(6),~1417--1429.
+\newblock https://doi.org/10.1007/s10796-021-10135-7.
 
-\harvarditem{Kominfo}{2022}{Kominfo2022}
-Kominfo, H.  \harvardyearleft 2022\harvardyearright , `{Update Perkembangan
-  Analog Switch Off (ASO)}', URL:
-  https://www.kominfo.go.id/content/detail/43905/siaran-pers-no-346hmkominfo082022-tentang-update-perkembangan-analog-switch-off-aso/0/siaran\textunderscore
-  pers.
-\newblock (Diakses tanggal 2 Oktober 2022).
+\harvarditem[Korom et~al.]{Korom, Phua, Hirata \harvardand\ Matsuura}{2014{\em
+  a}}{Korom2014-ci}
+Korom, A., Phua, M.-H., Hirata, Y. \harvardand\ Matsuura, T.  \harvardyearleft
+  2014{\em a}\harvardyearright , `Extracting oil palm crown from {WorldView-2}
+  satellite image', {\em IOP Conf. Ser. Earth Environ. Sci.} {\bf 18},~012044.
+\newline\harvardurl{https://doi.org/10.1088/1755-1315/18/1/012044}
 
-\harvarditem{Kruger \harvardand\ Guerrero}{2002}{Kruger2002}
-Kruger, L.~G. \harvardand\ Guerrero, P.~F.  \harvardyearleft
-  2002\harvardyearright , {\em {Digital Television: An Overview}}, Novinka
-  Books.
+\harvarditem[Korom et~al.]{Korom, Phua, Hirata \harvardand\ Matsuura}{2014{\em
+  b}}{Korom2014-th}
+Korom, A., Phua, M.-H., Hirata, Y. \harvardand\ Matsuura, T.  \harvardyearleft
+  2014{\em b}\harvardyearright , `Extracting oil palm crown from {WorldView-2}
+  satellite image', {\em IOP Conf. Ser. Earth Environ. Sci.} {\bf 18},~012044.
+\newblock DOI: 10.1088/1755-1315/18/1/012044.
 
-\harvarditem{Kumar \harvardand\ Prajapati}{2015}{Kumar2015}
-Kumar, S. \harvardand\ Prajapati, P.  \harvardyearleft 2015\harvardyearright ,
-  `{A Review Paper on Image Quality Assessment Metrics}', {\em International
-  Journal of Advance Research in Computer Science and Management} {\bf
-  2},~129--132.
+\harvarditem{Kozan}{2021}{MetehanKozanSupervisedNUnsupervised}
+Kozan, M.  \harvardyearleft 2021\harvardyearright , `Supervised and
+  unsupervised learning (an intuitive approach)'.
+\newblock Medium. URL:
+  https://medium.com/@metehankozan/supervised-and-unsupervised-learning-an-intuitive-approach-cd8f8f64b644
+  Waktu akses: 2 Januari 2023.
 
-\harvarditem{Kusuma}{2005}{Kusuma2005}
-Kusuma, T.~M.  \harvardyearleft 2005\harvardyearright , {A Perceptual-based
-  Objective Quality Metric for Wireless Imaging}, phdthesis, Curtin University
-  of Technology.
+\harvarditem{{KPRI (Kementerian Pertanian Republik
+  Indonesia)}}{2015}{StatistikPerkebunanKelapaSawit2013-2015}
+{KPRI (Kementerian Pertanian Republik Indonesia)}  \harvardyearleft
+  2015\harvardyearright , `Statistik perkebunan kelapa sawit indonesia
+  2013-2015'.
+\newblock Jakarta, Kementerian Pertanian, 2015.
 
-\harvarditem{Lee \harvardand\ Kook}{2019}{Lee2019}
-Lee, Y.-S. \harvardand\ Kook, J.  \harvardyearleft 2019\harvardyearright ,
-  `{Integrated {DVB}-X2 Receiver Architecture with Common Acceleration
-  Engine}', {\em Applied Sciences} {\bf 9}(19),~3983.
+\harvarditem[Latif et~al.]{Latif, Mohd \harvardand\
+  Kushairi}{2003}{JusohLatif2003}
+Latif, J., Mohd, M. \harvardand\ Kushairi, A.  \harvardyearleft
+  2003\harvardyearright , `Economics of higher planting density in oil palm
+  plantations',  pp.~32--39.
 
-\harvarditem{Lundstrom}{2006}{}
-Lundstrom, L.-I.  \harvardyearleft 2006\harvardyearright , {\em Understanding
-  Digital Television}, Focal Press.
+\harvarditem{Lewis}{1994}{JPLewis1994}
+Lewis, J.  \harvardyearleft 1994\harvardyearright , `Fast template matching',
+  pp.~120--123.
 
-\harvarditem[Markoulidakis et~al.]{Markoulidakis, Rallis, Georgoulas,
-  Kopsiaftis, Doulamis \harvardand\ Doulamis}{2021}{Markoulidakis_2021}
-Markoulidakis, I., Rallis, I., Georgoulas, I., Kopsiaftis, G., Doulamis, A.
-  \harvardand\ Doulamis, N.  \harvardyearleft 2021\harvardyearright ,
-  `Multiclass confusion matrix reduction method and its application on net
-  promoter score classification problem', {\em Technologies} {\bf 9}(4),~81.
+\harvarditem[Li et~al.]{Li, Li, Jiang, Weng, Geng, Li, Ke, Li, Cheng, Nie, Li,
+  Zhang, Liang, Zhou, Xu, Chu, Wei \harvardand\ Wei}{2022}{Li2022-dp}
+Li, C., Li, L., Jiang, H., Weng, K., Geng, Y., Li, L., Ke, Z., Li, Q., Cheng,
+  M., Nie, W., Li, Y., Zhang, B., Liang, Y., Zhou, L., Xu, X., Chu, X., Wei, X.
+  \harvardand\ Wei, X.  \harvardyearleft 2022\harvardyearright , `{YOLOv6}: A
+  single-stage object detection framework for industrial applications'.
+\newline\harvardurl{https://doi.org/10.48550/arXiv.2209.02976}
 
-\harvarditem[Mart{\'{\i}}nez-Rach et~al.]{Mart{\'{\i}}nez-Rach, Pi{\~{n}}ol,
-  L{\'{o}}pez, Malumbres, Oliver \harvardand\
-  Calafate}{2014}{Mart_nez_Rach_2014}
-Mart{\'{\i}}nez-Rach, M.~O., Pi{\~{n}}ol, P., L{\'{o}}pez, O.~M., Malumbres,
-  M.~P., Oliver, J. \harvardand\ Calafate, C.~T.  \harvardyearleft
-  2014\harvardyearright , `{On the Performance of Video Quality Assessment
-  Metrics under Different Compression and Packet Loss Scenarios}', {\em The
-  Scientific World Journal} {\bf 2014},~1--18.
+\harvarditem[Liu et~al.]{Liu, Fan, Zhang, Guo, Qin \harvardand\
+  Wang}{2021}{Liu2021-ez}
+Liu, B., Fan, Y., Zhang, L., Guo, H., Qin, M. \harvardand\ Wang, M.
+  \harvardyearleft 2021\harvardyearright , Image matching algorithm based on
+  improved {SSDA}, {\em in} `2021 {IEEE} 4th International Conference on
+  Electronics Technology ({ICET})', IEEE.
+\newline\harvardurl{https://doi.org/10.1109/ICET51757.2021.9451022}
 
-\harvarditem[Marziliano et~al.]{Marziliano, Dufaux, Winkler \harvardand\
-  Ebrahimi}{2002}{Marziliano}
-Marziliano, P., Dufaux, F., Winkler, S. \harvardand\ Ebrahimi, T.
-  \harvardyearleft 2002\harvardyearright , A no-reference perceptual blur
-  metric, {\em in} `Proceedings. International Conference on Image Processing',
-  {IEEE}.
+\harvarditem{Liu \harvardand\ Lang}{2019}{Liu2019-lv}
+Liu, H. \harvardand\ Lang, B.  \harvardyearleft 2019\harvardyearright ,
+  `Machine learning and deep learning methods for intrusion detection systems:
+  A survey', {\em Appl. Sci. (Basel)} {\bf 9}(20),~4396.
+\newblock (20:4396, doi: 10.3390/app9204396.
 
-\harvarditem[Matthews et~al.]{Matthews, Idiake, Noma-Osaghae \harvardand\
-  Nwukor}{2018}{Matthews2018}
-Matthews, V.~O., Idiake, S.~U., Noma-Osaghae, E. \harvardand\ Nwukor, F.
-  \harvardyearleft 2018\harvardyearright , `{Comparative Analysis of the Effect
-  of Distance on Signal Strength using Selected Communication Media Comparative
-  Analysis of the Effect of Distance on Signal Strength using Selected
-  Communication Media}', {\em International Journal of Advances in Scientific
-  Research and Engineering} {\bf 4}(8),~82--91.
+\harvarditem{{M. Dzulfikar F}}{2018}{MDzulfikarF}
+{M. Dzulfikar F}  \harvardyearleft 2018\harvardyearright , `Yolo (you only look
+  once). menara ilmu machine learning universitas gadjah mada'.
+\newblock URL:
+  https://machinelearning.mipa.ugm.ac.id/2018/08/05/yolo-you-only-look-once/.
 
-\harvarditem{M.H.~Pinson}{2004}{Pinson2004}
-M.H.~Pinson, S.~W.  \harvardyearleft 2004\harvardyearright , `{A New
-  Standardized Method for Objectively Measuring Video Quality}', {\em {IEEE}
-  Transactions on Broadcasting} {\bf 50}(3),~312--322.
+\harvarditem{{M. Harahap, J. Elfrida, P. Agusman, M. Rafael, R. Abram, K.
+  Andrianto}}{2019}{MHarahap2019SistemCerdasPemantauanArusLaluLintasDenganYolo}
+{M. Harahap, J. Elfrida, P. Agusman, M. Rafael, R. Abram, K. Andrianto}
+  \harvardyearleft 2019\harvardyearright , `Sistem cerdas pemantauan arus lalu
+  lintas dengan yolo (you only look once v3)',  pp.~367--376.
+\newblock Seminar nasional APTIKOM (SEMNASTIK).
 
-\harvarditem[Mittal et~al.]{Mittal, Moorthy \harvardand\
-  Bovik}{2012}{Mittal_2012}
-Mittal, A., Moorthy, A.~K. \harvardand\ Bovik, A.~C.  \harvardyearleft
-  2012\harvardyearright , `No-reference image quality assessment in the spatial
-  domain', {\em {IEEE} Transactions on Image Processing} {\bf
-  21}(12),~4695--4708.
+\harvarditem{Maj}{2018}{MichalMajObjectDetection}
+Maj, M.  \harvardyearleft 2018\harvardyearright , `Object detection and image
+  classification with yolo'.
+\newblock Appsilon DataScience. URL:
+  https://www.kdnuggets.com/2018/09/object-detection-image-classification-yolo.html.
+  Waktu akses: 17 Desember 2020.
 
-\harvarditem[Mustafa et~al.]{Mustafa, Yazid, Jaafar, Zainal, Abdul~Nasir
-  \harvardand\ Mazlan}{2017}{Mustafa2017}
-Mustafa, W., Yazid, H., Jaafar, M., Zainal, M., Abdul~Nasir, A.~S. \harvardand\
-  Mazlan, N.  \harvardyearleft 2017\harvardyearright , `{A Review of Image
-  Quality Assessment (IQA): SNR, GCF, AD, NAE, PSNR, ME}', {\em Journal of
-  Advanced Research in Computing and Applications} {\bf 7},~1--7.
+\harvarditem[Mubin et~al.]{Mubin, Nadarajoo, Shafri \harvardand\
+  Hamedianfar}{2019}{Mubin2019-xq}
+Mubin, N.~A., Nadarajoo, E., Shafri, H. Z.~M. \harvardand\ Hamedianfar, A.
+  \harvardyearleft 2019\harvardyearright , `Young and mature oil palm tree
+  detection and counting using convolutional neural network deep learning
+  method', {\em Int. J. Remote Sens.} {\bf 40}(19),~7500--7515.
+\newblock DOI: 10.1080/01431161.2019.1569282.
 
-\harvarditem{Nguyen \harvardand\ Shwedyk}{2009}{HaH.Nguyen2009}
-Nguyen, H.~H. \harvardand\ Shwedyk, E.  \harvardyearleft 2009\harvardyearright
-  , {\em {A First Course in Digital Communications}}, Cambridge University
-  Press.
+\harvarditem{Muhammad}{2021}{ApaItuPostgreSQL}
+Muhammad, A.  \harvardyearleft 2021\harvardyearright , `Apa itu postgresql?
+  mengenal database postgresql'.
+\newblock (Waktu Akses: 4 Januari 2023).
 
-\harvarditem[Ong et~al.]{Ong, Lin, Lu, Yang, Yao, Pan, Jiang \harvardand\
-  Moschetti}{2003}{Ong_2003}
-Ong, E., Lin, W., Lu, Z., Yang, X., Yao, S., Pan, F., Jiang, L. \harvardand\
-  Moschetti, F.  \harvardyearleft 2003\harvardyearright , `A no-reference
-  quality metric for measuring image blur'.
+\harvarditem[Munir et~al.]{Munir, {Kudang Boro Seminar}, {Sudradjat}, Sukoco
+  \harvardand\ Buono}{2022}{Munir2022-ii}
+Munir, S., {Kudang Boro Seminar}, {Sudradjat}, Sukoco, H. \harvardand\ Buono,
+  A.  \harvardyearleft 2022\harvardyearright , `The use of random forest
+  regression for estimating leaf nitrogen content of oil palm based on sentinel
+  {1-A} imagery', {\em Information (Basel)} {\bf 14}(1),~10.
+\newblock https://doi.org/10.3390/info14010010.
 
-\harvarditem[Pauliks et~al.]{Pauliks, Tretjaks, Belahs \harvardand\
-  Pauliks}{2013}{Romass2013}
-Pauliks, R., Tretjaks, K., Belahs, K. \harvardand\ Pauliks, R.
-  \harvardyearleft 2013\harvardyearright , A survey on some measurement methods
-  for subjective video quality assessment, {\em in} `2013 World Congress on
-  Computer and Information Technology ({WCCIT})', {IEEE}.
+\harvarditem[Nassif et~al.]{Nassif, Shahin, Attili, Azzeh \harvardand\
+  Shaalan}{2019}{SpeechRecognitionUsingDeepNeuralNetworks2019}
+Nassif, A.~B., Shahin, I., Attili, I., Azzeh, M. \harvardand\ Shaalan, K.
+  \harvardyearleft 2019\harvardyearright , `Speech recognition using deep
+  neural networks: A systematic review'.
+\newline\harvardurl{https://doi.org/10.1109/access.2019.2896880}
 
-\harvarditem{Powers}{2020}{Powers2020}
-Powers, D. M.~W.  \harvardyearleft 2020\harvardyearright , `{Evaluation: from
-  precision, recall and F-measure to ROC, informedness, markedness and
-  correlation}'.
+\harvarditem{Nelson \harvardand\ Solawetz}{2020}{JosephNelsonYOLOv5}
+Nelson, J. \harvardand\ Solawetz, J.  \harvardyearleft 2020\harvardyearright ,
+  `Responding to the controversy about yolov5'.
+\newblock URL: https://blog.roboflow.com/yolov4-versus-yolov5/ (Waktu Akses: 5
+  Januari 2023).
 
-\harvarditem{Reimers}{1998}{Reimers_1998}
-Reimers, U.  \harvardyearleft 1998\harvardyearright , `Digital video
-  broadcasting', {\em IEEE Communications Magazine} {\bf 36}(6),~104--110.
+\harvarditem{Nora \harvardand\ Mual}{2018}{nora2018buku}
+Nora, S. \harvardand\ Mual, C.~D.  \harvardyearleft 2018\harvardyearright ,
+  `Budidaya tanaman kelapa sawit'.
 
-\harvarditem{Reimers}{2006}{Reimers2006}
-Reimers, U.  \harvardyearleft 2006\harvardyearright , `{DVB The Family of
-  International Standards for Digital Video Broadcasting}', {\em Proceedings of
-  the IEEE.} {\bf 94}(1),~173--182.
+\harvarditem{Pahan}{2018}{IPahan2018}
+Pahan, I.  \harvardyearleft 2018\harvardyearright , `Panduan lengkap kelapa
+  sawit (manajemen agribisnis dari hulu hingga hilir)',  {\bf 5},~412.
 
-\harvarditem{Robin \harvardand\ Poulin}{2000}{MichaelRobin2000}
-Robin, M. \harvardand\ Poulin, M.  \harvardyearleft 2000\harvardyearright ,
-  {\em {Digital Televisin Fundamentals 2nd Edition}}, McGraw-Hill Professional.
+\harvarditem{Parman}{2007}{parman2007pengaruh}
+Parman, S.  \harvardyearleft 2007\harvardyearright , `Pengaruh pemberian pupuk
+  organik cair terhadap pertumbuhan dan produksi kentang (solanum tuberosum
+  l.)', {\em Anatomi Fisiologi} {\bf 15}(2),~21--31.
 
-\harvarditem[Rodriguez et~al.]{Rodriguez, Rosa, Abrahão, Bressan \harvardand\
-  Costa~Alfaia}{2014}{Rodriguez2014}
-Rodriguez, D.~Z., Rosa, R., Abrahão, J., Bressan, G. \harvardand\
-  Costa~Alfaia, E.  \harvardyearleft 2014\harvardyearright , `{Video Quality
-  Assessment in Video Streaming Services Considering User Preference for Video
-  Content}', {\em IEEE Transactions on Consumer Electronics} {\bf
-  60},~436--444.
+\harvarditem{Patel}{2020}{Patel_2020}
+Patel, A.  \harvardyearleft 2020\harvardyearright , `What is object
+  detection?'.
+\newline\harvardurl{https://medium.com/ml-research-lab/what-is-object-detection-51f9d872ece7}
 
-\harvarditem{Salomon \harvardand\ Motta}{2010}{Salomon2010}
-Salomon, D. \harvardand\ Motta, G.  \harvardyearleft 2010\harvardyearright ,
-  {\em {Handbook of Data Compression}}, fifth edn, Springer London.
+\harvarditem{Platform}{2022}{GoogleMaps}
+Platform, G.~M.  \harvardyearleft 2022\harvardyearright , `Maps static api'.
+\newblock Developers Google, URL:
+  https://developers.google.com/maps/documentation/maps-static/overview.
 
-\harvarditem[Seshadrinathan et~al.]{Seshadrinathan, Soundararajan, Bovik
-  \harvardand\ Cormack}{2010}{Seshadrinathan_2010}
-Seshadrinathan, K., Soundararajan, R., Bovik, A.~C. \harvardand\ Cormack, L.~K.
-   \harvardyearleft 2010\harvardyearright , `{Study of Subjective and Objective
-  Quality Assessment of Video}', {\em {IEEE} Transactions on Image Processing}
-  {\bf 19}(6),~1427--1441.
+\harvarditem{{PPRI}}{2021}{PPRI262021}
+{PPRI}  \harvardyearleft 2021\harvardyearright , `Peraturan pemerintah republik
+  indonesia nomor 26 tahun 2021 tentang penyelenggaraan bidang pertanian'.
+\newblock 2 Februari 2021, URL:
+  https://peraturan.bpk.go.id/Home/Details/161856/pp-no-26-tahun-2021, (Akses:
+  1 Mei 2023).
 
-\harvarditem[Shahreza et~al.]{Shahreza, Amini \harvardand\
-  Behroozi}{2019}{Otroshi_Shahreza_2019}
-Shahreza, H.~O., Amini, A. \harvardand\ Behroozi, H.  \harvardyearleft
-  2019\harvardyearright , `No-reference video quality assessment using
-  recurrent neural networks'.
+\harvarditem{Prabhu}{2018}{PrabhuCNN}
+Prabhu  \harvardyearleft 2018\harvardyearright , `Understanding of
+  convolutional neural network (cnn) — deep learning'.
+\newblock Medium, URL:
+  https://medium.com/@RaghavPrabhu/understanding-of-convolutional-neural-network-cnn-deep-learning-99760835f148
+  Waktu Akses: 22 Desember 2022.
 
-\harvarditem[Sheikh et~al.]{Sheikh, Sabir \harvardand\ Bovik}{2006}{Sheikh2006}
-Sheikh, H., Sabir, M. \harvardand\ Bovik, A.  \harvardyearleft
-  2006\harvardyearright , `{A Statistical Evaluation of Recent Full Reference
-  Image Quality Assessment Algorithms}', {\em {IEEE} Transactions on Image
-  Processing} {\bf 15}(11),~3440--3451.
+\harvarditem[Prayitno et~al.]{Prayitno, Indradewa \harvardand\
+  Sunarminto}{2008}{prayitno2008produktivitas}
+Prayitno, S., Indradewa, D. \harvardand\ Sunarminto, B.~H.  \harvardyearleft
+  2008\harvardyearright , `Produktivitas kelapa sawit (elaeis guineensis jacq.)
+  yang dipupuk dengan tandan kosong dan limbah cair pabrik kelapa sawit', {\em
+  Ilmu Pertanian (Agricultural Science)} {\bf 15}(1),~37--48.
 
-\harvarditem{Suryanto}{2021}{Suryanto2021}
-Suryanto  \harvardyearleft 2021\harvardyearright , `{Indonesia mulai masuki era
-  TV Digital}', URL:
-  https://www.kominfo.go.id/content/detail/3400/indonesia-mulai-masuki-era-tv-digital/0/sorotan\textunderscore
-  media.
-\newblock (Diakses tanggal 26 April 2021).
+\harvarditem{Primartha}{2018}{primartha2018belajar}
+Primartha, R.  \harvardyearleft 2018\harvardyearright , `Belajar machine
+  learning teori dan praktik', {\em Bandung: Informatika Bandung} {\bf
+  10},~20--30.
 
-\harvarditem{Tom}{2022}{Tom2022}
-Tom  \harvardyearleft 2022\harvardyearright , `{What Is The Difference Between
-  TV Signal Strength and Quality?}', URL:
-  https://www.smartaerials.co.uk/blog/what-is-the-difference-between-tv-signal-strength-quality.
-\newblock (Diakses tanggal 30 Juli 2022).
+\harvarditem{{PTPN}}{2018}{PTPN21Nov2018}
+{PTPN}  \harvardyearleft 2018\harvardyearright , `Standar panen kelapa sawit'.
+\newblock 21 Nov 2018, PT. Perkebunan Nusantara 1, Tersedia di:
+  http://ptpn1.co.id/artikel/standar-panen-kelapa-sawit, (Akses: 3 Juli 2020).
 
-\harvarditem{Varga}{2021}{Varga2021}
-Varga, D.  \harvardyearleft 2021\harvardyearright , `{No-Reference Image
-  Quality Assessment with Global Statistical Features}', {\em Journal of
-  Imaging} {\bf 7}(2),~29.
+\harvarditem{{Pusat Informasi Kelapa Sawit}}{2012}{PusatInformasiKelapaSawit}
+{Pusat Informasi Kelapa Sawit}  \harvardyearleft 2012\harvardyearright ,
+  `Tentang kelapa sawit'.
+\newblock PT. Fin Komodo Teknologi.
 
-\harvarditem{Victoria}{2020}{Victoria2020}
-Victoria, A.  \harvardyearleft 2020\harvardyearright , `{Information
-  Technology}'.
+\harvarditem[Ramadhani et~al.]{Ramadhani, Zarlis \harvardand\
+  Suwilo}{2020}{Ramadhani2020-jg}
+Ramadhani, F., Zarlis, M. \harvardand\ Suwilo, S.  \harvardyearleft
+  2020\harvardyearright , `Improve {BIRCH} algorithm for big data clustering',
+  {\em IOP Conf. Ser. Mater. Sci. Eng.} {\bf 725}(1),~012090.
 
-\harvarditem{Wang}{2003}{Wang2003}
-Wang, Z.  \harvardyearleft 2003\harvardyearright , `{Objective Video Quality
-  Assessment, The Handbook of Video Databes: Design and Applications}', {\em
-  B.Furht and O. Marqure, ed., CRC Press.} pp.~1041--1078.
+\harvarditem{Ratan}{2021}{PhaniRatanCNN}
+Ratan, P.  \harvardyearleft 2021\harvardyearright , `What is the convolutional
+  neural network architecture?'.
+\newblock Analytics Vidhya, URL:
+  https://www.analyticsvidhya.com/blog/2020/10/what-is-the-convolutional-neural-network-architecture/
+  (Waktu Akses: 22 Desember 2022).
 
-\harvarditem[Wang et~al.]{Wang, Bovic \harvardand\ Hamid}{2002}{Wang2002}
-Wang, Z., Bovic, A. \harvardand\ Hamid, S.  \harvardyearleft
-  2002\harvardyearright , `No-reference perceptual quality assessment of {JPEG}
-  compressed images', {\em IEEE International Conference on Image Processing} .
+\harvarditem[Redmon et~al.]{Redmon, Divvala, Girshick \harvardand\
+  Farhadi}{2015}{Redmon2015-hy}
+Redmon, J., Divvala, S., Girshick, R. \harvardand\ Farhadi, A.
+  \harvardyearleft 2015\harvardyearright , `You only look once: Unified,
+  real-time object detection'.
+\newblock https://doi.org/10.48550/arXiv.1506.02640.
 
-\harvarditem{Welvaert \harvardand\ Rosseel}{2013}{Welvaert2013}
-Welvaert, M. \harvardand\ Rosseel, Y.  \harvardyearleft 2013\harvardyearright ,
-  `{On the Definition of Signal-To-Noise Ratio and Contrast-To-Noise Ratio for
-  {fMRI} Data}', {\em {PLoS} {ONE}} {\bf 8}(11),~e77089.
+\harvarditem[Rizeei et~al.]{Rizeei, Shafri, Mohamoud, Pradhan \harvardand\
+  Kalantar}{2018}{Rizeei2018-yr}
+Rizeei, H.~M., Shafri, H. Z.~M., Mohamoud, M.~A., Pradhan, B. \harvardand\
+  Kalantar, B.  \harvardyearleft 2018\harvardyearright , `Oil palm counting and
+  age estimation from {WorldView-3} imagery and {LiDAR} data using an
+  integrated {OBIA} height model and regression analysis', {\em J. Sens.} {\bf
+  2018},~1--13.
+\newblock DOI: 10.1155/2018/2536327.
 
-\harvarditem[Xu et~al.]{Xu, Tao, Mao, Lu, Bao, Drobe \harvardand\
-  Chen}{2021}{Xu_2021}
-Xu, J., Tao, C., Mao, X., Lu, X., Bao, J., Drobe, B. \harvardand\ Chen, H.
-  \harvardyearleft 2021\harvardyearright , `{Blur Detection Sensitivity
-  Increases in Children Using Orthokeratology}', {\em Frontiers in
-  Neuroscience} {\bf 15}.
+\harvarditem[Sanchez et~al.]{Sanchez, Romero \harvardand\
+  Morales}{2020}{Sanchez2020-qj}
+Sanchez, S.~A., Romero, H.~J. \harvardand\ Morales, A.~D.  \harvardyearleft
+  2020\harvardyearright , `A review: Comparison of performance metrics of
+  pretrained models for object detection using the {TensorFlow} framework',
+  {\em IOP Conf. Ser. Mater. Sci. Eng.} {\bf 844},~012024.
+\newblock 844:012024 DOI: 10.1088/1757-899X/844/1/012024.
 
-\harvarditem[Ya'acob et~al.]{Ya'acob, Tajudin, Zamiri, Yusof, Sarnin
-  \harvardand\ Idris}{2019}{Yaacob2019}
-Ya'acob, N., Tajudin, N., Zamiri, M. M. .~M., Yusof, A.~L., Sarnin, S.~S.
-  \harvardand\ Idris, A.  \harvardyearleft 2019\harvardyearright ,
-  `{Measurement of digital video broadcasting-second generation terestrial
-  ({DVB}-T2) signal in Kuala Lumpur, Malaysia}', {\em Indonesian Journal of
-  Electrical Engineering and Computer Science} {\bf 13}(3),~1286.
+\harvarditem{Santi}{2011}{santi2011mengubah}
+Santi, R. C.~N.  \harvardyearleft 2011\harvardyearright , `Mengubah citra
+  berwarna menjadi gray-scale dan citra biner', {\em Dinamik} {\bf 16}(1).
 
-\harvarditem[yen Ong et~al.]{yen Ong, Song, Pan \harvardand\ Li}{2010}{Ong2010}
-yen Ong, C., Song, J., Pan, C. \harvardand\ Li, Y.  \harvardyearleft
-  2010\harvardyearright , `{Technology and standards of digital television
-  terrestrial multimedia broadcasting, Topics in Wireless Communications}',
-  {\em {IEEE} Communications Magazine} {\bf 48}(5),~119--127.
+\harvarditem[Santoso et~al.]{Santoso, Tani \harvardand\
+  Wang}{2016}{Santoso2016-ip}
+Santoso, H., Tani, H. \harvardand\ Wang, X.  \harvardyearleft
+  2016\harvardyearright , `A simple method for detection and counting of oil
+  palm trees using high-resolution multispectral satellite imagery', {\em Int.
+  J. Remote Sens.} {\bf 37}(21),~5122--5134.
+\newblock DOI: 10.1080/01431161.2016.1226527.
 
-\harvarditem{Yin}{n.d.}{Yin}
-Yin, R.~K.  \harvardyearleft n.d.\harvardyearright , {\em {Case Study Research
-  and Applications : Design and Methods}}, SAGE Publications, Inc.
+\harvarditem{Setiawan}{2022}{RonySetiawan-ApaItuReact}
+Setiawan, R.  \harvardyearleft 2022\harvardyearright , `Mengenal lebih dekat
+  apa itu react'.
+\newblock Dicoding, URL: https://www.dicoding.com/blog/apa-itu-react/ (Waktu
+  Akses: 5 Januari 2023).
+
+\harvarditem[Singh et~al.]{Singh, Pandey, Petropoulos, Pavlides, Srivastava,
+  Koutsias, Deng \harvardand\ Bao}{2020}{Singh2020-bx}
+Singh, P., Pandey, P.~C., Petropoulos, G.~P., Pavlides, A., Srivastava, P.~K.,
+  Koutsias, N., Deng, K. A.~K. \harvardand\ Bao, Y.  \harvardyearleft
+  2020\harvardyearright , Hyperspectral remote sensing in precision
+  agriculture: present status, challenges, and future trends, {\em in}
+  `Hyperspectral Remote Sensing', Elsevier, pp.~121--146.
+\newblock ISBN 9780081028940,
+  https://doi.org/10.1016/B978-0-08-102894-0.00009-7.
+
+\harvarditem{Sutton \harvardand\ Barto}{2018}{sutton2018reinforcement}
+Sutton, R.~S. \harvardand\ Barto, A.~G.  \harvardyearleft 2018\harvardyearright
+  , `Reinforcement learning: An introduction the mit press: Cambridge', {\em
+  Massachusetts ISBN 9780262039246} .
+
+\harvarditem{Taylor \harvardand\ Whelan}{2016}{JTaylor2016}
+Taylor, J. \harvardand\ Whelan, B.  \harvardyearleft 2016\harvardyearright , `A
+  general introduction to precision agriculture. grains research and
+  development corporation'.
+
+\harvarditem[Thongprayoon et~al.]{Thongprayoon, Kaewput, Kovvuru, Hansrivijit,
+  Kanduri, Bathini, Chewcharat, Leeaphorn, Gonzalez-Suarez \harvardand\
+  Cheungpasitporn}{2020}{Thongprayoon2020-qk}
+Thongprayoon, C., Kaewput, W., Kovvuru, K., Hansrivijit, P., Kanduri, S.~R.,
+  Bathini, T., Chewcharat, A., Leeaphorn, N., Gonzalez-Suarez, M.~L.
+  \harvardand\ Cheungpasitporn, W.  \harvardyearleft 2020\harvardyearright ,
+  `Promises of big data and artificial intelligence in nephrology and
+  transplantation', {\em J. Clin. Med.} {\bf 9}(4),~1107.
+\newline\harvardurl{https://doi.org/10.3390/jcm9041107}
+
+\harvarditem[Wang et~al.]{Wang, Bochkovskiy \harvardand\
+  Liao}{2022}{Wang2022-bn}
+Wang, C.-Y., Bochkovskiy, A. \harvardand\ Liao, H.-Y.~M.  \harvardyearleft
+  2022\harvardyearright , `{YOLOv7}: Trainable bag-of-freebies sets new
+  state-of-the-art for real-time object detectors'.
+\newline\harvardurl{https://doi.org/10.48550/arXiv.2207.02696}
+
+\harvarditem[Wang et~al.]{Wang, Yeh \harvardand\ Liao}{2021}{Wang2021-ar}
+Wang, C.-Y., Yeh, I.-H. \harvardand\ Liao, H.-Y.~M.  \harvardyearleft
+  2021\harvardyearright , `You only learn one representation: Unified network
+  for multiple tasks'.
+\newline\harvardurl{https://doi.org/10.48550/arXiv.2105.04206}
+
+\harvarditem[Wibowo et~al.]{Wibowo, Sitanggang, Mushthofa \harvardand\
+  Adrianto}{2022}{Wibowo2022-pe}
+Wibowo, H., Sitanggang, I.~S., Mushthofa, M. \harvardand\ Adrianto, H.~A.
+  \harvardyearleft 2022\harvardyearright , `Large-scale oil palm trees
+  detection from high-resolution remote sensing images using deep learning',
+  {\em Big Data Cogn. Comput.} {\bf 6}(3),~89.
+\newblock Doi: https://doi.org/10.3390/bdcc6030089.
+
+\harvarditem{Yuniartha}{2020{\em a}}{EksporMinyakSawitKontanCoId}
+Yuniartha, L.  \harvardyearleft 2020{\em a}\harvardyearright , `Ekspor minyak
+  sawit tahun 2019 naik 4,2% jadi 36,1 juta ton, bagaimana di tahun 2020?'.
+\newblock tersedia di:
+  https://industri.kontan.co.id/news/ekspor-minyak-sawit-tahun-2019-naik-42-jadi-361-juta-ton-bagaimana-di-tahun-2020
+  (Akses: 2 Juli 2020).
+
+\harvarditem{Yuniartha}{2020{\em b}}{GapkiCatatKonsumsiMinyakSawit}
+Yuniartha, L.  \harvardyearleft 2020{\em b}\harvardyearright , `Gapki catat
+  konsumsi minyak sawit dalam negeri tumbuh 23,57% selama 2019'.
+\newblock tersedia di:
+  https://industri.kontan.co.id/news/gapki-catat-konsumsi-minyak-sawit-dalam-negeri-tumbuh-2357-selama-2019
+  (Akses: 2 Juli 2020).
+
+\harvarditem{Zakharova}{2017}{zakharova2017automated}
+Zakharova, M.  \harvardyearleft 2017\harvardyearright , `Automated coconut tree
+  detection in aerial imagery using deep learning', {\em Diss. Master’s
+  Thesis} .
+
+\harvarditem[Zheng et~al.]{Zheng, Fu, Li, Wu, Zhao, Dong \harvardand\
+  Yu}{2020}{Zheng2020-qe}
+Zheng, J., Fu, H., Li, W., Wu, W., Zhao, Y., Dong, R. \harvardand\ Yu, L.
+  \harvardyearleft 2020\harvardyearright , `Cross-regional oil palm tree
+  counting and detection via a multi-level attention domain adaptation
+  network', {\em ISPRS J. Photogramm. Remote Sens.} {\bf 167},~154--177.
 
 \end{thebibliography}

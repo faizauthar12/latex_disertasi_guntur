@@ -21,75 +21,48 @@ Reallocating 'name_of_file' (item size: 1) to 18 items.
 A level-1 auxiliary file: daftaristilah.aux
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
-Reallocating 'name_of_file' (item size: 1) to 19 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
 Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: daftarlampiran.aux
-Database file #1: daftarpustakasandy.bib
-Warning--entry type for "Kessel2018" isn't style-file defined
---line 487 of file daftarpustakasandy.bib
-Repeated entry---line 1447 of file daftarpustakasandy.bib
- : @book{
- :       ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Baek_2008"
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1222 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1222 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1258 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1262 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1294 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1294 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1327 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1346 of file agsm.bst
-Too many commas in name 1 of "Abid Haleem, Mohd Javaid, Mohd Asim Qadri, Rajiv Suman" for entry UnderstandingTheRoleOfDigital2022
-while executing---line 1346 of file agsm.bst
-Warning--empty publisher in ElSaba2018
-You've used 72 entries,
+Database file #1: daftarpustakaguntur.bib
+You've used 76 entries,
             2909 wiz_defined-function locations,
-            1115 strings with 18776 characters,
-and the built_in function-call counts, 272193 in all, are:
-= -- 43943
-> -- 3797
+            1129 strings with 21425 characters,
+and the built_in function-call counts, 336477 in all, are:
+= -- 54822
+> -- 4631
 < -- 0
-+ -- 20892
-- -- 1155
-* -- 23260
-:= -- 55356
-add.period$ -- 87
-call.type$ -- 72
-change.case$ -- 1002
-chr.to.int$ -- 72
-cite$ -- 73
-duplicate$ -- 1081
-empty$ -- 2203
-format.name$ -- 1377
-if$ -- 48680
-int.to.chr$ -- 5
++ -- 26465
+- -- 1421
+* -- 29160
+:= -- 67495
+add.period$ -- 115
+call.type$ -- 76
+change.case$ -- 1064
+chr.to.int$ -- 74
+cite$ -- 76
+duplicate$ -- 1204
+empty$ -- 2295
+format.name$ -- 1643
+if$ -- 60240
+int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 63
-newline$ -- 234
-num.names$ -- 742
-pop$ -- 399
+missing$ -- 71
+newline$ -- 289
+num.names$ -- 790
+pop$ -- 360
 preamble$ -- 1
-purify$ -- 1080
+purify$ -- 1140
 quote$ -- 0
-skip$ -- 891
+skip$ -- 1045
 stack$ -- 0
-substring$ -- 61789
-swap$ -- 157
-text.length$ -- 1008
+substring$ -- 77755
+swap$ -- 177
+text.length$ -- 1064
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 268
-warning$ -- 1
-while$ -- 1562
+type$ -- 304
+warning$ -- 0
+while$ -- 1649
 width$ -- 0
-write$ -- 943
-(There were 10 error messages)
+write$ -- 1044
