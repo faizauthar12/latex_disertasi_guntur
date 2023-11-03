@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  2 NOV 2023 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  3 NOV 2023 08:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1483,24 +1483,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2] [3] [4]
-<bab1/Gambar/Picture1.png, id=1039, 213.04594pt x 214.55156pt>
+<bab1/Gambar/Picture1.png, id=1037, 213.04594pt x 214.55156pt>
 File: bab1/Gambar/Picture1.png Graphic file (type png)
 <use bab1/Gambar/Picture1.png>
 Package pdftex.def Info: bab1/Gambar/Picture1.png  used on input line 43.
 (pdftex.def)             Requested size: 199.1693pt x 200.5883pt.
  [5 <./bab1/Gambar/Picture1.png>]
-<bab1/Gambar/Picture2.jpg, id=1048, 176.15813pt x 216.05719pt>
+<bab1/Gambar/Picture2.jpg, id=1046, 176.15813pt x 216.05719pt>
 File: bab1/Gambar/Picture2.jpg Graphic file (type jpg)
 <use bab1/Gambar/Picture2.jpg>
 Package pdftex.def Info: bab1/Gambar/Picture2.jpg  used on input line 58.
 (pdftex.def)             Requested size: 199.1693pt x 244.28021pt.
-<bab1/Gambar/Picture3.png, id=1050, 399.74344pt x 145.29282pt>
+<bab1/Gambar/Picture3.png, id=1048, 399.74344pt x 145.29282pt>
 File: bab1/Gambar/Picture3.png Graphic file (type png)
 <use bab1/Gambar/Picture3.png>
 Package pdftex.def Info: bab1/Gambar/Picture3.png  used on input line 73.
 (pdftex.def)             Requested size: 398.3386pt x 144.78918pt.
  [6 <./bab1/Gambar/Picture2.jpg>]
-<bab1/Gambar/Picture4.png, id=1056, 396.609pt x 217.248pt>
+<bab1/Gambar/Picture4.png, id=1054, 396.609pt x 217.248pt>
 File: bab1/Gambar/Picture4.png Graphic file (type png)
 <use bab1/Gambar/Picture4.png>
 Package pdftex.def Info: bab1/Gambar/Picture4.png  used on input line 88.
@@ -1530,18 +1530,18 @@ BAB II\bfseries .
 
 ] [18{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [19]
 [20]
-<bab2/Gambar/Picture1.jpg, id=1158, 394.47375pt x 158.84344pt>
+<bab2/Gambar/Picture1.jpg, id=1156, 394.47375pt x 158.84344pt>
 File: bab2/Gambar/Picture1.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture1.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture1.jpg  used on input line 78.
 (pdftex.def)             Requested size: 398.3386pt x 160.3991pt.
  [21 <./bab2/Gambar/Picture1.jpg>]
-<bab2/Gambar/Picture2.png, id=1165, 387.69844pt x 136.25906pt>
+<bab2/Gambar/Picture2.png, id=1163, 387.69844pt x 136.25906pt>
 File: bab2/Gambar/Picture2.png Graphic file (type png)
 <use bab2/Gambar/Picture2.png>
 Package pdftex.def Info: bab2/Gambar/Picture2.png  used on input line 98.
 (pdftex.def)             Requested size: 398.3386pt x 140.00116pt.
-<bab2/Gambar/Picture3.png, id=1167, 335.00156pt x 141.52875pt>
+<bab2/Gambar/Picture3.png, id=1165, 335.00156pt x 141.52875pt>
 File: bab2/Gambar/Picture3.png Graphic file (type png)
 <use bab2/Gambar/Picture3.png>
 Package pdftex.def Info: bab2/Gambar/Picture3.png  used on input line 113.
@@ -1552,12 +1552,12 @@ Overfull \hbox (4.56917pt too wide) in paragraph at lines 121--122
 m/n/12 ). Keti-ka gam-bar adalah in-put ke CNN, masalah
  []
 
-<bab2/Gambar/Picture4.png, id=1178, 338.01282pt x 113.67468pt>
+<bab2/Gambar/Picture4.png, id=1176, 338.01282pt x 113.67468pt>
 File: bab2/Gambar/Picture4.png Graphic file (type png)
 <use bab2/Gambar/Picture4.png>
 Package pdftex.def Info: bab2/Gambar/Picture4.png  used on input line 128.
 (pdftex.def)             Requested size: 398.3386pt x 133.96669pt.
-<bab2/Gambar/Picture5.png, id=1180, 350.05782pt x 107.65219pt>
+<bab2/Gambar/Picture5.png, id=1178, 350.05782pt x 107.65219pt>
 File: bab2/Gambar/Picture5.png Graphic file (type png)
 <use bab2/Gambar/Picture5.png>
 Package pdftex.def Info: bab2/Gambar/Picture5.png  used on input line 143.
@@ -1570,12 +1570,12 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [24{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./bab2/Gambar/Pic
 ture5.png>]
-<bab2/Gambar/Picture6.png, id=1193, 316.18124pt x 160.34906pt>
+<bab2/Gambar/Picture6.png, id=1191, 316.18124pt x 160.34906pt>
 File: bab2/Gambar/Picture6.png Graphic file (type png)
 <use bab2/Gambar/Picture6.png>
 Package pdftex.def Info: bab2/Gambar/Picture6.png  used on input line 169.
 (pdftex.def)             Requested size: 398.3386pt x 202.02864pt.
-<bab2/Gambar/Picture7.png, id=1194, 149.8097pt x 117.43875pt>
+<bab2/Gambar/Picture7.png, id=1192, 149.8097pt x 117.43875pt>
 File: bab2/Gambar/Picture7.png Graphic file (type png)
 <use bab2/Gambar/Picture7.png>
 Package pdftex.def Info: bab2/Gambar/Picture7.png  used on input line 186.
@@ -1600,13 +1600,13 @@ Overfull \hbox (2.69608pt too wide) in paragraph at lines 207--208
  []
 
 [26]
-<bab2/Gambar/Picture8.png, id=1208, 381.67593pt x 214.55156pt>
+<bab2/Gambar/Picture8.png, id=1206, 381.67593pt x 214.55156pt>
 File: bab2/Gambar/Picture8.png Graphic file (type png)
 <use bab2/Gambar/Picture8.png>
 Package pdftex.def Info: bab2/Gambar/Picture8.png  used on input line 217.
 (pdftex.def)             Requested size: 398.3386pt x 223.92715pt.
  [27 <./bab2/Gambar/Picture8.png>] [28]
-<bab2/Gambar/Picture9.png, id=1226, 383.18156pt x 188.20313pt>
+<bab2/Gambar/Picture9.png, id=1224, 383.18156pt x 188.20313pt>
 File: bab2/Gambar/Picture9.png Graphic file (type png)
 <use bab2/Gambar/Picture9.png>
 Package pdftex.def Info: bab2/Gambar/Picture9.png  used on input line 262.
@@ -1636,13 +1636,13 @@ dimensional
  []
 
 [30] [31]
-<bab2/Gambar/Picture10.png, id=1255, 398.99063pt x 121.20282pt>
+<bab2/Gambar/Picture10.png, id=1253, 398.99063pt x 121.20282pt>
 File: bab2/Gambar/Picture10.png Graphic file (type png)
 <use bab2/Gambar/Picture10.png>
 Package pdftex.def Info: bab2/Gambar/Picture10.png  used on input line 319.
 (pdftex.def)             Requested size: 398.3386pt x 121.01016pt.
  [32 <./bab2/Gambar/Picture10.png>]
-<bab2/Gambar/Picture11.png, id=1262, 293.59688pt x 145.29282pt>
+<bab2/Gambar/Picture11.png, id=1260, 293.59688pt x 145.29282pt>
 File: bab2/Gambar/Picture11.png Graphic file (type png)
 <use bab2/Gambar/Picture11.png>
 Package pdftex.def Info: bab2/Gambar/Picture11.png  used on input line 340.
@@ -1654,13 +1654,13 @@ earn-ing \T1/lmr/m/n/12 da-p-at dipresen-tasikan
  []
 
 [33 <./bab2/Gambar/Picture11.png>] [34]
-<bab2/Gambar/Picture12.png, id=1277, 287.57437pt x 162.6075pt>
+<bab2/Gambar/Picture12.png, id=1275, 287.57437pt x 162.6075pt>
 File: bab2/Gambar/Picture12.png Graphic file (type png)
 <use bab2/Gambar/Picture12.png>
 Package pdftex.def Info: bab2/Gambar/Picture12.png  used on input line 385.
 (pdftex.def)             Requested size: 398.3386pt x 225.24715pt.
  [35] [36 <./bab2/Gambar/Picture12.png>]
-<bab2/Gambar/Picture13.png, id=1293, 362.85562pt x 216.81pt>
+<bab2/Gambar/Picture13.png, id=1291, 362.85562pt x 216.81pt>
 File: bab2/Gambar/Picture13.png Graphic file (type png)
 <use bab2/Gambar/Picture13.png>
 Package pdftex.def Info: bab2/Gambar/Picture13.png  used on input line 404.
@@ -1678,70 +1678,70 @@ p learn-ing yang umum.
  []
 
 [38]
-<bab2/Gambar/Picture14.png, id=1313, 281.55188pt x 194.22563pt>
+<bab2/Gambar/Picture14.png, id=1311, 281.55188pt x 194.22563pt>
 File: bab2/Gambar/Picture14.png Graphic file (type png)
 <use bab2/Gambar/Picture14.png>
 Package pdftex.def Info: bab2/Gambar/Picture14.png  used on input line 456.
 (pdftex.def)             Requested size: 318.67209pt x 219.84581pt.
-<bab2/Gambar/Picture15.png, id=1315, 253.69781pt x 225.09094pt>
+<bab2/Gambar/Picture15.png, id=1313, 253.69781pt x 225.09094pt>
 File: bab2/Gambar/Picture15.png Graphic file (type png)
 <use bab2/Gambar/Picture15.png>
 Package pdftex.def Info: bab2/Gambar/Picture15.png  used on input line 473.
 (pdftex.def)             Requested size: 318.67209pt x 282.74712pt.
  [39 <./bab2/Gambar/Picture14.png>]
-<bab2/Gambar/Picture16.png, id=1322, 95.6072pt x 100.12407pt>
+<bab2/Gambar/Picture16.png, id=1320, 95.6072pt x 100.12407pt>
 File: bab2/Gambar/Picture16.png Graphic file (type png)
 <use bab2/Gambar/Picture16.png>
 Package pdftex.def Info: bab2/Gambar/Picture16.png  used on input line 492.
 (pdftex.def)             Requested size: 119.50279pt x 125.15475pt.
  [40 <./bab2/Gambar/Picture15.png>]
-<bab2/Gambar/Picture17.jpg, id=1328, 398.99063pt x 135.50626pt>
+<bab2/Gambar/Picture17.jpg, id=1326, 398.99063pt x 135.50626pt>
 File: bab2/Gambar/Picture17.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture17.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture17.jpg  used on input line 509.
 (pdftex.def)             Requested size: 398.3386pt x 135.29086pt.
 
 [41 <./bab2/Gambar/Picture16.png> <./bab2/Gambar/Picture17.jpg>]
-<bab2/Gambar/Picture18.png, id=1335, 300.3722pt x 99.37125pt>
+<bab2/Gambar/Picture18.png, id=1333, 300.3722pt x 99.37125pt>
 File: bab2/Gambar/Picture18.png Graphic file (type png)
 <use bab2/Gambar/Picture18.png>
 Package pdftex.def Info: bab2/Gambar/Picture18.png  used on input line 533.
 (pdftex.def)             Requested size: 398.3386pt x 131.79211pt.
-<bab2/Gambar/Picture19.png, id=1337, 257.46187pt x 97.11281pt>
+<bab2/Gambar/Picture19.png, id=1335, 257.46187pt x 97.11281pt>
 File: bab2/Gambar/Picture19.png Graphic file (type png)
 <use bab2/Gambar/Picture19.png>
 Package pdftex.def Info: bab2/Gambar/Picture19.png  used on input line 549.
 (pdftex.def)             Requested size: 278.83578pt x 105.18404pt.
-<bab2/Gambar/Picture20.png, id=1339, 155.83218pt x 109.91063pt>
+<bab2/Gambar/Picture20.png, id=1337, 155.83218pt x 109.91063pt>
 File: bab2/Gambar/Picture20.png Graphic file (type png)
 <use bab2/Gambar/Picture20.png>
 Package pdftex.def Info: bab2/Gambar/Picture20.png  used on input line 565.
 (pdftex.def)             Requested size: 278.83578pt x 196.69012pt.
  [42 <./bab2/Gambar/Picture18.png> <./bab2/Gambar/Picture19.png>]
-<bab2/Gambar/Picture21.png, id=1347, 268.00125pt x 409.53pt>
+<bab2/Gambar/Picture21.png, id=1345, 268.00125pt x 409.53pt>
 File: bab2/Gambar/Picture21.png Graphic file (type png)
 <use bab2/Gambar/Picture21.png>
 Package pdftex.def Info: bab2/Gambar/Picture21.png  used on input line 581.
 (pdftex.def)             Requested size: 239.00558pt x 365.21791pt.
  [43 <./bab2/Gambar/Picture20.png>]
-<bab2/Gambar/Picture22.png, id=1355, 325.215pt x 146.04562pt>
+<bab2/Gambar/Picture22.png, id=1353, 325.215pt x 146.04562pt>
 File: bab2/Gambar/Picture22.png Graphic file (type png)
 <use bab2/Gambar/Picture22.png>
 Package pdftex.def Info: bab2/Gambar/Picture22.png  used on input line 599.
 (pdftex.def)             Requested size: 239.00558pt x 107.33443pt.
  [44 <./bab2/Gambar/Picture21.png>]
-<bab2/Gambar/Picture23.1.png, id=1363, 156.585pt x 126.4725pt>
+<bab2/Gambar/Picture23.1.png, id=1361, 156.585pt x 126.4725pt>
 File: bab2/Gambar/Picture23.1.png Graphic file (type png)
 <use bab2/Gambar/Picture23.1.png>
 Package pdftex.def Info: bab2/Gambar/Picture23.1.png  used on input line 626.
 (pdftex.def)             Requested size: 119.50279pt x 96.52534pt.
-<bab2/Gambar/Picture23.2.png, id=1364, 244.66406pt x 114.4275pt>
+<bab2/Gambar/Picture23.2.png, id=1362, 244.66406pt x 114.4275pt>
 File: bab2/Gambar/Picture23.2.png Graphic file (type png)
 <use bab2/Gambar/Picture23.2.png>
 Package pdftex.def Info: bab2/Gambar/Picture23.2.png  used on input line 627.
 (pdftex.def)             Requested size: 239.00558pt x 111.78374pt.
  [45 <./bab2/Gambar/Picture22.png>]
-<bab2/Gambar/Picture24.png, id=1372, 249.18094pt x 117.43875pt>
+<bab2/Gambar/Picture24.png, id=1370, 249.18094pt x 117.43875pt>
 File: bab2/Gambar/Picture24.png Graphic file (type png)
 <use bab2/Gambar/Picture24.png>
 Package pdftex.def Info: bab2/Gambar/Picture24.png  used on input line 646.
@@ -1749,12 +1749,12 @@ Package pdftex.def Info: bab2/Gambar/Picture24.png  used on input line 646.
 
 [46 <./bab2/Gambar/Picture23.1.png> <./bab2/Gambar/Picture23.2.png> <./bab2/Gam
 bar/Picture24.png>]
-<bab2/Gambar/Picture25.png, id=1382, 243.15843pt x 128.73094pt>
+<bab2/Gambar/Picture25.png, id=1380, 243.15843pt x 128.73094pt>
 File: bab2/Gambar/Picture25.png Graphic file (type png)
 <use bab2/Gambar/Picture25.png>
 Package pdftex.def Info: bab2/Gambar/Picture25.png  used on input line 664.
 (pdftex.def)             Requested size: 199.1693pt x 105.44217pt.
-<bab2/Gambar/Picture26.png, id=1385, 397.485pt x 102.3825pt>
+<bab2/Gambar/Picture26.png, id=1383, 397.485pt x 102.3825pt>
 File: bab2/Gambar/Picture26.png Graphic file (type png)
 <use bab2/Gambar/Picture26.png>
 Package pdftex.def Info: bab2/Gambar/Picture26.png  used on input line 680.
@@ -1765,25 +1765,25 @@ Overfull \hbox (14.64839pt too wide) in paragraph at lines 692--693
 nn Ma-chines \T1/lmr/m/n/12 (RBM) atau kadan-
  []
 
-<bab2/Gambar/Picture27.png, id=1387, 192.72pt x 167.87718pt>
+<bab2/Gambar/Picture27.png, id=1385, 192.72pt x 167.87718pt>
 File: bab2/Gambar/Picture27.png Graphic file (type png)
 <use bab2/Gambar/Picture27.png>
 Package pdftex.def Info: bab2/Gambar/Picture27.png  used on input line 699.
 (pdftex.def)             Requested size: 239.00558pt x 208.19629pt.
 [47 <./bab2/Gambar/Picture25.png> <./bab2/Gambar/Picture26.png>]
-<bab2/Gambar/Picture28.png, id=1396, 149.05687pt x 213.79875pt>
+<bab2/Gambar/Picture28.png, id=1394, 149.05687pt x 213.79875pt>
 File: bab2/Gambar/Picture28.png Graphic file (type png)
 <use bab2/Gambar/Picture28.png>
 Package pdftex.def Info: bab2/Gambar/Picture28.png  used on input line 716.
 (pdftex.def)             Requested size: 159.333pt x 228.55034pt.
  [48 <./bab2/Gambar/Picture27.png>] [49 <./bab2/Gambar/Picture28.png>]
-<bab2/Gambar/Picture29.png, id=1409, 265.99374pt x 142.5325pt>
+<bab2/Gambar/Picture29.png, id=1407, 265.99374pt x 142.5325pt>
 File: bab2/Gambar/Picture29.png Graphic file (type png)
 <use bab2/Gambar/Picture29.png>
 Package pdftex.def Info: bab2/Gambar/Picture29.png  used on input line 741.
 (pdftex.def)             Requested size: 159.333pt x 85.38095pt.
  [50 <./bab2/Gambar/Picture29.png>]
-<bab2/Gambar/Picture30.png, id=1420, 392.46625pt x 215.80624pt>
+<bab2/Gambar/Picture30.png, id=1418, 392.46625pt x 215.80624pt>
 File: bab2/Gambar/Picture30.png Graphic file (type png)
 <use bab2/Gambar/Picture30.png>
 Package pdftex.def Info: bab2/Gambar/Picture30.png  used on input line 772.
@@ -1794,7 +1794,7 @@ Overfull \hbox (7.33015pt too wide) in paragraph at lines 789--790
 rop-ut, masing-
  []
 
-<bab2/Gambar/Picture31.png, id=1427, 362.35374pt x 164.615pt>
+<bab2/Gambar/Picture31.png, id=1425, 362.35374pt x 164.615pt>
 File: bab2/Gambar/Picture31.png Graphic file (type png)
 <use bab2/Gambar/Picture31.png>
 Package pdftex.def Info: bab2/Gambar/Picture31.png  used on input line 800.
@@ -1805,25 +1805,25 @@ Overfull \hbox (14.09886pt too wide) in paragraph at lines 809--810
 ba-gai berikut: 
  []
 
-<bab2/Gambar/Picture32.png, id=1429, 362.35374pt x 162.6075pt>
+<bab2/Gambar/Picture32.png, id=1427, 362.35374pt x 162.6075pt>
 File: bab2/Gambar/Picture32.png Graphic file (type png)
 <use bab2/Gambar/Picture32.png>
 Package pdftex.def Info: bab2/Gambar/Picture32.png  used on input line 820.
 (pdftex.def)             Requested size: 358.50229pt x 160.88268pt.
 [52 <./bab2/Gambar/Picture31.png>]
-<bab2/Gambar/Picture33.png, id=1437, 350.30875pt x 170.6375pt>
+<bab2/Gambar/Picture33.png, id=1435, 350.30875pt x 170.6375pt>
 File: bab2/Gambar/Picture33.png Graphic file (type png)
 <use bab2/Gambar/Picture33.png>
 Package pdftex.def Info: bab2/Gambar/Picture33.png  used on input line 842.
 (pdftex.def)             Requested size: 358.50229pt x 174.64157pt.
  [53 <./bab2/Gambar/Picture32.png>]
-<bab2/Gambar/Picture34.png, id=1445, 339.2675pt x 176.66pt>
+<bab2/Gambar/Picture34.png, id=1443, 339.2675pt x 176.66pt>
 File: bab2/Gambar/Picture34.png Graphic file (type png)
 <use bab2/Gambar/Picture34.png>
 Package pdftex.def Info: bab2/Gambar/Picture34.png  used on input line 863.
 (pdftex.def)             Requested size: 358.50229pt x 186.68452pt.
  [54 <./bab2/Gambar/Picture33.png> <./bab2/Gambar/Picture34.png>]
-<bab2/Gambar/Picture35.png, id=1453, 368.37625pt x 208.78pt>
+<bab2/Gambar/Picture35.png, id=1451, 368.37625pt x 208.78pt>
 File: bab2/Gambar/Picture35.png Graphic file (type png)
 <use bab2/Gambar/Picture35.png>
 Package pdftex.def Info: bab2/Gambar/Picture35.png  used on input line 892.
@@ -1834,7 +1834,7 @@ Overfull \hbox (4.9362pt too wide) in paragraph at lines 907--908
  berkem-
  []
 
-<bab2/Gambar/Picture36.png, id=1462, 390.915pt x 223.38pt>
+<bab2/Gambar/Picture36.png, id=1460, 390.915pt x 223.38pt>
 File: bab2/Gambar/Picture36.png Graphic file (type png)
 <use bab2/Gambar/Picture36.png>
 Package pdftex.def Info: bab2/Gambar/Picture36.png  used on input line 914.
@@ -1869,7 +1869,7 @@ Overfull \hbox (18.48419pt too wide) in paragraph at lines 962--963
  YOLOv2,
  []
 
-<bab2/Gambar/Picture37.png, id=1476, 302.12875pt x 238.8925pt>
+<bab2/Gambar/Picture37.png, id=1474, 302.12875pt x 238.8925pt>
 File: bab2/Gambar/Picture37.png Graphic file (type png)
 <use bab2/Gambar/Picture37.png>
 Package pdftex.def Info: bab2/Gambar/Picture37.png  used on input line 976.
@@ -1893,13 +1893,13 @@ kan
  []
 
 [59 <./bab2/Gambar/Picture37.png>]
-<bab2/Gambar/Picture38.png, id=1488, 374.14781pt x 151.3153pt>
+<bab2/Gambar/Picture38.png, id=1486, 374.14781pt x 151.3153pt>
 File: bab2/Gambar/Picture38.png Graphic file (type png)
 <use bab2/Gambar/Picture38.png>
 Package pdftex.def Info: bab2/Gambar/Picture38.png  used on input line 1008.
 (pdftex.def)             Requested size: 318.67209pt x 128.88643pt.
  [60 <./bab2/Gambar/Picture38.png>]
-<bab2/Gambar/Picture39.png, id=1496, 338.6835pt x 215.8245pt>
+<bab2/Gambar/Picture39.png, id=1494, 338.6835pt x 215.8245pt>
 File: bab2/Gambar/Picture39.png Graphic file (type png)
 <use bab2/Gambar/Picture39.png>
 Package pdftex.def Info: bab2/Gambar/Picture39.png  used on input line 1026.
@@ -1946,7 +1946,7 @@ Overfull \hbox (11.44016pt too wide) in paragraph at lines 1053--1057
 n YOLOv4,
  []
 
-<bab2/Gambar/Picture40.png, id=1505, 213.525pt x 132.714pt>
+<bab2/Gambar/Picture40.png, id=1503, 213.525pt x 132.714pt>
 File: bab2/Gambar/Picture40.png Graphic file (type png)
 <use bab2/Gambar/Picture40.png>
 Package pdftex.def Info: bab2/Gambar/Picture40.png  used on input line 1063.
@@ -1957,7 +1957,7 @@ Overfull \hbox (13.22044pt too wide) in paragraph at lines 1074--1078
  (MT-YOLOv6)
  []
 
-<bab2/Gambar/Picture41.png, id=1512, 391.4625pt x 139.52126pt>
+<bab2/Gambar/Picture41.png, id=1510, 391.4625pt x 139.52126pt>
 File: bab2/Gambar/Picture41.png Graphic file (type png)
 <use bab2/Gambar/Picture41.png>
 Package pdftex.def Info: bab2/Gambar/Picture41.png  used on input line 1084.
@@ -1974,7 +1974,7 @@ Overfull \hbox (5.07979pt too wide) in paragraph at lines 1098--1099
 atan
  []
 
-<bab2/Gambar/Picture42.png, id=1519, 293.095pt x 216.81pt>
+<bab2/Gambar/Picture42.png, id=1517, 293.095pt x 216.81pt>
 File: bab2/Gambar/Picture42.png Graphic file (type png)
 <use bab2/Gambar/Picture42.png>
 Package pdftex.def Info: bab2/Gambar/Picture42.png  used on input line 1111.
@@ -1985,7 +1985,7 @@ Overfull \hbox (21.36055pt too wide) in paragraph at lines 1124--1126
 ungkan
  []
 
-<bab2/Gambar/Picture43.png, id=1526, 362.35374pt x 136.51pt>
+<bab2/Gambar/Picture43.png, id=1524, 362.35374pt x 136.51pt>
 File: bab2/Gambar/Picture43.png Graphic file (type png)
 <use bab2/Gambar/Picture43.png>
 Package pdftex.def Info: bab2/Gambar/Picture43.png  used on input line 1132.
@@ -2002,13 +2002,13 @@ Overfull \hbox (3.6573pt too wide) in paragraph at lines 1151--1152
 -cil men-
  []
 
-<bab2/Gambar/Picture44.png, id=1534, 385.44pt x 168.63pt>
+<bab2/Gambar/Picture44.png, id=1532, 385.44pt x 168.63pt>
 File: bab2/Gambar/Picture44.png Graphic file (type png)
 <use bab2/Gambar/Picture44.png>
 Package pdftex.def Info: bab2/Gambar/Picture44.png  used on input line 1158.
 (pdftex.def)             Requested size: 398.3386pt x 174.27234pt.
 [66 <./bab2/Gambar/Picture43.png>]
-<bab2/Gambar/Picture45.png, id=1541, 392.96812pt x 171.64125pt>
+<bab2/Gambar/Picture45.png, id=1539, 392.96812pt x 171.64125pt>
 File: bab2/Gambar/Picture45.png Graphic file (type png)
 <use bab2/Gambar/Picture45.png>
 Package pdftex.def Info: bab2/Gambar/Picture45.png  used on input line 1174.
@@ -2025,7 +2025,7 @@ Overfull \hbox (32.76117pt too wide) in paragraph at lines 1195--1196
 an pre-sisi mam-pu meingkatkan
  []
 
-<bab2/Gambar/Picture46.png, id=1553, 305.64188pt x 212.29312pt>
+<bab2/Gambar/Picture46.png, id=1551, 305.64188pt x 212.29312pt>
 File: bab2/Gambar/Picture46.png Graphic file (type png)
 <use bab2/Gambar/Picture46.png>
 Package pdftex.def Info: bab2/Gambar/Picture46.png  used on input line 1205.
@@ -2036,7 +2036,7 @@ Overfull \hbox (19.24385pt too wide) in paragraph at lines 1237--1238
 but atau monokotil.
  []
 
-<bab2/Gambar/Picture47.jpg, id=1563, 111.41624pt x 167.87718pt>
+<bab2/Gambar/Picture47.jpg, id=1561, 111.41624pt x 167.87718pt>
 File: bab2/Gambar/Picture47.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture47.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture47.jpg  used on input line 1244.
@@ -2052,13 +2052,13 @@ Overfull \hbox (2.8911pt too wide) in paragraph at lines 1346--1347
  karak-
  []
 
-<bab2/Gambar/Picture48.png, id=1582, 142.28156pt x 99.37125pt>
+<bab2/Gambar/Picture48.png, id=1580, 142.28156pt x 99.37125pt>
 File: bab2/Gambar/Picture48.png Graphic file (type png)
 <use bab2/Gambar/Picture48.png>
 Package pdftex.def Info: bab2/Gambar/Picture48.png  used on input line 1365.
 (pdftex.def)             Requested size: 159.333pt x 111.29199pt.
 [74 <./bab2/Gambar/Picture48.png>]
-<bab2/Gambar/Picture49.jpg, id=1594, 152.82094pt x 187.45032pt>
+<bab2/Gambar/Picture49.jpg, id=1592, 152.82094pt x 187.45032pt>
 File: bab2/Gambar/Picture49.jpg Graphic file (type jpg)
 <use bab2/Gambar/Picture49.jpg>
 Package pdftex.def Info: bab2/Gambar/Picture49.jpg  used on input line 1391.
@@ -3714,7 +3714,7 @@ Underfull \hbox (badness 3895) in paragraph at lines 1518--1518
 
 [80]) (bab3/Bab3_Metodologi.tex [81]
 BAB III\bfseries .
-<bab3/Gambar/Picture1.png, id=1632, 401.24907pt x 283.0575pt>
+<bab3/Gambar/Picture1.png, id=1630, 401.24907pt x 283.0575pt>
 File: bab3/Gambar/Picture1.png Graphic file (type png)
 <use bab3/Gambar/Picture1.png>
 Package pdftex.def Info: bab3/Gambar/Picture1.png  used on input line 12.
@@ -3722,35 +3722,35 @@ Package pdftex.def Info: bab3/Gambar/Picture1.png  used on input line 12.
 [82
 
  <./bab3/Gambar/Picture1.png>] [83]
-<bab3/Gambar/Picture2.png, id=1643, 398.23781pt x 193.47281pt>
+<bab3/Gambar/Picture2.png, id=1641, 398.23781pt x 193.47281pt>
 File: bab3/Gambar/Picture2.png Graphic file (type png)
 <use bab3/Gambar/Picture2.png>
 Package pdftex.def Info: bab3/Gambar/Picture2.png  used on input line 31.
 (pdftex.def)             Requested size: 398.3386pt x 193.52841pt.
-<bab3/Gambar/Picture3.png, id=1644, 398.23781pt x 189.70876pt>
+<bab3/Gambar/Picture3.png, id=1642, 398.23781pt x 189.70876pt>
 File: bab3/Gambar/Picture3.png Graphic file (type png)
 <use bab3/Gambar/Picture3.png>
 Package pdftex.def Info: bab3/Gambar/Picture3.png  used on input line 45.
 (pdftex.def)             Requested size: 398.3386pt x 189.76328pt.
  [84 <./bab3/Gambar/Picture2.png> <./bab3/Gambar/Picture3.png>]
-<bab3/Gambar/Picture4.png, id=1651, 288.3272pt x 207.77625pt>
+<bab3/Gambar/Picture4.png, id=1649, 288.3272pt x 207.77625pt>
 File: bab3/Gambar/Picture4.png Graphic file (type png)
 <use bab3/Gambar/Picture4.png>
 Package pdftex.def Info: bab3/Gambar/Picture4.png  used on input line 62.
 (pdftex.def)             Requested size: 239.00558pt x 172.2418pt.
  [85 <./bab3/Gambar/Picture4.png>]
-<bab3/Gambar/Picture5.png, id=1659, 398.23781pt x 225.84375pt>
+<bab3/Gambar/Picture5.png, id=1657, 398.23781pt x 225.84375pt>
 File: bab3/Gambar/Picture5.png Graphic file (type png)
 <use bab3/Gambar/Picture5.png>
 Package pdftex.def Info: bab3/Gambar/Picture5.png  used on input line 85.
 (pdftex.def)             Requested size: 398.3386pt x 225.90866pt.
  [86 <./bab3/Gambar/Picture5.png>]
-<bab3/Gambar/Picture6.jpg, id=1669, 395.514pt x 237.5055pt>
+<bab3/Gambar/Picture6.jpg, id=1667, 395.514pt x 237.5055pt>
 File: bab3/Gambar/Picture6.jpg Graphic file (type jpg)
 <use bab3/Gambar/Picture6.jpg>
 Package pdftex.def Info: bab3/Gambar/Picture6.jpg  used on input line 120.
 (pdftex.def)             Requested size: 398.3386pt x 239.2082pt.
-<bab3/Gambar/Picture7.jpg, id=1670, 395.1855pt x 197.757pt>
+<bab3/Gambar/Picture7.jpg, id=1668, 395.1855pt x 197.757pt>
 File: bab3/Gambar/Picture7.jpg Graphic file (type jpg)
 <use bab3/Gambar/Picture7.jpg>
 Package pdftex.def Info: bab3/Gambar/Picture7.jpg  used on input line 134.
@@ -3761,26 +3761,26 @@ Overfull \hbox (1.62035pt too wide) in paragraph at lines 146--147
 alm), dan dikatakan
  []
 
-<bab3/Gambar/Picture8.png, id=1676, 292.09125pt x 289.08pt>
+<bab3/Gambar/Picture8.png, id=1674, 292.09125pt x 289.08pt>
 File: bab3/Gambar/Picture8.png Graphic file (type png)
 <use bab3/Gambar/Picture8.png>
 Package pdftex.def Info: bab3/Gambar/Picture8.png  used on input line 153.
 (pdftex.def)             Requested size: 398.3386pt x 394.26839pt.
 [88 <./bab3/Gambar/Picture7.jpg>] [89 <./bab3/Gambar/Picture8.png>]
-<bab3/Gambar/Picture9.png, id=1690, 393.72093pt x 267.24844pt>
+<bab3/Gambar/Picture9.png, id=1688, 393.72093pt x 267.24844pt>
 File: bab3/Gambar/Picture9.png Graphic file (type png)
 <use bab3/Gambar/Picture9.png>
 Package pdftex.def Info: bab3/Gambar/Picture9.png  used on input line 198.
 (pdftex.def)             Requested size: 398.3386pt x 270.3796pt.
  [90]
-<bab3/Gambar/Picture10.png, id=1695, 567.3195pt x 247.52475pt>
+<bab3/Gambar/Picture10.png, id=1693, 567.3195pt x 247.52475pt>
 File: bab3/Gambar/Picture10.png Graphic file (type png)
 <use bab3/Gambar/Picture10.png>
 Package pdftex.def Info: bab3/Gambar/Picture10.png  used on input line 216.
 (pdftex.def)             Requested size: 398.3386pt x 173.79868pt.
 
 [91 <./bab3/Gambar/Picture9.png>] [92 <./bab3/Gambar/Picture10.png>]
-<bab3/Gambar/Picture11.png, id=1709, 396.7322pt x 268.75406pt>
+<bab3/Gambar/Picture11.png, id=1707, 396.7322pt x 268.75406pt>
 File: bab3/Gambar/Picture11.png Graphic file (type png)
 <use bab3/Gambar/Picture11.png>
 Package pdftex.def Info: bab3/Gambar/Picture11.png  used on input line 257.
@@ -3803,7 +3803,7 @@ angkah berikut-
  []
 
 [95]
-<bab3/Gambar/Picture12.png, id=1728, 747.9945pt x 296.307pt>
+<bab3/Gambar/Picture12.png, id=1726, 747.9945pt x 296.307pt>
 File: bab3/Gambar/Picture12.png Graphic file (type png)
 <use bab3/Gambar/Picture12.png>
 Package pdftex.def Info: bab3/Gambar/Picture12.png  used on input line 325.
@@ -3814,25 +3814,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--344
  []
 
 [97] [98] [99] [100] [101] [102] [103]
-<bab3/Gambar/Picture13.png, id=1773, 395.97937pt x 60.225pt>
+<bab3/Gambar/Picture13.png, id=1771, 395.97937pt x 60.225pt>
 File: bab3/Gambar/Picture13.png Graphic file (type png)
 <use bab3/Gambar/Picture13.png>
 Package pdftex.def Info: bab3/Gambar/Picture13.png  used on input line 456.
 (pdftex.def)             Requested size: 398.3386pt x 60.58507pt.
  [104 <./bab3/Gambar/Picture13.png>]
 [105]
-<bab3/Gambar/Picture14.png, id=1784, 385.44pt x 237.88875pt>
+<bab3/Gambar/Picture14.png, id=1782, 385.44pt x 237.88875pt>
 File: bab3/Gambar/Picture14.png Graphic file (type png)
 <use bab3/Gambar/Picture14.png>
 Package pdftex.def Info: bab3/Gambar/Picture14.png  used on input line 489.
 (pdftex.def)             Requested size: 398.3386pt x 245.84848pt.
  [106 <./bab3/Gambar/Picture14.png>] [107]
-<bab3/Gambar/Picture15.png, id=1796, 392.96812pt x 210.7875pt>
+<bab3/Gambar/Picture15.png, id=1794, 392.96812pt x 210.7875pt>
 File: bab3/Gambar/Picture15.png Graphic file (type png)
 <use bab3/Gambar/Picture15.png>
 Package pdftex.def Info: bab3/Gambar/Picture15.png  used on input line 532.
 (pdftex.def)             Requested size: 398.3386pt x 213.6817pt.
-<bab3/Gambar/Picture16.png, id=1798, 398.23781pt x 108.405pt>
+<bab3/Gambar/Picture16.png, id=1796, 398.23781pt x 108.405pt>
 File: bab3/Gambar/Picture16.png Graphic file (type png)
 <use bab3/Gambar/Picture16.png>
 Package pdftex.def Info: bab3/Gambar/Picture16.png  used on input line 548.
@@ -3966,7 +3966,7 @@ l.577 ...}\ , \mathbit{\phi} = 2 tan-1 [exp(yR]-π
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-<bab3/Gambar/Picture17.png, id=1814, 368.1253pt x 298.86656pt>
+<bab3/Gambar/Picture17.png, id=1812, 368.1253pt x 298.86656pt>
 File: bab3/Gambar/Picture17.png Graphic file (type png)
 <use bab3/Gambar/Picture17.png>
 Package pdftex.def Info: bab3/Gambar/Picture17.png  used on input line 588.
@@ -4046,18 +4046,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 [115
 
 ]
-<bab4/Gambar/Picture1.png, id=1847, 393.72093pt x 216.81pt>
+<bab4/Gambar/Picture1.png, id=1845, 393.72093pt x 216.81pt>
 File: bab4/Gambar/Picture1.png Graphic file (type png)
 <use bab4/Gambar/Picture1.png>
 Package pdftex.def Info: bab4/Gambar/Picture1.png  used on input line 36.
 (pdftex.def)             Requested size: 398.3386pt x 219.35019pt.
  [116 <./bab4/Gambar/Picture1.png>]
-<bab4/Gambar/Picture2.jpg, id=1854, 393.543pt x 195.4575pt>
+<bab4/Gambar/Picture2.jpg, id=1852, 393.543pt x 195.4575pt>
 File: bab4/Gambar/Picture2.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture2.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture2.jpg  used on input line 72.
 (pdftex.def)             Requested size: 278.83578pt x 138.48947pt.
-<bab4/Gambar/Picture3.jpg, id=1855, 393.8715pt x 229.95pt>
+<bab4/Gambar/Picture3.jpg, id=1853, 393.8715pt x 229.95pt>
 File: bab4/Gambar/Picture3.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture3.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture3.jpg  used on input line 86.
@@ -4084,23 +4084,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--119
  []
 
 [118]
-<bab4/Gambar/Picture4.1.png, id=1868, 258.9675pt x 267.24844pt>
+<bab4/Gambar/Picture4.1.png, id=1866, 258.9675pt x 267.24844pt>
 File: bab4/Gambar/Picture4.1.png Graphic file (type png)
 <use bab4/Gambar/Picture4.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture4.1.png  used on input line 133.
 (pdftex.def)             Requested size: 239.00558pt x 246.65857pt.
-<bab4/Gambar/Picture4.2.png, id=1869, 261.22594pt x 280.79906pt>
+<bab4/Gambar/Picture4.2.png, id=1867, 261.22594pt x 280.79906pt>
 File: bab4/Gambar/Picture4.2.png Graphic file (type png)
 <use bab4/Gambar/Picture4.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture4.2.png  used on input line 135.
 (pdftex.def)             Requested size: 239.00558pt x 256.92004pt.
  [119]
-<bab4/Gambar/Picture5.1.png, id=1874, 255.95625pt x 252.945pt>
+<bab4/Gambar/Picture5.1.png, id=1872, 255.95625pt x 252.945pt>
 File: bab4/Gambar/Picture5.1.png Graphic file (type png)
 <use bab4/Gambar/Picture5.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture5.1.png  used on input line 149.
 (pdftex.def)             Requested size: 239.00558pt x 236.1936pt.
-<bab4/Gambar/Picture5.2.png, id=1875, 252.945pt x 253.69781pt>
+<bab4/Gambar/Picture5.2.png, id=1873, 252.945pt x 253.69781pt>
 File: bab4/Gambar/Picture5.2.png Graphic file (type png)
 <use bab4/Gambar/Picture5.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture5.2.png  used on input line 151.
@@ -4112,7 +4112,7 @@ Overfull \hbox (0.33736pt too wide) in paragraph at lines 168--169
 meng-gu-nakan
  []
 
-<bab4/Gambar/Picture7.png, id=1889, 387.69844pt x 185.94469pt>
+<bab4/Gambar/Picture7.png, id=1887, 387.69844pt x 185.94469pt>
 File: bab4/Gambar/Picture7.png Graphic file (type png)
 <use bab4/Gambar/Picture7.png>
 Package pdftex.def Info: bab4/Gambar/Picture7.png  used on input line 177.
@@ -4122,12 +4122,12 @@ Underfull \hbox (badness 4316) in paragraph at lines 204--204
 []|\T1/lmr/m/n/12 Menambahkan mo-saik un-tuk mem-ban-tu
  []
 
-<bab4/Gambar/Picture8.1.png, id=1897, 179.16937pt x 196.48407pt>
+<bab4/Gambar/Picture8.1.png, id=1895, 179.16937pt x 196.48407pt>
 File: bab4/Gambar/Picture8.1.png Graphic file (type png)
 <use bab4/Gambar/Picture8.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture8.1.png  used on input line 220.
 (pdftex.def)             Requested size: 170.71652pt x 187.22543pt.
-<bab4/Gambar/Picture8.2.png, id=1898, 197.23688pt x 197.23688pt>
+<bab4/Gambar/Picture8.2.png, id=1896, 197.23688pt x 197.23688pt>
 File: bab4/Gambar/Picture8.2.png Graphic file (type png)
 <use bab4/Gambar/Picture8.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture8.2.png  used on input line 222.
@@ -4142,7 +4142,7 @@ Underfull \hbox (badness 6825) in paragraph at lines 242--242
 \T1/lmr/m/n/12 40% Max-i-mum
  []
 
-<bab4/Gambar/tbl-5-pic1.png, id=1903, 158.09062pt x 169.38281pt>
+<bab4/Gambar/tbl-5-pic1.png, id=1901, 158.09062pt x 169.38281pt>
 File: bab4/Gambar/tbl-5-pic1.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic1.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic1.png  used on input line 242.
@@ -4152,12 +4152,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/lmr/m/n/12 Between -39$[]$
  []
 
-<bab4/Gambar/tbl-5-pic2.png, id=1904, 252.945pt x 137.7647pt>
+<bab4/Gambar/tbl-5-pic2.png, id=1902, 252.945pt x 137.7647pt>
 File: bab4/Gambar/tbl-5-pic2.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic2.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic2.png  used on input line 244.
 (pdftex.def)             Requested size: 159.333pt x 86.7817pt.
-<bab4/Gambar/tbl-5-pic3.png, id=1905, 254.45062pt x 141.52875pt>
+<bab4/Gambar/tbl-5-pic3.png, id=1903, 254.45062pt x 141.52875pt>
 File: bab4/Gambar/tbl-5-pic3.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic3.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic3.png  used on input line 262.
@@ -4167,79 +4167,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--264
 []|\T1/lmr/m/n/12 Between -17$[]$
  []
 
-<bab4/Gambar/tbl-5-pic4.png, id=1906, 246.9225pt x 140.02313pt>
+<bab4/Gambar/tbl-5-pic4.png, id=1904, 246.9225pt x 140.02313pt>
 File: bab4/Gambar/tbl-5-pic4.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic4.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic4.png  used on input line 264.
 (pdftex.def)             Requested size: 159.333pt x 90.35161pt.
-<bab4/Gambar/tbl-5-pic5.png, id=1907, 188.20313pt x 192.72pt>
+<bab4/Gambar/tbl-5-pic5.png, id=1905, 188.20313pt x 192.72pt>
 File: bab4/Gambar/tbl-5-pic5.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic5.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic5.png  used on input line 266.
 (pdftex.def)             Requested size: 159.333pt x 163.16875pt.
-<bab4/Gambar/tbl-5-pic6.png, id=1908, 190.46156pt x 190.46156pt>
+<bab4/Gambar/tbl-5-pic6.png, id=1906, 190.46156pt x 190.46156pt>
 File: bab4/Gambar/tbl-5-pic6.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic6.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic6.png  used on input line 268.
 (pdftex.def)             Requested size: 159.333pt x 159.33852pt.
 [124 <./bab4/Gambar/Picture8.1.png> <./bab4/Gambar/Picture8.2.png> <./bab4/Gamb
 ar/tbl-5-pic1.png> <./bab4/Gambar/tbl-5-pic2.png>]
-<bab4/Gambar/tbl-5-pic7.png, id=1919, 185.19188pt x 185.94469pt>
+<bab4/Gambar/tbl-5-pic7.png, id=1917, 185.19188pt x 185.94469pt>
 File: bab4/Gambar/tbl-5-pic7.png Graphic file (type png)
 <use bab4/Gambar/tbl-5-pic7.png>
 Package pdftex.def Info: bab4/Gambar/tbl-5-pic7.png  used on input line 286.
 (pdftex.def)             Requested size: 159.333pt x 159.98306pt.
  [125 <./bab4/Gambar/tbl-5-pic3.png> <./bab4/Gambar/tbl-5-pic4.png> <./bab4/Gam
 bar/tbl-5-pic5.png> <./bab4/Gambar/tbl-5-pic6.png>]
-<bab4/Gambar/Picture9.1.png, id=1931, 191.21437pt x 164.11313pt>
+<bab4/Gambar/Picture9.1.png, id=1929, 191.21437pt x 164.11313pt>
 File: bab4/Gambar/Picture9.1.png Graphic file (type png)
 <use bab4/Gambar/Picture9.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture9.1.png  used on input line 307.
 (pdftex.def)             Requested size: 170.71652pt x 146.52849pt.
-<bab4/Gambar/Picture9.2.png, id=1932, 182.18062pt x 164.11313pt>
+<bab4/Gambar/Picture9.2.png, id=1930, 182.18062pt x 164.11313pt>
 File: bab4/Gambar/Picture9.2.png Graphic file (type png)
 <use bab4/Gambar/Picture9.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture9.2.png  used on input line 309.
 (pdftex.def)             Requested size: 170.71652pt x 153.79056pt.
  [126 <./bab4/Gambar/tbl-5-pic7.png>] [127 <./bab4/Gambar/Picture9.1.png> <./ba
 b4/Gambar/Picture9.2.png>]
-<bab4/Gambar/Picture10.png, id=1950, 365.11406pt x 50.43843pt>
+<bab4/Gambar/Picture10.png, id=1948, 365.11406pt x 50.43843pt>
 File: bab4/Gambar/Picture10.png Graphic file (type png)
 <use bab4/Gambar/Picture10.png>
 Package pdftex.def Info: bab4/Gambar/Picture10.png  used on input line 329.
 (pdftex.def)             Requested size: 398.3386pt x 55.03065pt.
-<bab4/Gambar/Picture11.png, id=1952, 388.45125pt x 224.33812pt>
+<bab4/Gambar/Picture11.png, id=1950, 388.45125pt x 224.33812pt>
 File: bab4/Gambar/Picture11.png Graphic file (type png)
 <use bab4/Gambar/Picture11.png>
 Package pdftex.def Info: bab4/Gambar/Picture11.png  used on input line 348.
 (pdftex.def)             Requested size: 398.3386pt x 230.05417pt.
  [128 <./bab4/Gambar/Picture10.png> <./bab4/Gambar/Picture11.png>]
-<bab4/Gambar/Picture12.png, id=1960, 358.33875pt x 206.27063pt>
+<bab4/Gambar/Picture12.png, id=1958, 358.33875pt x 206.27063pt>
 File: bab4/Gambar/Picture12.png Graphic file (type png)
 <use bab4/Gambar/Picture12.png>
 Package pdftex.def Info: bab4/Gambar/Picture12.png  used on input line 364.
 (pdftex.def)             Requested size: 398.3386pt x 229.30931pt.
-<bab4/Gambar/Picture13.png, id=1962, 359.09157pt x 202.50656pt>
+<bab4/Gambar/Picture13.png, id=1960, 359.09157pt x 202.50656pt>
 File: bab4/Gambar/Picture13.png Graphic file (type png)
 <use bab4/Gambar/Picture13.png>
 Package pdftex.def Info: bab4/Gambar/Picture13.png  used on input line 380.
 (pdftex.def)             Requested size: 398.3386pt x 224.65514pt.
  [129 <./bab4/Gambar/Picture12.png>]
-<bab4/Gambar/Picture14.png, id=1969, 891.33pt x 338.4645pt>
+<bab4/Gambar/Picture14.png, id=1967, 891.33pt x 338.4645pt>
 File: bab4/Gambar/Picture14.png Graphic file (type png)
 <use bab4/Gambar/Picture14.png>
 Package pdftex.def Info: bab4/Gambar/Picture14.png  used on input line 398.
 (pdftex.def)             Requested size: 398.3386pt x 151.2592pt.
 
 [130 <./bab4/Gambar/Picture13.png>] [131 <./bab4/Gambar/Picture14.png>]
-<bab4/Gambar/Picture15.png, id=1983, 387.69844pt x 203.25937pt>
+<bab4/Gambar/Picture15.png, id=1981, 387.69844pt x 203.25937pt>
 File: bab4/Gambar/Picture15.png Graphic file (type png)
 <use bab4/Gambar/Picture15.png>
 Package pdftex.def Info: bab4/Gambar/Picture15.png  used on input line 441.
 (pdftex.def)             Requested size: 398.3386pt x 208.84152pt.
 
 [132 <./bab4/Gambar/Picture15.png>]
-<bab4/Gambar/Picture16.png, id=1991, 398.23781pt x 235.63031pt>
+<bab4/Gambar/Picture16.png, id=1989, 398.23781pt x 235.63031pt>
 File: bab4/Gambar/Picture16.png Graphic file (type png)
 <use bab4/Gambar/Picture16.png>
 Package pdftex.def Info: bab4/Gambar/Picture16.png  used on input line 477.
@@ -4276,12 +4276,12 @@ Underfull \hbox (badness 2913) in paragraph at lines 543--543
 []|\T1/lmr/m/n/12 Waktu yang dibu-tuhkan un-tuk An-o-tasi Otoma-tis
  []
 
-<bab4/Gambar/Picture18.1.png, id=2012, 277.035pt x 150.5625pt>
+<bab4/Gambar/Picture18.1.png, id=2010, 277.035pt x 150.5625pt>
 File: bab4/Gambar/Picture18.1.png Graphic file (type png)
 <use bab4/Gambar/Picture18.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture18.1.png  used on input line 556.
 (pdftex.def)             Requested size: 239.00558pt x 129.89474pt.
-<bab4/Gambar/Picture18.2.png, id=2013, 275.52937pt x 156.585pt>
+<bab4/Gambar/Picture18.2.png, id=2011, 275.52937pt x 156.585pt>
 File: bab4/Gambar/Picture18.2.png Graphic file (type png)
 <use bab4/Gambar/Picture18.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture18.2.png  used on input line 557.
@@ -4306,68 +4306,68 @@ Underfull \hbox (badness 1178) in paragraph at lines 580--580
 []|\T1/lmr/m/n/12 Hasil % Ter-de-
  []
 
-<bab4/Gambar/Picture19.png, id=2024, 275.52937pt x 189.70876pt>
+<bab4/Gambar/Picture19.png, id=2022, 275.52937pt x 189.70876pt>
 File: bab4/Gambar/Picture19.png Graphic file (type png)
 <use bab4/Gambar/Picture19.png>
 Package pdftex.def Info: bab4/Gambar/Picture19.png  used on input line 617.
 (pdftex.def)             Requested size: 318.67209pt x 219.43414pt.
 [137]
-<bab4/Gambar/Picture20.png, id=2029, 394.47375pt x 201.00093pt>
+<bab4/Gambar/Picture20.png, id=2027, 394.47375pt x 201.00093pt>
 File: bab4/Gambar/Picture20.png Graphic file (type png)
 <use bab4/Gambar/Picture20.png>
 Package pdftex.def Info: bab4/Gambar/Picture20.png  used on input line 635.
 (pdftex.def)             Requested size: 398.3386pt x 202.96945pt.
  [138 <./bab4/Gambar/Picture19.png>]
-<bab4/Gambar/Picture21.png, id=2039, 373.395pt x 152.06813pt>
+<bab4/Gambar/Picture21.png, id=2037, 373.395pt x 152.06813pt>
 File: bab4/Gambar/Picture21.png Graphic file (type png)
 <use bab4/Gambar/Picture21.png>
 Package pdftex.def Info: bab4/Gambar/Picture21.png  used on input line 653.
 (pdftex.def)             Requested size: 398.3386pt x 162.23328pt.
  [139 <./bab4/Gambar/Picture20.png>]
-<bab4/Gambar/Picture22.png, id=2047, 291.33844pt x 113.67468pt>
+<bab4/Gambar/Picture22.png, id=2045, 291.33844pt x 113.67468pt>
 File: bab4/Gambar/Picture22.png Graphic file (type png)
 <use bab4/Gambar/Picture22.png>
 Package pdftex.def Info: bab4/Gambar/Picture22.png  used on input line 673.
 (pdftex.def)             Requested size: 398.3386pt x 155.43675pt.
 
 [140 <./bab4/Gambar/Picture21.png>]
-<bab4/Gambar/Picture23.png, id=2054, 153.57375pt x 143.78719pt>
+<bab4/Gambar/Picture23.png, id=2052, 153.57375pt x 143.78719pt>
 File: bab4/Gambar/Picture23.png Graphic file (type png)
 <use bab4/Gambar/Picture23.png>
 Package pdftex.def Info: bab4/Gambar/Picture23.png  used on input line 689.
 (pdftex.def)             Requested size: 159.333pt x 149.18849pt.
  [141 <./bab4/Gambar/Picture22.png> <./bab4/Gambar/Picture23.png>]
-<bab4/Gambar/Picture24.1.1.jpg, id=2063, 177.66376pt x 177.66376pt>
+<bab4/Gambar/Picture24.1.1.jpg, id=2061, 177.66376pt x 177.66376pt>
 File: bab4/Gambar/Picture24.1.1.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture24.1.1.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture24.1.1.jpg  used on input line 731.
 
 (pdftex.def)             Requested size: 170.71652pt x 170.72063pt.
-<bab4/Gambar/Picture24.1.2.png, id=2064, 197.23688pt x 115.18031pt>
+<bab4/Gambar/Picture24.1.2.png, id=2062, 197.23688pt x 115.18031pt>
 File: bab4/Gambar/Picture24.1.2.png Graphic file (type png)
 <use bab4/Gambar/Picture24.1.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture24.1.2.png  used on input line 732.
 
 (pdftex.def)             Requested size: 142.26378pt x 83.07736pt.
-<bab4/Gambar/Picture24.2.1.png, id=2065, 167.87718pt x 166.37157pt>
+<bab4/Gambar/Picture24.2.1.png, id=2063, 167.87718pt x 166.37157pt>
 File: bab4/Gambar/Picture24.2.1.png Graphic file (type png)
 <use bab4/Gambar/Picture24.2.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture24.2.1.png  used on input line 736.
 
 (pdftex.def)             Requested size: 170.71652pt x 169.18646pt.
-<bab4/Gambar/Picture24.2.2.png, id=2066, 185.19188pt x 106.89937pt>
+<bab4/Gambar/Picture24.2.2.png, id=2064, 185.19188pt x 106.89937pt>
 File: bab4/Gambar/Picture24.2.2.png Graphic file (type png)
 <use bab4/Gambar/Picture24.2.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture24.2.2.png  used on input line 737.
 
 (pdftex.def)             Requested size: 142.26378pt x 82.12027pt.
-<bab4/Gambar/Picture24.3.1.png, id=2067, 177.66376pt x 179.16937pt>
+<bab4/Gambar/Picture24.3.1.png, id=2065, 177.66376pt x 179.16937pt>
 File: bab4/Gambar/Picture24.3.1.png Graphic file (type png)
 <use bab4/Gambar/Picture24.3.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture24.3.1.png  used on input line 741.
 
 (pdftex.def)             Requested size: 170.71652pt x 172.1674pt.
-<bab4/Gambar/Picture24.3.2.png, id=2068, 193.47281pt x 115.93312pt>
+<bab4/Gambar/Picture24.3.2.png, id=2066, 193.47281pt x 115.93312pt>
 File: bab4/Gambar/Picture24.3.2.png Graphic file (type png)
 <use bab4/Gambar/Picture24.3.2.png>
 Package pdftex.def Info: bab4/Gambar/Picture24.3.2.png  used on input line 742.
@@ -4511,7 +4511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 817--817
  []
 
 [145]
-<bab4/Gambar/Picture25.png, id=2101, 401.208pt x 324.996pt>
+<bab4/Gambar/Picture25.png, id=2099, 401.208pt x 324.996pt>
 File: bab4/Gambar/Picture25.png Graphic file (type png)
 <use bab4/Gambar/Picture25.png>
 Package pdftex.def Info: bab4/Gambar/Picture25.png  used on input line 842.
@@ -4637,7 +4637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 893--893
  []
 
 [148]
-<bab4/Gambar/Picture26.png, id=2119, 401.208pt x 340.764pt>
+<bab4/Gambar/Picture26.png, id=2117, 401.208pt x 340.764pt>
 File: bab4/Gambar/Picture26.png Graphic file (type png)
 <use bab4/Gambar/Picture26.png>
 Package pdftex.def Info: bab4/Gambar/Picture26.png  used on input line 918.
@@ -4893,19 +4893,19 @@ Overfull \hbox (11.33636pt too wide) in paragraph at lines 1070--1071
 ini menampilkan
  []
 
-<bab4/Gambar/Picture28.png, id=2148, 404.055pt x 372.738pt>
+<bab4/Gambar/Picture28.png, id=2146, 404.055pt x 372.738pt>
 File: bab4/Gambar/Picture28.png Graphic file (type png)
 <use bab4/Gambar/Picture28.png>
 Package pdftex.def Info: bab4/Gambar/Picture28.png  used on input line 1078.
 (pdftex.def)             Requested size: 398.3386pt x 367.48181pt.
 [154] [155 <./bab4/Gambar/Picture28.png>]
-<bab4/Gambar/Picture29.1.png, id=2160, 272.9835pt x 234.8775pt>
+<bab4/Gambar/Picture29.1.png, id=2158, 272.9835pt x 234.8775pt>
 File: bab4/Gambar/Picture29.1.png Graphic file (type png)
 <use bab4/Gambar/Picture29.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture29.1.png  used on input line 1123.
 (pdftex.def)             Requested size: 398.3386pt x 342.74985pt.
  [156]
-<bab4/Gambar/Picture29.2.jpg, id=2165, 313.17pt x 313.17pt>
+<bab4/Gambar/Picture29.2.jpg, id=2163, 313.17pt x 313.17pt>
 File: bab4/Gambar/Picture29.2.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture29.2.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture29.2.jpg  used on input line 1138.
@@ -5030,18 +5030,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1165--1165
 \T1/lmr/m/n/12 A
  []
 
-<bab4/Gambar/Picture30.png, id=2182, 391.353pt x 366.168pt>
+<bab4/Gambar/Picture30.png, id=2180, 391.353pt x 366.168pt>
 File: bab4/Gambar/Picture30.png Graphic file (type png)
 <use bab4/Gambar/Picture30.png>
 Package pdftex.def Info: bab4/Gambar/Picture30.png  used on input line 1191.
 (pdftex.def)             Requested size: 398.3386pt x 372.70978pt.
 [159] [160 <./bab4/Gambar/Picture30.png>]
-<bab4/Gambar/Picture31.1.png, id=2194, 264.114pt x 198.7425pt>
+<bab4/Gambar/Picture31.1.png, id=2192, 264.114pt x 198.7425pt>
 File: bab4/Gambar/Picture31.1.png Graphic file (type png)
 <use bab4/Gambar/Picture31.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture31.1.png  used on input line 1236.
 (pdftex.def)             Requested size: 199.1693pt x 149.87225pt.
-<bab4/Gambar/Picture31.2.jpg, id=2195, 248.42813pt x 248.42813pt>
+<bab4/Gambar/Picture31.2.jpg, id=2193, 248.42813pt x 248.42813pt>
 File: bab4/Gambar/Picture31.2.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture31.2.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture31.2.jpg  used on input line 1240.
@@ -5166,18 +5166,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1267--1267
 \T1/lmr/m/n/12 A
  []
 
-<bab4/Gambar/Picture32.png, id=2205, 357.408pt x 250.536pt>
+<bab4/Gambar/Picture32.png, id=2203, 357.408pt x 250.536pt>
 File: bab4/Gambar/Picture32.png Graphic file (type png)
 <use bab4/Gambar/Picture32.png>
 Package pdftex.def Info: bab4/Gambar/Picture32.png  used on input line 1293.
 (pdftex.def)             Requested size: 398.3386pt x 279.22597pt.
 [162] [163 <./bab4/Gambar/Picture32.png>]
-<bab4/Gambar/Picture33.1.png, id=2219, 252.288pt x 189.873pt>
+<bab4/Gambar/Picture33.1.png, id=2217, 252.288pt x 189.873pt>
 File: bab4/Gambar/Picture33.1.png Graphic file (type png)
 <use bab4/Gambar/Picture33.1.png>
 Package pdftex.def Info: bab4/Gambar/Picture33.1.png  used on input line 1338.
 (pdftex.def)             Requested size: 199.1693pt x 149.8966pt.
-<bab4/Gambar/Picture33.2.jpg, id=2220, 248.42813pt x 248.42813pt>
+<bab4/Gambar/Picture33.2.jpg, id=2218, 248.42813pt x 248.42813pt>
 File: bab4/Gambar/Picture33.2.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture33.2.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture33.2.jpg  used on input line 1342.
@@ -5190,38 +5190,38 @@ n YOLOv7
  []
 
 [167]
-<bab4/Gambar/Picture34.png, id=2244, 398.99063pt x 134.75343pt>
+<bab4/Gambar/Picture34.png, id=2242, 398.99063pt x 134.75343pt>
 File: bab4/Gambar/Picture34.png Graphic file (type png)
 <use bab4/Gambar/Picture34.png>
 Package pdftex.def Info: bab4/Gambar/Picture34.png  used on input line 1408.
 (pdftex.def)             Requested size: 398.3386pt x 134.53925pt.
  [168]
-<bab4/Gambar/Picture35.png, id=2249, 398.99063pt x 191.9672pt>
+<bab4/Gambar/Picture35.png, id=2247, 398.99063pt x 191.9672pt>
 File: bab4/Gambar/Picture35.png Graphic file (type png)
 <use bab4/Gambar/Picture35.png>
 Package pdftex.def Info: bab4/Gambar/Picture35.png  used on input line 1424.
 (pdftex.def)             Requested size: 398.3386pt x 191.66208pt.
-<bab4/Gambar/Picture36.jpg, id=2251, 395.97937pt x 338.01282pt>
+<bab4/Gambar/Picture36.jpg, id=2249, 395.97937pt x 338.01282pt>
 File: bab4/Gambar/Picture36.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture36.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture36.jpg  used on input line 1440.
 (pdftex.def)             Requested size: 398.3386pt x 340.03377pt.
  [169 <./bab4/Gambar/Picture34.png> <./bab4/Gambar/Picture35.png>]
 [170 <./bab4/Gambar/Picture36.jpg>]
-<bab4/Gambar/Picture37.png, id=2265, 398.99063pt x 194.97844pt>
+<bab4/Gambar/Picture37.png, id=2263, 398.99063pt x 194.97844pt>
 File: bab4/Gambar/Picture37.png Graphic file (type png)
 <use bab4/Gambar/Picture37.png>
 Package pdftex.def Info: bab4/Gambar/Picture37.png  used on input line 1460.
 (pdftex.def)             Requested size: 398.3386pt x 194.66853pt.
  [171 <./bab4/Gambar/Picture37.png>]
-<bab4/Gambar/Picture38.jpg, id=2273, 399.74344pt x 266.49562pt>
+<bab4/Gambar/Picture38.jpg, id=2271, 399.74344pt x 266.49562pt>
 File: bab4/Gambar/Picture38.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture38.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture38.jpg  used on input line 1482.
 (pdftex.def)             Requested size: 398.3386pt x 265.57188pt.
 
 [172 <./bab4/Gambar/Picture38.jpg>]
-<bab4/Gambar/Picture39.jpg, id=2283, 397.8135pt x 70.299pt>
+<bab4/Gambar/Picture39.jpg, id=2281, 397.8135pt x 70.299pt>
 File: bab4/Gambar/Picture39.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture39.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture39.jpg  used on input line 1500.
@@ -5281,23 +5281,23 @@ Overfull \hbox (55.98425pt too wide) in paragraph at lines 1617--1618
  se-ni-lai (-6.474734588801301,
  []
 
-<bab4/Gambar/Picture40.jpg, id=2307, 400.4415pt x 199.3995pt>
+<bab4/Gambar/Picture40.jpg, id=2305, 400.4415pt x 199.3995pt>
 File: bab4/Gambar/Picture40.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture40.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture40.jpg  used on input line 1626.
 (pdftex.def)             Requested size: 398.3386pt x 198.35236pt.
-<bab4/Gambar/Picture41.jpg, id=2308, 398.4705pt x 196.443pt>
+<bab4/Gambar/Picture41.jpg, id=2306, 398.4705pt x 196.443pt>
 File: bab4/Gambar/Picture41.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture41.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture41.jpg  used on input line 1640.
 (pdftex.def)             Requested size: 398.3386pt x 196.37656pt.
 [177 <./bab4/Gambar/Picture40.jpg>]
-<bab4/Gambar/Picture42.jpg, id=2313, 398.4705pt x 196.7715pt>
+<bab4/Gambar/Picture42.jpg, id=2311, 398.4705pt x 196.7715pt>
 File: bab4/Gambar/Picture42.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture42.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture42.jpg  used on input line 1654.
 (pdftex.def)             Requested size: 398.3386pt x 196.70494pt.
-<bab4/Gambar/Picture43.jpg, id=2314, 398.4705pt x 196.443pt>
+<bab4/Gambar/Picture43.jpg, id=2312, 398.4705pt x 196.443pt>
 File: bab4/Gambar/Picture43.jpg Graphic file (type jpg)
 <use bab4/Gambar/Picture43.jpg>
 Package pdftex.def Info: bab4/Gambar/Picture43.jpg  used on input line 1668.
@@ -5565,15 +5565,50 @@ or \DeclareInputMath before using this key.
 \openout2 = `daftarlampiran.aux'.
 
  (daftarlampiran.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-4.
- (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[196
+<lampiran/Picture1.png, id=2469, 365.11406pt x 207.02344pt>
+File: lampiran/Picture1.png Graphic file (type png)
+<use lampiran/Picture1.png>
+Package pdftex.def Info: lampiran/Picture1.png  used on input line 15.
+(pdftex.def)             Requested size: 398.3386pt x 225.87218pt.
+<lampiran/Picture2.jpg, id=2470, 356.83313pt x 325.96782pt>
+File: lampiran/Picture2.jpg Graphic file (type jpg)
+<use lampiran/Picture2.jpg>
+Package pdftex.def Info: lampiran/Picture2.jpg  used on input line 31.
+(pdftex.def)             Requested size: 398.3386pt x 363.90265pt.
+ [196
 
-] [197] [198]) [199] (cv.tex
-<foto_cv_guntur.jpg, id=2494, 99.207pt x 115.9605pt>
+ <./lampiran/Picture1.png>]
+<lampiran/Picture3.jpg, id=2477, 283.0575pt x 254.45062pt>
+File: lampiran/Picture3.jpg Graphic file (type jpg)
+<use lampiran/Picture3.jpg>
+Package pdftex.def Info: lampiran/Picture3.jpg  used on input line 47.
+(pdftex.def)             Requested size: 278.83578pt x 250.6761pt.
+ [197 <./lampiran/Picture2.jpg>]
+<lampiran/Picture4.png, id=2483, 272.51813pt x 262.73157pt>
+File: lampiran/Picture4.png Graphic file (type png)
+<use lampiran/Picture4.png>
+Package pdftex.def Info: lampiran/Picture4.png  used on input line 63.
+(pdftex.def)             Requested size: 278.83578pt x 268.83655pt.
+<lampiran/Picture5.png, id=2484, 396.7322pt x 211.54031pt>
+File: lampiran/Picture5.png Graphic file (type png)
+<use lampiran/Picture5.png>
+Package pdftex.def Info: lampiran/Picture5.png  used on input line 79.
+(pdftex.def)             Requested size: 358.50229pt x 191.15918pt.
+ [198 <./lampiran/Picture3.jpg> <./lampiran/Picture4.png>]
+<lampiran/Picture6.jpg, id=2492, 388.944pt x 60.7725pt>
+File: lampiran/Picture6.jpg Graphic file (type jpg)
+<use lampiran/Picture6.jpg>
+Package pdftex.def Info: lampiran/Picture6.jpg  used on input line 95.
+(pdftex.def)             Requested size: 358.50229pt x 56.01614pt.
+<lampiran/Picture7.jpg, id=2493, 389.2725pt x 59.13pt>
+File: lampiran/Picture7.jpg Graphic file (type jpg)
+<use lampiran/Picture7.jpg>
+Package pdftex.def Info: lampiran/Picture7.jpg  used on input line 98.
+(pdftex.def)             Requested size: 358.50229pt x 54.4589pt.
+)
+[199 <./lampiran/Picture5.png> <./lampiran/Picture6.jpg> <./lampiran/Picture7.j
+pg>] (cv.tex
+<foto_cv_guntur.jpg, id=2502, 99.207pt x 115.9605pt>
 File: foto_cv_guntur.jpg Graphic file (type jpg)
 <use foto_cv_guntur.jpg>
 Package pdftex.def Info: foto_cv_guntur.jpg  used on input line 22.
@@ -5618,14 +5653,14 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MainTemplateDisertasi.out' has not changed.
-(rerunfilecheck)             Checksum: 825A7D76C59DC17B547C05E698937836;13722.
+(rerunfilecheck)             Checksum: 2D7A13F54918545633972754C304DF7E;13722.
  ) 
 Here is how much of TeX's memory you used:
- 31919 strings out of 475248
- 583260 string characters out of 5767609
- 2103785 words of memory out of 5000000
- 52022 multiletter control sequences out of 15000+600000
- 633944 words of font info for 90 fonts, out of 8000000 for 9000
+ 31917 strings out of 475248
+ 583880 string characters out of 5767609
+ 1947785 words of memory out of 5000000
+ 52024 multiletter control sequences out of 15000+600000
+ 630310 words of font info for 87 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  84i,18n,87p,2663b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/M
@@ -5636,15 +5671,12 @@ X/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
 lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/lm/lmro12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
-mtt9.pfb>
-Output written on MainTemplateDisertasi.pdf (232 pages, 16195240 bytes).
+b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on MainTemplateDisertasi.pdf (232 pages, 17090639 bytes).
 PDF statistics:
- 2752 PDF objects out of 2984 (max. 8388607)
- 710 named destinations out of 1000 (max. 500000)
- 1334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2748 PDF objects out of 2984 (max. 8388607)
+ 712 named destinations out of 1000 (max. 500000)
+ 1369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
