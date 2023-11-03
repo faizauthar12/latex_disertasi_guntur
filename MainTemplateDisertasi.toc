@@ -104,4 +104,4 @@
 \contentsline {section}{\numberline {5.1}Kesimpulan}{181}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Saran}{182}{section.5.2}%
 \contentsline {chapter}{DAFTAR PUSTAKA}{184}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{200}{table.caption.174}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{202}{table.caption.173}%

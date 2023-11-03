@@ -12,10 +12,19 @@ Anamisa, D.~R.  \harvardyearleft 2015\harvardyearright , `Aplikasi segmentasi
   objek menggunakan celluar neural network (cnn)', {\em Jurnal Ilmiah NERO}
   {\bf 1}(3),~157--163.
 
+\harvarditem{Arshad}{2021}{Arshad2021-qg}
+Arshad, U.  \harvardyearleft 2021\harvardyearright , `Object detection in last
+  decade - a survey', {\em Sci. J. Inform.} {\bf 8}(1),~60--70.
+
 \harvarditem{Bakar \harvardand\ Fajar}{2014}{OBIA}
 Bakar, A. \harvardand\ Fajar, E.  \harvardyearleft 2014\harvardyearright ,
   `Obia (object base image analysis)'.
 \newline\harvardurl{https://www.citrasatelit.com/obia/}
+
+\harvarditem{Blaschke}{2010}{blaschke2010object}
+Blaschke, T.  \harvardyearleft 2010\harvardyearright , `Object based image
+  analysis for remote sensing', {\em ISPRS journal of photogrammetry and remote
+  sensing} {\bf 65}(1),~2--16.
 
 \harvarditem{Boesch}{2022}{G-Boesch}
 Boesch, G.  \harvardyearleft 2022\harvardyearright , `Yolov7: The most powerful
@@ -180,6 +189,13 @@ Kaur, H., Ahsaan, S.~U., Alankar, B. \harvardand\ Chang, V.  \harvardyearleft
   23}(6),~1417--1429.
 \newblock https://doi.org/10.1007/s10796-021-10135-7.
 
+\harvarditem{KEITA}{2022}{ZoumanaKEITA-YOLOObjectDetectionExplained}
+KEITA, Z.  \harvardyearleft 2022\harvardyearright , `Yolo object detection
+  explained'.
+\newblock datacamp, URL:
+  https://www.datacamp.com/blog/yolo-object-detection-explained (Waktu Akses: 5
+  Januari 2023).
+
 \harvarditem[Korom et~al.]{Korom, Phua, Hirata \harvardand\ Matsuura}{2014{\em
   a}}{Korom2014-ci}
 Korom, A., Phua, M.-H., Hirata, Y. \harvardand\ Matsuura, T.  \harvardyearleft
@@ -226,8 +242,13 @@ Li, C., Li, L., Jiang, H., Weng, K., Geng, Y., Li, L., Ke, Z., Li, Q., Cheng,
   single-stage object detection framework for industrial applications'.
 \newline\harvardurl{https://doi.org/10.48550/arXiv.2209.02976}
 
-\harvarditem[Liu et~al.]{Liu, Fan, Zhang, Guo, Qin \harvardand\
-  Wang}{2021}{Liu2021-ez}
+\harvarditem[Li et~al.]{Li, Dong, Fu \harvardand\ Yu}{2018}{Li2018-eb}
+Li, W., Dong, R., Fu, H. \harvardand\ Yu, L.  \harvardyearleft
+  2018\harvardyearright , `Large-scale oil palm tree detection from
+  high-resolution satellite images using two-stage convolutional neural
+  networks', {\em Remote Sens. (Basel)} {\bf 11}(1),~11.
+
+\harvarditem{Liu, Fan, Zhang, Guo, Qin \harvardand\ Wang}{2021}{Liu2021-ez}
 Liu, B., Fan, Y., Zhang, L., Guo, H., Qin, M. \harvardand\ Wang, M.
   \harvardyearleft 2021\harvardyearright , Image matching algorithm based on
   improved {SSDA}, {\em in} `2021 {IEEE} 4th International Conference on
@@ -239,6 +260,12 @@ Liu, H. \harvardand\ Lang, B.  \harvardyearleft 2019\harvardyearright ,
   `Machine learning and deep learning methods for intrusion detection systems:
   A survey', {\em Appl. Sci. (Basel)} {\bf 9}(20),~4396.
 \newblock (20:4396, doi: 10.3390/app9204396.
+
+\harvarditem{Liu, Ghazali, Han \harvardand\ Mohamed}{2021}{liu2021automatic}
+Liu, X., Ghazali, K.~H., Han, F. \harvardand\ Mohamed, I.~I.  \harvardyearleft
+  2021\harvardyearright , `Automatic detection of oil palm tree from uav images
+  based on the deep learning method', {\em Applied Artificial Intelligence}
+  {\bf 35}(1),~13--24.
 
 \harvarditem{{M. Dzulfikar F}}{2018}{MDzulfikarF}
 {M. Dzulfikar F}  \harvardyearleft 2018\harvardyearright , `Yolo (you only look
@@ -259,6 +286,12 @@ Maj, M.  \harvardyearleft 2018\harvardyearright , `Object detection and image
 \newblock Appsilon DataScience. URL:
   https://www.kdnuggets.com/2018/09/object-detection-image-classification-yolo.html.
   Waktu akses: 17 Desember 2020.
+
+\harvarditem{Meel}{n.d.}{ViduhshiMeel-YOLOv3}
+Meel, V.  \harvardyearleft n.d.\harvardyearright , `Yolov3: Real-time object
+  detection algorithm (guide)'.
+\newblock viso.ai, URL: https://viso.ai/deep-learning/yolov3-overview/ (Waktu
+  Akses: 24 Desember 2022).
 
 \harvarditem[Mubin et~al.]{Mubin, Nadarajoo, Shafri \harvardand\
   Hamedianfar}{2019}{Mubin2019-xq}
@@ -297,6 +330,13 @@ Nelson, J. \harvardand\ Solawetz, J.  \harvardyearleft 2020\harvardyearright ,
 \harvarditem{Nora \harvardand\ Mual}{2018}{nora2018buku}
 Nora, S. \harvardand\ Mual, C.~D.  \harvardyearleft 2018\harvardyearright ,
   `Budidaya tanaman kelapa sawit'.
+
+\harvarditem{Nurmasari \harvardand\ Wijayanto}{2021}{nurmasari2021oil}
+Nurmasari, Y. \harvardand\ Wijayanto, A.~W.  \harvardyearleft
+  2021\harvardyearright , `Oil palm plantation detection in indonesia using
+  sentinel-2 and landsat-8 optical satellite imagery (case study: Rokan hulu
+  regency, riau province)', {\em International Journal of Remote Sensing and
+  Earth Sciences (IJReSES)} {\bf 18}(1),~1--18.
 
 \harvarditem{Pahan}{2018}{IPahan2018}
 Pahan, I.  \harvardyearleft 2018\harvardyearright , `Panduan lengkap kelapa
@@ -408,6 +448,12 @@ Setiawan, R.  \harvardyearleft 2022\harvardyearright , `Mengenal lebih dekat
 \newblock Dicoding, URL: https://www.dicoding.com/blog/apa-itu-react/ (Waktu
   Akses: 5 Januari 2023).
 
+\harvarditem{simplilearn}{2022}{simplilearnWhatIsDataCollection}
+simplilearn  \harvardyearleft 2022\harvardyearright , `What is data collection:
+  Methods, types, tools'.
+\newblock URL: https://www.simplilearn.com/what-is-data-collection-article
+  (Akses :Juni 20, 2022).
+
 \harvarditem[Singh et~al.]{Singh, Pandey, Petropoulos, Pavlides, Srivastava,
   Koutsias, Deng \harvardand\ Bao}{2020}{Singh2020-bx}
 Singh, P., Pandey, P.~C., Petropoulos, G.~P., Pavlides, A., Srivastava, P.~K.,
@@ -418,10 +464,38 @@ Singh, P., Pandey, P.~C., Petropoulos, G.~P., Pavlides, A., Srivastava, P.~K.,
 \newblock ISBN 9780081028940,
   https://doi.org/10.1016/B978-0-08-102894-0.00009-7.
 
+\harvarditem{{Smart Agribusiness and
+  Food}}{2017}{SmartAgribusinessBagaimanaPohonKelapaSawitTumbuh}
+{Smart Agribusiness and Food}  \harvardyearleft 2017\harvardyearright ,
+  `Bagaimana pohon kelapa sawit tumbuh?'.
+\newblock tersedia di:
+  https://www.smart-tbk.com/idbagaimana-pohon-kelapa-sawit-tumbuhenhow-oil-palm-is-grown/
+  (Akses: 2 Juli 2020).
+
+\harvarditem{SPKS}{2020}{SPKS-DefinisiPetaniSawitLuas}
+SPKS  \harvardyearleft 2020\harvardyearright , `Spks: Definisi petani sawit
+  luas lahan kurang 4 hektar'.
+\newblock Serikat Petani Kelapa Sawit, 1 Juni 2020, URL:
+  https://spks.or.id/detail-berita-spks-definisi-petani-sawit-luas-lahan-kurang-4-hektar
+  (Akses: 1 Mei 2023).
+
+\harvarditem{{Statista Research
+  Departmen}}{2023}{StatistaResearch-AgricultureIndustryInIndonesia}
+{Statista Research Departmen}  \harvardyearleft 2023\harvardyearright ,
+  `Agriculture industry in indonesia-statistics & facts'.
+\newblock Available online:
+  https://www.statista.com/topics/7732/agriculture-industry-in-indonesia/
+  (accessed on 20 Feb 2023).
+
 \harvarditem{Sutton \harvardand\ Barto}{2018}{sutton2018reinforcement}
 Sutton, R.~S. \harvardand\ Barto, A.~G.  \harvardyearleft 2018\harvardyearright
   , `Reinforcement learning: An introduction the mit press: Cambridge', {\em
   Massachusetts ISBN 9780262039246} .
+
+\harvarditem{SUWARTO}{2021}{SYahyaBudiDayaKelapaSawit}
+SUWARTO, S.~Y.  \harvardyearleft 2021\harvardyearright , `Budi daya kelapa
+  sawit'.
+\newblock [PowerPoint Slides]. URL: https://slideplayer.info/slide/17983699/.
 
 \harvarditem{Taylor \harvardand\ Whelan}{2016}{JTaylor2016}
 Taylor, J. \harvardand\ Whelan, B.  \harvardyearleft 2016\harvardyearright , `A
@@ -437,6 +511,13 @@ Thongprayoon, C., Kaewput, W., Kovvuru, K., Hansrivijit, P., Kanduri, S.~R.,
   `Promises of big data and artificial intelligence in nephrology and
   transplantation', {\em J. Clin. Med.} {\bf 9}(4),~1107.
 \newline\harvardurl{https://doi.org/10.3390/jcm9041107}
+
+\harvarditem{{USDA (United States Department of
+  Agriculture)}}{2020}{USDA-OilPalmWorldProduction}
+{USDA (United States Department of Agriculture)}  \harvardyearleft
+  2020\harvardyearright , `Oil palm world production. in: Oil palm explorer'.
+\newblock Retrieved 1 Feb 2021, Tersedia: di
+  http://ipad.fas.usda.gov/cropexplorer/cropview/commodityView.aspx?cropid=4243000.
 
 \harvarditem[Wang et~al.]{Wang, Bochkovskiy \harvardand\
   Liao}{2022}{Wang2022-bn}
@@ -458,6 +539,22 @@ Wibowo, H., Sitanggang, I.~S., Mushthofa, M. \harvardand\ Adrianto, H.~A.
   detection from high-resolution remote sensing images using deep learning',
   {\em Big Data Cogn. Comput.} {\bf 6}(3),~89.
 \newblock Doi: https://doi.org/10.3390/bdcc6030089.
+
+\harvarditem[Wong-in et~al.]{Wong-in, Kaewkongka, Cooharojananone \harvardand\
+  Lipikorn}{2015}{Wong-in2015-jv}
+Wong-in, T., Kaewkongka, T., Cooharojananone, N. \harvardand\ Lipikorn, R.
+  \harvardyearleft 2015\harvardyearright , Automatic oil palm detection and
+  identification from multi-scale clustering and normalized cross correlation,
+  {\em in} `Lecture Notes in Electrical Engineering', Lecture notes in
+  electrical engineering, Springer Berlin Heidelberg, Berlin, Heidelberg,
+  pp.~403--410.
+
+\harvarditem{Yan}{n.d.}{ShiYanLSTM2016}
+Yan, S.  \harvardyearleft n.d.\harvardyearright , `Understanding lstm and its
+  diagrams'.
+\newblock ML Review, URL:
+  https://blog.mlreview.com/understanding-lstm-and-its-diagrams-37e2f46f1714
+  Waktru Akses: 2 Januari 2023.
 
 \harvarditem{Yuniartha}{2020{\em a}}{EksporMinyakSawitKontanCoId}
 Yuniartha, L.  \harvardyearleft 2020{\em a}\harvardyearright , `Ekspor minyak
@@ -484,5 +581,9 @@ Zheng, J., Fu, H., Li, W., Wu, W., Zhao, Y., Dong, R. \harvardand\ Yu, L.
   \harvardyearleft 2020\harvardyearright , `Cross-regional oil palm tree
   counting and detection via a multi-level attention domain adaptation
   network', {\em ISPRS J. Photogramm. Remote Sens.} {\bf 167},~154--177.
+
+\harvarditem{Zhu}{2008}{zhu2008semi}
+Zhu, X.  \harvardyearleft 2008\harvardyearright , `Semi-supervised learning
+  literature survey contents', {\em Sci. York} {\bf 10}(1530),~10.
 
 \end{thebibliography}

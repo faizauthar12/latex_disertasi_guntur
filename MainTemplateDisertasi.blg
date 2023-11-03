@@ -25,44 +25,47 @@ Reallocating 'name_of_file' (item size: 1) to 20 items.
 Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: daftarlampiran.aux
 Database file #1: daftarpustakaguntur.bib
-You've used 76 entries,
+Warning--entry type for "ZoumanaKEITA-YOLOObjectDetectionExplained" isn't style-file defined
+--line 2903 of file daftarpustakaguntur.bib
+You've used 92 entries,
             2909 wiz_defined-function locations,
-            1129 strings with 21425 characters,
-and the built_in function-call counts, 336477 in all, are:
-= -- 54822
-> -- 4631
+            1219 strings with 24905 characters,
+and the built_in function-call counts, 392531 in all, are:
+= -- 63931
+> -- 5261
 < -- 0
-+ -- 26465
-- -- 1421
-* -- 29160
-:= -- 67495
-add.period$ -- 115
-call.type$ -- 76
-change.case$ -- 1064
-chr.to.int$ -- 74
-cite$ -- 76
-duplicate$ -- 1204
-empty$ -- 2295
-format.name$ -- 1643
-if$ -- 60240
++ -- 30725
+- -- 1613
+* -- 33858
+:= -- 78973
+add.period$ -- 140
+call.type$ -- 92
+change.case$ -- 1288
+chr.to.int$ -- 90
+cite$ -- 92
+duplicate$ -- 1457
+empty$ -- 2773
+format.name$ -- 1870
+if$ -- 70235
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 289
-num.names$ -- 790
-pop$ -- 360
+missing$ -- 86
+newline$ -- 346
+num.names$ -- 951
+pop$ -- 441
 preamble$ -- 1
-purify$ -- 1140
+purify$ -- 1380
 quote$ -- 0
-skip$ -- 1045
+skip$ -- 1260
 stack$ -- 0
-substring$ -- 77755
-swap$ -- 177
-text.length$ -- 1064
+substring$ -- 90541
+swap$ -- 213
+text.length$ -- 1288
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 304
+type$ -- 368
 warning$ -- 0
-while$ -- 1649
+while$ -- 2000
 width$ -- 0
-write$ -- 1044
+write$ -- 1251
+(There was 1 warning)
