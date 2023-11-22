@@ -8,10 +8,9 @@
 \contentsline {chapter}{ABSTRACT}{viii}{figure.caption.2}%
 \contentsline {chapter}{KATA PENGANTAR}{x}{figure.caption.2}%
 \contentsline {chapter}{DAFTAR ISTILAH}{xiii}{Item.13}%
-\contentsline {chapter}{DAFTAR ISI}{xv}{Item.13}%
-\contentsline {chapter}{DAFTAR TABEL}{xxii}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xxix}{chapter*.5}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxix}{chapter*.5}%
+\contentsline {chapter}{DAFTAR ISI}{xiv}{Item.13}%
+\contentsline {chapter}{DAFTAR TABEL}{xxi}{chapter*.4}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xxviii}{chapter*.5}%
 \contentsline {chapter}{\numberline {I\bfseries }PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Batasan Penelitian}{13}{section.1.2}%
@@ -104,4 +103,4 @@
 \contentsline {section}{\numberline {5.1}Kesimpulan}{181}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Saran}{182}{section.5.2}%
 \contentsline {chapter}{DAFTAR PUSTAKA}{184}{section.5.2}%
-\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{202}{table.caption.179}%
+\contentsline {chapter}{DAFTAR RIWAYAT HIDUP}{201}{table.caption.178}%

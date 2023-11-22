@@ -1,47 +1,47 @@
 \babel@toc {indonesia}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Statistik Areal dan Produksi Kelapa Sawit Menurut Provinsi dan Status Pengusahaan Tahun 2021 (Sumber: Ditjenbun, 2023)}}{4}{table.caption.7}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Statistik Areal dan Produksi Kelapa Sawit Menurut Provinsi dan Status Pengusahaan Tahun 2021 (Sumber: Ditjenbun, 2023)}}{4}{table.caption.6}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Penerapan Arsitektur Deep Learning}}{38}{table.caption.25}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Pengelompokkan Berdasarkan Masa Berbuah}}{72}{table.caption.60}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Produktivitas Tanaman Kelapa Sawit Menurut Umur Tanaman dalam Kondisi Kebun Percobaan Balit Marihat}}{73}{table.caption.61}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Hubungan Jarak Tanam dan Populasi per Hektar Kelapa Sawit}}{76}{table.caption.64}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces \textit {State of the Art} (Penelitian Terdahulu)h}}{77}{table.caption.65}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Penerapan Arsitektur Deep Learning}}{38}{table.caption.24}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Pengelompokkan Berdasarkan Masa Berbuah}}{72}{table.caption.59}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Produktivitas Tanaman Kelapa Sawit Menurut Umur Tanaman dalam Kondisi Kebun Percobaan Balit Marihat}}{73}{table.caption.60}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Hubungan Jarak Tanam dan Populasi per Hektar Kelapa Sawit}}{76}{table.caption.63}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces \textit {State of the Art} (Penelitian Terdahulu)h}}{77}{table.caption.64}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Luas Area Dari Gambar Citra yang Ditangkap oleh drone di Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil}}{87}{table.caption.75}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Augmentasi Dataset Sekunder untuk Menambahkan Data}}{90}{table.caption.79}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Sarana Penelitian Pengembangan Sistem untuk Membangun Dataset dengan Anotasi atau Label Otomatis}}{93}{table.caption.82}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Optimisasi Parameter}}{103}{table.caption.86}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Komponen Implementasi Prototype Perangkat Lunak}}{112}{table.caption.92}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Komponen Implementasi Prototype Perangkat Keras}}{114}{table.caption.94}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Luas Area Dari Gambar Citra yang Ditangkap oleh drone di Kebun Pendidikan dan Penelitian Kelapa Sawit IPB-Cargil}}{87}{table.caption.74}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Augmentasi Dataset Sekunder untuk Menambahkan Data}}{90}{table.caption.78}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Sarana Penelitian Pengembangan Sistem untuk Membangun Dataset dengan Anotasi atau Label Otomatis}}{93}{table.caption.81}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Optimisasi Parameter}}{103}{table.caption.85}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Komponen Implementasi Prototype Perangkat Lunak}}{112}{table.caption.91}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Komponen Implementasi Prototype Perangkat Keras}}{114}{table.caption.93}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Data Lokasi dan Luasan Area Studi}}{115}{table.caption.95}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Area Studi yang Berhasil Ditangkap menjadi Citra Area Pohon Kelapa Sawit dengan Drone}}{117}{table.caption.97}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Jumlah Citra dari Dua Area Studi}}{119}{table.caption.100}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Kegunaan Layanan Augmentasi Dataset Sekunder}}{123}{table.caption.104}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Hasil Proses Augmentasi Citra Dataset Sekunder}}{124}{table.caption.106}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Hasil Rerata Korelasi dan Waktu yang Dibutuhkan}}{131}{table.caption.115}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Waktu yang Dibutuhkan untuk Rotasi}}{133}{table.caption.117}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Waktu yang Dibutuhkan untuk Deteksi Objek sebagai Dataset}}{135}{table.caption.120}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Hasil Waktu Yang Dibutuhkan untuk Anotasi Otomatis}}{136}{table.caption.121}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Pengujian dengan 10 Citra Dataset Primer}}{137}{table.caption.123}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Dataset untuk Komputasi}}{142}{table.caption.129}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Optimisasi Parameter}}{144}{table.caption.131}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Sarana Penelitian Mesin NVIDIA (Super Komputer)}}{145}{table.caption.132}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}}{146}{table.caption.133}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv5}}{147}{table.caption.135}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}}{148}{table.caption.136}%
-\contentsline {table}{\numberline {4.17}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv6}}{150}{table.caption.138}%
-\contentsline {table}{\numberline {4.18}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{151}{table.caption.139}%
-\contentsline {table}{\numberline {4.19}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv7}}{152}{table.caption.141}%
-\contentsline {table}{\numberline {4.20}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}}{154}{table.caption.142}%
-\contentsline {table}{\numberline {4.21}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv5}}{156}{table.caption.144}%
-\contentsline {table}{\numberline {4.22}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}}{159}{table.caption.147}%
-\contentsline {table}{\numberline {4.23}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv6}}{160}{table.caption.149}%
-\contentsline {table}{\numberline {4.24}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{162}{table.caption.151}%
-\contentsline {table}{\numberline {4.25}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv7}}{163}{table.caption.153}%
-\contentsline {table}{\numberline {4.26}{\ignorespaces Hasil Kecepetan Waktu Proses Dataset dengan Model YOLOv7 Pelatihan dengan Inferensi}}{167}{table.caption.155}%
-\contentsline {table}{\numberline {4.27}{\ignorespaces Nilai Titik Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}}{173}{table.caption.162}%
-\contentsline {table}{\numberline {4.28}{\ignorespaces Nilai Komponen Format COCO}}{174}{table.caption.163}%
-\contentsline {table}{\numberline {4.29}{\ignorespaces Hasil Presentase Prediksi Pohon Kelapa Sawit pada 4 Blok}}{179}{table.caption.168}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Data Lokasi dan Luasan Area Studi}}{115}{table.caption.94}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Area Studi yang Berhasil Ditangkap menjadi Citra Area Pohon Kelapa Sawit dengan Drone}}{117}{table.caption.96}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Jumlah Citra dari Dua Area Studi}}{119}{table.caption.99}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Kegunaan Layanan Augmentasi Dataset Sekunder}}{123}{table.caption.103}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Hasil Proses Augmentasi Citra Dataset Sekunder}}{124}{table.caption.105}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Hasil Rerata Korelasi dan Waktu yang Dibutuhkan}}{131}{table.caption.114}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Waktu yang Dibutuhkan untuk Rotasi}}{133}{table.caption.116}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Waktu yang Dibutuhkan untuk Deteksi Objek sebagai Dataset}}{135}{table.caption.119}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Hasil Waktu Yang Dibutuhkan untuk Anotasi Otomatis}}{136}{table.caption.120}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Pengujian dengan 10 Citra Dataset Primer}}{137}{table.caption.122}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Dataset untuk Komputasi}}{142}{table.caption.128}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Optimisasi Parameter}}{144}{table.caption.130}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Sarana Penelitian Mesin NVIDIA (Super Komputer)}}{145}{table.caption.131}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}}{146}{table.caption.132}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv5}}{147}{table.caption.134}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}}{148}{table.caption.135}%
+\contentsline {table}{\numberline {4.17}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv6}}{150}{table.caption.137}%
+\contentsline {table}{\numberline {4.18}{\ignorespaces Evaluasi Pelatihan Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{151}{table.caption.138}%
+\contentsline {table}{\numberline {4.19}{\ignorespaces Evaluasi Waktu Proses Pelatihan Model CNN YOLOv7}}{152}{table.caption.140}%
+\contentsline {table}{\numberline {4.20}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv5 pada Google Colab Pro dan DGX-A-100}}{154}{table.caption.141}%
+\contentsline {table}{\numberline {4.21}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv5}}{156}{table.caption.143}%
+\contentsline {table}{\numberline {4.22}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv6 pada Google Colab Pro dan DGX-A-100}}{159}{table.caption.146}%
+\contentsline {table}{\numberline {4.23}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv6}}{160}{table.caption.148}%
+\contentsline {table}{\numberline {4.24}{\ignorespaces Evaluasi Pengujian Model dengan YOLOv7 pada Google Colab Pro dan DGX-A-100}}{162}{table.caption.150}%
+\contentsline {table}{\numberline {4.25}{\ignorespaces Evaluasi Waktu Proses Pengujian Model CNN YOLOv7}}{163}{table.caption.152}%
+\contentsline {table}{\numberline {4.26}{\ignorespaces Hasil Kecepetan Waktu Proses Dataset dengan Model YOLOv7 Pelatihan dengan Inferensi}}{167}{table.caption.154}%
+\contentsline {table}{\numberline {4.27}{\ignorespaces Nilai Titik Awal dari Titik-Titik pada Objek Pohon Kelapa Sawit}}{173}{table.caption.161}%
+\contentsline {table}{\numberline {4.28}{\ignorespaces Nilai Komponen Format COCO}}{174}{table.caption.162}%
+\contentsline {table}{\numberline {4.29}{\ignorespaces Hasil Presentase Prediksi Pohon Kelapa Sawit pada 4 Blok}}{179}{table.caption.167}%
 \addvspace {10\p@ }
